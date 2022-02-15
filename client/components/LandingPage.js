@@ -37,12 +37,14 @@ export default class LandingPage extends Base {
         {loaded ? (
           <Home />
         ) : (
-          <img
-            src={window.location.origin + "/images/loading-animation.gif"}
-            alt={"Loading animation"}
-            style={{ width: "100%" }}
-            onLoad={this.onImageLoad}
-          />
+          <div className={"allPage"} style={{ height: window.innerHeight }}>
+            <img
+              src={window.location.origin + "/images/loading-animation.gif"}
+              alt={"Loading animation"}
+              style={{ width: "100%" }}
+              onLoad={this.onImageLoad}
+            />
+          </div>
         )}
       </div>
     );
