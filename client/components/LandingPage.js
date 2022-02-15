@@ -22,8 +22,8 @@ export default class LandingPage extends Base {
           loaded: true,
         });
       },
-      1000
-      // 9000
+      // 1000
+      9000
     );
   }
 
