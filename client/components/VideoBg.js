@@ -34,7 +34,7 @@ export default class Home extends Base {
         muted={true}
       >
         <source
-          src={window.location.origin + "/assets/BackgroundVideoWithGrunge.mp4"}
+          src={"https://data.mob.land/assets/BackgroundVideoWithGrunge.mp4"}
         />
         <ControlBar className="controlbar" />
       </Player>
