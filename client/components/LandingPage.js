@@ -2,6 +2,7 @@
 import Base from "./Base";
 // import Ab from "./lib/Ab";
 import Home from "./Home";
+// import VideoBg from "./VideoBg";
 
 // eslint-disable-next-line no-undef
 // const { Container, Row, Col } = ReactBootstrap;
@@ -23,7 +24,7 @@ export default class LandingPage extends Base {
         });
       },
       // 1000
-      9000
+      5500
     );
   }
 

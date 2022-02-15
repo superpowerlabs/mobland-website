@@ -38,9 +38,7 @@ export default class Home extends Base {
 
     return (
       <div style={{ marginTop: 78 }}>
-        <div className={"videoBg"}>
-          <VideoBg />
-        </div>
+        <VideoBg />
         <Row className={"stats"}>
           <Col>
             <div className={"centered"}>
@@ -83,6 +81,7 @@ export default class Home extends Base {
               store={this.Store}
               setStore={this.setStore}
               set={investors}
+              start={0}
             />
           </Col>
         </Row>
@@ -96,6 +95,7 @@ export default class Home extends Base {
               store={this.Store}
               setStore={this.setStore}
               set={partners}
+              start={100}
             />
           </Col>
         </Row>

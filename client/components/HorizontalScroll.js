@@ -16,25 +16,28 @@ export default class HorizontalScroll extends Base {
   componentDidMount() {}
 
   render() {
-    let i = 0;
+    let i = this.props.start;
     return (
       <div>
         <div className={"hcontainer"}>
-          {this.props.set.map((item) => (
-            <div key={"img" + i++}>
-              <a href={item.href} target={"_blank"}>
-                <img className="card" src={`/images/investors/${item.img}`} />
-              </a>
-              <div className={"centered"}>
-                <a className={"yellowHover"} href={item.href}>
-                  {item.name}
+          {this.props.set.map((item) => {
+            let key = "entity" + i++;
+            return (
+              <div key={key}>
+                <a href={item.href} target={"_blank"}>
+                  <img className="card" src={`/images/investors/${item.img}`} />
                 </a>
+                <div className={"centered"}>
+                  <a className={"yellowHover"} href={item.href}>
+                    {item.name}
+                  </a>
+                </div>
+                {item.company ? (
+                  <div className={"centered"}>{item.company}</div>
+                ) : null}
               </div>
-              {item.company ? (
-                <div className={"centered"}>{item.company}</div>
-              ) : null}
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     );

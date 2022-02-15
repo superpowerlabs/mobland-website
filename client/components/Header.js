@@ -110,11 +110,11 @@ export default class Header extends Base {
           ) : null}
           <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
             {/*<NavDropdown.Divider />*/}
-            <NavDropdown.Item eventKey="4.1" as={Link} to={"/team"}>
+            <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
               TEAM
             </NavDropdown.Item>
             <NavDropdown.Item
-              eventKey="4.2"
+              eventKey="leaderboard"
               href={"https://leaderboard.mob.land"}
               target={"_blank"}
             >
@@ -133,7 +133,7 @@ export default class Header extends Base {
           <OverlayTrigger
             placement={"bottom"}
             overlay={
-              <Tooltip id={"tooltip-bottom"} className={"tooltipBottom"}>
+              <Tooltip id={"tooltip-bottom-1"} className={"tooltipBottom"}>
                 Coming soon
               </Tooltip>
             }
@@ -143,7 +143,7 @@ export default class Header extends Base {
           <OverlayTrigger
             placement={"bottom"}
             overlay={
-              <Tooltip id={"tooltip-bottom"} className={"tooltipBottom"}>
+              <Tooltip id={"tooltip-bottom-2"} className={"tooltipBottom"}>
                 Coming soon
               </Tooltip>
             }

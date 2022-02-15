@@ -11,33 +11,45 @@ import { Player, ControlBar } from "video-react";
 export default class Home extends Base {
   constructor(props) {
     super(props);
+    this.state = {
+      isLoading: true,
+    };
     this.bindMany(["handleStateChange"]);
   }
+
   componentDidMount() {
     this.player.subscribeToStateChange(this.handleStateChange);
     this.player.load();
   }
 
   handleStateChange(state) {
-    this.setState({
-      player: state,
-    });
+    if (!isNaN(state.duration) && this.state.isLoading) {
+      this.setState({
+        isLoading: false,
+      });
+    }
+    if (state.currentTime === state.duration) {
+      this.player.play();
+    }
   }
 
   render() {
+    const { isLoading } = this.state;
     return (
-      <Player
-        ref={(player) => {
-          this.player = player;
-        }}
-        autoPlay={true}
-        muted={true}
-      >
-        <source
-          src={"https://data.mob.land/assets/BackgroundVideoWithGrunge.mp4"}
-        />
-        <ControlBar className="controlbar" />
-      </Player>
+      <div className={"videoBg " + (!isLoading ? "nowshow" : "notshow")}>
+        <Player
+          ref={(player) => {
+            this.player = player;
+          }}
+          autoPlay={true}
+          muted={true}
+        >
+          <source
+            src={"https://data.mob.land/assets/BackgroundVideoWithGrunge.mp4"}
+          />
+          <ControlBar className="controlbar" />
+        </Player>
+      </div>
     );
   }
 }
