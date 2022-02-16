@@ -1634,8 +1634,10 @@ table td {
 .offScreen {
     position: absolute;
     z-index: 20;
-    top: -2000px;
-    left: -3000px;
+    top: -1000px;
+    left: -1000px;
+    width: 10px;
+    height: 10px;
 }
 
 .videoBg {
