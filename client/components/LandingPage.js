@@ -45,6 +45,10 @@ export default class LandingPage extends Base {
               style={{ width: "100%" }}
               onLoad={this.onImageLoad}
             />
+            <img
+              src={"https://data.mob.land/assets/VideoCover.jpg"}
+              className={"offScreen"}
+            />
           </div>
         )}
       </div>

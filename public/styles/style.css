@@ -1630,7 +1630,8 @@ table td {
     background-color: #131313;
 }
 
-.donotshow {
+.donotshow,
+.offScreen {
     position: absolute;
     z-index: 20;
     top: -2000px;
