@@ -62,6 +62,13 @@ class App extends Common {
   }
 
   componentWillUnmount() {
+    const { location } = window;
+    if (
+      !/local/.test(location.origin) &&
+      window.location.protocol === "http:"
+    ) {
+      window.location = location.href.replace(/^http:/, "https:");
+    }
     window.removeEventListener("resize", this.updateDimensions.bind(this));
   }
 

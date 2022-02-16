@@ -24,7 +24,7 @@ export default class LandingPage extends Base {
         });
       },
       // 1000
-      5500
+      7500
     );
   }
 
@@ -40,7 +40,7 @@ export default class LandingPage extends Base {
         ) : (
           <div className={"allPage"} style={{ height: window.innerHeight }}>
             <img
-              src={window.location.origin + "/images/loading-animation.gif"}
+              src={"https://data.mob.land/assets/MoblandSitePreloader.gif"}
               alt={"Loading animation"}
               style={{ width: "100%" }}
               onLoad={this.onImageLoad}

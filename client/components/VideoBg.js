@@ -43,10 +43,12 @@ export default class Home extends Base {
           }}
           autoPlay={true}
           muted={true}
+          poster={"https://data.mob.land/assets/VideoCover.jpg"}
         >
           <source
             src={"https://data.mob.land/assets/BackgroundVideoWithGrunge.mp4"}
           />
+
           <ControlBar className="controlbar" />
         </Player>
       </div>
