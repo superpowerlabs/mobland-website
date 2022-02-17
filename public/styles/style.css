@@ -305,6 +305,11 @@ div.textBlock p:last-child {
 /*    }*/
 /*}*/
 
+a.yellowHover {
+    color: whitesmoke !important;
+}
+
+
 a.yellowHover:hover {
     color: yellow !important;
 }
