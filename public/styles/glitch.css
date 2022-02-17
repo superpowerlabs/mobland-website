@@ -11,6 +11,13 @@
     --color-subtitle: #30efbf;
 }
 
+@media (max-width: 900px) {
+    .render {
+        --glitch-width: 85px;
+        --glitch-height: 85px;
+    }
+}
+
 .glitch--style-1 {
     --gap-horizontal: 20px;
     --gap-vertical: 2px;
@@ -183,14 +190,21 @@
 /* Glitch styles */
 .glitch {
     position: relative;
-    width: var(--glitch-width);
+    /*width: var(--glitch-width);*/
     /*max-width: 400px;*/
-    height: var(--glitch-height);
+    /*height: var(--glitch-height);*/
     /*max-height: calc(400px * 1.25);*/
     width: 185px;
     height: 185px;
     overflow: hidden;
     margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .glitch {
+        width: 85px;
+        height: 85px;
+    }
 }
 
 .glitch:hover {

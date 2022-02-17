@@ -1498,6 +1498,13 @@ table td {
     text-align: center;
 }
 
+@media (max-width: 900px) {
+    .investor {
+        margin: 8px;
+    }
+
+}
+
 .list {
     margin: 40px 0;
 }
@@ -1687,6 +1694,7 @@ table td {
 }
 
 @media (max-width: 900px) {
+
     /*.videoBg {*/
     /*    width: 900px;*/
     /*    position: relative;*/
