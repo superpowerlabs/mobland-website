@@ -50,22 +50,22 @@ export default class TeamMember extends Base {
       <div className={"teamMemberContainer"}>
         <div
           className={"teamMember"}
-          onMouseEnter={this.expand}
-          onMouseLeave={this.collapse}
+          onMouseEnter={job ? this.expand : undefined}
+          onMouseLeave={job ? this.collapse : undefined}
         >
           <div className={"memberPicture"}>
             <img src={"/images/team/" + img + ".png"} alt={name} />
           </div>
           <div className={"teamName"}>{name}</div>
-          <div className={"teamRole"}>{role}</div>
-          <Collapse in={false}>
+          <div className={"teamRole "+ (job ? '' : 'smaller')}>{role}</div>
+          {job ? <Collapse in={false}>
             <div className={"jobPicture"}>
               <img
                 src={"/images/team/" + job + ".png"}
                 alt={"Past experience"}
               />
             </div>
-          </Collapse>
+          </Collapse>  : undefined}
         </div>
       </div>
     );
