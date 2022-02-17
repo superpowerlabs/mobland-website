@@ -169,7 +169,7 @@
 @media screen and (max-width: 55em) {
     .grid {
         grid-template-columns: 100%;
-        margin-top: 3em;
+        /*margin-top: 3em;*/
     }
     .grid__item {
         margin: 0 0 3em;
@@ -186,6 +186,10 @@
         top: 20%;
     }
 }
+
+/*@media (max-width: 900px) {*/
+/*    .grid {*/
+/*}*/
 
 /* Glitch styles */
 .glitch {

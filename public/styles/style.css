@@ -1502,7 +1502,6 @@ table td {
     .investor {
         margin: 8px;
     }
-
 }
 
 .list {
@@ -1694,7 +1693,6 @@ table td {
 }
 
 @media (max-width: 900px) {
-
     /*.videoBg {*/
     /*    width: 900px;*/
     /*    position: relative;*/
