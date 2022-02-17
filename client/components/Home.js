@@ -38,11 +38,11 @@ export default class Home extends Base {
     // const { loaded } = this.state;
 
     return (
-      <div style={{ marginTop: 78 }}>
+      <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <VideoBg />
         <Row className={"stats"}>
-          <Col>
-            <div className={"centered"}>
+          <Col xs={12} lg={4}>
+            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
               <div className={"wrong"}>497k+</div>
               <div className={"underWrong"}>
                 Existing community
@@ -51,8 +51,8 @@ export default class Home extends Base {
               </div>
             </div>{" "}
           </Col>
-          <Col>
-            <div className={"centered"}>
+          <Col xs={12} lg={4}>
+            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
               <div className={"wrong"}>$3M USD+</div>
               <div className={"underWrong"}>
                 8000 NFTS
@@ -62,8 +62,8 @@ export default class Home extends Base {
             </div>{" "}
           </Col>
 
-          <Col>
-            <div className={"centered"}>
+          <Col xs={12} lg={4}>
+            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
               <div className={"wrong"}>#1 IN Vol</div>
               <div className={"underWrong"}>
                 Binance NFT

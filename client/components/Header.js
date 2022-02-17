@@ -1,4 +1,6 @@
-const { Navbar, Nav, Button, OverlayTrigger, Tooltip, NavDropdown } =
+// import { isMobile } from "react-device-detect";
+
+const { Navbar, Nav, OverlayTrigger, Tooltip, NavDropdown } =
   // eslint-disable-next-line no-undef
   ReactBootstrap;
 
@@ -51,33 +53,33 @@ export default class Header extends Base {
   render() {
     const { expanded } = this.state;
 
-    let address = null;
-    let shortAddress;
-    if (this.Store.connectedWallet) {
-      let fullAddress = this.Store.connectedWallet;
-      shortAddress = this.ellipseAddress(fullAddress);
-      if (this.state.addressExpanded) {
-        address = (
-          <span>
-            {this.Store.connectedWallet}
-            {/*  <i onClick={this.expandAddress}*/}
-            {/*                                                className="command fa fa-minus-circle"*/}
-            {/*/>*/}
-          </span>
-        );
-      } else {
-        address = (
-          <span>
-            {shortAddress}
-            {/*{isPhone ? null :*/}
-            {/*  <i style={{marginLeft: 5}} onClick={this.expandAddress}*/}
-            {/*     className="command fa fa-plus-circle"*/}
-            {/*  />*/}
-            {/*}*/}
-          </span>
-        );
-      }
-    }
+    // let address
+    // let shortAddress;
+    // if (this.Store.connectedWallet) {
+    //   let fullAddress = this.Store.connectedWallet;
+    //   shortAddress = this.ellipseAddress(fullAddress);
+    //   if (this.state.addressExpanded) {
+    //     address = (
+    //       <span>
+    //         {this.Store.connectedWallet}
+    //         {/*  <i onClick={this.expandAddress}*/}
+    //         {/*                                                className="command fa fa-minus-circle"*/}
+    //         {/*/>*/}
+    //       </span>
+    //     );
+    //   } else {
+    //     address = (
+    //       <span>
+    //         {shortAddress}
+    //         {/*{isPhone ? null :*/}
+    //         {/*  <i style={{marginLeft: 5}} onClick={this.expandAddress}*/}
+    //         {/*     className="command fa fa-plus-circle"*/}
+    //         {/*  />*/}
+    //         {/*}*/}
+    //       </span>
+    //     );
+    //   }
+    // }
 
     // let connectedTo = "";
     //   =
@@ -102,82 +104,93 @@ export default class Header extends Base {
         expand="lg"
         className={"roboto"}
       >
-        <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
-          {window.location.pathname !== "/" ? (
-            <Navbar.Text className={"links"} as={Link} to={"/"}>
-              HOME
+        {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={this.setExpanded}
+        />
+
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
+            {window.location.pathname !== "/" ? (
+              <Navbar.Text className={"links"} as={Link} to={"/"}>
+                HOME
+              </Navbar.Text>
+            ) : null}
+            <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
+              {/*<NavDropdown.Divider />*/}
+              <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
+                TEAM
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                eventKey="leaderboard"
+                href={"https://leaderboard.mob.land"}
+                target={"_blank"}
+              >
+                LEADERBOARD
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Navbar.Text className={"links"}>
+              <a
+                className={"menucmd yellowHover"}
+                href={"https://staking.mob.land"}
+                target={"_blank"}
+              >
+                STAKING
+              </a>
             </Navbar.Text>
-          ) : null}
-          <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
-            {/*<NavDropdown.Divider />*/}
-            <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
-              TEAM
-            </NavDropdown.Item>
-            <NavDropdown.Item
-              eventKey="leaderboard"
-              href={"https://leaderboard.mob.land"}
-              target={"_blank"}
+            <OverlayTrigger
+              placement={"bottom"}
+              overlay={
+                <Tooltip id={"tooltip-bottom-1"} className={"tooltipBottom"}>
+                  Coming soon
+                </Tooltip>
+              }
             >
-              LEADERBOARD
-            </NavDropdown.Item>
-          </NavDropdown>
-          <Navbar.Text className={"links"}>
-            <a
-              className={"menucmd yellowHover"}
-              href={"https://staking.mob.land"}
-              target={"_blank"}
+              <Navbar.Text className={"links"}>MARKETPLACE</Navbar.Text>
+            </OverlayTrigger>
+            <OverlayTrigger
+              placement={"bottom"}
+              overlay={
+                <Tooltip id={"tooltip-bottom-2"} className={"tooltipBottom"}>
+                  Coming soon
+                </Tooltip>
+              }
             >
-              STAKING
-            </a>
-          </Navbar.Text>
-          <OverlayTrigger
-            placement={"bottom"}
-            overlay={
-              <Tooltip id={"tooltip-bottom-1"} className={"tooltipBottom"}>
-                Coming soon
-              </Tooltip>
-            }
-          >
-            <Navbar.Text className={"links"}>MARKETPLACE</Navbar.Text>
-          </OverlayTrigger>
-          <OverlayTrigger
-            placement={"bottom"}
-            overlay={
-              <Tooltip id={"tooltip-bottom-2"} className={"tooltipBottom"}>
-                Coming soon
-              </Tooltip>
-            }
-          >
-            <Navbar.Text className={"links"}>GOVERNANCE</Navbar.Text>
-          </OverlayTrigger>
-        </Nav>
+              <Navbar.Text className={"links"}>GOVERNANCE</Navbar.Text>
+            </OverlayTrigger>
+          </Nav>
+        </Navbar.Collapse>
         {this.Store.width ? (
           <img
             className={"positionAbsolute"}
             src={"https://s3.mob.land/assets/Mobland_Title_Stylized300.png"}
-            style={{ width: 220, left: this.Store.width / 2 - 110 }}
+            style={{
+              width: 220,
+              left: this.isMobile() ? 80 : this.Store.width / 2 - 110,
+            }}
           />
         ) : null}
 
-        {this.isMobile() ? (
-          this.Store.connectedWallet ? (
-            <div className={"aqua floatRightAbsolute"}>
-              <i
-                className="fas fa-user-astronaut"
-                style={{ marginRight: 10 }}
-              />
-              {address}
-            </div>
-          ) : (
-            <Button
-              className={"floatRightAbsolute"}
-              size={"sm"}
-              onClick={this.props.connect}
-            >
-              Connect your wallet
-            </Button>
-          )
-        ) : null}
+        {/*{this.isMobile() ? (*/}
+        {/*  this.Store.connectedWallet ? (*/}
+        {/*    <div className={"aqua floatRightAbsolute"}>*/}
+        {/*      <i*/}
+        {/*        className="fas fa-user-astronaut"*/}
+        {/*        style={{ marginRight: 10 }}*/}
+        {/*      />*/}
+        {/*      {address}*/}
+        {/*    </div>*/}
+        {/*  ) : (*/}
+        {/*    <Button*/}
+        {/*      className={"floatRightAbsolute"}*/}
+        {/*      size={"sm"}*/}
+        {/*      onClick={this.props.connect}*/}
+        {/*    >*/}
+        {/*      Connect your wallet*/}
+        {/*    </Button>*/}
+        {/*  )*/}
+        {/*) : null}*/}
 
         <Navbar.Collapse>
           {this.Store.chainId === 1 && !this.isMobile() ? (
@@ -192,19 +205,15 @@ export default class Header extends Base {
         {/*    style={{ height: 40 }}*/}
         {/*  />*/}
         {/*</Navbar.Brand>*/}
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          onClick={this.setExpanded}
-        />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mr-auto my-2 my-lg-0" navbarScroll></Nav>
         </Navbar.Collapse>
 
-        <Navbar.Collapse
-          className="justify-content-end"
-          style={{ display: "block" }}
-        >
-          {this.isMobile() ? null : (
+        {this.isMobile() ? null : (
+          <Navbar.Collapse
+            className="justify-content-end"
+            style={{ display: "block" }}
+          >
             <Navbar.Text className={"socialLinks"}>
               <a
                 href={"https://discord.gg/tSVtRkppnp"}
@@ -230,22 +239,8 @@ export default class Header extends Base {
                 <i className="fab fa-twitter" />
               </a>
             </Navbar.Text>
-          )}
-
-          {/*<Navbar.Text>{connectedTo}</Navbar.Text>*/}
-
-          {/*{this.isMobile() ? null : this.Store.connectedWallet ? (*/}
-          {/*  <Navbar.Text className={"aqua"}>*/}
-          {/*    <i*/}
-          {/*      className="fas fa-user-astronaut"*/}
-          {/*      style={{ marginRight: 10 }}*/}
-          {/*    />*/}
-          {/*    {address}*/}
-          {/*  </Navbar.Text>*/}
-          {/*) : (*/}
-          {/*  <Button onClick={this.props.connect}>Connect your wallet</Button>*/}
-          {/*)}*/}
-        </Navbar.Collapse>
+          </Navbar.Collapse>
+        )}
         {/*{*/}
         {/*  this.state.isOperator*/}
         {/*    ? <Navbar.Text>*/}

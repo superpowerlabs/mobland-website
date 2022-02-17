@@ -441,6 +441,10 @@ img.oil {
 button {
 }
 
+.root {
+    width: 100% !important;
+}
+
 div.subtitle {
     /*background: #000;*/
     width: 100%;
@@ -1566,9 +1570,34 @@ table td {
     height: 35px;
 }
 
+.masonryContainer {
+    text-align: center;
+}
+
 .teamContainer {
-    margin: 0 100px;
-    max-width: 1300px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .teamContainer {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .teamContainer {
+        max-width: 610px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .teamContainer {
+        max-width: 310px;
+        margin: 0 auto;
+    }
 }
 
 .teamMemberContainer {
@@ -1657,6 +1686,72 @@ table td {
     backface-visibility: hidden;
 }
 
+@media (max-width: 900px) {
+    .videoBg {
+        width: 900px;
+        position: relative;
+        left: -100px;
+    }
+
+    .socialLinks {
+        display: none;
+    }
+
+    /*.navbar-expand-lg {*/
+    /*    margin-top: 100px;*/
+
+    /*}*/
+
+    .navbar-expand-lg.navbar-light.bg-dark {
+        padding-top: 120px;
+        /*max-width: 80%;*/
+    }
+}
+
+/*.navbar-collapse.collapse {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*@keyframes collapseFadeIn {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*.faded {*/
+/*    opacity: 0.2;*/
+/*}*/
+
+/*.navbar-collapse.collapse.show {*/
+/*    animation: 0.3s ease-out 0s 1 collapseFadeIn;*/
+/*    opacity: 1;*/
+/*}*/
+
+.navbar-light .navbar-toggler {
+    color: #1d2121;
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../images/toggle.png) !important;
+}
+
+.show .navbar-nav-scroll .links,
+.show .navbar-nav-scroll .links a {
+    font-size: 1.7rem !important;
+    padding: 8px 0 !important;
+}
+
+.show .navbar-light.navbar-text a,
+.show .yellowHover {
+    padding: 0 !important;
+}
+
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -1697,3 +1792,7 @@ table td {
     color: #999;
     font-size: 75%;
 }
+
+/*.navbar-toggler.collapsed {*/
+/*    visibility: visible;*/
+/*}*/

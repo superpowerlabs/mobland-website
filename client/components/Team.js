@@ -57,7 +57,7 @@ export default class Team extends Base {
     // const { loaded } = this.state;
 
     return (
-      <div style={{ marginTop: 78 }}>
+      <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <Row>
           <Col className={"titleLeft"}>
             <div className={"image"}>
@@ -66,11 +66,13 @@ export default class Team extends Base {
             Team
           </Col>
         </Row>
-        <Masonry
-          className={"teamContainer"} // default ''
-        >
-          {this.getTeamMembers()}
-        </Masonry>
+        <div className={"masonryContainer"}>
+          <Masonry
+            className={"teamContainer"} // default ''
+          >
+            {this.getTeamMembers()}
+          </Masonry>
+        </div>
       </div>
     );
   }
