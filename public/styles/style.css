@@ -1687,11 +1687,11 @@ table td {
 }
 
 @media (max-width: 900px) {
-    .videoBg {
-        width: 900px;
-        position: relative;
-        left: -100px;
-    }
+    /*.videoBg {*/
+    /*    width: 900px;*/
+    /*    position: relative;*/
+    /*    left: -100px;*/
+    /*}*/
 
     .socialLinks {
         display: none;
