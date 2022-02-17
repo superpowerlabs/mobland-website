@@ -23,11 +23,12 @@ export default class HorizontalScroll extends Base {
   }
 
   componentDidMount() {
-    const { clientWidth } = this.scrollContainerRef.current;
-    let initialLeft = clientWidth / 2;
-    initialLeft -= initialLeft % 225;
-    this.setState({ left: initialLeft });
-    this.magicScroll();
+    // const { clientWidth } = this.scrollContainerRef.current;
+    // let initialLeft = clientWidth / 2;
+    // initialLeft -= initialLeft % 225;
+    // this.setState({ left: initialLeft });
+    // this.magicScroll();
+    // this.setTimeout(() => document.body.classList.add('render'), 60);
   }
 
   async scrollLeftNow(zero) {
@@ -71,18 +72,64 @@ export default class HorizontalScroll extends Base {
     return (
       <div>
         <div
-          className={"hcontainer " + (this.state.cls || "")}
+          className={"hcontainer grid " + (this.state.cls || "")}
           ref={this.scrollContainerRef}
         >
           {this.props.set.map((item) => {
             let key = "entity" + i++;
+            let style = Math.ceil(5 * Math.random());
+            if (style === 6) {
+              style = 5;
+            }
             return (
-              <div key={key}>
+              <div key={key} className={"grid-item"}>
                 <a href={item.href} target={"_blank"}>
-                  <img
-                    className="hcard"
-                    src={`/images/investors/${item.img}`}
-                  />
+                  {/*<div className="grid__item">*/}
+                  <div
+                    className={
+                      "hcard  glitch glitch--style-" +
+                      style +
+                      " " +
+                      (Math.random() > 0.5 ? "glitch--vertical" : "")
+                    }
+                  >
+                    <div
+                      className="glitch__img"
+                      style={{
+                        backgroundImage: `url(/images/investors/${item.img})`,
+                        backgroundSize: "contain",
+                      }}
+                    />
+                    <div
+                      className="glitch__img"
+                      style={{
+                        backgroundImage: `url(/images/investors/${item.img})`,
+                        backgroundSize: "contain",
+                      }}
+                    />
+                    <div
+                      className="glitch__img"
+                      style={{
+                        backgroundImage: `url(/images/investors/${item.img})`,
+                        backgroundSize: "contain",
+                      }}
+                    />
+                    <div
+                      className="glitch__img"
+                      style={{
+                        backgroundImage: `url(/images/investors/${item.img})`,
+                        backgroundSize: "contain",
+                      }}
+                    />
+                    <div
+                      className="glitch__img"
+                      style={{
+                        backgroundImage: `url(/images/investors/${item.img})`,
+                        backgroundSize: "contain",
+                      }}
+                    />
+                  </div>
+                  {/*</div>*/}
                 </a>
                 <div className={"centered"} style={{ paddingTop: 6 }}>
                   <a className={"grey666 yellowHover"} href={item.href}>
