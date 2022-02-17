@@ -57,15 +57,17 @@ export default class TeamMember extends Base {
             <img src={"/images/team/" + img + ".png"} alt={name} />
           </div>
           <div className={"teamName"}>{name}</div>
-          <div className={"teamRole "+ (job ? '' : 'smaller')}>{role}</div>
-          {job ? <Collapse in={false}>
-            <div className={"jobPicture"}>
-              <img
-                src={"/images/team/" + job + ".png"}
-                alt={"Past experience"}
-              />
-            </div>
-          </Collapse>  : undefined}
+          <div className={"teamRole " + (job ? "" : "smaller")}>{role}</div>
+          {job ? (
+            <Collapse in={false}>
+              <div className={"jobPicture"}>
+                <img
+                  src={"/images/team/" + job + ".png"}
+                  alt={"Past experience"}
+                />
+              </div>
+            </Collapse>
+          ) : undefined}
         </div>
       </div>
     );
