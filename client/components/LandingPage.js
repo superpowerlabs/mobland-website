@@ -24,11 +24,17 @@ export default class LandingPage extends Base {
         });
       },
       // 1000
-      7500
+      7000
     );
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    if (/skip/.test(window.location.search)) {
+      this.setStore({
+        loaded: true,
+      });
+    }
+  }
 
   render() {
     const { loaded } = this.Store;

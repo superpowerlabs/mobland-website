@@ -6,6 +6,7 @@ import VideoBg from "./VideoBg";
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import HorizontalScroll from "./HorizontalScroll";
+// import HorizontalScroll from "./InfiniteHorizontalScroll";
 
 // eslint-disable-next-line no-undef
 const { Row, Col } = ReactBootstrap;

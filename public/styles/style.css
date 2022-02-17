@@ -10,6 +10,10 @@
     font-weight: normal;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 body {
     width: 100%;
     margin: 0;
@@ -300,11 +304,6 @@ div.textBlock p:last-child {
 /*        max-width: 1400px !important;*/
 /*    }*/
 /*}*/
-
-a.yellowHover {
-    color: white !important;
-    text-decoration: none;
-}
 
 a.yellowHover:hover {
     color: yellow !important;
@@ -1464,7 +1463,7 @@ table td {
     font-family: Modeco, sans-serif !important;
 }
 
-.card {
+.hcard {
     flex-shrink: 0;
     width: 185px;
     height: 185px;
@@ -1477,7 +1476,115 @@ table td {
     filter: grayscale(1);
 }
 
-.card:hover {
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-family: Modeco, sans-serif !important;
+}
+
+.card {
+    width: 185px;
+    height: 185px;
+    border-radius: 10px;
+    margin: 0 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black; /* #131313 */
+    filter: grayscale(1);
+    position: relative;
+    display: inline-block;
+}
+
+/*.card {*/
+
+.card-img-container {
+    height: 185px;
+    width: 185px;
+    text-align: center;
+    line-height: 150px;
+    filter: grayscale(1);
+}
+
+.card-img-container:hover {
+    filter: grayscale(0);
+}
+
+.card-img-text {
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+.card-text-container {
+}
+
+.card-title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+.card-subtitle {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.card-info-container {
+    padding: 5px;
+}
+
+.icon-container__horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll {
+    padding: 5px;
+    height: 235px;
+    line-height: 235px;
+    position: absolute;
+    flex-basis: 0;
+    z-index: 5;
+    background-color: rgba(225, 225, 225, 0.8);
+    color: darkgrey;
+    display: none;
+    transition: 2s;
+}
+
+.card-container:hover .scroll {
+    display: block;
+    transition: 2s;
+}
+
+.scroll-prev {
+    left: 10px;
+}
+
+.scroll-next {
+    right: 10px;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.hcard:hover {
     filter: grayscale(0);
 }
 
@@ -1649,19 +1756,43 @@ table td {
     backface-visibility: hidden;
 }
 
-/*.notshow {*/
-/*    visibility: hidden;*/
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.fade-out {
+    animation: 0.3s ease-out 0s 1 fadeOut;
+    opacity: 0.5;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*.faded {*/
+/*    opacity: 0.2;*/
 /*}*/
 
-/*@keyframes loadVideo {*/
-/*    0% {*/
-/*        opacity: 0;*/
-/*    }*/
-/*    100% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*}*/
+.fade-in {
+    animation: 0.3s ease-out 0s 1 fadeIn;
+    opacity: 1;
+}
 
-/*.nowshow {*/
-/*    animation: 3s ease-out 0s 1 loadVideo;*/
-/*}*/
+.grey666 {
+    color: #666 !important;
+}
+
+.grey999 {
+    color: #999;
+    font-size: 75%;
+}
