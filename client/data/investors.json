@@ -1,45 +1,5 @@
 [
   {
-    "href": "https://twitter.com/ZssBecker",
-    "name": "Alex Becker",
-    "img": "Sin.City_website_backers_alex_becker.png"
-  },
-  {
-    "href": "https://twitter.com/animocabrands",
-    "name": "Animoca",
-    "img": "animoca.png"
-  },
-  {
-    "href": "http://www.longling.com/?lang=en",
-    "name": "Longling",
-    "img": "longling.png"
-  },
-  {
-    "href": "https://twitter.com/TheSpartanGroup",
-    "name": "Spartan Group",
-    "img": "spartangroup.png"
-  },
-  {
-    "href": "https://capitalant.com/",
-    "name": "A&T",
-    "img": "a&t.png"
-  },
-  {
-    "href": "https://www.hyperedge.capital/",
-    "name": "Hyperedge",
-    "img": "hyperedge.png"
-  },
-  {
-    "href": "https://shima.capital/",
-    "name": "Shima Capital",
-    "img": "shimacapital.png"
-  },
-  {
-    "href": "https://www.iangels.com/",
-    "name": "iAngels",
-    "img": "iangels.png"
-  },
-  {
     "href": "https://twitter.com/SynCityHQ",
     "name": "Superpower",
     "img": "super-power.png"
@@ -119,5 +79,45 @@
     "href": "https://twitter.com/santiagoroel",
     "name": "Santiago R Santos",
     "img": "Sin.City_website_backers_santiago-r-santos.png"
+  },
+  {
+    "href": "https://twitter.com/ZssBecker",
+    "name": "Alex Becker",
+    "img": "Sin.City_website_backers_alex_becker.png"
+  },
+  {
+    "href": "https://twitter.com/animocabrands",
+    "name": "Animoca",
+    "img": "animoca.png"
+  },
+  {
+    "href": "http://www.longling.com/?lang=en",
+    "name": "Longling",
+    "img": "longling.png"
+  },
+  {
+    "href": "https://twitter.com/TheSpartanGroup",
+    "name": "Spartan Group",
+    "img": "spartangroup.png"
+  },
+  {
+    "href": "https://capitalant.com/",
+    "name": "A&T",
+    "img": "a&t.png"
+  },
+  {
+    "href": "https://www.hyperedge.capital/",
+    "name": "Hyperedge",
+    "img": "hyperedge.png"
+  },
+  {
+    "href": "https://shima.capital/",
+    "name": "Shima Capital",
+    "img": "shimacapital.png"
+  },
+  {
+    "href": "https://www.iangels.com/",
+    "name": "iAngels",
+    "img": "iangels.png"
   }
 ]
