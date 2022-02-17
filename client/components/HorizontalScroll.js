@@ -97,35 +97,30 @@ export default class HorizontalScroll extends Base {
                       className="glitch__img"
                       style={{
                         backgroundImage: `url(/images/investors/${item.img})`,
-
                       }}
                     />
                     <div
                       className="glitch__img"
                       style={{
                         backgroundImage: `url(/images/investors/${item.img})`,
-
                       }}
                     />
                     <div
                       className="glitch__img"
                       style={{
                         backgroundImage: `url(/images/investors/${item.img})`,
-
                       }}
                     />
                     <div
                       className="glitch__img"
                       style={{
                         backgroundImage: `url(/images/investors/${item.img})`,
-
                       }}
                     />
                     <div
                       className="glitch__img"
                       style={{
                         backgroundImage: `url(/images/investors/${item.img})`,
-
                       }}
                     />
                   </div>
