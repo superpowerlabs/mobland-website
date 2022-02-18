@@ -16,7 +16,7 @@ export default class Footer extends Base {
           src={"/images/footer-sep.png"}
           style={{ width: "100%", margin: "30px 0" }}
         />
-        Copyright © 2022 Mob Land - All right reserved
+        Copyright © 2022 Mobland - All right reserved
       </div>
     );
   }
