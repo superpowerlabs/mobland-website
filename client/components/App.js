@@ -63,7 +63,9 @@ class App extends Common {
 
   componentWillUnmount() {
     const { location } = window;
-    if (
+    if (/mobland/.test(window.location.hostname)) {
+      window.location = "https://mob.land";
+    } else if (
       !/local/.test(location.origin) &&
       window.location.protocol === "http:"
     ) {
