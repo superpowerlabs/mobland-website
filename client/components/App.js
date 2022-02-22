@@ -22,7 +22,14 @@ class App extends Common {
     let localStore = JSON.parse(ls("localStore") || "{}");
     let pathhash = ethers.utils.id(window.location.pathname);
 
-    // console.log(pathhash)
+    if (/mobland/.test(window.location.origin)) {
+      window.location = "https://mob.land";
+    } else if (
+      !/local/.test(location.origin) &&
+      window.location.protocol === "http:"
+    ) {
+      window.location = location.href.replace(/^http:/, "https:");
+    }
 
     this.state = {
       Store: Object.assign(
@@ -62,15 +69,6 @@ class App extends Common {
   }
 
   componentWillUnmount() {
-    const { location } = window;
-    if (/mobland/.test(window.location.hostname)) {
-      window.location = "https://mob.land";
-    } else if (
-      !/local/.test(location.origin) &&
-      window.location.protocol === "http:"
-    ) {
-      window.location = location.href.replace(/^http:/, "https:");
-    }
     window.removeEventListener("resize", this.updateDimensions.bind(this));
   }
 
