@@ -1477,8 +1477,8 @@ table td {
 
 .hcard {
     flex-shrink: 0;
-    width: 185px;
-    height: 185px;
+    width: 140px;
+    height: 140px;
     border-radius: 10px;
     margin: 0 20px;
     background-size: cover;
@@ -1488,8 +1488,17 @@ table td {
     filter: grayscale(1);
 }
 
+.dongle {
+    font-family: "Dongle", sans-serif !important;
+}
+
+.wrapped {
+    height: 48px !important;
+    width: 140px;
+}
+
 .grid-item {
-    margin: 0 24px;
+    margin: 0 24px 24px;
 }
 
 @media (max-width: 900px) {

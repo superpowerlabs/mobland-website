@@ -13,7 +13,7 @@ export default class Footer extends Base {
         />
         <img
           alt={"separator"}
-          src={"/images/footer-sep.png"}
+          src={"https://s3.mob.land/assets/footer-sep.png"}
           style={{ width: "100%", margin: "18px 0 30px" }}
         />
         Copyright © 2022 Mobland - All right reserved
