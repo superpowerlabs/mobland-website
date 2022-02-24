@@ -134,11 +134,14 @@ export default class InvestorsAndPartners extends Base {
                     </a>
                   </div>
                   {item.company ? (
-                    <div className={"wrapped grey999 centered"} >
+                    <div className={"wrapped grey999 centered"}>
                       {item.company}
                     </div>
                   ) : (
-                    <div style={{ color: "transparent" }}><br/><br/></div>
+                    <div style={{ color: "transparent" }}>
+                      <br />
+                      <br />
+                    </div>
                   )}
                 </div>
               );
