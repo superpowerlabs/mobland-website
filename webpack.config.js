@@ -27,10 +27,5 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        mode: process.env.NODE_ENV || "production",
-      },
-    }),
   ],
 };

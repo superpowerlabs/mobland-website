@@ -139,16 +139,15 @@ export default class Header extends Base {
                 STAKING
               </a>
             </Navbar.Text>
-            <OverlayTrigger
-              placement={"bottom"}
-              overlay={
-                <Tooltip id={"tooltip-bottom-1"} className={"tooltipBottom"}>
-                  Coming soon
-                </Tooltip>
-              }
-            >
-              <Navbar.Text className={"links"}>MARKETPLACE</Navbar.Text>
-            </OverlayTrigger>
+            <Navbar.Text className={"links"}>
+              <a
+                className={"menucmd yellowHover"}
+                href={"https://marketplace.mob.land"}
+                target={"_blank"}
+              >
+                MARKETPLACE
+              </a>
+            </Navbar.Text>
             <OverlayTrigger
               placement={"bottom"}
               overlay={
@@ -225,14 +224,14 @@ export default class Header extends Base {
                 <i className="fab fa-discord" style={{ color: "yellow" }} />
               </a>
               <a
-                href="http://t.me/SynCityHQ"
+                href="http://t.me/MoblandHQ"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-telegram" />
               </a>
               <a
-                href="https://twitter.com/SynCityHQ"
+                href="https://twitter.com/MoblandHQ"
                 target="_blank"
                 rel="noopener noreferrer"
               >
