@@ -5,8 +5,8 @@ import VideoBg from "./VideoBg";
 
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
-import HorizontalScroll from "./HorizontalScroll";
-// import HorizontalScroll from "./InfiniteHorizontalScroll";
+import InvestorsAndPartners from "./InvestorsAndPartners";
+// import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
 const { Row, Col } = ReactBootstrap;
@@ -78,7 +78,7 @@ export default class Home extends Base {
         </Row>
         <Row>
           <Col className={"list"}>
-            <HorizontalScroll
+            <InvestorsAndPartners
               store={this.Store}
               setStore={this.setStore}
               set={investors}
@@ -92,7 +92,7 @@ export default class Home extends Base {
         </Row>
         <Row>
           <Col className={"list"}>
-            <HorizontalScroll
+            <InvestorsAndPartners
               store={this.Store}
               setStore={this.setStore}
               set={partners}

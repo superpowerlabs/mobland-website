@@ -23,8 +23,7 @@ export default class LandingPage extends Base {
           loaded: true,
         });
       },
-      // 1000
-      7000
+      window.location.hostname === "localhost" ? 0 : 7000
     );
   }
 
