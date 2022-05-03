@@ -57,7 +57,7 @@ export default class Home extends Base {
               <div className={"underWrong"}>
                 8000 NFTS
                 <br />
-                sold out 18 min
+                sold out in 18 min
               </div>
             </div>{" "}
           </Col>

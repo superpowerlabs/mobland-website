@@ -224,7 +224,7 @@ export default class Header extends Base {
                 <i className="fab fa-discord" style={{ color: "yellow" }} />
               </a>
               <a
-                href="http://t.me/MoblandHQ"
+                href="https://t.me/MobLandAnnouncements"
                 target="_blank"
                 rel="noopener noreferrer"
               >
