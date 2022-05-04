@@ -1822,3 +1822,9 @@ table td {
 /*.navbar-toggler.collapsed {*/
 /*    visibility: visible;*/
 /*}*/
+.skip {
+    color: yellow;
+    background-color: black;
+    float: right;
+    width: 5%;
+}
