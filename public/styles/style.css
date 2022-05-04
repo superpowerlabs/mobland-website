@@ -1826,5 +1826,12 @@ table td {
     color: yellow;
     background-color: black;
     float: right;
-    width: 5%;
+    transform: skewX(-6deg);
+    padding: 4px 14px;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.skip div {
+    transform: skewX(6deg);
 }

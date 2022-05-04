@@ -60,7 +60,7 @@ export default class LandingPage extends Base {
               className={"offScreen"}
             />
             <button onClick={this.skip} className="skip">
-              skip
+              <div>Skip the intro</div>
             </button>
           </div>
         )}
