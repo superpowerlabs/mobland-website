@@ -13,7 +13,7 @@ export default class LandingPage extends Base {
   constructor(props) {
     super(props);
 
-    this.bindMany(["onImageLoad"]);
+    this.bindMany(["onImageLoad", "skip"]);
   }
 
   onImageLoad() {
@@ -23,7 +23,7 @@ export default class LandingPage extends Base {
           loaded: true,
         });
       },
-      window.location.hostname === "localhost" ? 0 : 7000
+      window.location.hostname === "localhost" ? 7000 : 7000
     );
   }
 
@@ -33,6 +33,11 @@ export default class LandingPage extends Base {
         loaded: true,
       });
     }
+  }
+  skip() {
+    this.setStore({
+      loaded: true,
+    });
   }
 
   render() {
@@ -54,6 +59,9 @@ export default class LandingPage extends Base {
               src={"https://data.mob.land/assets/VideoCover.jpg"}
               className={"offScreen"}
             />
+            <button onClick={this.skip} className="skip">
+              <div>Skip the intro</div>
+            </button>
           </div>
         )}
       </div>
