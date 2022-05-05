@@ -1836,6 +1836,6 @@ table td {
     transform: skewX(6deg);
 }
 .mobileImages {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 33%;
 }
