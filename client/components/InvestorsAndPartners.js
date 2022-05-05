@@ -96,7 +96,7 @@ export default class InvestorsAndPartners extends Base {
                         }
                       >
                         <div
-                          className="glitch__img"
+                          className="nonglitch__img"
                           style={{
                             backgroundImage: `url(/images/investors/${item.img})`,
                           }}
