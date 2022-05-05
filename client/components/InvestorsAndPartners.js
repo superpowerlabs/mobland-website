@@ -83,7 +83,7 @@ export default class InvestorsAndPartners extends Base {
                 style = 5;
               }
               return (
-                <div className= {this.isMobile() ? "mobileImages" : "" } >
+                <div className={this.isMobile() ? "mobileImages" : ""}>
                   <div key={key} className={"grid-item"}>
                     <a href={item.href} target={"_blank"}>
                       {/*<div className="grid__item">*/}
