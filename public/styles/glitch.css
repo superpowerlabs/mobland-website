@@ -227,6 +227,20 @@
     background-blend-mode: var(--blend-mode-1);
 }
 
+@media (max-width: 600px) {
+    .glitch__img {
+    position: absolute;
+    top: calc(-1 * var(--gap-vertical));
+    left: calc(-1 * var(--gap-horizontal));
+    width: 80px;
+    height: 80px;
+    background-color: var(--blend-color-1);
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+    background-blend-mode: var(--blend-mode-1);
+}
+}
+
 /*.glitch--style-2 .glitch__img {*/
 /*	background-image: url(../img/2.jpg);*/
 /*}*/
