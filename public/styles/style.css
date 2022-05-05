@@ -1835,3 +1835,7 @@ table td {
 .skip div {
     transform: skewX(6deg);
 }
+.images{
+    height: 250px;
+    width: 250px;
+}

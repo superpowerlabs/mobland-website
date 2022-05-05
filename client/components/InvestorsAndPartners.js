@@ -84,6 +84,7 @@ export default class InvestorsAndPartners extends Base {
                 style = 5;
               }
               return (
+                <div className="images">
                 <div key={key} className={"grid-item"}>
                   <a href={item.href} target={"_blank"}>
                     {/*<div className="grid__item">*/}
@@ -143,6 +144,7 @@ export default class InvestorsAndPartners extends Base {
                       <br />
                     </div>
                   )}
+                </div>
                 </div>
               );
             })}
