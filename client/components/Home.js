@@ -57,7 +57,7 @@ export default class Home extends Base {
               <div className={"underWrong"}>
                 8000 NFTS
                 <br />
-                sold out in 18 min
+                sold out in 18 minutes
               </div>
             </div>{" "}
           </Col>
@@ -66,9 +66,9 @@ export default class Home extends Base {
             <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
               <div className={"wrong"}>#1 IN Vol</div>
               <div className={"underWrong"}>
-                Binance NFT
+              Ranked #1 on Binance NFT
                 <br />
-                All-time #1 volume
+                all-time volume
               </div>
             </div>{" "}
           </Col>
