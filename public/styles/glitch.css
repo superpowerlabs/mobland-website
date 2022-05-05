@@ -226,6 +226,17 @@
     transform: translate3d(0, 0, 0);
     background-blend-mode: var(--blend-mode-1);
 }
+.nonglitch__img {
+    position: absolute;
+    top: calc(-1);
+    left: calc(-1);
+    width: calc(100%);
+    height: calc(100%);
+    background-color: var(--blend-color-1);
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+    background-blend-mode: var(--blend-mode-1);
+}
 
 /*.glitch--style-2 .glitch__img {*/
 /*	background-image: url(../img/2.jpg);*/

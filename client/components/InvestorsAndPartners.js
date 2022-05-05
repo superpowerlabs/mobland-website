@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-undef
 import Base from "./Base";
 import Masonry from "react-masonry-component";
-
 async function sleep(millis) {
   // eslint-disable-next-line no-undef
   return new Promise((resolve) => setTimeout(resolve, millis));
@@ -84,65 +83,73 @@ export default class InvestorsAndPartners extends Base {
                 style = 5;
               }
               return (
-                <div key={key} className={"grid-item"}>
-                  <a href={item.href} target={"_blank"}>
-                    {/*<div className="grid__item">*/}
-                    <div
-                      className={
-                        "hcard  glitch glitch--style-" +
-                        style +
-                        " " +
-                        (Math.random() > 0.5 ? "glitch--vertical" : "")
-                      }
-                    >
+                <div className={this.isMobile() ? "mobileImages" : ""}>
+                  <div key={key} className={"grid-item"}>
+                    <a href={item.href} target={"_blank"}>
+                      {/*<div className="grid__item">*/}
                       <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                    </div>
-                    {/*</div>*/}
-                  </a>
-                  <div className={"centered"} style={{ paddingTop: 6 }}>
-                    <a className={"grey666 yellowHover"} href={item.href}>
-                      {item.name}
+                        className={
+                          "hcard  glitch glitch--style-" +
+                          style +
+                          " " +
+                          (Math.random() > 0.5 ? "glitch--vertical" : "")
+                        }
+                      >
+                        <div
+                          className="nonglitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                      </div>
+                      {/*</div>*/}
                     </a>
+                    <div className={"centered"} style={{ paddingTop: 6 }}>
+                      <a className={"grey666 yellowHover"} href={item.href}>
+                        {item.name}
+                      </a>
+                    </div>
+                    {item.company ? (
+                      <div
+                        className={
+                          this.isMobile()
+                            ? "grey999 centered"
+                            : "wrapped grey999 centered"
+                        }
+                      >
+                        {item.company}
+                      </div>
+                    ) : (
+                      <div style={{ color: "transparent" }}>
+                        <br />
+                        <br />
+                      </div>
+                    )}
                   </div>
-                  {item.company ? (
-                    <div className={"wrapped grey999 centered"}>
-                      {item.company}
-                    </div>
-                  ) : (
-                    <div style={{ color: "transparent" }}>
-                      <br />
-                      <br />
-                    </div>
-                  )}
                 </div>
               );
             })}

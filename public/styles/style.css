@@ -1835,3 +1835,7 @@ table td {
 .skip div {
     transform: skewX(6deg);
 }
+.mobileImages {
+    height: 180px;
+    width: 33%;
+}
