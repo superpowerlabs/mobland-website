@@ -85,66 +85,66 @@ export default class InvestorsAndPartners extends Base {
               }
               return (
                 <div className="images">
-                <div key={key} className={"grid-item"}>
-                  <a href={item.href} target={"_blank"}>
-                    {/*<div className="grid__item">*/}
-                    <div
-                      className={
-                        "hcard  glitch glitch--style-" +
-                        style +
-                        " " +
-                        (Math.random() > 0.5 ? "glitch--vertical" : "")
-                      }
-                    >
+                  <div key={key} className={"grid-item"}>
+                    <a href={item.href} target={"_blank"}>
+                      {/*<div className="grid__item">*/}
                       <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                      <div
-                        className="glitch__img"
-                        style={{
-                          backgroundImage: `url(/images/investors/${item.img})`,
-                        }}
-                      />
-                    </div>
-                    {/*</div>*/}
-                  </a>
-                  <div className={"centered"} style={{ paddingTop: 6 }}>
-                    <a className={"grey666 yellowHover"} href={item.href}>
-                      {item.name}
+                        className={
+                          "hcard  glitch glitch--style-" +
+                          style +
+                          " " +
+                          (Math.random() > 0.5 ? "glitch--vertical" : "")
+                        }
+                      >
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                        <div
+                          className="glitch__img"
+                          style={{
+                            backgroundImage: `url(/images/investors/${item.img})`,
+                          }}
+                        />
+                      </div>
+                      {/*</div>*/}
                     </a>
+                    <div className={"centered"} style={{ paddingTop: 6 }}>
+                      <a className={"grey666 yellowHover"} href={item.href}>
+                        {item.name}
+                      </a>
+                    </div>
+                    {item.company ? (
+                      <div className={"wrapped grey999 centered"}>
+                        {item.company}
+                      </div>
+                    ) : (
+                      <div style={{ color: "transparent" }}>
+                        <br />
+                        <br />
+                      </div>
+                    )}
                   </div>
-                  {item.company ? (
-                    <div className={"wrapped grey999 centered"}>
-                      {item.company}
-                    </div>
-                  ) : (
-                    <div style={{ color: "transparent" }}>
-                      <br />
-                      <br />
-                    </div>
-                  )}
-                </div>
                 </div>
               );
             })}
