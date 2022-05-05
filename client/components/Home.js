@@ -66,7 +66,7 @@ export default class Home extends Base {
             <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
               <div className={"wrong"}>#1 IN Vol</div>
               <div className={"underWrong"}>
-              Ranked #1 on Binance NFT
+                Ranked #1 on Binance NFT
                 <br />
                 all-time volume
               </div>
