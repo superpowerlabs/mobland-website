@@ -134,7 +134,13 @@ export default class InvestorsAndPartners extends Base {
                       </a>
                     </div>
                     {item.company ? (
-                      <div className={this.isMobile() ? "grey999 centered": "wrapped grey999 centered"}>
+                      <div
+                        className={
+                          this.isMobile()
+                            ? "grey999 centered"
+                            : "wrapped grey999 centered"
+                        }
+                      >
                         {item.company}
                       </div>
                     ) : (
