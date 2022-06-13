@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@ethersproject/contracts': ^5.1.0
@@ -69,23 +69,23 @@ dependencies:
   pg: 8.7.1
   prop-types: 15.8.0
   react: 17.0.2
-  react-device-detect: 2.1.2_react-dom@17.0.2+react@17.0.2
+  react-device-detect: 2.1.2_sfoxds7t5ydpegc3knd667wn6m
   react-dom: 17.0.2_react@17.0.2
-  react-image: 4.0.3_react-dom@17.0.2+react@17.0.2
+  react-image: 4.0.3_sfoxds7t5ydpegc3knd667wn6m
   react-infinite-scroller: 1.2.5_react@17.0.2
   react-masonry-component: 6.3.0_react@17.0.2
-  react-scroll-horizontal: 1.6.6_fcd735ed90f9ecea045d06f518d846c2
-  react-spring: 9.4.2_react-dom@17.0.2+react@17.0.2
+  react-scroll-horizontal: 1.6.6_7tltl3mq7hwoubc5a32rrwcgyi
+  react-spring: 9.4.2_sfoxds7t5ydpegc3knd667wn6m
   react-use-gesture: 9.1.3_react@17.0.2
-  react-video-looper: 1.0.16_react-dom@17.0.2+react@17.0.2
+  react-video-looper: 1.0.16_sfoxds7t5ydpegc3knd667wn6m
   simple-json-db: 1.2.3
   superagent: 4.1.0
-  video-react: 0.15.0_react-dom@17.0.2+react@17.0.2
+  video-react: 0.15.0_sfoxds7t5ydpegc3knd667wn6m
 
 devDependencies:
   babel-core: 6.26.3
   babel-eslint: 7.2.3
-  babel-loader: 7.1.5_babel-core@6.26.3+webpack@2.7.0
+  babel-loader: 7.1.5_jkcjd3l5xas5nj7saqjahn7npu
   babel-plugin-react-transform: 2.0.2
   babel-polyfill: 6.26.0
   babel-preset-env: 1.7.0
@@ -200,6 +200,8 @@ packages:
     resolution: {integrity: sha512-Sm/S9Or6nN8uiFsQU1yodyDW3MWXQhFeqzMPM+t8MJjM+pLsnFVxFZzkpXKvUXh+Gz9cbMoYYs484+Jw/NTEFQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.16.8
     dev: false
 
   /@babel/runtime/7.16.7:
@@ -757,7 +759,7 @@ packages:
     resolution: {integrity: sha512-GGiIscTM+CEUNV52anj3g5FqAZKL2+eRKtvBOAlC99qGBbvJ3qTLImrUR/I3lXY7PRuLgzI6kh34quA1oUxWYQ==}
     dev: false
 
-  /@react-spring/web/9.4.2_react-dom@17.0.2+react@17.0.2:
+  /@react-spring/web/9.4.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-sWfA9NkVuvVOpjSlMkD2zcF6X3i8NSHTeH/uHCGKsN3mYqgkhvAF+E8GASO/H4KKGNhbRvgCZiwJXOtOGyUg6A==}
     peerDependencies:
       react: ^16.8.0  || ^17.0.0
@@ -771,7 +773,7 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@react-spring/zdog/9.4.2_react-dom@17.0.2+react@17.0.2:
+  /@react-spring/zdog/9.4.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-lQi6Kh5ibEgD8+V3rja5rgMoLsdlgvXsr7cDeBKmBwXx0ne10gR7bSqEeD8wWcAIon/F5qfsR+Ns2B4FpDqYtA==}
     peerDependencies:
       react: ^16.8.0  || ^17.0.0
@@ -957,11 +959,13 @@ packages:
       color-convert: 2.0.1
     dev: true
 
-  /anymatch/2.0.0:
+  /anymatch/2.0.0_supports-color@3.2.3:
     resolution: {integrity: sha512-5teOsQWABXHHBFP9y3skS5P3d/WfWXpv3FUpy+LorMrNYaT9pI4oLMQX7jzQ2KklNpGpWHzdCXTDT2Y3XGlZBw==}
     dependencies:
-      micromatch: 3.1.10
+      micromatch: 3.1.10_supports-color@3.2.3
       normalize-path: 2.1.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
     optional: true
 
@@ -1095,6 +1099,8 @@ packages:
       private: 0.1.8
       slash: 1.0.0
       source-map: 0.5.7
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-eslint/7.2.3:
@@ -1106,6 +1112,8 @@ packages:
       babel-traverse: 6.26.0
       babel-types: 6.26.0
       babylon: 6.18.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-generator/6.26.1:
@@ -1127,6 +1135,8 @@ packages:
       babel-runtime: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-builder-binary-assignment-operator-visitor/6.24.1:
@@ -1135,6 +1145,8 @@ packages:
       babel-helper-explode-assignable-expression: 6.24.1
       babel-runtime: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-builder-react-jsx/6.26.0:
@@ -1152,6 +1164,8 @@ packages:
       babel-runtime: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-define-map/6.26.0:
@@ -1161,6 +1175,8 @@ packages:
       babel-runtime: 6.26.0
       babel-types: 6.26.0
       lodash: 4.17.21
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-explode-assignable-expression/6.24.1:
@@ -1169,6 +1185,8 @@ packages:
       babel-runtime: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-explode-class/6.24.1:
@@ -1178,6 +1196,8 @@ packages:
       babel-runtime: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-function-name/6.24.1:
@@ -1188,6 +1208,8 @@ packages:
       babel-template: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-get-function-arity/6.24.1:
@@ -1227,6 +1249,8 @@ packages:
       babel-template: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helper-replace-supers/6.24.1:
@@ -1238,6 +1262,8 @@ packages:
       babel-template: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-helpers/6.24.1:
@@ -1245,9 +1271,11 @@ packages:
     dependencies:
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
-  /babel-loader/7.1.5_babel-core@6.26.3+webpack@2.7.0:
+  /babel-loader/7.1.5_jkcjd3l5xas5nj7saqjahn7npu:
     resolution: {integrity: sha512-iCHfbieL5d1LfOQeeVJEUyD9rTwBcP/fcEbRCfempxTDuqrKpu0AZjLAQHEQa3Yqyj9ORKe2iHfoj4rHLf7xpw==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -1288,7 +1316,7 @@ packages:
       '@babel/helper-module-imports': 7.16.7
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
-      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
+      styled-components: 4.4.1_sfoxds7t5ydpegc3knd667wn6m
     dev: false
 
   /babel-plugin-syntax-async-functions/6.13.0:
@@ -1352,6 +1380,8 @@ packages:
       babel-helper-remap-async-to-generator: 6.24.1
       babel-plugin-syntax-async-generators: 6.13.0
       babel-runtime: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-async-to-generator/6.24.1:
@@ -1360,6 +1390,8 @@ packages:
       babel-helper-remap-async-to-generator: 6.24.1
       babel-plugin-syntax-async-functions: 6.13.0
       babel-runtime: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-class-constructor-call/6.24.1:
@@ -1368,6 +1400,8 @@ packages:
       babel-plugin-syntax-class-constructor-call: 6.18.0
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-class-properties/6.24.1:
@@ -1377,6 +1411,8 @@ packages:
       babel-plugin-syntax-class-properties: 6.13.0
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-decorators/6.24.1:
@@ -1387,6 +1423,8 @@ packages:
       babel-runtime: 6.26.0
       babel-template: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-do-expressions/6.22.0:
@@ -1416,6 +1454,8 @@ packages:
       babel-traverse: 6.26.0
       babel-types: 6.26.0
       lodash: 4.17.21
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-classes/6.24.1:
@@ -1430,6 +1470,8 @@ packages:
       babel-template: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-computed-properties/6.24.1:
@@ -1437,6 +1479,8 @@ packages:
     dependencies:
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-destructuring/6.23.0:
@@ -1464,6 +1508,8 @@ packages:
       babel-helper-function-name: 6.24.1
       babel-runtime: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-literals/6.22.0:
@@ -1478,6 +1524,8 @@ packages:
       babel-plugin-transform-es2015-modules-commonjs: 6.26.2
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-modules-commonjs/6.26.2:
@@ -1487,6 +1535,8 @@ packages:
       babel-runtime: 6.26.0
       babel-template: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-modules-systemjs/6.24.1:
@@ -1495,6 +1545,8 @@ packages:
       babel-helper-hoist-variables: 6.24.1
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-modules-umd/6.24.1:
@@ -1503,6 +1555,8 @@ packages:
       babel-plugin-transform-es2015-modules-amd: 6.24.1
       babel-runtime: 6.26.0
       babel-template: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-object-super/6.24.1:
@@ -1510,6 +1564,8 @@ packages:
     dependencies:
       babel-helper-replace-supers: 6.24.1
       babel-runtime: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-parameters/6.24.1:
@@ -1521,6 +1577,8 @@ packages:
       babel-template: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-es2015-shorthand-properties/6.24.1:
@@ -1570,6 +1628,8 @@ packages:
       babel-helper-builder-binary-assignment-operator-visitor: 6.24.1
       babel-plugin-syntax-exponentiation-operator: 6.13.0
       babel-runtime: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-plugin-transform-export-extensions/6.22.0:
@@ -1682,6 +1742,8 @@ packages:
       browserslist: 3.2.8
       invariant: 2.2.4
       semver: 5.7.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-preset-flow/6.23.0:
@@ -1707,6 +1769,8 @@ packages:
       babel-plugin-transform-do-expressions: 6.22.0
       babel-plugin-transform-function-bind: 6.22.0
       babel-preset-stage-1: 6.24.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-preset-stage-1/6.24.1:
@@ -1715,6 +1779,8 @@ packages:
       babel-plugin-transform-class-constructor-call: 6.24.1
       babel-plugin-transform-export-extensions: 6.22.0
       babel-preset-stage-2: 6.24.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-preset-stage-2/6.24.1:
@@ -1724,6 +1790,8 @@ packages:
       babel-plugin-transform-class-properties: 6.24.1
       babel-plugin-transform-decorators: 6.24.1
       babel-preset-stage-3: 6.24.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-preset-stage-3/6.24.1:
@@ -1734,6 +1802,8 @@ packages:
       babel-plugin-transform-async-to-generator: 6.24.1
       babel-plugin-transform-exponentiation-operator: 6.24.1
       babel-plugin-transform-object-rest-spread: 6.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-register/6.26.0:
@@ -1746,6 +1816,8 @@ packages:
       lodash: 4.17.21
       mkdirp: 0.5.5
       source-map-support: 0.4.18
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-runtime/6.26.0:
@@ -1763,6 +1835,8 @@ packages:
       babel-types: 6.26.0
       babylon: 6.18.0
       lodash: 4.17.21
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-traverse/6.26.0:
@@ -1777,6 +1851,8 @@ packages:
       globals: 9.18.0
       invariant: 2.2.4
       lodash: 4.17.21
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /babel-types/6.26.0:
@@ -1877,6 +1953,8 @@ packages:
       qs: 6.7.0
       raw-body: 2.4.0
       type-is: 1.6.18
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /brace-expansion/1.1.11:
@@ -1900,6 +1978,28 @@ packages:
       snapdragon-node: 2.1.1
       split-string: 3.1.0
       to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /braces/2.3.2_supports-color@3.2.3:
+    resolution: {integrity: sha512-aNdbnj9P8PjdXU4ybaWLK2IF3jc/EoDYbC7AazW6to3TRsfXxscC9UXOB5iDiEQrkyIbWp2SLQda4+QAa7nc3w==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      arr-flatten: 1.1.0
+      array-unique: 0.3.2
+      extend-shallow: 2.0.1
+      fill-range: 4.0.0
+      isobject: 3.0.1
+      repeat-element: 1.1.4
+      snapdragon: 0.8.2_supports-color@3.2.3
+      snapdragon-node: 2.1.1
+      split-string: 3.1.0
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
 
   /braces/3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
@@ -2108,23 +2208,25 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /chokidar/2.1.8:
+  /chokidar/2.1.8_supports-color@3.2.3:
     resolution: {integrity: sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==}
     deprecated: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
     dependencies:
-      anymatch: 2.0.0
+      anymatch: 2.0.0_supports-color@3.2.3
       async-each: 1.0.3
-      braces: 2.3.2
+      braces: 2.3.2_supports-color@3.2.3
       glob-parent: 3.1.0
       inherits: 2.0.4
       is-binary-path: 1.0.1
       is-glob: 4.0.1
       normalize-path: 3.0.0
       path-is-absolute: 1.0.1
-      readdirp: 2.2.1
+      readdirp: 2.2.1_supports-color@3.2.3
       upath: 1.2.0
     optionalDependencies:
       fsevents: 1.2.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
     optional: true
 
@@ -2438,8 +2540,26 @@ packages:
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.0.0
+
+  /debug/2.6.9_supports-color@3.2.3:
+    resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.0.0
+      supports-color: 3.2.3
+    dev: true
+    optional: true
 
   /debug/4.3.1:
     resolution: {integrity: sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==}
@@ -2955,6 +3075,25 @@ packages:
       regex-not: 1.0.2
       snapdragon: 0.8.2
       to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /expand-brackets/2.1.4_supports-color@3.2.3:
+    resolution: {integrity: sha1-t3c14xXOMPa27/D4OwQVGiJEliI=}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      debug: 2.6.9_supports-color@3.2.3
+      define-property: 0.2.5
+      extend-shallow: 2.0.1
+      posix-character-classes: 0.1.1
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@3.2.3
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
 
   /expand-tilde/2.0.2:
     resolution: {integrity: sha1-l+gBqgUt8CRU3kawK/YhZCzchQI=}
@@ -3001,6 +3140,8 @@ packages:
       type-is: 1.6.18
       utils-merge: 1.0.1
       vary: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /extend-shallow/2.0.1:
@@ -3041,6 +3182,26 @@ packages:
       regex-not: 1.0.2
       snapdragon: 0.8.2
       to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /extglob/2.0.4_supports-color@3.2.3:
+    resolution: {integrity: sha512-Nmb6QXkELsuBr24CJSkilo6UHHgbekK5UiZgfE6UHD3Eb27YC6oD+bhcT+tJ6cl8dmsgdQxnWlcry8ksBIBLpw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      array-unique: 0.3.2
+      define-property: 1.0.0
+      expand-brackets: 2.1.4_supports-color@3.2.3
+      extend-shallow: 2.0.1
+      fragment-cache: 0.2.1
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@3.2.3
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
@@ -3100,6 +3261,8 @@ packages:
       parseurl: 1.3.3
       statuses: 1.5.0
       unpipe: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /find-cache-dir/1.0.0:
@@ -3142,6 +3305,8 @@ packages:
       is-glob: 4.0.1
       micromatch: 3.1.10
       resolve-dir: 1.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /fined/1.2.0:
@@ -4046,6 +4211,8 @@ packages:
       object.map: 1.0.1
       rechoir: 0.6.2
       resolve: 1.20.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /load-json-file/1.1.0:
@@ -4212,6 +4379,31 @@ packages:
       regex-not: 1.0.2
       snapdragon: 0.8.2
       to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /micromatch/3.1.10_supports-color@3.2.3:
+    resolution: {integrity: sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      arr-diff: 4.0.0
+      array-unique: 0.3.2
+      braces: 2.3.2_supports-color@3.2.3
+      define-property: 2.0.2
+      extend-shallow: 3.0.2
+      extglob: 2.0.4_supports-color@3.2.3
+      fragment-cache: 0.2.1
+      kind-of: 6.0.3
+      nanomatch: 1.2.13_supports-color@3.2.3
+      object.pick: 1.3.0
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@3.2.3
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
 
   /miller-rabin/4.0.1:
     resolution: {integrity: sha512-115fLhvZVqWwHPbClyntxEVfVDfl9DLLTuJvq3g2O/Oxi8AiNouAHvDSzHS0viUJc+V5vm3eq91Xwqn9dp4jRA==}
@@ -4356,6 +4548,29 @@ packages:
       regex-not: 1.0.2
       snapdragon: 0.8.2
       to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /nanomatch/1.2.13_supports-color@3.2.3:
+    resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      arr-diff: 4.0.0
+      array-unique: 0.3.2
+      define-property: 2.0.2
+      extend-shallow: 3.0.2
+      fragment-cache: 0.2.1
+      is-windows: 1.0.2
+      kind-of: 6.0.3
+      object.pick: 1.3.0
+      regex-not: 1.0.2
+      snapdragon: 0.8.2_supports-color@3.2.3
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
 
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
@@ -5031,7 +5246,7 @@ packages:
       unpipe: 1.0.0
     dev: false
 
-  /react-device-detect/2.1.2_react-dom@17.0.2+react@17.0.2:
+  /react-device-detect/2.1.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-N42xttwez3ECgu4KpOL2ICesdfoz8NCBfmc1rH9FRYSjH7NmMyANPSrQ3EvAtJyj/6TzJNhrANSO38iXjCB2Ug==}
     peerDependencies:
       react: '>= 0.14.0 < 18.0.0'
@@ -5053,7 +5268,7 @@ packages:
       scheduler: 0.20.2
     dev: false
 
-  /react-image/4.0.3_react-dom@17.0.2+react@17.0.2:
+  /react-image/4.0.3_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-19MUK9u1qaw9xys8XEsVkSpVhHctEBUeYFvrLTe1PN+4w5Co13AN2WA7xtBshPM6SthsOj77SlDrEAeOaJpf7g==}
     peerDependencies:
       '@babel/runtime': '>=7'
@@ -5102,7 +5317,7 @@ packages:
       react: 17.0.2
     dev: false
 
-  /react-scroll-horizontal/1.6.6_fcd735ed90f9ecea045d06f518d846c2:
+  /react-scroll-horizontal/1.6.6_7tltl3mq7hwoubc5a32rrwcgyi:
     resolution: {integrity: sha512-aR5xE+5EOTQhhrljztHT5qqKEiYU+mKTePaQZJQqikREN0brNfpZst7QP2iEeQo8aip+r7ljTxQZOmfT3OwdSg==}
     peerDependencies:
       prop-types: ^15.5.4
@@ -5115,15 +5330,15 @@ packages:
       react-motion: 0.5.2_react@17.0.2
     dev: false
 
-  /react-spring/9.4.2_react-dom@17.0.2+react@17.0.2:
+  /react-spring/9.4.2_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-mK9xdq1kAhbe5YpP4EG2IzRa2C1M1UfR/MO1f83PE+IpHwCm1nGQhteF3MGyX6I3wnkoBWTXbY6n4443Dp52Og==}
     dependencies:
       '@react-spring/core': 9.4.2_react@17.0.2
       '@react-spring/konva': 9.4.2_react@17.0.2
       '@react-spring/native': 9.4.2_react@17.0.2
       '@react-spring/three': 9.4.2_react@17.0.2
-      '@react-spring/web': 9.4.2_react-dom@17.0.2+react@17.0.2
-      '@react-spring/zdog': 9.4.2_react-dom@17.0.2+react@17.0.2
+      '@react-spring/web': 9.4.2_sfoxds7t5ydpegc3knd667wn6m
+      '@react-spring/zdog': 9.4.2_sfoxds7t5ydpegc3knd667wn6m
     transitivePeerDependencies:
       - '@react-three/fiber'
       - konva
@@ -5145,13 +5360,13 @@ packages:
       react: 17.0.2
     dev: false
 
-  /react-video-looper/1.0.16_react-dom@17.0.2+react@17.0.2:
+  /react-video-looper/1.0.16_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-hD+F683H0IJVqUP6PelhwzHxG2ghae6WkTazdUZlw8jrMG+JlQivSE8lthYHEcmYAhZBOpWJLK1ss9qKRR55iQ==}
     peerDependencies:
       react: 16.x
     dependencies:
       react: 17.0.2
-      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
+      styled-components: 4.4.1_sfoxds7t5ydpegc3knd667wn6m
     transitivePeerDependencies:
       - react-dom
     dev: false
@@ -5201,13 +5416,15 @@ packages:
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
 
-  /readdirp/2.2.1:
+  /readdirp/2.2.1_supports-color@3.2.3:
     resolution: {integrity: sha512-1JU/8q+VgFZyxwrJ+SVIOsh+KywWGpds3NTqikiKpDMZWScmAYyKIgqkO+ARvNWJfXeXR1zxz7aHF4u4CyH6vQ==}
     engines: {node: '>=0.10'}
     dependencies:
       graceful-fs: 4.2.6
-      micromatch: 3.1.10
+      micromatch: 3.1.10_supports-color@3.2.3
       readable-stream: 2.3.7
+    transitivePeerDependencies:
+      - supports-color
     dev: true
     optional: true
 
@@ -5460,6 +5677,8 @@ packages:
       on-finished: 2.3.0
       range-parser: 1.2.1
       statuses: 1.5.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /serialize-javascript/5.0.1:
@@ -5476,6 +5695,8 @@ packages:
       escape-html: 1.0.3
       parseurl: 1.3.3
       send: 0.17.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /set-blocking/2.0.0:
@@ -5574,6 +5795,26 @@ packages:
       source-map: 0.5.7
       source-map-resolve: 0.5.3
       use: 3.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /snapdragon/0.8.2_supports-color@3.2.3:
+    resolution: {integrity: sha512-FtyOnWN/wCHTVXOMwvSv26d+ko5vWlIDD6zoUJ7LW8vh+ZBC8QdljveRP+crNrtBwioEUWy/4dMtbBjA4ioNlg==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      base: 0.11.2
+      debug: 2.6.9_supports-color@3.2.3
+      define-property: 0.2.5
+      extend-shallow: 2.0.1
+      map-cache: 0.2.2
+      source-map: 0.5.7
+      source-map-resolve: 0.5.3
+      use: 3.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
 
   /source-list-map/2.0.1:
     resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
@@ -5796,7 +6037,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /styled-components/4.4.1_react-dom@17.0.2+react@17.0.2:
+  /styled-components/4.4.1_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-RNqj14kYzw++6Sr38n7197xG33ipEOktGElty4I70IKzQF1jzaD1U4xQ+Ny/i03UUhHlC5NWEO+d8olRCDji6g==}
     requiresBuild: true
     peerDependencies:
@@ -6037,7 +6278,7 @@ packages:
     dev: true
 
   /uglify-to-browserify/1.0.2:
-    resolution: {integrity: sha1-bgkk1r2mta/jSeOabWMoUKD4grc=}
+    resolution: {integrity: sha512-vb2s1lYx2xBtUgy+ta+b2J/GLVUR+wmpINwHePmPRhOsIVCG2wDzKJ0n14GslH1BifsqVzSOwQhRaCAsZ/nI4Q==}
     requiresBuild: true
     dev: true
     optional: true
@@ -6152,7 +6393,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /video-react/0.15.0_react-dom@17.0.2+react@17.0.2:
+  /video-react/0.15.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-wF3BwG1qikkSX11nu0KsygxeWehzMaYpd4Uvy1sKLFnCNk794f9TPL4q/+mMmLJ8uYb5DSlgg6VraTHyihiMHQ==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -6171,22 +6412,26 @@ packages:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
     dev: true
 
-  /watchpack-chokidar2/2.0.1:
+  /watchpack-chokidar2/2.0.1_supports-color@3.2.3:
     resolution: {integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==}
     requiresBuild: true
     dependencies:
-      chokidar: 2.1.8
+      chokidar: 2.1.8_supports-color@3.2.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
     optional: true
 
-  /watchpack/1.7.5:
+  /watchpack/1.7.5_supports-color@3.2.3:
     resolution: {integrity: sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==}
     dependencies:
       graceful-fs: 4.2.6
       neo-async: 2.6.2
     optionalDependencies:
       chokidar: 3.5.1
-      watchpack-chokidar2: 2.0.1
+      watchpack-chokidar2: 2.0.1_supports-color@3.2.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /webpack-sources/1.4.3:
@@ -6200,6 +6445,14 @@ packages:
     resolution: {integrity: sha512-MjAA0ZqO1ba7ZQJRnoCdbM56mmFpipOPUv/vQpwwfSI42p5PVDdoiuK2AL2FwFUVgT859Jr43bFZXRg/LNsqvg==}
     engines: {node: '>=4.3.0 <5.0.0 || >=5.10'}
     hasBin: true
+    peerDependencies:
+      webpack-cli: '*'
+      webpack-command: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
+      webpack-command:
+        optional: true
     dependencies:
       acorn: 5.7.4
       acorn-dynamic-import: 2.0.2
@@ -6219,7 +6472,7 @@ packages:
       supports-color: 3.2.3
       tapable: 0.2.9
       uglify-js: 2.8.29
-      watchpack: 1.7.5
+      watchpack: 1.7.5_supports-color@3.2.3
       webpack-sources: 1.4.3
       yargs: 6.6.0
     dev: true

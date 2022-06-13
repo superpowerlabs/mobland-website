@@ -77,6 +77,9 @@ export default class InvestorsAndPartners extends Base {
         >
           <Masonry>
             {this.props.set.map((item) => {
+              if (item.skip) {
+                return null;
+              }
               let key = "entity" + i++;
               let style = Math.ceil(5 * Math.random());
               if (style === 6) {
