@@ -43,7 +43,8 @@
     "href": "https://twitter.com/stablekwon",
     "name": "Do Kwon",
     "img": "Sin.City_website_backers_do-kwon.png",
-    "company": "Founder Terra"
+    "company": "Founder Terra",
+    "skip": true
   },
   {
     "href": "https://twitter.com/pmenchov",
