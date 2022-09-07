@@ -1,5 +1,5 @@
 import ethers from "ethers";
-const { utils } = ethers
+const { utils } = ethers;
 
 class Auth {
   async getSignedAuthToken(chainId, signer, data = {}) {
