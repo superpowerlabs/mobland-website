@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
-const { Link } = ReactRouterDOM;
+import { Link } from "react-bootstrap";
 
 import Base from "./Base";
 import { addToken } from "../utils/Wallet";
