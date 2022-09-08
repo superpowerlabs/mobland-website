@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import React from "react";
 
 import Common from "./Common";
 import clientApi from "../utils/ClientApi";

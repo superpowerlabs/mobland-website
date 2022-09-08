@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-undef
+import React from "react";
 export default class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);

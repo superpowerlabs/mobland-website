@@ -6,10 +6,12 @@ import VideoBg from "./VideoBg";
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
+import React from "react";
+
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
-const { Row, Col } = ReactBootstrap;
+import { Row, Col } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

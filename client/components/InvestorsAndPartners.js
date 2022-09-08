@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-undef
 import Base from "./Base";
+import React from "react";
 import Masonry from "react-masonry-component";
 async function sleep(millis) {
   // eslint-disable-next-line no-undef

@@ -1,4 +1,5 @@
 import ls from "local-storage";
+import React from "react";
 
 // eslint-disable-next-line no-undef
 export default class Common extends React.Component {

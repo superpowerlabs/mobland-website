@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-undef
 import Base from "./Base";
 // import Ab from "./lib/Ab";
+import React from "react";
 import { Player, ControlBar } from "video-react";
 
 // eslint-disable-next-line no-undef

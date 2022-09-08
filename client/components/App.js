@@ -1,8 +1,9 @@
 // eslint-disable-next-line no-undef
-const { BrowserRouter, Route, Switch } = ReactRouterDOM;
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
-const { Modal, Button } = ReactBootstrap;
 
 import ethers from "ethers";
 import clientApi from "../utils/ClientApi";

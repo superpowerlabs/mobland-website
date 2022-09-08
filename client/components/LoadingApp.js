@@ -1,7 +1,8 @@
 import Base from "./Base";
+import React from "react";
 
 // eslint-disable-next-line no-undef
-const { Container, Row, Col } = ReactBootstrap;
+import { Container, Row, Col } from "react-bootstrap";
 
 class LoadingApp extends Base {
   render() {

@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-undef
 import Base from "./Base";
+import React from "react";
 
 async function sleep(millis) {
   // eslint-disable-next-line no-undef
