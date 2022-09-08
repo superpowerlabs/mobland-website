@@ -10,7 +10,7 @@ import Base from "./Base";
 // import team from "../data/team.json";
 
 // eslint-disable-next-line no-undef
-const { Collapse } = ReactBootstrap;
+import { Collapse } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

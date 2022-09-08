@@ -9,7 +9,7 @@ import InvestorsAndPartners from "./InvestorsAndPartners";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
-const { Row, Col } = ReactBootstrap;
+import { Row, Col } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

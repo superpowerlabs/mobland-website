@@ -6,7 +6,7 @@ import team from "../data/team.json";
 import advisors from "../data/advisors.json";
 import Masonry from "react-masonry-component";
 // eslint-disable-next-line no-undef
-const { Row, Col } = ReactBootstrap;
+import { Row, Col } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

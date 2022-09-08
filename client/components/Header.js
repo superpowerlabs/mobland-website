@@ -1,8 +1,12 @@
 // import { isMobile } from "react-device-detect";
 
-const { Navbar, Nav, OverlayTrigger, Tooltip, NavDropdown } =
-  // eslint-disable-next-line no-undef
-  ReactBootstrap;
+import {
+  Navbar,
+  Nav,
+  OverlayTrigger,
+  Tooltip,
+  NavDropdown,
+} from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 const { Link } = ReactRouterDOM;
