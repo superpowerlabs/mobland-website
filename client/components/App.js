@@ -5,7 +5,7 @@ import { Modal, Button } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 
-import {ethers} from "ethers";
+import { ethers } from "ethers";
 import clientApi from "../utils/ClientApi";
 import config from "../config";
 import ls from "local-storage";
