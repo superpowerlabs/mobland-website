@@ -1,4 +1,4 @@
-import ethers from "ethers";
+import {ethers} from "ethers";
 const { Contract } = require("@ethersproject/contracts");
 const config = require("../../client/config");
 // const _ = require('lodash')

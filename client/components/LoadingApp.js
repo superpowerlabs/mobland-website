@@ -23,4 +23,4 @@ class LoadingApp extends Base {
   }
 }
 
-module.exports = LoadingApp;
+export default LoadingApp;

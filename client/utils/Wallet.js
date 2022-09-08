@@ -27,4 +27,4 @@ class Wallet {
   }
 }
 
-module.exports = new Wallet();
+export default new Wallet();
