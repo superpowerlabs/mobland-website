@@ -1,6 +1,6 @@
 const knex = require("knex");
 const Spinner = require("cli-spinner").Spinner;
-import _ from "lodash";
+const _ = require("lodash");
 
 async function sleep(millis) {
   // eslint-disable-next-line no-undef
