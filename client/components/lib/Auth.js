@@ -1,5 +1,3 @@
-const { utils } = require("ethers");
-
 class Auth {
   async getSignedAuthToken(chainId, signer, data = {}) {
     if (typeof data !== "string") {
