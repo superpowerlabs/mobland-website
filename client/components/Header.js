@@ -1,8 +1,13 @@
 // import { isMobile } from "react-device-detect";
 import React from "react";
-import { Navbar, Nav, OverlayTrigger, Tooltip, NavDropdown } from
+import {
+  Navbar,
+  Nav,
+  OverlayTrigger,
+  Tooltip,
+  NavDropdown,
   // eslint-disable-next-line no-undef
-  "react-bootstrap";
+} from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 import { Link } from "react-router-dom";
