@@ -1,10 +1,11 @@
+import React from "react";
 // eslint-disable-next-line no-undef
 import Base from "./Base";
 // import Ab from "./lib/Ab";
 import { Player, ControlBar } from "video-react";
 
 // eslint-disable-next-line no-undef
-// const { Container, Row, Col } = ReactBootstrap;
+// const { Container, Row, Col } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

@@ -1,5 +1,8 @@
 // eslint-disable-next-line no-undef
-const { Row, Col } = ReactBootstrap;
+import React from "react";
+import PropTypes from "prop-types";
+
+import { Row, Col } from "react-bootstrap";
 
 import Ab from "./Ab";
 
@@ -33,3 +36,11 @@ export default class CenteredImage extends React.Component {
     );
   }
 }
+
+CenteredImage.propTypes = {
+  src: PropTypes.node.isRequired,
+  alt: PropTypes.node.isRequired,
+  link: PropTypes.node.isRequired,
+  top: PropTypes.node.isRequired,
+  bottom: PropTypes.node.isRequired,
+};

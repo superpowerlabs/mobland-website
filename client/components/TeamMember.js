@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-undef
+import React from "react";
 import Base from "./Base";
 // import Ab from "./lib/Ab";
 // import VideoBg from "./VideoBg";
@@ -10,7 +11,7 @@ import Base from "./Base";
 // import team from "../data/team.json";
 
 // eslint-disable-next-line no-undef
-const { Collapse } = ReactBootstrap;
+import { Collapse } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

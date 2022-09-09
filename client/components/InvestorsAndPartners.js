@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-undef
+import React from "react";
 import Base from "./Base";
 import Masonry from "react-masonry-component";
 async function sleep(millis) {
@@ -86,8 +87,11 @@ export default class InvestorsAndPartners extends Base {
                 style = 5;
               }
               return (
-                <div className={this.isMobile() ? "mobileImages" : ""}>
-                  <div key={key} className={"grid-item"}>
+                <div
+                  key={key}
+                  className={this.isMobile() ? "mobileImages" : ""}
+                >
+                  <div className={"grid-item"}>
                     <a href={item.href} target={"_blank"}>
                       {/*<div className="grid__item">*/}
                       <div

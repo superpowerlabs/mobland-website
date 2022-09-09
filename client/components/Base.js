@@ -1,10 +1,11 @@
+import React from "react";
 import PropTypes from "prop-types";
 
 import Common from "./Common";
 import clientApi from "../utils/ClientApi";
 import { isMobile } from "react-device-detect";
 
-class Base extends Common {
+export default class Base extends Common {
   constructor(props) {
     super(props);
     this.bindMany([
@@ -88,5 +89,3 @@ Base.propTypes = {
   Store: PropTypes.object,
   setStore: PropTypes.func,
 };
-
-export default Base;

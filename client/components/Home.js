@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-undef
+import React from "react";
 import Base from "./Base";
 // import Ab from "./lib/Ab";
 import VideoBg from "./VideoBg";
@@ -9,7 +10,7 @@ import InvestorsAndPartners from "./InvestorsAndPartners";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
-const { Row, Col } = ReactBootstrap;
+import { Row, Col } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 

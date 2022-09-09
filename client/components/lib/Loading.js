@@ -1,5 +1,7 @@
 // eslint-disable-next-line no-undef
-const { Spinner } = ReactBootstrap;
+import React from "react";
+import PropTypes from "prop-types";
+import { Spinner } from "react-bootstrap";
 
 // eslint-disable-next-line no-undef
 export default class Loading extends React.Component {
@@ -16,3 +18,8 @@ export default class Loading extends React.Component {
     );
   }
 }
+
+Loading.propTypes = {
+  variant: PropTypes.node.isRequired,
+  animation: PropTypes.node.isRequired,
+};

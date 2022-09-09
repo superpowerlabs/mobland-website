@@ -1,11 +1,15 @@
 // import { isMobile } from "react-device-detect";
+import React from "react";
 
-const { Navbar, Nav, OverlayTrigger, Tooltip, NavDropdown } =
-  // eslint-disable-next-line no-undef
-  ReactBootstrap;
+import {
+  Navbar,
+  Nav,
+  OverlayTrigger,
+  Tooltip,
+  NavDropdown,
+} from "react-bootstrap";
 
-// eslint-disable-next-line no-undef
-const { Link } = ReactRouterDOM;
+import { Link } from "react-router-dom";
 
 import Base from "./Base";
 import { addToken } from "../utils/Wallet";
