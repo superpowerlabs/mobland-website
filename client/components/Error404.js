@@ -1,9 +1,10 @@
+import React from "react";
 import Base from "./Base";
 
 // eslint-disable-next-line no-undef
 import { Container } from "react-bootstrap";
 
-class Error404 extends Base {
+export default class Error404 extends Base {
   constructor(props) {
     super(props);
   }
@@ -19,5 +20,3 @@ class Error404 extends Base {
     );
   }
 }
-
-module.exports = Error404;

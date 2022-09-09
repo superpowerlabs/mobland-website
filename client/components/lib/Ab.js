@@ -1,4 +1,7 @@
 // eslint-disable-next-line no-undef
+import React from "react";
+import PropTypes from "prop-types";
+
 export default class Ab extends React.Component {
   render() {
     const { link, label, onClick, title } = this.props;
@@ -26,3 +29,11 @@ export default class Ab extends React.Component {
       );
   }
 }
+
+Ab.propTypes = {
+  link: PropTypes.node.isRequired,
+  label: PropTypes.node.isRequired,
+  onClick: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  className: PropTypes.node.isRequired,
+};

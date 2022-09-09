@@ -1,11 +1,12 @@
-// eslint-disable-next-line no-undef
-import { BrowserRouter, Route, Switch, Modal, Button } from "react-bootstrap";
+import React from "react";
+import { Modal, Button } from "react-bootstrap";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import { ethers } from "ethers";
-import clientApi from "../utils/ClientApi";
-import config from "../config";
 import ls from "local-storage";
 import Common from "./Common";
+import clientApi from "../utils/ClientApi";
+import config from "../config";
 import Header from "./Header";
 import Footer from "./Footer";
 import LandingPage from "./LandingPage";

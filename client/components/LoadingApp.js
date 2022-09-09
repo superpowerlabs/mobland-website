@@ -1,9 +1,10 @@
+import React from "react";
 import Base from "./Base";
 
 // eslint-disable-next-line no-undef
 import { Container, Row, Col } from "react-bootstrap";
 
-class LoadingApp extends Base {
+export default class LoadingApp extends Base {
   render() {
     return (
       <Container>
@@ -21,5 +22,3 @@ class LoadingApp extends Base {
     );
   }
 }
-
-module.exports = LoadingApp;
