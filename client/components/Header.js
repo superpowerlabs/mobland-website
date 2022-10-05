@@ -123,9 +123,9 @@ export default class Header extends Base {
             ) : null}
             <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
               {/*<NavDropdown.Divider />*/}
-              <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
+              {/* <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
                 TEAM
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item
                 eventKey="leaderboard"
                 href={"https://leaderboard.mob.land"}
