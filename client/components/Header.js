@@ -121,11 +121,11 @@ export default class Header extends Base {
                 HOME
               </Navbar.Text>
             ) : null}
-            <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
-              {/*<NavDropdown.Divider />*/}
-              {/* <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
+            {/* <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
+              <NavDropdown.Divider />
+              <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
                 TEAM
-              </NavDropdown.Item> */}
+              </NavDropdown.Item>
               <NavDropdown.Item
                 eventKey="leaderboard"
                 href={"https://leaderboard.mob.land"}
@@ -133,7 +133,7 @@ export default class Header extends Base {
               >
                 LEADERBOARD
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
             <Navbar.Text className={"links"}>
               <a
                 className={"menucmd yellowHover"}
