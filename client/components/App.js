@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Button } from "react-bootstrap";
+// import { Modal, Button } from "react-bootstrap";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import { ethers } from "ethers";
@@ -11,6 +11,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 import Error404 from "./Error404";
+import CallToAction from "./CallToAction";
+
 // import Team from "./Team";
 
 class App extends Common {
@@ -165,13 +167,12 @@ class App extends Common {
     }
   }
 
-  showModal(modalTitle, modalBody, modalClose, secondButton, modalAction) {
+  showModal(modalTitle, modalMessage, onConfirm, confirmButtonText) {
     this.setStore({
       modalTitle,
-      modalBody,
-      modalClose,
-      secondButton,
-      modalAction,
+      modalMessage,
+      onConfirm,
+      confirmButtonText,
       showModal: true,
     });
   }
@@ -215,6 +216,21 @@ class App extends Common {
           />
         ) : null}
         <main>
+          {Store.loaded && Store.showModal ? (
+            <CallToAction
+              title={Store.modalTitle}
+              message={Store.modalMessage}
+              confirmButtonText={Store.confirmButtonText}
+              onConfirm={() => {
+                Store.onConfirm();
+                this.setStore({ showModal: false });
+              }}
+              onClose={() => {
+                this.setStore({ showModal: false });
+              }}
+            />
+          ) : null}
+
           <Switch>
             <Route exact path="/">
               <LandingPage Store={Store} setStore={this.setStore} />
@@ -230,34 +246,6 @@ class App extends Common {
         </main>
         {Store.loaded ? (
           <Footer Store={Store} setStore={this.setStore} />
-        ) : null}
-        {Store.showModal ? (
-          <Modal.Dialog>
-            <Modal.Header>
-              <Modal.Title>{Store.modalTitle}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>{Store.modalBody}</Modal.Body>
-            <Modal.Footer>
-              <Button
-                onClick={() => {
-                  this.setStore({ showModal: false });
-                }}
-              >
-                {Store.modalClose || "Close"}
-              </Button>
-              {this.state.secondButton ? (
-                <Button
-                  onClick={() => {
-                    Store.modalAction();
-                    this.setStore({ showModal: false });
-                  }}
-                  bsStyle="primary"
-                >
-                  {Store.secondButton}
-                </Button>
-              ) : null}
-            </Modal.Footer>
-          </Modal.Dialog>
         ) : null}
       </BrowserRouter>
     );

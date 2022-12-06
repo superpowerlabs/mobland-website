@@ -1867,7 +1867,9 @@ table td {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: url(../assets/FullFarm.png) left bottom no-repeat, url(../assets/Uncommon_Lv07_Full.png) right bottom no-repeat, url(../assets/yellowgrungeslash.png) right bottom no-repeat;
+    background: url(../assets/FullFarm.png) left bottom no-repeat,
+        url(../assets/Uncommon_Lv07_Full.png) right bottom no-repeat,
+        url(../assets/yellowgrungeslash.png) right bottom no-repeat;
     padding: 2%;
 }
 
@@ -1878,12 +1880,12 @@ table td {
     text-align: center;
 }
 
-.closeButtonWrapper{
+.closeButtonWrapper {
     display: flex;
     justify-content: flex-end;
 }
 
-.closeButton{
+.closeButton {
     background-image: url(../assets/CloseButton.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1891,7 +1893,6 @@ table td {
     height: 23px;
     cursor: pointer;
 }
-
 
 .modalMessage {
     font-family: Modeco, sans-serif;
@@ -1903,13 +1904,13 @@ table td {
     font-size: 1.4rem;
 }
 
-.buttonWrapper{
+.buttonWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.confirmButton{
+.confirmButton {
     background-color: #f3de39;
     color: #000;
     font-family: Modeco, sans-serif;
@@ -1927,48 +1928,43 @@ table td {
 }
 
 @media (max-width: 1200px) {
-    .modalTitle{
+    .modalTitle {
         font-size: 5vw;
     }
 
-    .modalMessage{
+    .modalMessage {
         font-size: 1.4rem;
     }
 
-    .modalData{
+    .modalData {
         background-size: auto;
     }
-
-    
 }
 
 @media (max-width: 900px) {
-    .modalData{
+    .modalData {
         background: none;
     }
 
-    .modalMessage{
+    .modalMessage {
         font-size: 1rem;
     }
 
-    .confirmButton{
+    .confirmButton {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 600px) {
-    .modalData{
+    .modalData {
         background: none;
     }
 
-    .modalMessage{
+    .modalMessage {
         font-size: 0.8rem;
     }
 
-    .confirmButton{
+    .confirmButton {
         font-size: 0.8rem;
     }
-    
 }
-
-
