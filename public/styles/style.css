@@ -1898,6 +1898,9 @@ table td {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1.4rem;
 }
 
 .buttonWrapper{
@@ -1921,6 +1924,51 @@ table td {
     box-shadow: #ccc;
     box-shadow: 0 0 20px #f3de39;
     text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    .modalTitle{
+        font-size: 5vw;
+    }
+
+    .modalMessage{
+        font-size: 1.4rem;
+    }
+
+    .modalData{
+        background-size: auto;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+    .modalData{
+        background: none;
+    }
+
+    .modalMessage{
+        font-size: 1rem;
+    }
+
+    .confirmButton{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .modalData{
+        background: none;
+    }
+
+    .modalMessage{
+        font-size: 0.8rem;
+    }
+
+    .confirmButton{
+        font-size: 0.8rem;
+    }
+    
 }
 
 

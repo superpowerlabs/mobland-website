@@ -16,7 +16,7 @@ const CallToAction = ({
             <div className="closeButton" onClick={() => onClose()}></div>
           </div>
           <div className="modalTitle">{title}</div>
-          <div className="modalMessage modalMessage">{message}</div>
+          <div className="modalMessage">{message}</div>
           <div className="buttonWrapper">
             <button className="confirmButton" onClick={() => onConfirm()}>
               {confirmButtonText}
