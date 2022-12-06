@@ -7,6 +7,7 @@ import VideoBg from "./VideoBg";
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
+import CallToAction from "./CallToAction";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
@@ -40,6 +41,19 @@ export default class Home extends Base {
 
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
+        <CallToAction
+          title="FARM AND TURF SALE!"
+          message="Start your path to becoming a virtual kingpin by generating SEED and BUD! Get all you need in the upcoming Turf and Farm sale!"
+          confirmButtonText="Learn More"
+          onConfirm={() => {
+            // eslint-disable-next-line no-console
+            console.log("confirmed");
+          }}
+          onClose={() => {
+            // eslint-disable-next-line no-console
+            console.log("closed");
+          }}
+        />
         <VideoBg />
         <Row className={"stats"}>
           <Col xs={12} lg={4}>

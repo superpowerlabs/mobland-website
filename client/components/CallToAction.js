@@ -1,27 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "react-bootstrap";
 
 const CallToAction = ({
-  Title,
-  Message,
-  ConfirmButtonText,
-  ConfirmCallBack,
+  title,
+  message,
+  confirmButtonText,
+  onConfirm,
+  onClose,
 }) => {
   return (
     <div className="sectionWrapper">
       <div className="modalWrapper">
         <div className="modalData">
-          <div className="modalTitle">{Title}</div>
-          <div className="modalMessage modalMessage">{Message}</div>
-          <Button
-            onClick={() => {
-              // eslint-disable-next-line no-console
-              console.log("clicked");
-            }}
-          >
-            LEARN MORE
-          </Button>
+          <div className="closeButtonWrapper">
+            <div className="closeButton" onClick={() => onClose()}></div>
+          </div>
+          <div className="modalTitle">{title}</div>
+          <div className="modalMessage modalMessage">{message}</div>
+          <div className="buttonWrapper">
+            <button className="confirmButton" onClick={() => onConfirm()}>
+              {confirmButtonText}
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -29,10 +29,11 @@ const CallToAction = ({
 };
 
 CallToAction.propTypes = {
-  Title: PropTypes.string.isRequired,
-  Message: PropTypes.string.isRequired,
-  ConfirmButtonText: PropTypes.string.isRequired,
-  ConfirmCallBack: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+  confirmButtonText: PropTypes.string.isRequired,
+  onConfirm: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default CallToAction;

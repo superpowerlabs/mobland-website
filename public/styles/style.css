@@ -1840,7 +1840,7 @@ table td {
     width: 33%;
 }
 
-.sectionWrapper{
+.sectionWrapper {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -1850,7 +1850,7 @@ table td {
     align-items: center;
 }
 
-.modalWrapper{
+.modalWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1863,23 +1863,64 @@ table td {
     opacity: 90%;
 }
 
-.modalData{
+.modalData {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    background: url(../assets/FullFarm.png) left bottom no-repeat, url(../assets/Uncommon_Lv07_Full.png) right bottom no-repeat, url(../assets/yellowgrungeslash.png) right bottom no-repeat;
+    padding: 2%;
 }
 
-.modalTitle{
+.modalTitle {
     font-family: Wrong, sans-serif;
     font-size: 5vw;
     color: white;
     text-align: center;
 }
 
-.modalMessage{
+.closeButtonWrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeButton{
+    background-image: url(../assets/CloseButton.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+
+.modalMessage {
     font-family: Modeco, sans-serif;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmButton{
+    background-color: #f3de39;
+    color: #000;
+    font-family: Modeco, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 25%;
+    height: 3rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border-color: #f3de39;
+    box-shadow: #ccc;
+    box-shadow: 0 0 20px #f3de39;
+    text-transform: uppercase;
+}
+
+
