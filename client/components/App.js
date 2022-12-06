@@ -41,6 +41,14 @@ class App extends Common {
           config,
           width: this.getWidth(),
           pathname: window.location.pathname,
+          showModal: true,
+          modalTitle: "FARM AND TURF SALE!",
+          modalMessage:
+            "Start your path to becoming a virtual kingpin by generating SEED and BUD! Get all you need in the upcoming Turf and Farm sale!",
+          onConfirm: () => {
+            // Add method here
+          },
+          confirmButtonText: "Learn More",
         },
         localStore
       ),
