@@ -6,7 +6,7 @@ const Modal = (props) => {
     open: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,
   };
-  
+
   if (!props.open) return null;
   return (
     <div onClick={props.onClose} className="overlay">
@@ -14,8 +14,8 @@ const Modal = (props) => {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        
-        className="modalContainer" >
+        className="modalContainer"
+      >
         <div>
           <p className="closeBtn" onClick={props.onClose}>
             X
@@ -27,9 +27,8 @@ const Modal = (props) => {
               and BUD! Get all you need in the upcoming Turf and Farm sale!
             </p>
             <a target="_blank" href="https://www.linkedin.com/">
-                <img src='/images/Group1.png'/>
+              <img src="/images/Group1.png" />
             </a>
-               
           </div>
         </div>
       </div>

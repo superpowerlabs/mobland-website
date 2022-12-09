@@ -10,7 +10,6 @@
     font-weight: normal;
 }
 
-
 a {
     text-decoration: none !important;
 }
@@ -1841,7 +1840,6 @@ table td {
     width: 33%;
 }
 
-
 /* Modal  Style*/
 .overlay {
     width: 100%;
@@ -1873,7 +1871,7 @@ table td {
     text-align: center;
 }
 .content .title {
-    font-family:Wrong;
+    font-family: Wrong;
     font-size: 70px;
     letter-spacing: 1.4px;
     color: white;
@@ -1888,10 +1886,9 @@ table td {
     margin-bottom: -29px;
     align-items: center;
     color: white;
-
 }
 .content .img {
-    cursor: "pointer"
+    cursor: "pointer";
 }
 .closeBtn {
     top: 8px;
@@ -1908,5 +1905,4 @@ table td {
         width: 100%;
         height: 100%;
     }
-
 }

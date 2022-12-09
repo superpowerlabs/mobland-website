@@ -22,7 +22,6 @@ export default class Home extends Base {
     this.state = {
       openModal: true,
       // loaded: false,
- 
     };
 
     // this.bindMany(["onImageLoad"]);
@@ -47,70 +46,69 @@ export default class Home extends Base {
 
     return (
       <div>
-      <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
-        <VideoBg />
-        <Row className={"stats"}>
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>497k+</div>
-              <div className={"underWrong"}>
-                Existing community
-                <br />
-                and growing
-              </div>
-            </div>{" "}
-          </Col>
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>$3M USD+</div>
-              <div className={"underWrong"}>
-                8000 NFTS
-                <br />
-                sold out in 18 minutes
-              </div>
-            </div>{" "}
-          </Col>
+        <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
+          <VideoBg />
+          <Row className={"stats"}>
+            <Col xs={12} lg={4}>
+              <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
+                <div className={"wrong"}>497k+</div>
+                <div className={"underWrong"}>
+                  Existing community
+                  <br />
+                  and growing
+                </div>
+              </div>{" "}
+            </Col>
+            <Col xs={12} lg={4}>
+              <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
+                <div className={"wrong"}>$3M USD+</div>
+                <div className={"underWrong"}>
+                  8000 NFTS
+                  <br />
+                  sold out in 18 minutes
+                </div>
+              </div>{" "}
+            </Col>
 
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>#1 IN Vol</div>
-              <div className={"underWrong"}>
-                Ranked #1 on Binance NFT
-                <br />
-                all-time volume
-              </div>
-            </div>{" "}
-          </Col>
-        </Row>
-        <Row>
-          <Col className={"investor"}>INVESTORS</Col>
-        </Row>
-        <Row>
-          <Col className={"list"}>
-            <InvestorsAndPartners
-              store={this.Store}
-              setStore={this.setStore}
-              set={investors}
-              start={0}
-            />
-          </Col>
-        </Row>
+            <Col xs={12} lg={4}>
+              <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
+                <div className={"wrong"}>#1 IN Vol</div>
+                <div className={"underWrong"}>
+                  Ranked #1 on Binance NFT
+                  <br />
+                  all-time volume
+                </div>
+              </div>{" "}
+            </Col>
+          </Row>
+          <Row>
+            <Col className={"investor"}>INVESTORS</Col>
+          </Row>
+          <Row>
+            <Col className={"list"}>
+              <InvestorsAndPartners
+                store={this.Store}
+                setStore={this.setStore}
+                set={investors}
+                start={0}
+              />
+            </Col>
+          </Row>
 
-        <Row>
-          <Col className={"investor"}>PARTNERS</Col>
-        </Row>
-        <Row>
-          <Col className={"list"}>
-            <InvestorsAndPartners
-              store={this.Store}
-              setStore={this.setStore}
-              set={partners}
-              start={100}
-            />
-          </Col>
-        </Row>
-      
-      </div>
+          <Row>
+            <Col className={"investor"}>PARTNERS</Col>
+          </Row>
+          <Row>
+            <Col className={"list"}>
+              <InvestorsAndPartners
+                store={this.Store}
+                setStore={this.setStore}
+                set={partners}
+                start={100}
+              />
+            </Col>
+          </Row>
+        </div>
         <Modal open={this.state.openModal} onClose={this.closeModal} />
       </div>
     );
