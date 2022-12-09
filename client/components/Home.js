@@ -7,6 +7,7 @@ import VideoBg from "./VideoBg";
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
+import Modal from "./Modal";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
@@ -17,12 +18,18 @@ import { Row, Col } from "react-bootstrap";
 export default class Home extends Base {
   constructor(props) {
     super(props);
-
+    this.closeModal = this.closeModal.bind(this);
     this.state = {
+      openModal: true,
       // loaded: false,
+ 
     };
 
     // this.bindMany(["onImageLoad"]);
+  }
+  // function for closing modal
+  closeModal() {
+    this.setState({ openModal: false });
   }
 
   // onImageLoad() {
@@ -39,6 +46,7 @@ export default class Home extends Base {
     // const { loaded } = this.state;
 
     return (
+      <div>
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <VideoBg />
         <Row className={"stats"}>
@@ -101,6 +109,9 @@ export default class Home extends Base {
             />
           </Col>
         </Row>
+      
+      </div>
+        <Modal open={this.state.openModal} onClose={this.closeModal} />
       </div>
     );
   }
