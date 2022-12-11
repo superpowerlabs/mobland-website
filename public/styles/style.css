@@ -1840,31 +1840,60 @@ table td {
     width: 33%;
 }
 
-/* Modal  Style*/
 .overlay {
     width: 100%;
     height: 100%;
     position: fixed;
 }
 
-.modalContainer {
-    max-width: 850px;
-    width: 100%;
-    height: 50%;
+.modalContainer{
+    width: 945px ;
+    height: 556px;
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
     border-radius: 8px;
-    background-size: 850px 600px;
-    background-image: url(../images/farm.png);
+    background: url(../images/WidescreenBox.png);
     position: fixed;
     display: flex;
-    background-color: #000000;
+    flex-direction: column;
 }
 
+.modalContainer ::after{
+    content: '';
+    width: 899px ;
+    height: 556px;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background:url(../images/FullFarm.png);
+    background-repeat: no-repeat;
+    background-position: left bottom -70% ;
+    z-index:   11;
+
+    
+}
+.modalContainer ::before{
+    content: '';
+    width: 899px ;
+    height: 556px;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    position: fixed;
+    display: flex;
+    background:url(../images/Uncommon_Lv07_Full.png),url(../images/yellowgrungeslash.png);
+    background-repeat: no-repeat;
+    background-position: right  bottom 57px,right bottom 68px;
+    z-index:   10;
+} 
+
 .content {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1876,33 +1905,36 @@ table td {
     letter-spacing: 1.4px;
     color: white;
     align-items: left;
+   
 }
-
 .content .paragraph {
     font-family: Modeco;
     font-weight: 34;
     font-size: 24px;
     margin-top: -15px;
     margin-bottom: -29px;
+    margin-left: 50px;
+    margin-right: 50px;
     align-items: center;
     color: white;
 }
-.content .img {
-    cursor: "pointer";
-}
-.closeBtn {
-    top: 8px;
-    right: 8px;
+.content img {
+
     position: fixed;
     cursor: pointer;
+    display: flex;
+    margin-left: 33%;
+    z-index: 12;
 }
-@media screen and (max-width: 500px) {
-    .modalContainer {
-        flex-direction: column;
-        top: 0;
-        left: 0;
-        transform: none;
-        width: 100%;
-        height: 100%;
-    }
+.closeBtn {
+    top: 41px;
+    right: 36px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 13;
+    
 }
+
+
+
+
