@@ -1846,10 +1846,10 @@ table td {
     position: fixed;
 }
 
-.modalContainer{
-    width: 945px ;
+.modalContainer {
+    width: 945px;
     height: 556px;
-    top: 56%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 8px;
@@ -1859,9 +1859,9 @@ table td {
     flex-direction: column;
 }
 
-.modalContainer ::after{
-    content: '';
-    width: 899px ;
+.modalContainer ::after {
+    content: "";
+    width: 899px;
     height: 556px;
     left: 50%;
     top: 58%;
@@ -1869,16 +1869,14 @@ table td {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background:url(../images/FullFarm.png);
+    background: url(../images/FullFarm.png);
     background-repeat: no-repeat;
-    background-position: left bottom -70% ;
-    z-index:   11;
-
-    
+    background-position: left bottom -70%;
+    z-index: 11;
 }
-.modalContainer ::before{
-    content: '';
-    width: 899px ;
+.modalContainer ::before {
+    content: "";
+    width: 899px;
     height: 556px;
     left: 50%;
     top: 58%;
@@ -1886,11 +1884,12 @@ table td {
     flex-direction: column;
     position: fixed;
     display: flex;
-    background:url(../images/Uncommon_Lv07_Full.png),url(../images/yellowgrungeslash.png);
+    background: url(../images/Uncommon_Lv07_Full.png),
+        url(../images/yellowgrungeslash.png);
     background-repeat: no-repeat;
-    background-position: right  bottom 57px,right bottom 68px;
-    z-index:   10;
-} 
+    background-position: right bottom 57px, right bottom 68px;
+    z-index: 10;
+}
 
 .content {
     padding: 2rem 2rem;
@@ -1905,7 +1904,6 @@ table td {
     letter-spacing: 1.4px;
     color: white;
     align-items: left;
-   
 }
 .content .paragraph {
     font-family: Modeco;
@@ -1919,7 +1917,6 @@ table td {
     color: white;
 }
 .content img {
-
     position: fixed;
     cursor: pointer;
     display: flex;
@@ -1932,9 +1929,4 @@ table td {
     position: fixed;
     cursor: pointer;
     z-index: 13;
-    
 }
-
-
-
-
