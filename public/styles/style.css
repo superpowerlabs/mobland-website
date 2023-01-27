@@ -1839,7 +1839,7 @@ table td {
     height: 180px;
     width: 33%;
 }
-.welcomeBackground{
+.welcomeBackground {
     background: #202020;
 }
 .welcome {
@@ -1850,26 +1850,26 @@ table td {
     font-size: xxx-large;
     font-family: Wrong, sans-serif;
 }
-.summary{
+.summary {
     padding: 15px;
     font-size: 20px;
 }
-.whitepaper{
+.whitepaper {
     font-family: Wrong, sans-serif;
     font-size: x-large;
 }
-.MuiGrid-container{
+.MuiGrid-container {
     border: black solid;
 }
-.corePool{
+.corePool {
     border: black solid;
     background: #ecdc00;
 }
-.seedPool{
+.seedPool {
     border: black solid;
     background: #6512af;
 }
-.stakingPools{
+.stakingPools {
     padding: 15px;
     font-size: x-large;
 }

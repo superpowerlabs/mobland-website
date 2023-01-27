@@ -45,8 +45,8 @@ export default class Home extends Base {
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <VideoBg />
         <WhitePaperSummary />
-        <StakingPools/>
-        <Blueprints/>
+        <StakingPools />
+        <Blueprints />
         <Row className={"stats"}>
           <Col xs={12} lg={4}>
             <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
