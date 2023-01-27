@@ -7,10 +7,13 @@ import VideoBg from "./VideoBg";
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
+import WhitePaperSummary from "./WhitePaper";
+import StakingPools from "./StakingPools";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
 import { Row, Col } from "react-bootstrap";
+import Blueprints from "./Blueprints";
 
 // eslint-disable-next-line no-undef
 
@@ -41,6 +44,9 @@ export default class Home extends Base {
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <VideoBg />
+        <WhitePaperSummary />
+        <StakingPools/>
+        <Blueprints/>
         <Row className={"stats"}>
           <Col xs={12} lg={4}>
             <div className={"centered" + (this.isMobile() ? " mb22" : "")}>

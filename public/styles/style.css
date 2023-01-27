@@ -1839,3 +1839,37 @@ table td {
     height: 180px;
     width: 33%;
 }
+.welcomeBackground{
+    background: #202020;
+}
+.welcome {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+    font-size: xxx-large;
+    font-family: Wrong, sans-serif;
+}
+.summary{
+    padding: 15px;
+    font-size: 20px;
+}
+.whitepaper{
+    font-family: Wrong, sans-serif;
+    font-size: x-large;
+}
+.MuiGrid-container{
+    border: black solid;
+}
+.corePool{
+    border: black solid;
+    background: #ecdc00;
+}
+.seedPool{
+    border: black solid;
+    background: #6512af;
+}
+.stakingPools{
+    padding: 15px;
+    font-size: x-large;
+}
