@@ -2,18 +2,16 @@
 import React from "react";
 import Base from "./Base";
 // import Ab from "./lib/Ab";
-import VideoBg from "./VideoBg";
-
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
-import WhitePaperSummary from "./WhitePaper";
 import StakingPools from "./StakingPools";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 // eslint-disable-next-line no-undef
 import { Row, Col } from "react-bootstrap";
 import Blueprints from "./Blueprints";
+import SynrRank from "./SynrRank";
 
 // eslint-disable-next-line no-undef
 
@@ -43,43 +41,10 @@ export default class Home extends Base {
 
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
-        <VideoBg />
-        <WhitePaperSummary />
         <StakingPools />
+        <SynrRank />
         <Blueprints />
-        <Row className={"stats"}>
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>497k+</div>
-              <div className={"underWrong"}>
-                Existing community
-                <br />
-                and growing
-              </div>
-            </div>{" "}
-          </Col>
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>$3M USD+</div>
-              <div className={"underWrong"}>
-                8000 NFTS
-                <br />
-                sold out in 18 minutes
-              </div>
-            </div>{" "}
-          </Col>
 
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>#1 IN Vol</div>
-              <div className={"underWrong"}>
-                Ranked #1 on Binance NFT
-                <br />
-                all-time volume
-              </div>
-            </div>{" "}
-          </Col>
-        </Row>
         <Row>
           <Col className={"investor"}>INVESTORS</Col>
         </Row>

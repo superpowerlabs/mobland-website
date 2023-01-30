@@ -1447,8 +1447,7 @@ table td {
 }
 
 .stats {
-    padding: 80px 0;
-    /*background-image: linear-gradient(black, #131313);*/
+    border-top: #606060 solid;
 }
 
 .wrong {
@@ -1459,8 +1458,7 @@ table td {
 
 .underWrong {
     font-family: Modeco, sans-serif;
-    font-size: 1.3rem;
-    color: yellow;
+    color: white;
 }
 
 ::-webkit-scrollbar {
@@ -1703,35 +1701,18 @@ table td {
     height: 10px;
 }
 
-.videoBg {
-    inset: 0;
-    max-width: none;
-    max-height: none;
-    pointer-events: none;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
+.socialLinks {
+    display: none;
 }
 
-@media (max-width: 900px) {
-    /*.videoBg {*/
-    /*    width: 900px;*/
-    /*    position: relative;*/
-    /*    left: -100px;*/
-    /*}*/
+/*.navbar-expand-lg {*/
+/*    margin-top: 100px;*/
 
-    .socialLinks {
-        display: none;
-    }
+/*}*/
 
-    /*.navbar-expand-lg {*/
-    /*    margin-top: 100px;*/
-
-    /*}*/
-
-    .navbar-expand-lg.navbar-light.bg-dark {
-        padding-top: 120px;
-        /*max-width: 80%;*/
-    }
+.navbar-expand-lg.navbar-light.bg-dark {
+    padding-top: 120px;
+    /*max-width: 80%;*/
 }
 
 /*.navbar-collapse.collapse {*/
@@ -1845,10 +1826,15 @@ table td {
 .welcome {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 15%;
-    font-size: xxx-large;
+    font-size: 500%;
     font-family: Wrong, sans-serif;
+    padding-top: 10%;
+}
+.welcomeSub {
+    display: flex;
+    justify-content: center;
+    font-size: 115%;
+    margin-top: -2%;
 }
 .summary {
     padding: 15px;
@@ -1857,9 +1843,6 @@ table td {
 .whitepaper {
     font-family: Wrong, sans-serif;
     font-size: x-large;
-}
-.MuiGrid-container {
-    border: black solid;
 }
 .corePool {
     border: black solid;

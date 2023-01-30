@@ -116,31 +116,23 @@ export default class Header extends Base {
 
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
-            {window.location.pathname !== "/" ? (
-              <Navbar.Text className={"links"} as={Link} to={"/"}>
-                HOME
-              </Navbar.Text>
-            ) : null}
-            <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
-              {/*<NavDropdown.Divider />*/}
-              {/* <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
-                TEAM
-              </NavDropdown.Item> */}
-              <NavDropdown.Item
-                eventKey="leaderboard"
-                href={"https://leaderboard.mob.land"}
-                target={"_blank"}
-              >
-                LEADERBOARD
-              </NavDropdown.Item>
-            </NavDropdown>
+            <img
+              src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
+              style={{
+                width: "5%",
+                marginRight: "5%",
+              }}
+            />
+            <Navbar.Text className={"links"} as={Link} to={"/"}>
+              Home
+            </Navbar.Text>
             <Navbar.Text className={"links"}>
               <a
                 className={"menucmd yellowHover"}
                 href={"https://staking.mob.land"}
                 target={"_blank"}
               >
-                STAKING
+                Staking
               </a>
             </Navbar.Text>
             <Navbar.Text className={"links"}>
@@ -149,31 +141,29 @@ export default class Header extends Base {
                 href={"https://marketplace.mob.land"}
                 target={"_blank"}
               >
-                MARKETPLACE
+                Marketplace
               </a>
             </Navbar.Text>
-            <OverlayTrigger
-              placement={"bottom"}
-              overlay={
-                <Tooltip id={"tooltip-bottom-2"} className={"tooltipBottom"}>
-                  Coming soon
-                </Tooltip>
-              }
-            >
-              <Navbar.Text className={"links"}>GOVERNANCE</Navbar.Text>
-            </OverlayTrigger>
+            <Navbar.Text className={"links"}>
+              <a
+                className={"menucmd yellowHover"}
+                href={"https://marketplace.mob.land"}
+                target={"_blank"}
+              >
+                How To Play
+              </a>
+            </Navbar.Text>
+            <Navbar.Text className={"links"}>
+              <a
+                className={"menucmd yellowHover"}
+                href={"https://marketplace.mob.land"}
+                target={"_blank"}
+              >
+                Road Map
+              </a>
+            </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
-        {this.Store.width ? (
-          <img
-            className={"positionAbsolute"}
-            src={"https://s3.mob.land/assets/Mobland_Title_Stylized300.png"}
-            style={{
-              width: 220,
-              left: this.isMobile() ? 80 : this.Store.width / 2 - 110,
-            }}
-          />
-        ) : null}
 
         {/*{this.isMobile() ? (*/}
         {/*  this.Store.connectedWallet ? (*/}

@@ -5,33 +5,54 @@ import { Grid } from "@material-ui/core";
 function StakingPools() {
   return (
     <div className="welcomeBackground">
-      <Grid container>
-        <Grid item xs={6} className="corePool">
-          <div className="stakingPools">
-            Stake your SYNR tokens to earn rewards in SYNR, sSYNR, or both!{" "}
-          </div>
-          <a
-            className="whitepaper"
-            href="https://staking.mob.land/core/dashboard"
-          >
-            {" "}
-            CORE POOL
-          </a>
+      <div
+        style={{
+          backgroundImage: 'url("/images/city-background.png")',
+        }}
+      >
+        <Grid container>
+          <Grid item xs={8}>
+            <Grid item xs={12}>
+              <div className="welcome">ENTER THE MAFIA METAVERSE </div>
+            </Grid>
+            <Grid item xs={12}>
+              <div className="welcomeSub">
+                Step into Mobland and take on the world of a modern crime
+                syndicate.{" "}
+              </div>
+            </Grid>
+            <Grid container>
+              <Grid item xs={3} />
+              <Grid item xs={3}>
+                <a
+                  className="whitepaper"
+                  href="https://staking.mob.land/core/dashboard"
+                >
+                  {" "}
+                  CORE POOL
+                </a>{" "}
+              </Grid>
+              <Grid item xs={3}>
+                <a
+                  className="whitepaper"
+                  href="https://staking.mob.land/seed/dashboard"
+                >
+                  {" "}
+                  SEED FARM
+                </a>
+              </Grid>
+              <Grid item xs={3} />
+            </Grid>
+          </Grid>
+          <Grid item xs={4}>
+            <img
+              alt={"Gangster"}
+              src={"/images/gangster-two.png"}
+              style={{ width: "100%", marginTop: "-45%" }}
+            />
+          </Grid>
         </Grid>
-        <Grid item xs={6} className="seedPool">
-          <div className="stakingPools">
-            SEED fuels the cross-chain MOBLAND economy and is a key asset to
-            generate revenue for GameFi 2.0 participants.
-          </div>
-          <a
-            className="whitepaper"
-            href="https://staking.mob.land/seed/dashboard"
-          >
-            {" "}
-            SEED FARM
-          </a>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
