@@ -1,13 +1,7 @@
 // import { isMobile } from "react-device-detect";
 import React from "react";
 
-import {
-  Navbar,
-  Nav,
-  OverlayTrigger,
-  Tooltip,
-  NavDropdown,
-} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 import { Link } from "react-router-dom";
 

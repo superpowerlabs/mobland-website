@@ -10,8 +10,10 @@ import StakingPools from "./StakingPools";
 
 // eslint-disable-next-line no-undef
 import { Row, Col } from "react-bootstrap";
-import Blueprints from "./Blueprints";
 import SynrRank from "./SynrRank";
+import BuildYourEmpire from "./BuildYourEmpire";
+import Browse from "./Browse";
+import Economy from "./Economy";
 
 // eslint-disable-next-line no-undef
 
@@ -26,16 +28,6 @@ export default class Home extends Base {
     // this.bindMany(["onImageLoad"]);
   }
 
-  // onImageLoad() {
-  //   this.setTimeout(() => {
-  //     this.setState({
-  //       loaded: true,
-  //     });
-  //   }, 1000); //7000);
-  // }
-
-  componentDidMount() {}
-
   render() {
     // const { loaded } = this.state;
 
@@ -43,8 +35,9 @@ export default class Home extends Base {
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <StakingPools />
         <SynrRank />
-        <Blueprints />
-
+        <BuildYourEmpire />
+        <Browse />
+        <Economy/>
         <Row>
           <Col className={"investor"}>INVESTORS</Col>
         </Row>
