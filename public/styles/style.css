@@ -1880,7 +1880,7 @@ table td {
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
-.empireButton{
+.empireButton {
     border: 1px #a69d0a solid;
     border-radius: 50px;
     font-weight: bold;
@@ -1895,4 +1895,4 @@ table td {
 }
 .exchanges img {
     height: 40px !important;
-  }
+}
