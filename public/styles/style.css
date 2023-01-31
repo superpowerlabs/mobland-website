@@ -1840,9 +1840,18 @@ table td {
     padding: 15px;
     font-size: 20px;
 }
-.whitepaper {
-    font-family: Wrong, sans-serif;
-    font-size: x-large;
+.button {
+    border: 1px #a69d0a solid;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    background: #fae901;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 0px 0px 15px yellow;
+    font-size: 120%;
 }
 .corePool {
     border: black solid;

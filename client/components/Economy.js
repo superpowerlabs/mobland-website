@@ -27,7 +27,7 @@ class Economy extends Component {
               <Grid container>
                 <Grid item xs={4}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     CORE POOL
@@ -35,7 +35,7 @@ class Economy extends Component {
                 </Grid>
                 <Grid item xs={4}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/seed/dashboard"
                   >
                     SEED FARM

@@ -25,7 +25,7 @@ class StakingPools extends Component {
                 <Grid item xs={3} />
                 <Grid item xs={3}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     {" "}
@@ -34,7 +34,7 @@ class StakingPools extends Component {
                 </Grid>
                 <Grid item xs={3}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/seed/dashboard"
                   >
                     {" "}

@@ -28,7 +28,7 @@ class Leaks extends React.Component {
               <Grid container>
                 <Grid item xs={12}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     Road Map

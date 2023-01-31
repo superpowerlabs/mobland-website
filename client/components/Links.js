@@ -11,7 +11,7 @@ function Links() {
             Stake your SYNR tokens to earn rewards in SYNR, sSYNR, or both!{" "}
           </div>
           <a
-            className="whitepaper"
+            className="button"
             href="https://staking.mob.land/core/dashboard"
           >
             {" "}
@@ -24,7 +24,7 @@ function Links() {
             generate revenue for GameFi 2.0 participants.
           </div>
           <a
-            className="whitepaper"
+            className="button"
             href="https://staking.mob.land/seed/dashboard"
           >
             {" "}

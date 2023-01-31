@@ -30,7 +30,7 @@ class BuildYourEmpire extends Component {
               <Grid container>
                 <Grid item xs={12}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     Shadow Market

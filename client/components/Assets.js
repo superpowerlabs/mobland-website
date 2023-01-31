@@ -34,7 +34,7 @@ class Assets extends React.Component {
                 </Grid>
                 <Grid item xs={6}>
                   <a
-                    className="whitepaper"
+                    className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     CORE POOL

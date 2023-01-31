@@ -36,7 +36,7 @@ class Browse extends Component {
               <Grid container>
                 <Grid item xs={9} />
                 <Grid item xs={3}>
-                  <a className="whitepaper" href="https://blueprints.mob.land/">
+                  <a className="button" href="https://blueprints.mob.land/">
                     {" "}
                     Reveal APP
                   </a>{" "}
