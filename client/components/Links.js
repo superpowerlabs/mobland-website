@@ -10,10 +10,7 @@ function Links() {
           <div className="stakingPools">
             Stake your SYNR tokens to earn rewards in SYNR, sSYNR, or both!{" "}
           </div>
-          <a
-            className="button"
-            href="https://staking.mob.land/core/dashboard"
-          >
+          <a className="button" href="https://staking.mob.land/core/dashboard">
             {" "}
             CORE POOL
           </a>
@@ -23,10 +20,7 @@ function Links() {
             SEED fuels the cross-chain MOBLAND economy and is a key asset to
             generate revenue for GameFi 2.0 participants.
           </div>
-          <a
-            className="button"
-            href="https://staking.mob.land/seed/dashboard"
-          >
+          <a className="button" href="https://staking.mob.land/seed/dashboard">
             {" "}
             SEED FARM
           </a>
