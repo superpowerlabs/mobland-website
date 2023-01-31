@@ -1452,7 +1452,7 @@ table td {
 
 .wrong {
     font-family: Wrong, sans-serif;
-    font-size: 7rem;
+    font-size: 500%;
     color: white;
 }
 
@@ -1460,7 +1460,7 @@ table td {
     font-family: Modeco, sans-serif;
     color: white;
     margin-top: -9%;
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -1876,9 +1876,23 @@ table td {
     font-size: larger;
 }
 .title {
+    display: flex;
+    justify-content: flex-start;
     font-size: 500%;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
+}
+.titleRight{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 500%;
+    font-family: Wrong, sans-serif;
+    padding-top: 10%;
+}
+
+.textRight{
+    font-size: 100%;
+    text-align: end;
 }
 .empireButton {
     border: 1px #a69d0a solid;

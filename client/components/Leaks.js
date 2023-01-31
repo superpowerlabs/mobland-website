@@ -25,7 +25,7 @@ class Leaks extends React.Component {
                   see our plans for the future.
                 </div>
               </Grid>
-              <Grid container>
+              <br/>
                 <Grid item xs={12}>
                   <a
                     className="button"
@@ -34,8 +34,9 @@ class Leaks extends React.Component {
                     Road Map
                   </a>
                 </Grid>
-              </Grid>
+                <br/>
             </Grid>
+            
             <Grid item xs={4}>
               <div className="coins">Image needed</div>
             </Grid>

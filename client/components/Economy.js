@@ -9,6 +9,8 @@ class Economy extends Component {
           style={{
             backgroundImage: 'url("/images/ml-city2.jpg")',
             backgroundSize: "cover",
+            borderTop: "1px #3a3a3b solid",
+            borderBottom: "1px #3a3a3b solid",
           }}
         >
           <Grid container>
