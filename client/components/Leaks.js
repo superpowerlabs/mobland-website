@@ -7,7 +7,7 @@ class Leaks extends React.Component {
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/ml-city2.jpg")',
+            backgroundImage: 'url("/images/mob-leak.jpg")',
             backgroundSize: "cover",
           }}
         >
