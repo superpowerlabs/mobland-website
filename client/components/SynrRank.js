@@ -29,7 +29,10 @@ class SynrRank extends Component {
           >
             <div className={"Center"}>
               <div className={"wrong"}>500k+</div>
-              <div className={"underWrong"} style={{paddingLeft: "9%", marginTop: "-13%"}}>
+              <div
+                className={"underWrong"}
+                style={{ paddingLeft: "9%", marginTop: "-13%" }}
+              >
                 SYNNERS in our community <br />
                 and growing every day!
               </div>
@@ -46,7 +49,7 @@ class SynrRank extends Component {
           >
             <div className={"Center"}>
               <div className={"wrong"}>#1 IN Vol</div>
-              <div className={"underWrong"} style={{paddingLeft: "27%"}}>
+              <div className={"underWrong"} style={{ paddingLeft: "27%" }}>
                 Ranked #1 on Binance NFT
                 <br />
                 all-time volume
