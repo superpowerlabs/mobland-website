@@ -22,6 +22,8 @@ class StakingPools extends Component {
                   syndicate.{" "}
                 </div>
               </Grid>
+              <br />
+              <br />
               <Grid container>
                 <Grid item xs={3} />
                 <Grid item xs={3}>
