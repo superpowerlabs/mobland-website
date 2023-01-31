@@ -14,10 +14,18 @@ class SynrRank extends Component {
             <img
               alt={"Gangster"}
               src={"/images/gangster-five.png"}
-              style={{ width: "100%", marginTop: "-45%" }}
+              style={{ width: "100%", marginTop: "-21%" }}
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid
+            item
+            xs={4}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <div className={"Center"}>
               <div className={"wrong"}>500k+</div>
               <div className={"underWrong"}>
@@ -27,7 +35,14 @@ class SynrRank extends Component {
             </div>{" "}
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid
+            item
+            xs={4}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <div className={"Center"}>
               <div className={"wrong"}>#1 IN Vol</div>
               <div className={"underWrong"}>
