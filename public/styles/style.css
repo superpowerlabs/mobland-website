@@ -1729,6 +1729,7 @@ table td {
     padding-bottom: 3%;
     box-shadow: 0px 0px 15px #f7f8f8;
     font-size: 120%;
+    margin-left: -24%;
 }
 .corePool {
     border: black solid;
@@ -1783,7 +1784,7 @@ table td {
     font-size: 110%;
 }
 .exchanges {
-    margin-left: -35%;
+    margin-left: -57%;
     margin-top: -2%;
 }
 .exchanges img {
