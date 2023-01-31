@@ -29,13 +29,13 @@ class BuildYourEmpire extends Component {
               </Grid>
               <Grid container>
                 <Grid item xs={12}>
-                  <div style={{padding: "5%"}}> 
-                  <a
-                    className="button"
-                    href="https://staking.mob.land/core/dashboard"
-                  >
-                    Shadow Market
-                  </a>{" "}
+                  <div style={{ padding: "5%" }}>
+                    <a
+                      className="button"
+                      href="https://staking.mob.land/core/dashboard"
+                    >
+                      Shadow Market
+                    </a>{" "}
                   </div>
                 </Grid>
               </Grid>
