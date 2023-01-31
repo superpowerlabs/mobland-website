@@ -10,6 +10,11 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: Mulish;
+    src: url(../assets/Mulish-Regular.ttf);
+    font-weight: normal;
+}
 a {
     text-decoration: none !important;
 }
@@ -1383,6 +1388,7 @@ table td {
 
 .navbar-light .navbar-nav .nav-link,
 .links {
+    font-family: Mulish, sans-serif;
     font-size: 0.8rem !important;
     padding-top: 12px;
     color: white;
@@ -1676,9 +1682,10 @@ table td {
     padding-top: 10%;
 }
 .welcomeSub {
-    font-size: 1.2vw;
+    font-family: Mulish, sans-serif;
+    font-size: 1.5vw;
     margin-top: -2%;
-    width: 70%;
+    width: 80%;
 }
 .summary {
     padding: 15px;
@@ -1804,4 +1811,12 @@ b,
 
 .two-columns-right {
     float: right;
+}
+.joinUs{
+    font-family: Mulish, sans-serif;
+    display: "inline";
+    padding-right: 20;
+}
+.mulish{
+    font-family: Mulish, sans-serif;
 }

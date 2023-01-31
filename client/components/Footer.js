@@ -34,7 +34,7 @@ function Footer({ setShowTerms }) {
                   position: "relative",
                 }}
               >
-                <div style={{ display: "inline", paddingRight: 20 }}>
+                <div className="joinUs">
                   Join Us
                 </div>
                 <Link

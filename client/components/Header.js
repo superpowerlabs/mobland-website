@@ -203,7 +203,7 @@ export default class Header extends Base {
           >
             <Navbar.Text className={"socialLinks"}>
               <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer">
-                <span className={"bitSmaller"}>JOIN US</span>
+                <span className={"bitSmaller mulish"}>JOIN US</span>
 
                 <i className="fab fa-discord" />
               </a>
