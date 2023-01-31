@@ -15,8 +15,9 @@ class Economy extends Component {
             <Grid item xs={1} />
             <Grid item xs={7}>
               <Grid item xs={12}>
-                <div className="welcome">Game Economy</div>
+                <div className="title">Game Economy</div>
               </Grid>
+              <br />
               <Grid item xs={12}>
                 <div className="welcomeSub">
                   Synthetic SYNR, SEED, BUD... MOBLAND boasts an intricate
@@ -24,6 +25,7 @@ class Economy extends Component {
                   SYNR.
                 </div>
               </Grid>
+              <br />
               <Grid container>
                 <Grid item xs={4}>
                   <a
@@ -42,7 +44,28 @@ class Economy extends Component {
                   </a>
                 </Grid>
                 <Grid item xs={4}>
-                  <div>Links to Exchanges</div>
+                <div className="exchanges">
+        <a
+          href={
+            "https://www.kucoin.com/trade/SYNR-USDT?spm=kcWeb.B5markets.tradeList.1"
+          }
+        >
+          <img  src={"/images/kucoin.png"} alt={"Kucoin"} />
+        </a>
+        <a href={"https://www.bybit.com/en-US/trade/spot/SYNR/USDT"}>
+          <img src={"/images/bybit.png"} alt={"ByBit"} />
+        </a>
+        <a
+          href={
+            "https://www.bitmart.com/trade/en?layout=basic&symbol=SYNR_USDT"
+          }
+        >
+          <img src={"/images/some-b.png"} alt={"Bitmart"} />
+        </a>
+        <a href={"https://app.uniswap.org/#/swap?chain=mainnet"}>
+          <img src={"/images/uniswap.png"} alt={"Uniswap"} />
+        </a>
+      </div>
                 </Grid>
               </Grid>
               <br />

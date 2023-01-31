@@ -16,7 +16,7 @@ class BuildYourEmpire extends Component {
             <Grid item xs={1} />
             <Grid item xs={7}>
               <Grid item xs={12}>
-                <div className="empire">BUILD YOUR EMPIRE </div>
+                <div className="title">BUILD YOUR EMPIRE </div>
               </Grid>
               <Grid item xs={12}>
                 <div className="welcomeSub">
@@ -30,7 +30,7 @@ class BuildYourEmpire extends Component {
               <Grid item xs={12}>
                 <div style={{ paddingTop: "5%", paddingBottom: "5%" }}>
                   <a
-                    className="button"
+                    className="empireButton"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     Shadow Market
