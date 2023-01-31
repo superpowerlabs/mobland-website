@@ -655,7 +655,9 @@ h2 {
 .pl20p {
     padding-left: 100px !important;
 }
-
+.underlineHover:hover {
+    text-decoration: underline;
+}
 .pr20p {
     padding-right: 100px !important;
 }
@@ -1907,4 +1909,57 @@ table td {
 }
 .exchanges img {
     height: 40px !important;
+}
+
+.footerNote {
+    color: #884;
+    font-size: 84%;
+    background-color: #00000040;
+    padding: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.footerNote a {
+    text-decoration: none !important;
+}
+.footer {
+    width: 100%;
+    border-top: 1px solid;
+    border-color: #ffdd0080 !important ;
+    background: black;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.seed-container .footer {
+    border-color: #7b16db80 !important;
+}
+.bit-smaller {
+    font-size: 90%;
+}
+b,
+.bold {
+    font-family: ModecoBold, sans-serif !important;
+}
+
+.light {
+    font-family: ModecoLight, sans-serif !important;
+}
+.two-columns {
+    clear: both;
+    padding: 0 12px;
+    font-size: 0.9rem;
+}
+
+.two-columns:last-child {
+    margin-bottom: 18px;
+}
+
+.two-columns-left {
+    float: left;
+}
+
+.two-columns-right {
+    float: right;
 }
