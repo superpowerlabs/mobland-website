@@ -1683,9 +1683,22 @@ table td {
 }
 .welcomeSub {
     font-family: Mulish, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-top: -2%;
-    width: 80%;
+    width: 70%;
+}
+.empireSub {
+    font-family: Mulish, sans-serif;
+    font-size: 1.2vw;
+    margin-top: -2%;
+    width: 70%;
+}
+.browseSub {
+    font-family: Mulish, sans-serif;
+    font-size: 1.2vw;
+    margin-top: -2%;
+    width: 76%;
+    margin-left: 15%;
 }
 .summary {
     padding: 15px;
@@ -1702,6 +1715,19 @@ table td {
     padding-top: 3%;
     padding-bottom: 3%;
     box-shadow: 0px 0px 15px yellow;
+    font-size: 120%;
+}
+.buttonSeed {
+    border: 1px #f7f8f8 solid;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    background: #f7f8f8;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 0px 0px 15px #f7f8f8;
     font-size: 120%;
 }
 .corePool {
@@ -1756,8 +1782,15 @@ table td {
     box-shadow: 0px 0px 15px yellow;
     font-size: 110%;
 }
+.exchanges {
+    margin-left: -35%;
+    margin-top: -2%;
+}
 .exchanges img {
     height: 40px !important;
+}
+.exchanges a {
+    padding: 0 3px;
 }
 
 .footerNote {

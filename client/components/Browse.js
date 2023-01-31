@@ -29,7 +29,7 @@ class Browse extends Component {
                 <div className="welcome">Browse the Roster </div>
               </Grid>
               <Grid item xs={12}>
-                <div className="welcomeSub">
+                <div className="browseSub">
                   We recently released our custom Blueprint Reveal App which
                   unveiled to the world the range of dynamic (and dangerous)
                   gangsters of MOBLAND for Blueprint NFT holders to use in-game.
@@ -39,7 +39,11 @@ class Browse extends Component {
               </Grid>
               <Grid container>
                 <Grid item xs={9} />
-                <Grid item xs={3}>
+                <Grid
+                  item
+                  xs={3}
+                  style={{ paddingTop: "40px", marginLeft: "-5%" }}
+                >
                   <a className="button" href="https://blueprints.mob.land/">
                     {" "}
                     Reveal APP
