@@ -34,9 +34,7 @@ function Footer({ setShowTerms }) {
                   position: "relative",
                 }}
               >
-                <div className="joinUs">
-                  Join Us
-                </div>
+                <div className="joinUs">Join Us</div>
                 <Link
                   display="inline"
                   underline="none"
