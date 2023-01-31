@@ -19,13 +19,17 @@ class BuildYourEmpire extends Component {
                 <div className="title">BUILD YOUR EMPIRE </div>
               </Grid>
               <Grid item xs={12}>
-                <div className="welcomeSub">
-                  Own TURF. Grow BUD. Run MOBLAND. <br /> With ground-breaking
-                  cross-chain functionality and headed up by Chief Grow
-                  Officers, Snoop Dogg and Champ Medici, we’re proud to announce
-                  the SHADOW MARKET. Stake SEED, grow digital weed and defend
-                  your territory from other players and mercenaries!{" "}
-                </div>
+                <p className="welcomeSub">
+                  Own TURF. Grow BUD. Run MOBLAND. <br />
+                  <br /> With ground-breaking cross-chain functionality and
+                  headed up by Chief Grow Officers, Snoop Dogg and Champ Medici,
+                  we’re proud to announce the{" "}
+                  <span style={{ color: "#ffee03", fontWeight: "bold" }}>
+                    SHADOW MARKET
+                  </span>
+                  . Stake SEED, grow digital weed and defend your territory from
+                  other players and mercenaries!{" "}
+                </p>
               </Grid>
               <Grid item xs={12}>
                 <div style={{ paddingTop: "5%", paddingBottom: "5%" }}>

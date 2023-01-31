@@ -1833,8 +1833,6 @@ table td {
     padding-top: 10%;
 }
 .welcomeSub {
-    display: flex;
-    justify-content: center;
     font-size: 115%;
     margin-top: -2%;
 }
