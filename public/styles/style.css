@@ -1452,13 +1452,15 @@ table td {
 
 .wrong {
     font-family: Wrong, sans-serif;
-    font-size: 4rem;
+    font-size: 7.5rem;
     color: white;
 }
 
 .underWrong {
     font-family: Modeco, sans-serif;
     color: white;
+    margin-top: -9%;
+    font-size: 1.1rem;
 }
 
 ::-webkit-scrollbar {
