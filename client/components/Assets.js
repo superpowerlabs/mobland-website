@@ -28,7 +28,7 @@ class Assets extends React.Component {
                   and how you get put them to work!
                 </div>
               </Grid>
-              <br/>
+              <br />
               <Grid container>
                 <Grid item xs={6}>
                   <div>Links to Assets</div>
@@ -42,7 +42,7 @@ class Assets extends React.Component {
                   </a>{" "}
                 </Grid>
               </Grid>
-              <br/>
+              <br />
             </Grid>
             <Grid item xs={1} />
           </Grid>

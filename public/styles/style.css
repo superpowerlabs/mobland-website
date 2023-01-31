@@ -1882,7 +1882,7 @@ table td {
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
-.titleRight{
+.titleRight {
     display: flex;
     justify-content: flex-end;
     font-size: 500%;
@@ -1890,7 +1890,7 @@ table td {
     padding-top: 10%;
 }
 
-.textRight{
+.textRight {
     font-size: 100%;
     text-align: end;
 }

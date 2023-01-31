@@ -25,18 +25,18 @@ class Leaks extends React.Component {
                   see our plans for the future.
                 </div>
               </Grid>
-              <br/>
-                <Grid item xs={12}>
-                  <a
-                    className="button"
-                    href="https://staking.mob.land/core/dashboard"
-                  >
-                    Road Map
-                  </a>
-                </Grid>
-                <br/>
+              <br />
+              <Grid item xs={12}>
+                <a
+                  className="button"
+                  href="https://staking.mob.land/core/dashboard"
+                >
+                  Road Map
+                </a>
+              </Grid>
+              <br />
             </Grid>
-            
+
             <Grid item xs={4}>
               <div className="coins">Image needed</div>
             </Grid>
