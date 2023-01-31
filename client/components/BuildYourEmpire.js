@@ -27,16 +27,15 @@ class BuildYourEmpire extends Component {
                   your territory from other players and mercenaries!{" "}
                 </div>
               </Grid>
-                <Grid item xs={12}>
-                  <div style={{     paddingTop: "5%",
-    paddingBottom: "5%" }}>
-                    <a
-                      className="button"
-                      href="https://staking.mob.land/core/dashboard"
-                    >
-                      Shadow Market
-                    </a>{" "}
-                  </div>
+              <Grid item xs={12}>
+                <div style={{ paddingTop: "5%", paddingBottom: "5%" }}>
+                  <a
+                    className="button"
+                    href="https://staking.mob.land/core/dashboard"
+                  >
+                    Shadow Market
+                  </a>{" "}
+                </div>
               </Grid>
             </Grid>
             <Grid item xs={4}>

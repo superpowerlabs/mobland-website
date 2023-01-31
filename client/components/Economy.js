@@ -45,7 +45,7 @@ class Economy extends Component {
                   <div>Links to Exchanges</div>
                 </Grid>
               </Grid>
-              <br/>
+              <br />
             </Grid>
             <Grid item xs={4}>
               <div className="coins">Coins (Suggested to be ANIMATED</div>

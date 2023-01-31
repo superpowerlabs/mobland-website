@@ -1875,8 +1875,8 @@ table td {
     display: flex;
     font-size: larger;
 }
-.empire{
-        font-size: 500%;
-        font-family: Wrong, sans-serif;
-        padding-top: 10%;
+.empire {
+    font-size: 500%;
+    font-family: Wrong, sans-serif;
+    padding-top: 10%;
 }
