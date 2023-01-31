@@ -202,14 +202,10 @@ export default class Header extends Base {
             style={{ display: "block" }}
           >
             <Navbar.Text className={"socialLinks"}>
-              <a
-                href={"https://discord.gg/tSVtRkppnp"}
-                style={{ color: "yellow" }}
-                rel="noreferrer"
-              >
+              <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer">
                 <span className={"bitSmaller"}>JOIN US</span>
 
-                <i className="fab fa-discord" style={{ color: "yellow" }} />
+                <i className="fab fa-discord" />
               </a>
               <a
                 href="https://t.me/MobLandAnnouncements"
