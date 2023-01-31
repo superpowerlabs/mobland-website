@@ -1676,8 +1676,9 @@ table td {
     padding-top: 10%;
 }
 .welcomeSub {
-    font-size: 115%;
+    font-size: 1.2vw;
     margin-top: -2%;
+    width: 70%;
 }
 .summary {
     padding: 15px;

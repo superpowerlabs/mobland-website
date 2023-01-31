@@ -32,7 +32,7 @@ class BuildYourEmpire extends Component {
                 </p>
               </Grid>
               <Grid item xs={12}>
-                <div style={{ paddingTop: "5%", paddingBottom: "5%" }}>
+                <div style={{ paddingTop: "4%", paddingBottom: "7%" }}>
                   <a
                     className="empireButton"
                     href="https://staking.mob.land/core/dashboard"
@@ -46,7 +46,11 @@ class BuildYourEmpire extends Component {
               <img
                 alt={"Farm"}
                 src={"/images/farm-night.png"}
-                style={{ width: "100%" }}
+                style={{
+                  width: "115%",
+                  marginLeft: "-20%",
+                  paddingTop: "18px",
+                }}
               />
             </Grid>
           </Grid>
