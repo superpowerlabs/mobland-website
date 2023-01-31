@@ -8,7 +8,7 @@ class StakingPools extends Component {
         <div
           style={{
             backgroundImage: 'url("/images/city.jpg")',
-            backgroundSize: "cover"
+            backgroundSize: "cover",
           }}
         >
           <Grid container>

@@ -84,7 +84,7 @@ body {
 
 .command,
 a {
-    color: yellow;
+    color: white;
     cursor: pointer;
 }
 
@@ -1452,7 +1452,7 @@ table td {
 
 .wrong {
     font-family: Wrong, sans-serif;
-    font-size: 7.5rem;
+    font-size: 7rem;
     color: white;
 }
 
@@ -1460,7 +1460,7 @@ table td {
     font-family: Modeco, sans-serif;
     color: white;
     margin-top: -9%;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -1869,4 +1869,9 @@ table td {
 }
 .coins {
     padding-top: 30%;
+}
+.social{
+    justify-content: space-evenly;
+    display: flex;
+    font-size: larger;
 }

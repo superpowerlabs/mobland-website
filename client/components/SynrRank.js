@@ -36,6 +36,28 @@ class SynrRank extends Component {
                 SYNNERS in our community <br />
                 and growing every day!
               </div>
+              <div className= "social">
+              <a
+                href={"https://discord.gg/tSVtRkppnp"}
+                rel="noreferrer"
+              >
+                <i className="fab fa-discord"/>
+              </a>
+              <a
+                href="https://t.me/MobLandAnnouncements"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-telegram" />
+              </a>
+              <a
+                href="https://twitter.com/MoblandHQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-twitter" />
+              </a>
+              </div>
             </div>{" "}
           </Grid>
 
@@ -48,11 +70,11 @@ class SynrRank extends Component {
             }}
           >
             <div className={"Center"}>
-              <div className={"wrong"}>#1 IN Vol</div>
+              <div className={"wrong"}>#1 Volume</div>
               <div className={"underWrong"} style={{ paddingLeft: "27%" }}>
-                Ranked #1 on Binance NFT
+                Ranked #1 of all time
                 <br />
-                all-time volume
+                for Binance NFT Volume
               </div>
             </div>{" "}
           </Grid>
