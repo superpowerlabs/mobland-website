@@ -17,7 +17,11 @@ class Browse extends Component {
               <img
                 alt={"Gangster"}
                 src={"/images/gangster-three.png"}
-                style={{ width: "100%", marginTop: "-5%" }}
+                style={{
+                  width: "100%",
+                  marginTop: "-10%",
+                  marginBottom: "-2%",
+                }}
               />
             </Grid>
             <Grid item xs={7}>

@@ -12,6 +12,7 @@ class StakingPools extends Component {
           }}
         >
           <Grid container>
+            <Grid item xs={1} />
             <Grid item xs={8}>
               <Grid item xs={12}>
                 <div className="welcome">ENTER THE MAFIA METAVERSE </div>
@@ -47,11 +48,11 @@ class StakingPools extends Component {
                 <Grid item xs={3} />
               </Grid>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <img
                 alt={"Gangster"}
                 src={"/images/gangster-two.png"}
-                style={{ width: "100%", marginTop: "-5%" }}
+                style={{ width: "120%", marginTop: "-5%" }}
               />
             </Grid>
           </Grid>

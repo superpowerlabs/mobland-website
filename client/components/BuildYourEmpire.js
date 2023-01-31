@@ -7,8 +7,8 @@ class BuildYourEmpire extends Component {
       <div>
         <div
           style={{
-            // marginTop: "-4%",
-            border: "#404143 solid",
+            borderTop: "#404143 solid",
+            borderBottom: "#404143 solid",
             backgroundImage: 'url("/images/woodland-bg.jpg")',
           }}
         >
