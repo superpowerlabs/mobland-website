@@ -46,11 +46,7 @@ class BuildYourEmpire extends Component {
               <img
                 alt={"Farm"}
                 src={"/images/farm-night.png"}
-                style={{
-                  width: "115%",
-                  marginLeft: "-20%",
-                  paddingTop: "18px",
-                }}
+                className="turfImage"
               />
             </Grid>
           </Grid>
