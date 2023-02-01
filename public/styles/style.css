@@ -675,6 +675,13 @@ img.pc90 {
 /*    background-size: contain;*/
 /*}*/
 
+@media (max-width: 1000px) {
+    .socialLinks {
+        float: right;
+    margin-top: -5%;
+    }
+}
+
 .socialLinks a {
     color: white !important;
     text-decoration: none;
