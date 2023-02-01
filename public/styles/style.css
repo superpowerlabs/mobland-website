@@ -1959,7 +1959,35 @@ b,
     margin-left: -20%;
     padding-top: 18px;
 }
+.browseButtonDiv {
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.gangster2 {
+    width: 100%;
+    margin-top: -10%;
+    margin-bottom: -2%;
+}
 @media (max-width: 600px) {
+    .gangster2 {
+        width: 56%;
+        margin-top: 0px;
+        margin-bottom: -2%;
+        position: relative;
+        left: 25%;
+    }
+
+    .browseButtonDiv {
+        justify-content: center;
+    }
+    .browseSub {
+        font-size: 2.5vw;
+        margin-top: 0;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
     .title {
         justify-content: center;
         font-size: 10vw;

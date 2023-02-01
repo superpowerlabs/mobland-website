@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-undef
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
+import { isMobile } from "react-device-detect";
 
 class Browse extends Component {
   render() {
@@ -12,23 +13,23 @@ class Browse extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={1} />
-            <Grid item xs={4}>
-              <img
-                alt={"Gangster"}
-                src={"/images/gangster-three.png"}
-                style={{
-                  width: "100%",
-                  marginTop: "-10%",
-                  marginBottom: "-2%",
-                }}
-              />
-            </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={false} sm={1} />
+            {isMobile ? null : (
+              <Grid item xs={12} sm={4}>
+                <img
+                  alt={"Gangster"}
+                  src={"/images/gangster-three.png"}
+                  style={{
+                    width: "100%",
+                    marginTop: "-10%",
+                    marginBottom: "-2%",
+                  }}
+                />
+              </Grid>
+            )}
+            <Grid item xs={12} sm={7}>
               <Grid item xs={12}>
-                <div className="welcome" style={{ marginRight: "-8%" }}>
-                  Browse the Roster{" "}
-                </div>
+                <div className="title">Browse the Roster </div>
               </Grid>
               <Grid item xs={12}>
                 <div className="browseSub">
@@ -40,16 +41,8 @@ class Browse extends Component {
                 </div>
               </Grid>
               <Grid container>
-                <Grid item xs={4} />
-                <Grid
-                  item
-                  xs={6}
-                  style={{
-                    paddingTop: "40px",
-                    display: "flex",
-                    justifyContent: "flex-end",
-                  }}
-                >
+                <Grid item xs={false} sm={4} />
+                <Grid item xs={12} sm={6} className="browseButtonDiv">
                   <a
                     className="buttonBrowse"
                     href="https://blueprints.mob.land/"
@@ -60,6 +53,19 @@ class Browse extends Component {
                 </Grid>
               </Grid>
             </Grid>
+            {!isMobile ? null : (
+              <Grid item xs={12} sm={4}>
+                <img
+                  alt={"Gangster"}
+                  src={"/images/gangster-three.png"}
+                  style={{
+                    width: "100%",
+                    marginTop: "-10%",
+                    marginBottom: "-2%",
+                  }}
+                />
+              </Grid>
+            )}
           </Grid>
         </div>
       </div>
