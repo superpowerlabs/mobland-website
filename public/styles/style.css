@@ -1856,3 +1856,10 @@ b,
 .mulish {
     font-family: Mulish, sans-serif;
 }
+.assets{
+    display: flex;
+    justify-content: space-evenly;
+}
+.assets img {
+    height: 30px !important;
+}
