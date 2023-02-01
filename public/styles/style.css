@@ -1833,6 +1833,8 @@ table td {
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
+
+
 .titleRight {
     display: flex;
     justify-content: flex-end;
@@ -1934,7 +1936,7 @@ b,
     width: 120%;
     margin-top: -5%;
 }
-@media (max-width: 600px) {
+@media (max-width: 960px) {
     .button {
         font-size: 5.5vw !important;
         margin: 1%;
