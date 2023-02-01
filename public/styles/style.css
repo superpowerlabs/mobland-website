@@ -1797,10 +1797,10 @@ table td {
     font-weight: bold;
     color: black;
     background: #fae901;
-    padding-left: 14%;
-    padding-right: 16%;
-    padding-top: 3%;
-    padding-bottom: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
     box-shadow: 0px 0px 15px yellow;
     font-size: 120%;
 }
@@ -2046,6 +2046,12 @@ b,
     .buttonAssets {
         font-size: 5.5vw !important;
         margin: 1%;
+    }
+    .buttonLeaks {
+        padding-left: 14%;
+        padding-right: 16%;
+        padding-top: 3%;
+        padding-bottom: 2%;
     }
     .welcomeLeak {
         display: flex;
