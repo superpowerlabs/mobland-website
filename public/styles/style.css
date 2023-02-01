@@ -1722,9 +1722,9 @@ table td {
     padding-top: 3%;
     padding-bottom: 3%;
     box-shadow: 0px 0px 15px yellow;
-    font-size: 120%;
+    font-size: 110%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .button {
         font-size: 1.5vw !important;
     }
@@ -1732,6 +1732,9 @@ table td {
         font-size: 1.5vw !important;
     }
     .buttonBrowse {
+        font-size: 1.5vw !important;
+    }
+    .buttonAssets {
         font-size: 1.5vw !important;
     }
 }
@@ -1746,7 +1749,7 @@ table td {
     padding-top: 3%;
     padding-bottom: 3%;
     box-shadow: 0px 0px 15px #f7f8f8;
-    font-size: 120%;
+    font-size: 110%;
 }
 .buttonAssets {
     border: 1px #a69d0a solid;

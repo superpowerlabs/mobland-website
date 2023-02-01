@@ -45,7 +45,7 @@ class Economy extends Component {
                     SEED POOL
                   </a>
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={6}>
                   <div className="exchanges">
                     <a
                       href={
