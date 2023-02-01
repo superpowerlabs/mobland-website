@@ -15,7 +15,7 @@ class Economy extends Component {
         >
           <Grid container>
             <Grid item xs={1} />
-            <Grid item xs={7} style={{ paddingBottom: "6%" }}>
+            <Grid item xs={6} style={{ paddingBottom: "6%" }}>
               <Grid item xs={12}>
                 <div className="title">Game Economy</div>
               </Grid>
@@ -29,7 +29,7 @@ class Economy extends Component {
               </Grid>
               <br />
               <Grid container>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                   <a
                     className="button"
                     href="https://staking.mob.land/core/dashboard"
@@ -37,7 +37,7 @@ class Economy extends Component {
                     CORE POOL
                   </a>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                   <a
                     className="buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
@@ -45,7 +45,7 @@ class Economy extends Component {
                     SEED POOL
                   </a>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={5}>
                   <div className="exchanges">
                     <a
                       href={
@@ -74,7 +74,7 @@ class Economy extends Component {
               </Grid>
               <br />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={5}>
               <div className="coins">Coins (Suggested to be ANIMATED</div>
             </Grid>
           </Grid>

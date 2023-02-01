@@ -38,7 +38,6 @@ class Leaks extends React.Component {
             </Grid>
 
             <Grid item xs={4}>
-              <div className="coins">Image needed</div>
             </Grid>
           </Grid>
         </div>
