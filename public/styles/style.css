@@ -1959,11 +1959,22 @@ b,
     margin-left: -20%;
     padding-top: 18px;
 }
+
+.mobileExchange {
+    display: flex;
+    justify-content: center;
+    padding-top: 12%;
+}
+
+.economyMobile {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 600px) {
     .title {
         justify-content: center;
         font-size: 10vw;
-        padding-top: 0px;
+        padding-top: 25px;
     }
     .textSub {
         font-size: 2vw;

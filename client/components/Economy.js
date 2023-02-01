@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import Coins from "./Coins";
+import { isMobile } from "react-device-detect";
 
 class Economy extends Component {
   render() {
@@ -16,7 +17,7 @@ class Economy extends Component {
         >
           <Grid container>
             <Grid item xs={1} />
-            <Grid item xs={6} style={{ paddingBottom: "6%" }}>
+            <Grid item xs={12} style={{ paddingBottom: "6%" }}>
               <Grid item xs={12}>
                 <div className="title">Game Economy</div>
               </Grid>
@@ -30,7 +31,7 @@ class Economy extends Component {
               </Grid>
               <br />
               <Grid container>
-                <Grid item xs={3}>
+                <Grid item xs={12} className={isMobile ? "economyMobile" : ""}>
                   <a
                     className="button"
                     href="https://staking.mob.land/core/dashboard"
@@ -38,7 +39,7 @@ class Economy extends Component {
                     CORE POOL
                   </a>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} className={isMobile ? "economyMobile" : ""}>
                   <a
                     className="buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
@@ -46,7 +47,11 @@ class Economy extends Component {
                     SEED POOL
                   </a>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid
+                  item
+                  xs={12}
+                  className={isMobile ? "mobileExchange" : null}
+                >
                   <div className="exchanges">
                     <a
                       href={
@@ -77,7 +82,7 @@ class Economy extends Component {
             </Grid>
             <Grid item xs={1} />
             <Grid item xs={3}>
-              <Coins />
+              {isMobile ? null : <Coins />}
             </Grid>
             <Grid item xs={1} />
           </Grid>
