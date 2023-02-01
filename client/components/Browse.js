@@ -44,9 +44,11 @@ class Browse extends Component {
                 <Grid
                   item
                   xs={5}
-                  style={{ paddingTop: "40px",
-                  display: "flex",
-                  justifyContent: "flex-end"}}
+                  style={{
+                    paddingTop: "40px",
+                    display: "flex",
+                    justifyContent: "flex-end",
+                  }}
                 >
                   <a
                     className="buttonBrowse"
