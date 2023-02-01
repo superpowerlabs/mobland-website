@@ -45,7 +45,7 @@ class StakingPools extends Component {
                     CORE POOL
                   </a>{" "}
                 </Grid>
-                <br/>
+                <br />
                 <Grid
                   style={{ display: "flex", justifyContent: "center" }}
                   item
