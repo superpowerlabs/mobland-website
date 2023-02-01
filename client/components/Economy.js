@@ -16,13 +16,13 @@ class Economy extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={1} />
-            <Grid item xs={12} style={{ paddingBottom: "6%" }}>
-              <Grid item xs={12}>
+            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={7} style={{ paddingBottom: "6%" }}>
+              <Grid item xs={12} sm={12}>
                 <div className="title">Game Economy</div>
               </Grid>
               <br />
-              <Grid item xs={12}>
+              <Grid item xs={12} sm={12}>
                 <div className="textSub">
                   Synthetic SYNR, SEED, BUD... MOBLAND boasts an intricate
                   economy with a range of commodities, but it all starts with
@@ -31,7 +31,12 @@ class Economy extends Component {
               </Grid>
               <br />
               <Grid container>
-                <Grid item xs={12} className={isMobile ? "economyMobile" : ""}>
+                <Grid
+                  item
+                  xs={12}
+                  sm={3}
+                  className={isMobile ? "economyMobile" : ""}
+                >
                   <a
                     className="button"
                     href="https://staking.mob.land/core/dashboard"
@@ -39,7 +44,12 @@ class Economy extends Component {
                     CORE POOL
                   </a>
                 </Grid>
-                <Grid item xs={12} className={isMobile ? "economyMobile" : ""}>
+                <Grid
+                  item
+                  xs={12}
+                  sm={3}
+                  className={isMobile ? "economyMobile" : ""}
+                >
                   <a
                     className="buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
@@ -50,6 +60,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
+                  sm={6}
                   className={isMobile ? "mobileExchange" : null}
                 >
                   <div className="exchanges">
@@ -80,11 +91,9 @@ class Economy extends Component {
               </Grid>
               <br />
             </Grid>
-            <Grid item xs={1} />
-            <Grid item xs={3}>
+            <Grid item xs={3} sm={4}>
               {isMobile ? null : <Coins />}
             </Grid>
-            <Grid item xs={1} />
           </Grid>
         </div>
       </div>
