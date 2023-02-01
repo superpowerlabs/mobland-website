@@ -57,7 +57,7 @@ class Assets extends React.Component {
                 </Grid>
                 <Grid item xs={3}>
                   <a
-                    className="button"
+                    className="buttonAssets"
                     href="https://staking.mob.land/core/dashboard"
                   >
                     GUIDE

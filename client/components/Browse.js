@@ -44,11 +44,14 @@ class Browse extends Component {
                 <Grid
                   item
                   xs={3}
-                  style={{ paddingTop: "40px", marginLeft: "-8%" }}
+                  style={{ paddingTop: "40px", marginLeft: "-10%" }}
                 >
-                  <a className="button" href="https://blueprints.mob.land/">
+                  <a
+                    className="buttonBrowse"
+                    href="https://blueprints.mob.land/"
+                  >
                     {" "}
-                    Reveal APP
+                    REVEAL APP
                   </a>{" "}
                 </Grid>
               </Grid>

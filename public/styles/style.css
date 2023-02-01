@@ -1738,6 +1738,45 @@ table td {
     font-size: 120%;
     margin-left: -24%;
 }
+.buttonAssets {
+    border: 1px #a69d0a solid;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    background: #fae901;
+    padding-left: 28%;
+    padding-right: 30%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    box-shadow: 0px 0px 15px yellow;
+    font-size: 120%;
+}
+.buttonLeaks {
+    border: 1px #a69d0a solid;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    background: #fae901;
+    padding-left: 14%;
+    padding-right: 16%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    box-shadow: 0px 0px 15px yellow;
+    font-size: 120%;
+}
+.buttonBrowse {
+    border: 1px #a69d0a solid;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    background: #fae901;
+    padding-left: 20%;
+    padding-right: 22%;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    box-shadow: 0px 0px 15px yellow;
+    font-size: 120%;
+}
 .corePool {
     border: black solid;
     background: #ecdc00;

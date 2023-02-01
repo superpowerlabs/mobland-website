@@ -28,10 +28,10 @@ class Leaks extends React.Component {
               <br />
               <Grid item xs={4}>
                 <a
-                  className="button"
+                  className="buttonLeaks"
                   href="https://staking.mob.land/core/dashboard"
                 >
-                  Road Map
+                  ROADMAP
                 </a>
               </Grid>
               <br />
