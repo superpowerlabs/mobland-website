@@ -32,22 +32,25 @@ class Assets extends React.Component {
               </Grid>
               <br />
               <Grid container>
-              <Grid item xs={4}/>
+                <Grid item xs={4} />
                 <Grid item xs={5}>
-                  <div className="assets" >
+                  <div className="assets">
                     <a
-                      href={"https://opensea.io/collection/mobland-genesis-synr-pass"}
+                      href={
+                        "https://opensea.io/collection/mobland-genesis-synr-pass"
+                      }
                     >
                       <img src={"/images/opensea.png"} alt={"OpenSea"} />
                     </a>
-                    <a
-                      href={
-                        ""
-                      }
-                    >
-                      <img src={"/images/mobland-white-icon.png"} alt={"mobland"} />
+                    <a href={""}>
+                      <img
+                        src={"/images/mobland-white-icon.png"}
+                        alt={"mobland"}
+                      />
                     </a>
-                    <a href={"https://opensea.io/collection/mobland-blueprints"}>
+                    <a
+                      href={"https://opensea.io/collection/mobland-blueprints"}
+                    >
                       <img src={"/images/binance.png"} alt={"Binance"} />
                     </a>
                   </div>
