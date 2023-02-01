@@ -58,11 +58,7 @@ class Browse extends Component {
                 <img
                   alt={"Gangster"}
                   src={"/images/gangster-three.png"}
-                  style={{
-                    width: "100%",
-                    marginTop: "-10%",
-                    marginBottom: "-2%",
-                  }}
+                  className="gangster3"
                 />
               </Grid>
             )}

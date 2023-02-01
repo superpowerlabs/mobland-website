@@ -1964,13 +1964,24 @@ b,
     display: flex;
     justify-content: flex-end;
 }
-.gangster2 {
+.gangster3 {
     width: 100%;
     margin-top: -10%;
     margin-bottom: -2%;
 }
+
+.mobileExchange {
+    display: flex;
+    justify-content: center;
+    padding-top: 12%;
+}
+
+.economyMobile {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 600px) {
-    .gangster2 {
+    .gangster3 {
         width: 56%;
         margin-top: 0px;
         margin-bottom: -2%;
@@ -1991,7 +2002,7 @@ b,
     .title {
         justify-content: center;
         font-size: 10vw;
-        padding-top: 0px;
+        padding-top: 25px;
     }
     .textSub {
         font-size: 2vw;
