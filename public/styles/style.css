@@ -678,7 +678,7 @@ img.pc90 {
 @media (max-width: 1000px) {
     .socialLinks {
         float: right;
-    margin-top: -5%;
+        margin-top: -5%;
     }
 }
 
