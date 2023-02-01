@@ -12,8 +12,8 @@ class StakingPools extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={1} />
-            <Grid item xs={8}>
+            <Grid item xs={false} lg={1} />
+            <Grid item xs={12} lg={8}>
               <Grid item xs={12}>
                 <div className="welcome">ENTER THE MAFIA METAVERSE </div>
               </Grid>
@@ -29,9 +29,14 @@ class StakingPools extends Component {
               </Grid>
               <br />
               <br />
-              <Grid container style={{ marginLeft: "8%" }}>
-                <Grid item xs={3} />
-                <Grid item xs={3}>
+              <Grid container>
+                <Grid item xs={false} lg={3} />
+                <Grid
+                  style={{ display: "flex", justifyContent: "center" }}
+                  item
+                  xs={12}
+                  lg={3}
+                >
                   <a
                     className="button"
                     href="https://staking.mob.land/core/dashboard"
@@ -40,7 +45,13 @@ class StakingPools extends Component {
                     CORE POOL
                   </a>{" "}
                 </Grid>
-                <Grid item xs={3}>
+                <br/>
+                <Grid
+                  style={{ display: "flex", justifyContent: "center" }}
+                  item
+                  xs={12}
+                  lg={3}
+                >
                   <a
                     className="buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
@@ -49,15 +60,21 @@ class StakingPools extends Component {
                     SEED POOL
                   </a>
                 </Grid>
-                <Grid item xs={3} />
+                <Grid item xs={false} lg={3} />
               </Grid>
             </Grid>
-            <Grid item xs={3}>
-              <img
-                alt={"Gangster"}
-                src={"/images/gangster-two.png"}
-                style={{ width: "120%", marginTop: "-5%" }}
-              />
+            <Grid item xs={12} lg={3}>
+              <Grid container>
+                <Grid item xs={3} lg={false} />
+                <Grid item xs={6} lg={12}>
+                  <img
+                    alt={"Gangster"}
+                    src={"/images/gangster-two.png"}
+                    className="gangster1"
+                  />
+                </Grid>
+                <Grid item xs={3} lg={false} />
+              </Grid>
             </Grid>
           </Grid>
         </div>

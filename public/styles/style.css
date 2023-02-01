@@ -1684,13 +1684,13 @@ table td {
 .welcome {
     display: flex;
     justify-content: center;
-    font-size: 5.5vw;
+    font-size: 7.5vw;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
 .welcomeSub {
     font-family: Mulish, sans-serif;
-    font-size: 1.2vw;
+    font-size: 2vw;
     margin-top: -1%;
 }
 .textSub {
@@ -1928,4 +1928,27 @@ b,
 }
 .assetImages img {
     width: 70%;
+}
+
+.gangster1 {
+    width: 120%;
+    margin-top: -5%;
+}
+@media (max-width: 600px) {
+    .button {
+        font-size: 5.5vw !important;
+        margin: 1%;
+    }
+    .buttonSeed {
+        font-size: 5.5vw !important;
+        margin: 1%;
+    }
+    .buttonBrowse {
+        font-size: 5.5vw !important;
+        margin: 1%;
+    }
+    .buttonAssets {
+        font-size: 5.5vw !important;
+        margin: 1%;
+    }
 }
