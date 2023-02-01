@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
+import Coins from "./Coins";
 
 class Economy extends Component {
   render() {
@@ -74,9 +75,11 @@ class Economy extends Component {
               </Grid>
               <br />
             </Grid>
-            <Grid item xs={5}>
-              <div className="coins">Coins (Suggested to be ANIMATED</div>
+            <Grid item xs={1} />
+            <Grid item xs={3}>
+              <Coins />
             </Grid>
+            <Grid item xs={1} />
           </Grid>
         </div>
       </div>

@@ -1813,9 +1813,7 @@ table td {
     padding: 15px;
     font-size: x-large;
 }
-.coins {
-    padding-top: 30%;
-}
+
 .social {
     justify-content: space-evenly;
     display: flex;
@@ -1911,4 +1909,10 @@ b,
 }
 .assets img {
     height: 30px !important;
+}
+.coins {
+    padding-top: 5%;
+}
+.coins img {
+    width: 70%;
 }
