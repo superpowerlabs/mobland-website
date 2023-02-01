@@ -5,8 +5,10 @@ module.exports = rateLimiter({
   windowMS: 10000, // 10 seconds
   message: "You can't make any more requests at the moment. Try again later",
   keyGenerator: (req) => {
-    return req.headers["x-real-ip"] ||
+    return (
+      req.headers["x-real-ip"] ||
       req.headers["x-forwarded-for"] ||
-      req.connection.remoteAddress;
-  }
+      req.connection.remoteAddress
+    );
+  },
 });
