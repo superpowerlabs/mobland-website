@@ -42,7 +42,7 @@ class Browse extends Component {
                 <Grid
                   item
                   xs={3}
-                  style={{ paddingTop: "40px", marginLeft: "-5%" }}
+                  style={{ paddingTop: "40px", marginLeft: "-8%" }}
                 >
                   <a className="button" href="https://blueprints.mob.land/">
                     {" "}

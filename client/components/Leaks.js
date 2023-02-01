@@ -13,8 +13,8 @@ class Leaks extends React.Component {
         >
           <Grid container>
             <Grid item xs={1} />
-            <Grid item xs={7}>
-              <Grid item xs={12}>
+            <Grid item xs={7} style={{ paddingBottom: "11%" }}>
+              <Grid item xs={12} style={{ display: "flex" }}>
                 <div className="welcome">In The Works </div>
               </Grid>
               <Grid item xs={12}>
@@ -26,7 +26,7 @@ class Leaks extends React.Component {
                 </div>
               </Grid>
               <br />
-              <Grid item xs={12}>
+              <Grid item xs={4}>
                 <a
                   className="button"
                   href="https://staking.mob.land/core/dashboard"

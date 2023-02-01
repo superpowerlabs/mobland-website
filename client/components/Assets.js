@@ -32,15 +32,15 @@ class Assets extends React.Component {
               </Grid>
               <br />
               <Grid container>
-                <Grid item xs={6}>
+                <Grid item xs={9}>
                   <div>Links to Assets</div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={3}>
                   <a
                     className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
-                    CORE POOL
+                    GUIDE
                   </a>{" "}
                 </Grid>
               </Grid>
