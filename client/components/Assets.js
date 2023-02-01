@@ -16,12 +16,14 @@ class Assets extends React.Component {
             <Grid item xs={4}>
               <div className="coins">Assets (Suggested to be ANIMATED</div>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} style={{ paddingBottom: "7%" }}>
               <Grid item xs={12}>
-                <div className="titleRight">Your Assets </div>
+                <div className="welcome" style={{ justifyContent: "end" }}>
+                  Your Assets{" "}
+                </div>
               </Grid>
               <Grid item xs={12}>
-                <div className="textRight">
+                <div className="assetsSub">
                   As well as the token economy, there are many types of NFTs
                   that you can utilise on your path to becoming a MOBLAND
                   Kingpin. Hit the button below to learn all about these assets

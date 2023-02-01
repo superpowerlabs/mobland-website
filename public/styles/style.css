@@ -1677,7 +1677,7 @@ table td {
 .welcome {
     display: flex;
     justify-content: center;
-    font-size: 500%;
+    font-size: 5vw;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
@@ -1697,8 +1697,16 @@ table td {
     font-family: Mulish, sans-serif;
     font-size: 1.2vw;
     margin-top: -2%;
-    width: 76%;
+    width: 68%;
     margin-left: 15%;
+    text-align: end;
+}
+.assetsSub {
+    font-family: Mulish, sans-serif;
+    font-size: 1.2vw;
+    margin-top: -2%;
+    text-align: right;
+    margin-left: 13%;
 }
 .summary {
     padding: 15px;
@@ -1754,7 +1762,7 @@ table td {
 .title {
     display: flex;
     justify-content: flex-start;
-    font-size: 500%;
+    font-size: 5vw;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
@@ -1764,11 +1772,6 @@ table td {
     font-size: 500%;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
-}
-
-.textRight {
-    font-size: 100%;
-    text-align: end;
 }
 .empireButton {
     border: 1px #a69d0a solid;
