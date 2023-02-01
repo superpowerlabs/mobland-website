@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import AssetImages from "./AssetImages";
 
 class Assets extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class Assets extends React.Component {
           <Grid container>
             <Grid item xs={1} />
             <Grid item xs={4}>
-              <div className="coins">Assets (Suggested to be ANIMATED</div>
+              <AssetImages />
             </Grid>
             <Grid item xs={6} style={{ paddingBottom: "7%" }}>
               <Grid item xs={12}>
