@@ -138,24 +138,6 @@ export default class Header extends Base {
                 Marketplace
               </a>
             </Navbar.Text>
-            <Navbar.Text className={"links"}>
-              <a
-                className={"menucmd yellowHover"}
-                href={"https://marketplace.mob.land"}
-                target={"_blank"}
-              >
-                How To Play
-              </a>
-            </Navbar.Text>
-            <Navbar.Text className={"links"}>
-              <a
-                className={"menucmd yellowHover"}
-                href={"https://marketplace.mob.land"}
-                target={"_blank"}
-              >
-                Road Map
-              </a>
-            </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
 

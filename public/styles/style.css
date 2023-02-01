@@ -1703,6 +1703,11 @@ table td {
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
+.welcomeLeak {
+    font-size: 7.5vw;
+    font-family: Wrong, sans-serif;
+    padding-top: 10%;
+}
 .welcomeSub {
     font-family: Mulish, sans-serif;
     font-size: 2vw;
@@ -1980,6 +1985,11 @@ b,
     display: flex;
     justify-content: center;
 }
+
+.leakMobile {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 600px) {
     .gangster3 {
         width: 56%;
@@ -2036,5 +2046,9 @@ b,
     .buttonAssets {
         font-size: 5.5vw !important;
         margin: 1%;
+    }
+    .welcomeLeak {
+        display: flex;
+        justify-content: center;
     }
 }
