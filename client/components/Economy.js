@@ -21,7 +21,7 @@ class Economy extends Component {
               </Grid>
               <br />
               <Grid item xs={12}>
-                <div className="welcomeSub">
+                <div className="textSub">
                   Synthetic SYNR, SEED, BUD... MOBLAND boasts an intricate
                   economy with a range of commodities, but it all starts with
                   <span style={{ color: "#fae901" }}> SYNR</span>.
@@ -42,7 +42,7 @@ class Economy extends Component {
                     className="buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
                   >
-                    SEED FARM
+                    SEED POOL
                   </a>
                 </Grid>
                 <Grid item xs={4}>

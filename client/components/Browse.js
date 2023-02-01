@@ -26,7 +26,9 @@ class Browse extends Component {
             </Grid>
             <Grid item xs={7}>
               <Grid item xs={12}>
-                <div className="welcome">Browse the Roster </div>
+                <div className="welcome" style={{ marginRight: "-8%" }}>
+                  Browse the Roster{" "}
+                </div>
               </Grid>
               <Grid item xs={12}>
                 <div className="browseSub">

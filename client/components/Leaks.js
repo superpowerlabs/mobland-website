@@ -18,7 +18,7 @@ class Leaks extends React.Component {
                 <div className="welcome">In The Works </div>
               </Grid>
               <Grid item xs={12}>
-                <div className="welcomeSub">
+                <div className="textSub">
                   We’re always working on something new, from innovations and
                   improvements to the economy, to ground-breaking and immersive
                   games for you to play and dominate. Hit the button below to

@@ -17,7 +17,11 @@ class StakingPools extends Component {
               <Grid item xs={12}>
                 <div className="welcome">ENTER THE MAFIA METAVERSE </div>
               </Grid>
-              <Grid item xs={12}>
+              <Grid
+                item
+                xs={12}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
                 <div className="welcomeSub">
                   Step into Mobland and take on the world of a modern crime
                   syndicate.{" "}
@@ -25,7 +29,7 @@ class StakingPools extends Component {
               </Grid>
               <br />
               <br />
-              <Grid container>
+              <Grid container style={{ marginLeft: "8%" }}>
                 <Grid item xs={3} />
                 <Grid item xs={3}>
                   <a
@@ -38,11 +42,11 @@ class StakingPools extends Component {
                 </Grid>
                 <Grid item xs={3}>
                   <a
-                    className="button"
+                    className="buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
                   >
                     {" "}
-                    SEED FARM
+                    SEED POOL
                   </a>
                 </Grid>
                 <Grid item xs={3} />
