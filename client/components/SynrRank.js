@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
+import { isMobile } from "react-device-detect";
 
 class SynrRank extends Component {
   render() {
@@ -10,28 +11,36 @@ class SynrRank extends Component {
         }}
       >
         <Grid container className={"stats"}>
-          <Grid item xs={4}>
-            <img
-              alt={"Gangster"}
-              src={"/images/gangster-five.png"}
-              style={{ width: "100%", marginTop: "-21%" }}
-            />
-          </Grid>
+          {isMobile ? null : (
+            <Grid item xs={12} lg={4}>
+              <img
+                alt={"Gangster"}
+                src={"/images/gangster-five.png"}
+                style={{ width: "100%", marginTop: "-21%" }}
+              />
+            </Grid>
+          )}
           <Grid
             item
-            xs={4}
+            xs={12}
+            lg={4}
             style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginLeft: "-6%",
+              marginLeft: isMobile ? null : "-6%",
             }}
           >
             <div className={"Center"}>
-              <div className={"wrong"}>500k+</div>
+              <div className={isMobile ? "wrongMobile top" : "wrong"}>
+                500k+
+              </div>
               <div
                 className={"underWrong"}
-                style={{ paddingLeft: "7%", marginTop: "-13%" }}
+                style={{
+                  paddingLeft: isMobile ? null : "7%",
+                  marginTop: isMobile ? null : "-13%",
+                }}
               >
                 SYNNERS in our community <br />
                 and growing every day!
@@ -60,18 +69,25 @@ class SynrRank extends Component {
 
           <Grid
             item
-            xs={4}
+            xs={12}
+            lg={4}
             style={{
               display: "flex",
               alignItems: "center",
+              justifyContent: "center",
               marginTop: "-2%",
             }}
           >
             <div className={"Center"}>
-              <div className={"wrong"}>#1 Volume</div>
+              <div className={isMobile ? "wrongMobile bottom" : "wrong"}>
+                #1 Volume
+              </div>
               <div
                 className={"underWrong"}
-                style={{ paddingLeft: "27%", paddingTop: "1%" }}
+                style={{
+                  paddingLeft: isMobile ? null : "27%",
+                  paddingTop: isMobile ? null : "1%",
+                }}
               >
                 Ranked #1 of all time
                 <br />
@@ -79,6 +95,20 @@ class SynrRank extends Component {
               </div>
             </div>{" "}
           </Grid>
+          {!isMobile ? null : (
+            <Grid
+              item
+              xs={12}
+              lg={4}
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <img
+                alt={"Gangster"}
+                src={"/images/gangster-five.png"}
+                style={{ width: "50%", marginRight: "-7%" }}
+              />
+            </Grid>
+          )}
         </Grid>
       </div>
     );

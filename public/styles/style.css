@@ -1322,6 +1322,21 @@ table td {
     color: white;
 }
 
+.wrongMobile {
+    font-family: Wrong, sans-serif;
+    font-size: 7vw;
+    color: white;
+    padding: 11% 0;
+}
+
+.wrongMobile.top {
+    margin-left: 34%;
+}
+
+.wrongMobile.bottom {
+    margin-left: 14%;
+}
+
 .underWrong {
     font-family: Modeco, sans-serif;
     color: white;
