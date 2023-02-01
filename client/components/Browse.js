@@ -40,10 +40,10 @@ class Browse extends Component {
                 </div>
               </Grid>
               <Grid container>
-                <Grid item xs={5} />
+                <Grid item xs={4} />
                 <Grid
                   item
-                  xs={5}
+                  xs={6}
                   style={{
                     paddingTop: "40px",
                     display: "flex",
@@ -57,7 +57,6 @@ class Browse extends Component {
                     {" "}
                     REVEAL APP
                   </a>{" "}
-                  <Grid item xs={2} />
                 </Grid>
               </Grid>
             </Grid>
