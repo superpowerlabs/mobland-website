@@ -12,8 +12,8 @@ class StakingPools extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={false} md={1} />
-            <Grid item xs={12} md={8}>
+            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={8}>
               <Grid item xs={12}>
                 <div className="welcome">ENTER THE MAFIA METAVERSE </div>
               </Grid>
@@ -30,12 +30,12 @@ class StakingPools extends Component {
               <br />
               <br />
               <Grid container>
-                <Grid item xs={false} md={3} />
+                <Grid item xs={false} sm={3} />
                 <Grid
                   style={{ display: "flex", justifyContent: "center" }}
                   item
                   xs={12}
-                  md={3}
+                  sm={3}
                 >
                   <a
                     className="button"
@@ -50,7 +50,7 @@ class StakingPools extends Component {
                   style={{ display: "flex", justifyContent: "center" }}
                   item
                   xs={12}
-                  md={3}
+                  sm={3}
                 >
                   <a
                     className="buttonSeed"
@@ -60,20 +60,20 @@ class StakingPools extends Component {
                     SEED POOL
                   </a>
                 </Grid>
-                <Grid item xs={false} md={3} />
+                <Grid item xs={false} sm={3} />
               </Grid>
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={3}>
               <Grid container>
-                <Grid item xs={3} md={false} />
-                <Grid item xs={6} md={12}>
+                <Grid item xs={3} sm={false} />
+                <Grid item xs={6} sm={12}>
                   <img
                     alt={"Gangster"}
                     src={"/images/gangster-two.png"}
                     className="gangster1"
                   />
                 </Grid>
-                <Grid item xs={3} md={false} />
+                <Grid item xs={3} sm={false} />
               </Grid>
             </Grid>
           </Grid>

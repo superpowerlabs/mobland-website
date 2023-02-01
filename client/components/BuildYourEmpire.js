@@ -13,12 +13,12 @@ class BuildYourEmpire extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={false} md={1} />
-            <Grid item xs={12} md={7}>
-              <Grid item xs={12} md={12}>
+            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={7}>
+              <Grid item xs={12} sm={12}>
                 <div className="title">BUILD YOUR EMPIRE </div>
               </Grid>
-              <Grid item xs={12} md={12}>
+              <Grid item xs={12} sm={12}>
                 <p className="textSub">
                   Own TURF. Grow BUD. Run MOBLAND. <br />
                   <br /> With ground-breaking cross-chain functionality and
@@ -31,7 +31,7 @@ class BuildYourEmpire extends Component {
                   other players and mercenaries!{" "}
                 </p>
               </Grid>
-              <Grid item xs={12} md={12}>
+              <Grid item xs={12} sm={12}>
                 <div className="empireButtonDiv">
                   <a
                     className="empireButton"
@@ -42,7 +42,7 @@ class BuildYourEmpire extends Component {
                 </div>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={4}>
               <img
                 alt={"Farm"}
                 src={"/images/farm-night.png"}
