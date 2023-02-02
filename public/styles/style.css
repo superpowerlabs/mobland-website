@@ -1434,6 +1434,9 @@ table td {
     font-size: 2rem;
     margin: 40px 0;
     text-align: center;
+    color: yellow;
+    font-family: "Mulish";
+    font-weight: bold;
 }
 
 @media (max-width: 900px) {
@@ -1908,14 +1911,14 @@ table td {
 }
 
 .ranking {
-    padding-top: 60px;
+    padding-top: 4%;
     text-align: center;
 }
 
 .thirdGangster {
     width: 31vw;
-    margin-top: -100px;
-    margin-right: 12px;
+    margin-top: -17%;
+    margin-right: 2%;
     position: relative;
     z-index: 3;
 }
@@ -1932,7 +1935,7 @@ table td {
     text-align: right;
     font-size: 5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 60px;
+    padding-top: 10%;
 }
 
 .exchanges {
@@ -2005,9 +2008,10 @@ b,
 }
 
 .joinUs {
+    color: white;
     font-family: Mulish, sans-serif;
-    display: "inline";
-    padding-right: 20;
+    font-weight: 400;
+    position: absolute;
 }
 
 .mulish {
@@ -2028,7 +2032,7 @@ b,
 }
 
 .coins img {
-    width: 70%;
+    width: 80%;
 }
 
 .assetImages {
@@ -2047,7 +2051,7 @@ b,
 
 .femaleGangster {
     width: 70%;
-    margin: -90px 0 0 105px;
+    margin: -10% 0 0 23%;
 }
 
 @media (max-width: 1200px) {
@@ -2078,11 +2082,11 @@ b,
 
 .farmImage {
     width: 40vw;
-    margin-top: -67px;
+    margin-top: -10%;
 }
 
 .browseButtonDiv {
-    padding-top: 40px;
+    padding: 8% 0;
     text-align: right;
 }
 
@@ -2115,8 +2119,19 @@ b,
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
+.scrollingWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
 
 @media (max-width: 600px) {
+    .welcome {
+        font-size: 7.5vw;
+    }
+    .welcomeSub {
+        font-size: 1.5vw;
+    }
     .assetsTitle {
         justify-content: center;
         font-size: 10.5vw;
@@ -2140,7 +2155,10 @@ b,
     }
 
     .browseButtonDiv {
+        padding-top: 25px;
         justify-content: center;
+        display: flex;
+        padding-bottom: 20px;
     }
 
     .browseSub {
@@ -2207,5 +2225,24 @@ b,
     .welcomeLeak {
         display: flex;
         justify-content: center;
+    }
+
+    .wrongMobile.top {
+        margin-left: 0;
+    }
+
+    .wrongMobile.bottom {
+        margin-left: 0;
+    }
+    .textSub2 {
+        font-size: 2.5vw;
+        margin-top: 0;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .overFarm {
+        text-align: inherit;
+        padding-right: 0;
     }
 }

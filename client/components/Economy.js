@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import Coins from "./Coins";
-import { imdobileOnly } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
 class Economy extends Component {
   render() {
@@ -18,15 +18,15 @@ class Economy extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={12} md={1} />
-            <Grid item xs={12} md={6}>
-              <Grid item xs={12} md={12}>
-                <div className="title" style={{ marginTop: 20 }}>
+            <Grid item xs={12} sm={1} />
+            <Grid item xs={12} sm={7} style={{ paddingBottom: "2%" }}>
+              <Grid item xs={12} sm={12}>
+                <div className="title" style={{ marginTop: "-5%" }}>
                   Game Economy
                 </div>
               </Grid>
               <br />
-              <Grid item xs={12} md={12}>
+              <Grid item xs={12} sm={12}>
                 <div className="textSub">
                   Synthetic SYNR, SEED, BUD... MOBLAND boasts an intricate
                   economy with a range of commodities, but it all starts with
@@ -38,8 +38,8 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  md={3}
-                  className={imdobileOnly ? "economyMobile" : ""}
+                  sm={3}
+                  className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
                     className="button"
@@ -51,8 +51,8 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  md={3}
-                  className={imdobileOnly ? "economyMobile" : ""}
+                  sm={3}
+                  className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
                     className="button buttonSeed"
@@ -64,8 +64,8 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  md={6}
-                  className={imdobileOnly ? "mobileExchange" : null}
+                  sm={6}
+                  className={isMobileOnly ? "mobileExchange" : null}
                 >
                   <div className="exchanges">
                     <a
@@ -100,8 +100,8 @@ class Economy extends Component {
               <br />
             </Grid>
 
-            {imdobileOnly ? null : (
-              <Grid item xs={12} md={4} style={{ textAlign: "right" }}>
+            {isMobileOnly ? null : (
+              <Grid item xs={12} sm={3} style={{ textAlign: "right" }}>
                 <Coins />
               </Grid>
             )}

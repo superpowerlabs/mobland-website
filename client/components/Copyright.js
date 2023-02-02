@@ -6,15 +6,10 @@ class Copyright extends Component {
   render() {
     return (
       <div className={"centered"}>
-        <img
-          alt={"logo"}
-          src={"/images/logo-m.png"}
-          style={{ width: 44, marginBottom: 8 }}
-        />
         {this.props.children}
         <div className={"footerNote"}>
-          <Link color="inherit" href={"https://mob.land"}>
-            Copyright © 2022 MOBLAND - All right reserved
+          <Link color="#e0e0e0" href={"https://mob.land"}>
+            MOBLAND © 2023, All rights reserved
           </Link>
         </div>
       </div>
