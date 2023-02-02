@@ -10,6 +10,7 @@ class Leaks extends React.Component {
           style={{
             backgroundImage: 'url("/images/mob-leak.jpg")',
             backgroundSize: "cover",
+            border: "1px #606060 solid",
           }}
         >
           <Grid container>
