@@ -2100,6 +2100,12 @@ b,
 }
 
 @media (max-width: 600px) {
+    .welcome {
+        font-size: 7.5vw;
+    }
+    .welcomeSub {
+        font-size: 1.5vw;
+    }
     .assetsTitle {
         justify-content: center;
         font-size: 10.5vw;
