@@ -88,9 +88,10 @@ a {
     cursor: pointer;
 }
 
+
 .command:hover,
 a:hover {
-    color: gold;
+    color: yellow;
 }
 
 .navbar-light .navbar-brand {
@@ -693,6 +694,10 @@ img.pc90 {
 .socialLinks a {
     color: white !important;
     text-decoration: none;
+}
+
+.socialLinks a:hover {
+    color: yellow !important;
 }
 
 .socialLinks i {
@@ -1785,7 +1790,7 @@ table td {
     font-family: Mulish, sans-serif !important;
     color: black;
     background: #fae901;
-    padding: 5px 18px 3px;
+    padding: 3px 18px;
     box-shadow: 0 0 6px #ffff0090 !important;
     font-size: 1.2rem;
     text-align: center;
@@ -2055,7 +2060,6 @@ b,
         width: 45vw;
         margin-top: -30px;
     }
-
 }
 
 .browseGangsterDiv {
