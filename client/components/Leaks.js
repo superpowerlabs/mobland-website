@@ -45,7 +45,7 @@ class Leaks extends React.Component {
               </Grid>
               <br />
             </Grid>
-            <grid item xs={false} sm={6} />
+            <Grid item xs={false} sm={6} />
           </Grid>
         </div>
       </div>
