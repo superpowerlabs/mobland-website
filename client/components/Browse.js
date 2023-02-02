@@ -13,9 +13,9 @@ class Browse extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={12} md={1} />
+            <Grid item xs={12} sm={1} />
             {isMobileOnly ? null : (
-              <Grid item md={5} className={"browseGangsterDiv"}>
+              <Grid item sm={5} className={"browseGangsterDiv"}>
                 <img
                   alt={"Gangster"}
                   src={"/images/gangster-three.png"}
@@ -23,7 +23,7 @@ class Browse extends Component {
                 />
               </Grid>
             )}
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} sm={5}>
               <Grid item xs={12}>
                 <div className={isMobileOnly ? "title" : "titleRight"}>
                   Browse the Roster{" "}
@@ -45,7 +45,7 @@ class Browse extends Component {
               </Grid>
             </Grid>
             {isMobileOnly ? (
-              <Grid item xs={12} md={false}>
+              <Grid item xs={12} sm={false}>
                 <img
                   alt={"Gangster"}
                   src={"/images/gangster-three.png"}

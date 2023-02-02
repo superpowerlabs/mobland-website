@@ -1906,14 +1906,14 @@ table td {
 }
 
 .ranking {
-    padding-top: 60px;
+    padding-top: 4%;
     text-align: center;
 }
 
 .thirdGangster {
     width: 31vw;
-    margin-top: -100px;
-    margin-right: 12px;
+    margin-top: -17%;
+    margin-right: 2%;
     position: relative;
     z-index: 3;
 }
@@ -1930,7 +1930,7 @@ table td {
     text-align: right;
     font-size: 5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 60px;
+    padding-top: 10%;
 }
 
 .exchanges {
@@ -2045,7 +2045,7 @@ b,
 
 .femaleGangster {
     width: 70%;
-    margin: -90px 0 0 105px;
+    margin: -10% 0 0 23%;
 }
 
 .browseGangsterDiv {
@@ -2068,7 +2068,7 @@ b,
 }
 
 .browseButtonDiv {
-    padding-top: 40px;
+    padding: 8% 0;
     text-align: right;
 }
 
@@ -2137,7 +2137,10 @@ b,
     }
 
     .browseButtonDiv {
+        padding-top: 25px;
         justify-content: center;
+        display: flex;
+        padding-bottom: 20px;
     }
 
     .browseSub {
@@ -2204,5 +2207,13 @@ b,
     .welcomeLeak {
         display: flex;
         justify-content: center;
+    }
+
+    .wrongMobile.top {
+        margin-left: 0;
+    }
+
+    .wrongMobile.bottom {
+        margin-left: 0;
     }
 }

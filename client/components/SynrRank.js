@@ -12,7 +12,7 @@ class SynrRank extends Component {
       >
         <Grid container className={"stats"}>
           {isMobileOnly ? null : (
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={4}>
               <img
                 alt={"Gangster"}
                 className={"femaleGangster"}
@@ -23,7 +23,7 @@ class SynrRank extends Component {
           <Grid
             item
             xs={12}
-            md={4}
+            sm={4}
             className={"ranking"}
             // style={{
             //   display: "flex",
@@ -68,7 +68,7 @@ class SynrRank extends Component {
           <Grid
             item
             xs={12}
-            md={4}
+            sm={4}
             className={"ranking"}
             // style={{
             //   display: "flex",
