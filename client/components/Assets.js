@@ -57,7 +57,7 @@ class Assets extends React.Component {
                     </a>
                   </div>
                 </Grid>
-                <Grid container>
+                <Grid item xs={false} md={3}>
                   <Grid item xs={3} md={false} />
                   <Grid item xs={6} md={3}>
                     <div
