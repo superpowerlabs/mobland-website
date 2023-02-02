@@ -10,11 +10,12 @@
     font-weight: normal;
 }
 
-@font-face {
-    font-family: Mulish;
-    src: url(../assets/Mulish-Regular.ttf);
-    font-weight: normal;
-}
+/*@font-face {*/
+/*    font-family: Mulish;*/
+/*    src: url(../assets/Mulish-Regular.ttf);*/
+/*    font-weight: normal;*/
+/*}*/
+
 a {
     text-decoration: none !important;
 }
@@ -85,6 +86,11 @@ body {
 a {
     color: white;
     cursor: pointer;
+}
+
+.command:hover,
+a:hover {
+    color: gold;
 }
 
 .navbar-light .navbar-brand {
@@ -526,9 +532,11 @@ h2 {
 .pl20p {
     padding-left: 100px !important;
 }
+
 .underlineHover:hover {
     text-decoration: underline;
 }
+
 .pr20p {
     padding-right: 100px !important;
 }
@@ -896,18 +904,23 @@ h1.notTooLarge {
 
 .nftText {
 }
+
 .nftTextGold {
     color: yellow;
 }
+
 .nftTextSilver {
     color: silver;
 }
+
 .nftTextBronze {
     color: #b08d57;
 }
+
 .nftLogos img {
     width: 18rem;
 }
+
 .topRow {
     font-size: 90%;
     margin: 8px 0;
@@ -917,10 +930,12 @@ h1.notTooLarge {
     font-size: 100%;
     margin-top: 8px;
 }
+
 .nftTextFlex {
     display: flex;
     flex-direction: row;
 }
+
 .topsynnersLogo {
     text-align: center;
 }
@@ -944,6 +959,7 @@ h1.notTooLarge {
     flex-direction: row;
     justify-content: flex-start;
 }
+
 .progressBar2 {
     width: 100%;
     margin: 2px 0 0 0;
@@ -960,6 +976,7 @@ h1.notTooLarge {
     background-size: cover;
     width: 100%;
 }
+
 .progress .sr-only {
     position: relative;
 }
@@ -979,32 +996,40 @@ h1.notTooLarge {
     flex-direction: row;
     justify-content: flex-end;
 }
+
 .bars {
     border-left: 6px solid white;
     height: 25px;
 }
+
 .Top50 {
     padding-right: 19.7%;
 }
+
 .Top50bar {
     border-left: 6px solid white;
     height: 25px;
     padding-left: 00px;
 }
+
 .Top100 {
     padding-right: 10%;
 }
+
 .Top100bar {
     border-left: 6px solid white;
     height: 25px;
 }
+
 .Top200 {
     padding-right: 23.5%;
 }
+
 .Top200bar {
     border-left: 6px solid white;
     height: 25px;
 }
+
 .notConnectedTxt {
     color: #316cf4;
     font-size: 32px;
@@ -1233,6 +1258,7 @@ table td {
     .rank-header {
         font-size: 0.9rem;
     }
+
     .landingpageText {
         font-size: 1.4rem;
         line-height: 1.3rem;
@@ -1248,7 +1274,6 @@ table td {
     /*    padding-right: 0;*/
     /*    width: 90%;*/
     /*}*/
-
     .onTitle {
         font-weight: bold;
         font-size: 0.7rem;
@@ -1271,6 +1296,7 @@ table td {
     /*    background-image: url(../images/progress-bg-mobile.jpg);*/
     /*}*/
 }
+
 .CopyRight {
     padding-top: 16px;
     border-top: 1px solid #551;
@@ -1316,6 +1342,14 @@ table td {
     border-top: #606060 solid;
 }
 
+.wrongPreload {
+    font-family: Wrong, sans-serif;
+    font-size: 1px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
 .wrong {
     font-family: Wrong, sans-serif;
     font-size: 7vw;
@@ -1338,10 +1372,9 @@ table td {
 }
 
 .underWrong {
-    font-family: Modeco, sans-serif;
+    font-family: Mulish, sans-serif;
     color: white;
-    margin-top: -9%;
-    font-size: 100%;
+    margin-top: -18px;
 }
 
 ::-webkit-scrollbar {
@@ -1689,44 +1722,50 @@ table td {
 .skip div {
     transform: skewX(6deg);
 }
+
 .mobileImages {
     height: 180px;
     width: 33%;
 }
+
 .welcomeBackground {
     background: #202020;
 }
+
 .welcome {
     display: flex;
     justify-content: center;
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 10%;
 }
+
 .welcomeLeak {
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
+
 .welcomeSub {
     font-family: Mulish, sans-serif;
-    font-size: 2vw;
+    font-size: 1.2vw;
     margin-top: -1%;
 }
+
 .textSub {
     font-family: Mulish, sans-serif;
     font-size: 1.2vw;
-    margin-top: -2%;
-    width: 70%;
 }
+
+.textSub2 {
+    font-size: 1vw;
+}
+
 .browseSub {
     font-family: Mulish, sans-serif;
     font-size: 1.2vw;
-    margin-top: -2%;
-    width: 68%;
-    margin-left: 15%;
-    text-align: end;
+    text-align: right;
 }
+
 .assetsSub {
     font-family: Mulish, sans-serif;
     font-size: 1.2vw;
@@ -1734,47 +1773,50 @@ table td {
     text-align: right;
     margin-left: 13%;
 }
+
 .summary {
     padding: 15px;
     font-size: 20px;
 }
+
 .button {
     border: 1px #a69d0a solid;
     border-radius: 50px;
-    font-weight: bold;
+    font-family: Mulish, sans-serif !important;
     color: black;
     background: #fae901;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    box-shadow: 0px 0px 15px yellow;
-    font-size: 110%;
+    padding: 5px 18px 3px;
+    box-shadow: 0 0 6px #ffff0090 !important;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
 }
+
+.buttonSeed {
+    border: 1px #f7f8f8 solid;
+    background: #f7f8f8;
+    box-shadow: 0 0 6px #ffffff90 !important;
+}
+
+.button:hover {
+    color: black;
+    box-shadow: 0 0 15px blue;
+}
+
 @media (max-width: 1000px) {
     .button {
         font-size: 1.5vw !important;
     }
+
     .buttonSeed {
         font-size: 1.5vw !important;
     }
+
     .buttonBrowse {
         font-size: 1.5vw !important;
     }
 }
-.buttonSeed {
-    border: 1px #f7f8f8 solid;
-    border-radius: 50px;
-    font-weight: bold;
-    color: black;
-    background: #f7f8f8;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    box-shadow: 0px 0px 15px #f7f8f8;
-    font-size: 110%;
-}
+
 .buttonAssets {
     border: 1px #a69d0a solid;
     border-radius: 50px;
@@ -1785,11 +1827,12 @@ table td {
     padding-right: 30%;
     padding-top: 4%;
     padding-bottom: 2%;
-    box-shadow: 0px 0px 15px yellow;
+    box-shadow: 00 15px yellow;
     font-size: 120%;
-    cursor: not-allowed;
+    cursor: default;
     opacity: 0.5;
 }
+
 .buttonLeaks {
     border: 1px #a69d0a solid;
     border-radius: 50px;
@@ -1800,11 +1843,12 @@ table td {
     padding-right: 7%;
     padding-top: 1.5%;
     padding-bottom: 1%;
-    box-shadow: 0px 0px 15px yellow;
+    box-shadow: 0 0 15px yellow;
     font-size: 120%;
     cursor: not-allowed;
     opacity: 0.5;
 }
+
 .buttonBrowse {
     border: 1px #a69d0a solid;
     border-radius: 50px;
@@ -1815,9 +1859,10 @@ table td {
     padding-right: 10%;
     padding-top: 2.5%;
     padding-bottom: 1.5%;
-    box-shadow: 0px 0px 15px yellow;
+    box-shadow: 0 0 15px yellow;
     font-size: 110%;
 }
+
 .empireButton {
     border: 1px #a69d0a solid;
     border-radius: 50px;
@@ -1828,50 +1873,71 @@ table td {
     padding-right: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
-    box-shadow: 0px 0px 15px yellow;
+    box-shadow: 0 0 15px yellow;
     font-size: 110%;
 }
+
 .corePool {
     border: black solid;
     background: #ecdc00;
 }
+
 .seedPool {
     border: black solid;
     background: #6512af;
 }
+
 .stakingPools {
     padding: 15px;
     font-size: x-large;
 }
 
 .social {
-    justify-content: space-evenly;
-    display: flex;
-    font-size: larger;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 12px;
 }
+
+.social a {
+    padding: 0 12px;
+}
+
+.ranking {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.thirdGangster {
+    width: 31vw;
+    margin-top: -100px;
+    margin-right: 12px;
+    position: relative;
+    z-index: 3;
+}
+
 .title {
     display: flex;
     justify-content: flex-start;
     font-size: 5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 10%;
+    padding-top: 80px;
 }
 
 .titleRight {
-    display: flex;
-    justify-content: flex-start;
+    text-align: right;
     font-size: 5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 10%;
-    margin-left: 30%;
+    padding-top: 60px;
 }
 
 .exchanges {
     margin-top: -2%;
 }
+
 .exchanges img {
     height: 40px !important;
 }
+
 .exchanges a {
     padding: 0 3px;
 }
@@ -1888,10 +1954,11 @@ table td {
 .footerNote a {
     text-decoration: none !important;
 }
+
 .footer {
     width: 100%;
     border-top: 1px solid;
-    border-color: #ffdd0080 !important ;
+    border-color: #ffdd0080 !important;
     background: black;
     margin-top: 50px;
     padding-bottom: 100px;
@@ -1900,9 +1967,11 @@ table td {
 .seed-container .footer {
     border-color: #7b16db80 !important;
 }
+
 .bit-smaller {
     font-size: 90%;
 }
+
 b,
 .bold {
     font-family: ModecoBold, sans-serif !important;
@@ -1911,6 +1980,7 @@ b,
 .light {
     font-family: ModecoLight, sans-serif !important;
 }
+
 .two-columns {
     clear: both;
     padding: 0 12px;
@@ -1928,52 +1998,77 @@ b,
 .two-columns-right {
     float: right;
 }
+
 .joinUs {
     font-family: Mulish, sans-serif;
     display: "inline";
     padding-right: 20;
 }
+
 .mulish {
     font-family: Mulish, sans-serif;
 }
+
 .assets {
     display: flex;
     justify-content: space-evenly;
 }
+
 .assets img {
     height: 30px !important;
 }
+
 .coins {
     margin-top: -20%;
 }
+
 .coins img {
     width: 70%;
 }
+
 .assetImages {
     margin-top: -25%;
+    text-align: right;
 }
+
 .assetImages img {
     width: 85%;
 }
 
 .gangster1 {
-    width: 120%;
-    margin-top: -5%;
+    width: 66%;
+    margin-top: 12px;
 }
+
+.femaleGangster {
+    width: 70%;
+    margin: -90px 0 0 105px;
+}
+
+.browseGangsterDiv {
+    text-align: right;
+    /*padding-right: 5vw;*/
+}
+
 .empireButtonDiv {
-    padding-top: 4%;
-    padding-bottom: 7%;
+    padding: 30px 0 80px;
 }
-.turfImage {
-    width: 115%;
-    margin-left: -20%;
-    padding-top: 18px;
+
+.overFarm {
+    text-align: right;
+    padding-right: 5vw;
 }
+
+.farmImage {
+    width: 40vw;
+    margin-top: -67px;
+}
+
 .browseButtonDiv {
     padding-top: 40px;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
 }
+
 .gangster3 {
     width: 100%;
     margin-top: -10%;
@@ -1995,19 +2090,22 @@ b,
     display: flex;
     justify-content: center;
 }
+
 .assetsTitle {
     display: flex;
     justify-content: flex-end;
-    font-size: 7.5vw;
+    font-size: 5.5vw;
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
+
 @media (max-width: 600px) {
     .assetsTitle {
         justify-content: center;
         font-size: 10.5vw;
         padding-top: 5%;
     }
+
     .assetsSub {
         font-size: 2.5vw;
         margin-top: 0;
@@ -2015,9 +2113,10 @@ b,
         margin-left: 5%;
         text-align: center;
     }
+
     .gangster3 {
         width: 56%;
-        margin-top: 0px;
+        margin-top: 0;
         margin-bottom: -2%;
         position: relative;
         left: 25%;
@@ -2026,6 +2125,7 @@ b,
     .browseButtonDiv {
         justify-content: center;
     }
+
     .browseSub {
         font-size: 2.5vw;
         margin-top: 0;
@@ -2033,11 +2133,13 @@ b,
         margin-left: 5%;
         text-align: center;
     }
+
     .title {
         justify-content: center;
         font-size: 10vw;
         padding-top: 25px;
     }
+
     .textSub {
         font-size: 2vw;
         width: 100%;
@@ -2045,38 +2147,46 @@ b,
         padding-right: 5%;
         text-align: center;
     }
+
     .empireButtonDiv {
         justify-content: center;
         display: flex;
     }
-    .turfImage {
+
+    .farmImage {
         width: 70%;
         padding-left: 25%;
         margin-left: 0%;
-        padding-top: 0px;
+        padding-top: 0;
     }
+
     .button {
         font-size: 5.5vw !important;
         margin: 1%;
     }
+
     .buttonSeed {
         font-size: 5.5vw !important;
         margin: 1%;
     }
+
     .buttonBrowse {
         font-size: 5.5vw !important;
         margin: 1%;
     }
+
     .buttonAssets {
         font-size: 5.5vw !important;
         margin: 1%;
     }
+
     .buttonLeaks {
         padding-left: 14%;
         padding-right: 16%;
         padding-top: 3%;
         padding-bottom: 2%;
     }
+
     .welcomeLeak {
         display: flex;
         justify-content: center;

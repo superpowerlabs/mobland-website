@@ -42,9 +42,11 @@ export default class LandingPage extends Base {
 
   render() {
     const { loaded } = this.Store;
+    // const loaded = true;
 
     return (
       <div style={{ width: "100%" }}>
+        <div className={"wrongPreload"}>#</div>
         {loaded ? (
           <Home />
         ) : (

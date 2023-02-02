@@ -13,19 +13,19 @@ class AssetImages extends Component {
           alt={"Blueprint"}
           src={"/images/blueprint.png"}
           style={{
-            marginTop: "-43%",
+            marginTop: "-51%",
             zIndex: "1",
             position: "relative",
-            left: "-25%",
+            left: "-31%",
           }}
         />
         <img
           alt={"Genesis Pass"}
           style={{
             width: "46%",
-            marginTop: "-30%",
+            marginTop: "-42%",
             position: "relative",
-            left: "18%",
+            left: "-18%",
             transform: "rotate(45deg)",
           }}
           src={"/images/genesis-pass.png"}

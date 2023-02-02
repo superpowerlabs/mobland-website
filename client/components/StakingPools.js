@@ -12,10 +12,12 @@ class StakingPools extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={false} sm={1} />
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={false} md={1} />
+            <Grid item xs={12} md={6}>
               <Grid item xs={12}>
-                <div className="welcome">ENTER THE MAFIA METAVERSE </div>
+                <div className="welcome" style={{ paddingTop: 130 }}>
+                  ENTER THE MAFIA METAVERSE
+                </div>
               </Grid>
               <Grid
                 item
@@ -23,47 +25,50 @@ class StakingPools extends Component {
                 style={{ display: "flex", justifyContent: "center" }}
               >
                 <div className="welcomeSub">
-                  Step into Mobland and take on the world of a modern crime
-                  syndicate.{" "}
+                  Step into MOBLAND and take on the world of a modern crime
+                  syndicate.
                 </div>
               </Grid>
-              <br />
-              <br />
-              <Grid container>
-                <Grid item xs={false} sm={3} />
+              <Grid container style={{ marginTop: 40 }}>
+                <Grid item xs={false} sm={2} />
                 <Grid
-                  style={{ display: "flex", justifyContent: "center" }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "right",
+                    paddingRight: 20,
+                  }}
                   item
                   xs={12}
-                  sm={3}
+                  sm={4}
                 >
                   <a
                     className="button"
                     href="https://staking.mob.land/core/dashboard"
                   >
-                    {" "}
                     CORE POOL
-                  </a>{" "}
+                  </a>
                 </Grid>
-                <br />
                 <Grid
-                  style={{ display: "flex", justifyContent: "center" }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "left",
+                    paddingLeft: 20,
+                  }}
                   item
                   xs={12}
-                  sm={3}
+                  sm={4}
                 >
                   <a
-                    className="buttonSeed"
+                    className="button buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
                   >
-                    {" "}
                     SEED POOL
                   </a>
                 </Grid>
-                <Grid item xs={false} sm={3} />
+                <Grid item xs={false} sm={2} />
               </Grid>
             </Grid>
-            <Grid item xs={12} sm={3}>
+            <Grid item xs={12} md={4}>
               <Grid container>
                 <Grid item xs={3} sm={false} />
                 <Grid item xs={6} sm={12}>
@@ -76,6 +81,7 @@ class StakingPools extends Component {
                 <Grid item xs={3} sm={false} />
               </Grid>
             </Grid>
+            <Grid item xs={false} md={1} />
           </Grid>
         </div>
       </div>

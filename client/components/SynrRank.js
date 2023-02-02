@@ -11,42 +11,34 @@ class SynrRank extends Component {
         }}
       >
         <Grid container className={"stats"}>
-          {isMobileOnly ? null : (
-            <Grid item xs={12} sm={6}>
-              <img
-                alt={"Gangster"}
-                src={"/images/gangster-five.png"}
-                style={{
-                  width: "100%",
-                  marginTop: "-21%",
-                  marginBottom: "-1%",
-                }}
-              />
-            </Grid>
-          )}
+          <Grid item xs={12} md={4}>
+            <img
+              alt={"Gangster"}
+              className={"femaleGangster"}
+              src={"/images/gangster-five.png"}
+            />
+          </Grid>
           <Grid
             item
             xs={12}
-            sm={3}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginLeft: isMobileOnly ? null : "-6%",
-            }}
+            md={4}
+            className={"ranking"}
+            // style={{
+            //   display: "flex",
+            //   justifyContent: "center",
+            //   alignItems: "center",
+            //   marginLeft: isMobileOnly ? null : "-6%",
+            // }}
           >
-            <div className={"Center"}>
-              <div className={isMobileOnly ? "wrongMobile top" : "wrong"}>
-                500k+
+            <div className={"centered"}>
+              <div className={isMobileOnly ? "wrongMobile top" : "welcome"}>
+                500,000+
               </div>
-              <div
-                className={"underWrong"}
-                style={{
-                  paddingLeft: isMobileOnly ? null : "7%",
-                  marginTop: isMobileOnly ? null : "-13%",
-                }}
-              >
-                SYNNERS in our community <br />
+              <div className={"underWrong"}>
+                <span style={{ whiteSpace: "nowrap" }}>
+                  SYNNERS in our community
+                </span>
+                <br />
                 and growing every day!
               </div>
               <div className="social">
@@ -74,22 +66,22 @@ class SynrRank extends Component {
           <Grid
             item
             xs={12}
-            sm={3}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop: "-2%",
-            }}
+            md={4}
+            className={"ranking"}
+            // style={{
+            //   display: "flex",
+            //   alignItems: "center",
+            //   justifyContent: "center",
+            //   marginTop: "-2%",
+            // }}
           >
-            <div className={"Center"}>
-              <div className={isMobileOnly ? "wrongMobile bottom" : "wrong"}>
+            <div className={"centered"}>
+              <div className={isMobileOnly ? "wrongMobile bottom" : "welcome"}>
                 #1 Volume
               </div>
               <div
                 className={"underWrong"}
                 style={{
-                  paddingLeft: isMobileOnly ? null : "27%",
                   paddingTop: isMobileOnly ? null : "1%",
                 }}
               >
@@ -97,7 +89,10 @@ class SynrRank extends Component {
                 <br />
                 for Binance NFT Volume
               </div>
-            </div>{" "}
+            </div>
+            <div className="social">
+              <a href={"#"}> </a>
+            </div>
           </Grid>
           {!isMobileOnly ? null : (
             <Grid
