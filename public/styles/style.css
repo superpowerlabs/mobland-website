@@ -2003,9 +2003,10 @@ b,
 }
 
 .joinUs {
+    color: white;
     font-family: Mulish, sans-serif;
-    display: "inline";
-    padding-right: 20;
+    font-weight: 400;
+    position: absolute;
 }
 
 .mulish {

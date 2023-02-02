@@ -44,7 +44,7 @@ function Footer({ setShowTerms }) {
                   rel="noreferrer"
                 >
                   <img
-                    src={"/images/discord.png"}
+                    src={"/images/white-discord.png"}
                     alt={"Discord"}
                     style={{ height: 22, paddingRight: 12, display: "inline" }}
                   />
@@ -58,9 +58,9 @@ function Footer({ setShowTerms }) {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={"/images/telegram.png"}
+                    src={"/images/white-telegram.png"}
                     alt={"Telegram"}
-                    style={{ height: 22, paddingRight: 12, display: "inline" }}
+                    style={{ height: 15, paddingRight: 12, display: "inline" }}
                   />
                 </Link>
                 <Link
@@ -72,9 +72,9 @@ function Footer({ setShowTerms }) {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={"/images/twitter.png"}
+                    src={"/images/white-twitter.png"}
                     alt={"Twitter"}
-                    style={{ height: 22, display: "inline" }}
+                    style={{ height: 15, display: "inline" }}
                   />
                 </Link>
               </div>
@@ -103,6 +103,14 @@ function Footer({ setShowTerms }) {
                     {/*>*/}
                     {/*  Leaderboard*/}
                     {/*</Link>*/}
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://leaderboard.mob.land"}
+                    >
+                      Leaderboard
+                    </Link>
                     <Link
                       display="block"
                       underline="hover"
@@ -180,78 +188,67 @@ function Footer({ setShowTerms }) {
           >
             <TwoColumns
               left={
-                <TwoColumns
-                  left={
-                    <TwoColumns
-                      left={
-                        <div style={{ paddingRight: 24 }}>
-                          <div className="bold">About</div>
-                          <span className={"light"}>
-                            {/*<Link*/}
-                            {/*  display="block"*/}
-                            {/*  underline="hover"*/}
-                            {/*  color="inherit"*/}
-                            {/*  href={"https://mob.land/team"}*/}
-                            {/*>*/}
-                            {/*  Team*/}
-                            {/*</Link>*/}
-                            {/*<Link*/}
-                            {/*  style={{ paddingRight: "20px" }}*/}
-                            {/*  underline="hover"*/}
-                            {/*  display="block"*/}
-                            {/*  color="inherit"*/}
-                            {/*  href={"https://leaderboard.mob.land"}*/}
-                            {/*>*/}
-                            {/*  Leaderboard*/}
-                            {/*</Link>*/}
-                            <Link
-                              display="block"
-                              underline="hover"
-                              color="inherit"
-                              href={"https://mobland.gitbook.io/mobland/"}
-                            >
-                              WhitePaper
-                            </Link>
-                          </span>
-                        </div>
-                      }
-                      right={
-                        <div style={{ paddingRight: 12 }}>
-                          <div className="bold">Be a SYNNER</div>
-                          <span className={"light"}>
-                            {/*<Link*/}
-                            {/*  display="block"*/}
-                            {/*  underline="hover"*/}
-                            {/*  color="inherit"*/}
-                            {/*  href={"https://marketplace.mob.land"}*/}
-                            {/*  target={"_blank"}*/}
-                            {/*>*/}
-                            {/*  Marketplace*/}
-                            {/*</Link>*/}
-                            <Link
-                              display="block"
-                              underline="hover"
-                              color="inherit"
-                              href={"/core/dashboard"}
-                            >
-                              Core Pool
-                            </Link>
+                <div>
+                  <img
+                    style={{ width: "70%", paddingLeft: "5%" }}
+                    src={"/images/mobland-horizontal.png"}
+                    alt={"Mobland"}
+                  />
+                  <TwoColumns
+                    left={
+                      <TwoColumns
+                        left={
+                          <div style={{ paddingRight: 24 }}>
+                            <div className="bold">About</div>
+                            <span className={"light"}>
+                              <Link
+                                display="block"
+                                underline="hover"
+                                color="inherit"
+                                href={"https://leaderboard.mob.land"}
+                              >
+                                Leaderboard
+                              </Link>
+                              <Link
+                                display="block"
+                                underline="hover"
+                                color="inherit"
+                                href={"https://mobland.gitbook.io/mobland/"}
+                              >
+                                WhitePaper
+                              </Link>
+                            </span>
+                          </div>
+                        }
+                        right={
+                          <div style={{ paddingRight: 12 }}>
+                            <div className="bold">Be a SYNNER</div>
+                            <span className={"light"}>
+                              <Link
+                                display="block"
+                                underline="hover"
+                                color="inherit"
+                                href={"/core/dashboard"}
+                              >
+                                Core Pool
+                              </Link>
 
-                            <Link
-                              display="block"
-                              underline="hover"
-                              color="inherit"
-                              href={"/seed/dashboard"}
-                            >
-                              SEED Farm
-                            </Link>
-                          </span>
-                        </div>
-                      }
-                    />
-                  }
-                  right={<div />}
-                />
+                              <Link
+                                display="block"
+                                underline="hover"
+                                color="inherit"
+                                href={"/seed/dashboard"}
+                              >
+                                SEED Farm
+                              </Link>
+                            </span>
+                          </div>
+                        }
+                      />
+                    }
+                    right={<div />}
+                  />
+                </div>
               }
               right={
                 <div style={{ textAlign: "right" }}>
@@ -264,7 +261,7 @@ function Footer({ setShowTerms }) {
                         position: "relative",
                       }}
                     >
-                      <div style={{ position: "absolute" }}>Join Us</div>
+                      <div className="joinUs">Join Us</div>
                     </div>
                     <Link
                       display="inline"
@@ -275,7 +272,7 @@ function Footer({ setShowTerms }) {
                       rel="noreferrer"
                     >
                       <img
-                        src={"/images/discord.png"}
+                        src={"/images/white-discord.png"}
                         alt={"Discord"}
                         style={{
                           height: 22,
@@ -293,10 +290,10 @@ function Footer({ setShowTerms }) {
                       rel="noopener noreferrer"
                     >
                       <img
-                        src={"/images/telegram.png"}
+                        src={"/images/white-telegram.png"}
                         alt={"Telegram"}
                         style={{
-                          height: 22,
+                          height: 15,
                           paddingRight: 12,
                           display: "inline",
                         }}
@@ -311,9 +308,9 @@ function Footer({ setShowTerms }) {
                       rel="noopener noreferrer"
                     >
                       <img
-                        src={"/images/twitter.png"}
+                        src={"/images/white-twitter.png"}
                         alt={"Twitter"}
-                        style={{ height: 22, display: "inline" }}
+                        style={{ height: 15, display: "inline" }}
                       />
                     </Link>
                   </div>
