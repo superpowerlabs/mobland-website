@@ -21,7 +21,9 @@ class Economy extends Component {
             <Grid item xs={12} md={1} />
             <Grid item xs={12} md={6}>
               <Grid item xs={12} md={12}>
-                <div className="title" style={{marginTop: 20}}>Game Economy</div>
+                <div className="title" style={{ marginTop: 20 }}>
+                  Game Economy
+                </div>
               </Grid>
               <br />
               <Grid item xs={12} md={12}>
@@ -32,7 +34,7 @@ class Economy extends Component {
                 </div>
               </Grid>
               <br />
-              <Grid container style={{marginTop: 20}}>
+              <Grid container style={{ marginTop: 20 }}>
                 <Grid
                   item
                   xs={12}
@@ -98,7 +100,11 @@ class Economy extends Component {
               <br />
             </Grid>
 
-            {imdobileOnly ? null : <Grid item xs={12} md={4} style={{textAlign: "right"}}><Coins /></Grid>}
+            {imdobileOnly ? null : (
+              <Grid item xs={12} md={4} style={{ textAlign: "right" }}>
+                <Coins />
+              </Grid>
+            )}
           </Grid>
         </div>
       </div>

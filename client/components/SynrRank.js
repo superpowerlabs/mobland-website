@@ -11,13 +11,13 @@ class SynrRank extends Component {
         }}
       >
         <Grid container className={"stats"}>
-          <Grid item xs={12} md={4}>
+          {isMobileOnly ? null :<Grid item xs={12} md={4}>
             <img
               alt={"Gangster"}
               className={"femaleGangster"}
               src={"/images/gangster-five.png"}
             />
-          </Grid>
+          </Grid>}
           <Grid
             item
             xs={12}

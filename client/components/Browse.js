@@ -14,13 +14,15 @@ class Browse extends Component {
         >
           <Grid container>
             <Grid item xs={12} md={1} />
-            {isMobileOnly ? null : <Grid item md={5} className={"browseGangsterDiv"}>
-              <img
-                alt={"Gangster"}
-                src={"/images/gangster-three.png"}
-                className={"thirdGangster"}
-              />
-            </Grid>}
+            {isMobileOnly ? null : (
+              <Grid item md={5} className={"browseGangsterDiv"}>
+                <img
+                  alt={"Gangster"}
+                  src={"/images/gangster-three.png"}
+                  className={"thirdGangster"}
+                />
+              </Grid>
+            )}
             <Grid item xs={12} md={5}>
               <Grid item xs={12}>
                 <div className={isMobileOnly ? "title" : "titleRight"}>
@@ -37,18 +39,20 @@ class Browse extends Component {
                 </div>
               </Grid>
               <Grid item xs={12} className="browseButtonDiv">
-                  <a className="button" href="https://avatar.mob.land/">
-                    REVEAL APP
-                  </a>
+                <a className="button" href="https://avatar.mob.land/">
+                  REVEAL APP
+                </a>
               </Grid>
             </Grid>
-            {isMobileOnly ? <Grid item xs={12} md={false}>
-              <img
-                alt={"Gangster"}
-                src={"/images/gangster-three.png"}
-                className="gangster3"
-              />
-            </Grid> : null}
+            {isMobileOnly ? (
+              <Grid item xs={12} md={false}>
+                <img
+                  alt={"Gangster"}
+                  src={"/images/gangster-three.png"}
+                  className="gangster3"
+                />
+              </Grid>
+            ) : null}
           </Grid>
         </div>
       </div>
