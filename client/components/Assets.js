@@ -63,7 +63,7 @@ class Assets extends React.Component {
                     <Grid item xs={6} sm={12}>
                       <div
                         style={{
-                          paddingTop: "1%",
+                          paddingTop: isMobile? "10%": "0%",
                           display: "flex",
                           justifyContent: "center",
                         }}
