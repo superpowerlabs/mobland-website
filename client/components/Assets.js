@@ -15,16 +15,16 @@ class Assets extends React.Component {
           <Grid container>
             <Grid item xs={1} />
             {isMobile ? null : (
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} sm={4}>
                 <AssetImages />
               </Grid>
             )}
 
-            <Grid item xs={12} md={6} style={{ paddingBottom: "7%" }}>
-              <Grid item xs={12} md={12}>
+            <Grid item xs={12} sm={6} style={{ paddingBottom: "7%" }}>
+              <Grid item xs={12} sm={12}>
                 <div className="assetsTitle">Your Assets </div>
               </Grid>
-              <Grid item xs={12} md={12}>
+              <Grid item xs={12} sm={12}>
                 <div className="assetsSub">
                   As well as the token economy, there are many types of NFTs
                   that you can utilise on your path to becoming a MOBLAND
@@ -34,8 +34,8 @@ class Assets extends React.Component {
               </Grid>
               <br />
               <Grid container>
-                <Grid item xs={false} md={4} />
-                <Grid item xs={12} md={5}>
+                <Grid item xs={false} sm={4} />
+                <Grid item xs={12} sm={5}>
                   <div className="assets">
                     <a
                       href={
@@ -57,31 +57,33 @@ class Assets extends React.Component {
                     </a>
                   </div>
                 </Grid>
-                <Grid item xs={false} md={3}>
-                  <Grid item xs={3} md={false} />
-                  <Grid item xs={6} md={3}>
-                    <div
-                      style={{
-                        paddingTop: "10%",
-                        display: "flex",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <a
-                        className="buttonAssets"
-                        href="https://staking.mob.land/core/dashboard"
+                <Grid item xs={12} sm={3}>
+                  <Grid container>
+                    <Grid item xs={3} sm={false} />
+                    <Grid item xs={6} sm={12}>
+                      <div
+                        style={{
+                          paddingTop: "1%",
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
                       >
-                        GUIDE
-                      </a>{" "}
-                    </div>
+                        <a
+                          className="buttonAssets"
+                          href="https://staking.mob.land/core/dashboard"
+                        >
+                          GUIDE
+                        </a>{" "}
+                      </div>
+                    </Grid>
+                    <Grid item xs={3} sm={false} />
                   </Grid>
-                  <Grid item xs={3} md={false} />
                 </Grid>
               </Grid>
 
               <br />
             </Grid>
-            <Grid item xs={false} md={1} />
+            <Grid item xs={false} sm={1} />
           </Grid>
         </div>
       </div>
