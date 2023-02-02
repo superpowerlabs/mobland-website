@@ -29,7 +29,9 @@ class Browse extends Component {
             )}
             <Grid item xs={12} sm={7}>
               <Grid item xs={12}>
-                <div className="title">Browse the Roster </div>
+                <div className={isMobile ? "title" : "titleRight"}>
+                  Browse the Roster{" "}
+                </div>
               </Grid>
               <Grid item xs={12}>
                 <div className="browseSub">
