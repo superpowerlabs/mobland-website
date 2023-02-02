@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import Base from "./Base";
 import { addToken } from "../utils/Wallet";
 
-
 export default class Header extends Base {
   constructor(props) {
     super(props);
@@ -17,7 +16,7 @@ export default class Header extends Base {
       addressExpanded: false,
       expanded: "",
       pathname: window.location.pathname,
-      showBg: false
+      showBg: false,
     };
 
     this.bindMany(["expandAddress", "checkPathname", "setExpanded"]);
@@ -35,12 +34,11 @@ export default class Header extends Base {
 
     window.addEventListener("scroll", () => {
       if (window.scrollY > 80) {
-        this.setState({showBg: true});
+        this.setState({ showBg: true });
       } else {
-        this.setState({showBg: false});
+        this.setState({ showBg: false });
       }
     });
-
   }
 
   expandAddress() {
@@ -150,22 +148,22 @@ export default class Header extends Base {
               </a>
             </Navbar.Text>
             <Navbar.Text className={"links"}>
-              <a
+              <span
                 className={"menucmd yellowHover"}
-                href={"https://marketplace.mob.land"}
-                target={"_blank"}
+                // href={"https://marketplace.mob.land"}
+                // target={"_blank"}
               >
                 How To Play
-              </a>
+              </span>
             </Navbar.Text>
             <Navbar.Text className={"links"}>
-              <a
+              <span
                 className={"menucmd yellowHover"}
-                href={"https://marketplace.mob.land"}
-                target={"_blank"}
+                // href={"https://marketplace.mob.land"}
+                // target={"_blank"}
               >
                 Roadmap
-              </a>
+              </span>
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
