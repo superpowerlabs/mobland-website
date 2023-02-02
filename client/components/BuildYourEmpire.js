@@ -11,6 +11,7 @@ class BuildYourEmpire extends Component {
           backgroundImage: 'url("/images/woodland-bg.jpg")',
           zIndex: "1",
           position: "relative",
+          // clipPath: "polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%)"
         }}
       >
         <Grid container>
