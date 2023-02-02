@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
 class Browse extends Component {
   render() {
@@ -14,7 +14,7 @@ class Browse extends Component {
         >
           <Grid container>
             <Grid item xs={false} sm={1} />
-            {isMobile ? null : (
+            {isMobileOnly ? null : (
               <Grid item xs={12} sm={4}>
                 <img
                   alt={"Gangster"}
@@ -31,7 +31,7 @@ class Browse extends Component {
             )}
             <Grid item xs={12} sm={7}>
               <Grid item xs={12}>
-                <div className={isMobile ? "title" : "titleRight"}>
+                <div className={isMobileOnly ? "title" : "titleRight"}>
                   Browse the Roster{" "}
                 </div>
               </Grid>
@@ -54,7 +54,7 @@ class Browse extends Component {
                 </Grid>
               </Grid>
             </Grid>
-            {!isMobile ? null : (
+            {!isMobileOnly ? null : (
               <Grid item xs={12} sm={4}>
                 <img
                   alt={"Gangster"}

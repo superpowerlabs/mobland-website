@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import Coins from "./Coins";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
 class Economy extends Component {
   render() {
@@ -37,7 +37,7 @@ class Economy extends Component {
                   item
                   xs={12}
                   sm={3}
-                  className={isMobile ? "economyMobile" : ""}
+                  className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
                     className="button"
@@ -50,7 +50,7 @@ class Economy extends Component {
                   item
                   xs={12}
                   sm={3}
-                  className={isMobile ? "economyMobile" : ""}
+                  className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
                     className="buttonSeed"
@@ -63,7 +63,7 @@ class Economy extends Component {
                   item
                   xs={12}
                   sm={6}
-                  className={isMobile ? "mobileExchange" : null}
+                  className={isMobileOnly ? "mobileExchange" : null}
                 >
                   <div className="exchanges">
                     <a
@@ -94,7 +94,7 @@ class Economy extends Component {
               <br />
             </Grid>
             <Grid item xs={3} sm={4}>
-              {isMobile ? null : <Coins />}
+              {isMobileOnly ? null : <Coins />}
             </Grid>
           </Grid>
         </div>

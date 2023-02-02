@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import AssetImages from "./AssetImages";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 class Assets extends React.Component {
   render() {
     return (
@@ -16,7 +16,7 @@ class Assets extends React.Component {
         >
           <Grid container>
             <Grid item xs={1} />
-            {isMobile ? null : (
+            {isMobileOnly ? null : (
               <Grid item xs={12} sm={4}>
                 <AssetImages />
               </Grid>
@@ -67,7 +67,7 @@ class Assets extends React.Component {
                     <Grid item xs={6} sm={12}>
                       <div
                         style={{
-                          paddingTop: isMobile ? "10%" : "0%",
+                          paddingTop: isMobileOnly ? "10%" : "0%",
                           display: "flex",
                           justifyContent: "center",
                         }}

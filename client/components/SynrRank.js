@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
 class SynrRank extends Component {
   render() {
@@ -11,7 +11,7 @@ class SynrRank extends Component {
         }}
       >
         <Grid container className={"stats"}>
-          {isMobile ? null : (
+          {isMobileOnly ? null : (
             <Grid item xs={12} sm={6}>
               <img
                 alt={"Gangster"}
@@ -32,18 +32,18 @@ class SynrRank extends Component {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginLeft: isMobile ? null : "-6%",
+              marginLeft: isMobileOnly ? null : "-6%",
             }}
           >
             <div className={"Center"}>
-              <div className={isMobile ? "wrongMobile top" : "wrong"}>
+              <div className={isMobileOnly ? "wrongMobile top" : "wrong"}>
                 500k+
               </div>
               <div
                 className={"underWrong"}
                 style={{
-                  paddingLeft: isMobile ? null : "7%",
-                  marginTop: isMobile ? null : "-13%",
+                  paddingLeft: isMobileOnly ? null : "7%",
+                  marginTop: isMobileOnly ? null : "-13%",
                 }}
               >
                 SYNNERS in our community <br />
@@ -83,14 +83,14 @@ class SynrRank extends Component {
             }}
           >
             <div className={"Center"}>
-              <div className={isMobile ? "wrongMobile bottom" : "wrong"}>
+              <div className={isMobileOnly ? "wrongMobile bottom" : "wrong"}>
                 #1 Volume
               </div>
               <div
                 className={"underWrong"}
                 style={{
-                  paddingLeft: isMobile ? null : "27%",
-                  paddingTop: isMobile ? null : "1%",
+                  paddingLeft: isMobileOnly ? null : "27%",
+                  paddingTop: isMobileOnly ? null : "1%",
                 }}
               >
                 Ranked #1 of all time
@@ -99,7 +99,7 @@ class SynrRank extends Component {
               </div>
             </div>{" "}
           </Grid>
-          {!isMobile ? null : (
+          {!isMobileOnly ? null : (
             <Grid
               item
               xs={12}

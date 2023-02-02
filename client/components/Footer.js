@@ -5,12 +5,12 @@ import Copyright from "./Copyright";
 import TwoColumns from "./TwoColumns";
 import Link from "@mui/material/Link";
 
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
 function Footer({ setShowTerms }) {
   return (
     <div className="footer">
-      {isMobile ? (
+      {isMobileOnly ? (
         <Container
           maxWidth="lg"
           component="footer"
