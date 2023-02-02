@@ -183,6 +183,7 @@ div.cardContainer {
 }
 
 .white {
+    color: white !important;
 }
 
 .porpora {
@@ -1509,6 +1510,11 @@ footer.MuiContainer-root {
     max-width: none !important;
 }
 
+.bottomSocialLink {
+    font-size: 1.2rem;
+    padding-right: 18px;
+}
+
 @media (min-width: 1200px) {
     footer.MuiContainer-root {
         max-width: none !important;
@@ -1976,6 +1982,8 @@ footer.MuiContainer-root {
     color: #884;
     font-size: 84%;
     background-color: #00000040;
+    font-weight: 200;
+    font-family: Mulish, sans-serif;
     padding: 14px;
     max-width: 400px;
     margin: 0 auto;

@@ -23,7 +23,7 @@ class App extends Common {
     if (/mobland/.test(window.location.origin)) {
       window.location = "https://mob.land";
     } else if (
-      !/local/.test(location.origin) &&
+      !/(local|amazonaws)/.test(location.origin) &&
       window.location.protocol === "http:"
     ) {
       window.location = location.href.replace(/^http:/, "https:");

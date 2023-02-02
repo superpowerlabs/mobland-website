@@ -198,17 +198,17 @@ function Footer({ setShowTerms }) {
                     left={
                       <TwoColumns
                         left={
-                          <div style={{ paddingRight: 24 }}>
+                          <div style={{ paddingRight: 24, paddingTop: 20 }}>
                             <div className="bold">About</div>
                             <span className={"light"}>
-                              <Link
-                                display="block"
-                                underline="hover"
-                                color="inherit"
-                                href={"https://leaderboard.mob.land"}
-                              >
-                                Leaderboard
-                              </Link>
+                              {/*<Link*/}
+                              {/*  display="block"*/}
+                              {/*  underline="hover"*/}
+                              {/*  color="inherit"*/}
+                              {/*  href={"https://leaderboard.mob.land"}*/}
+                              {/*>*/}
+                              {/*  Leaderboard*/}
+                              {/*</Link>*/}
                               <Link
                                 display="block"
                                 underline="hover"
@@ -221,7 +221,7 @@ function Footer({ setShowTerms }) {
                           </div>
                         }
                         right={
-                          <div style={{ paddingRight: 12 }}>
+                          <div style={{ padding: "20px 12px 0 32px" }}>
                             <div className="bold">Be a SYNNER</div>
                             <span className={"light"}>
                               <Link
@@ -253,75 +253,38 @@ function Footer({ setShowTerms }) {
               right={
                 <div style={{ textAlign: "right" }}>
                   <div style={{ color: "#fe0" }}>
-                    <div
-                      className={"bitSmaller bold"}
-                      style={{
-                        paddingRight: 62,
-                        display: "inline",
-                        position: "relative",
-                      }}
+                    <span className={"bitSmaller mulish bottomSocialLink white"}>Join us</span>
+                    <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer"
+                       className={"bottomSocialLink"}
                     >
-                      <div className="joinUs">Join Us</div>
-                    </div>
-                    <Link
-                      display="inline"
-                      underline="none"
-                      color="inherit"
-                      href={"https://discord.gg/tSVtRkppnp"}
-                      style={{ color: "yellow" }}
-                      rel="noreferrer"
-                    >
-                      <img
-                        src={"/images/white-discord.png"}
-                        alt={"Discord"}
-                        style={{
-                          height: 22,
-                          paddingRight: 12,
-                          display: "inline",
-                        }}
-                      />
-                    </Link>
-                    <Link
-                      display="inline"
-                      underline="none"
-                      color="inherit"
+
+                      <i className="fab fa-discord" />
+                    </a>
+                    <a
                       href="https://t.me/MobLandAnnouncements"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={"bottomSocialLink"}
                     >
-                      <img
-                        src={"/images/white-telegram.png"}
-                        alt={"Telegram"}
-                        style={{
-                          height: 15,
-                          paddingRight: 12,
-                          display: "inline",
-                        }}
-                      />
-                    </Link>
-                    <Link
-                      display="inline"
-                      underline="none"
-                      color="inherit"
+                      <i className="fab fa-telegram" />
+                    </a>
+                    <a
                       href="https://twitter.com/MoblandHQ"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={"bottomSocialLink"}
                     >
-                      <img
-                        src={"/images/white-twitter.png"}
-                        alt={"Twitter"}
-                        style={{ height: 15, display: "inline" }}
-                      />
-                    </Link>
+                      <i className="fab fa-twitter" />
+                    </a>
                   </div>
                   <span className={"light"}>
-                    <span
-                      className={"command underlineHover"}
-                      onClick={() => setShowTerms(true)}
-                      href={undefined}
-                    >
-                      Privacy Policy{" "}
-                    </span>
+                    {/*<span*/}
+                    {/*  className={"command underlineHover"}*/}
+                    {/*  onClick={() => setShowTerms(true)}*/}
+                    {/*  href={undefined}*/}
+                    {/*>*/}
+                    {/*  Privacy Policy*/}
+                    {/*</span>*/}
                     {/*<Link*/}
                     {/*  display="block"*/}
                     {/*  underline="hover"*/}

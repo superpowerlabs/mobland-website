@@ -37,7 +37,7 @@ class BuildYourEmpire extends Component {
               <div className="empireButtonDiv">
                 <a
                   className="button"
-                  href="https://staking.mob.land/core/dashboard"
+                  href="https://shadowmarket.mob.land"
                 >
                   SHADOW MARKET
                 </a>
