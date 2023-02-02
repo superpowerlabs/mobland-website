@@ -1909,8 +1909,8 @@ table td {
 
 .thirdGangster {
     width: 31vw;
-    margin-top: -100px;
-    margin-right: 12px;
+    margin-top: -17%;
+    margin-right: 2%;
     position: relative;
     z-index: 3;
 }
@@ -1927,7 +1927,7 @@ table td {
     text-align: right;
     font-size: 5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 60px;
+    padding-top: 10%;
 }
 
 .exchanges {
@@ -2065,7 +2065,7 @@ b,
 }
 
 .browseButtonDiv {
-    padding-top: 40px;
+    padding: 8% 0;
     text-align: right;
 }
 
@@ -2129,7 +2129,10 @@ b,
     }
 
     .browseButtonDiv {
+        padding-top: 25px;
         justify-content: center;
+        display: flex;
+        padding-bottom: 20px;
     }
 
     .browseSub {
