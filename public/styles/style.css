@@ -2065,7 +2065,7 @@ b,
 
 .farmImage {
     width: 40vw;
-    margin-top: -67px;
+    margin-top: -10%;
 }
 
 .browseButtonDiv {
@@ -2216,5 +2216,16 @@ b,
 
     .wrongMobile.bottom {
         margin-left: 0;
+    }
+    .textSub2 {
+        font-size: 2.5vw;
+        margin-top: 0;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .overFarm {
+        text-align: inherit;
+        padding-right: 0;
     }
 }

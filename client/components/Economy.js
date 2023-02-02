@@ -18,15 +18,15 @@ class Economy extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={12} md={1} />
-            <Grid item xs={12} md={6}>
-              <Grid item xs={12} md={12}>
-                <div className="title" style={{ marginTop: 20 }}>
+            <Grid item xs={12} sm={1} />
+            <Grid item xs={12} sm={7} style={{ paddingBottom: "2%" }}>
+              <Grid item xs={12} sm={12}>
+                <div className="title" style={{ marginTop: "-5%" }}>
                   Game Economy
                 </div>
               </Grid>
               <br />
-              <Grid item xs={12} md={12}>
+              <Grid item xs={12} sm={12}>
                 <div className="textSub">
                   Synthetic SYNR, SEED, BUD... MOBLAND boasts an intricate
                   economy with a range of commodities, but it all starts with
@@ -38,7 +38,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  md={3}
+                  sm={3}
                   className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
@@ -51,7 +51,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  md={3}
+                  sm={3}
                   className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
@@ -64,7 +64,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  md={6}
+                  sm={6}
                   className={isMobileOnly ? "mobileExchange" : null}
                 >
                   <div className="exchanges">
@@ -101,7 +101,7 @@ class Economy extends Component {
             </Grid>
 
             {isMobileOnly ? null : (
-              <Grid item xs={12} md={4} style={{ textAlign: "right" }}>
+              <Grid item xs={12} sm={3} style={{ textAlign: "right" }}>
                 <Coins />
               </Grid>
             )}
