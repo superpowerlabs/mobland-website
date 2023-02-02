@@ -72,12 +72,7 @@ class Assets extends React.Component {
                           justifyContent: "center",
                         }}
                       >
-                        <a
-                          className="buttonAssets"
-                          href="https://staking.mob.land/core/dashboard"
-                        >
-                          GUIDE
-                        </a>{" "}
+                        <a className="buttonAssets">GUIDE</a>{" "}
                       </div>
                     </Grid>
                     <Grid item xs={3} sm={false} />

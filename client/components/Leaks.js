@@ -39,12 +39,7 @@ class Leaks extends React.Component {
                   sm={12}
                   className={isMobile ? "leakMobile" : ""}
                 >
-                  <a
-                    className="buttonLeaks"
-                    href="https://staking.mob.land/core/dashboard"
-                  >
-                    ROADMAP
-                  </a>
+                  <a className="buttonLeaks">ROADMAP</a>
                 </Grid>
                 <Grid item xs={3} sm={false} />
               </Grid>
