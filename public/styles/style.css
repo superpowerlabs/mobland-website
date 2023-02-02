@@ -1761,9 +1761,6 @@ table td {
     .buttonBrowse {
         font-size: 1.5vw !important;
     }
-    .buttonAssets {
-        font-size: 1.5vw !important;
-    }
 }
 .buttonSeed {
     border: 1px #f7f8f8 solid;
@@ -1990,7 +1987,26 @@ b,
     display: flex;
     justify-content: center;
 }
+.assetsTitle {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 7.5vw;
+    font-family: Wrong, sans-serif;
+    padding-top: 10%;
+}
 @media (max-width: 600px) {
+    .assetsTitle {
+        justify-content: center;
+        font-size: 10.5vw;
+        padding-top: 5%;
+    }
+    .assetsSub {
+        font-size: 2.5vw;
+        margin-top: 0;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
     .gangster3 {
         width: 56%;
         margin-top: 0px;
