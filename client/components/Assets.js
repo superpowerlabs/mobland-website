@@ -46,12 +46,12 @@ class Assets extends React.Component {
                     >
                       <img src={"/images/opensea.png"} alt={"OpenSea"} />
                     </a>
-                    <a href={""}>
+                    {/* <a href={""}>
                       <img
                         src={"/images/mobland-white-icon.png"}
                         alt={"mobland"}
                       />
-                    </a>
+                    </a> */}
                     <a
                       href={
                         "https://www.binance.com/en/nft/header-search?keyword=mobland"

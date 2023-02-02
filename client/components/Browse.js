@@ -49,7 +49,7 @@ class Browse extends Component {
                 <Grid item xs={12} sm={6} className="browseButtonDiv">
                   <a
                     className="buttonBrowse"
-                    href="https://blueprints.mob.land/"
+                    href="https://avatar.mob.land/"
                   >
                     {" "}
                     REVEAL APP
