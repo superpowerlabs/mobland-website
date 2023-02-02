@@ -22,7 +22,9 @@ class Browse extends Component {
                   style={{
                     width: "100%",
                     marginTop: "-10%",
-                    marginBottom: "-2%",
+                    marginBottom: "-3.5%",
+                    zIndex: "1",
+                    position: "relative",
                   }}
                 />
               </Grid>

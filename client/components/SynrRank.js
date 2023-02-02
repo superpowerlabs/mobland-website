@@ -16,7 +16,11 @@ class SynrRank extends Component {
               <img
                 alt={"Gangster"}
                 src={"/images/gangster-five.png"}
-                style={{ width: "100%", marginTop: "-21%" }}
+                style={{
+                  width: "100%",
+                  marginTop: "-21%",
+                  marginBottom: "-1%",
+                }}
               />
             </Grid>
           )}

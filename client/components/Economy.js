@@ -13,6 +13,8 @@ class Economy extends Component {
             backgroundSize: "cover",
             borderTop: "1px #3a3a3b solid",
             borderBottom: "1px #3a3a3b solid",
+            zIndex: "1",
+            position: "relative",
           }}
         >
           <Grid container>

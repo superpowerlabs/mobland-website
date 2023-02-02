@@ -10,6 +10,8 @@ class BuildYourEmpire extends Component {
             borderTop: "#404143 solid",
             borderBottom: "#404143 solid",
             backgroundImage: 'url("/images/woodland-bg.jpg")',
+            zIndex: "1",
+            position: "relative",
           }}
         >
           <Grid container>
