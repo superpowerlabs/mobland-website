@@ -14,7 +14,6 @@ class AssetImages extends Component {
           src={"/images/blueprint.png"}
           style={{
             marginTop: "-43%",
-            width: "70%",
             zIndex: "1",
             position: "relative",
             left: "-25%",
@@ -23,7 +22,7 @@ class AssetImages extends Component {
         <img
           alt={"Genesis Pass"}
           style={{
-            width: "36%",
+            width: "46%",
             marginTop: "-30%",
             position: "relative",
             left: "18%",
