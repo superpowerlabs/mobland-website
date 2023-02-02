@@ -13,23 +13,17 @@ class Browse extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={1} />
             {isMobileOnly ? null : (
-              <Grid item xs={12} sm={4}>
+              <Grid item sm={5} className={"browseGangsterDiv"}>
                 <img
                   alt={"Gangster"}
                   src={"/images/gangster-three.png"}
-                  style={{
-                    width: "100%",
-                    marginTop: "-10%",
-                    marginBottom: "-3.5%",
-                    zIndex: "1",
-                    position: "relative",
-                  }}
+                  className={"thirdGangster"}
                 />
               </Grid>
             )}
-            <Grid item xs={12} sm={7}>
+            <Grid item xs={12} sm={5}>
               <Grid item xs={12}>
                 <div className={isMobileOnly ? "title" : "titleRight"}>
                   Browse the Roster{" "}
@@ -44,25 +38,21 @@ class Browse extends Component {
                   they can’t refuse!{" "}
                 </div>
               </Grid>
-              <Grid container>
-                <Grid item xs={false} sm={4} />
-                <Grid item xs={12} sm={6} className="browseButtonDiv">
-                  <a className="buttonBrowse" href="https://avatar.mob.land/">
-                    {" "}
-                    REVEAL APP
-                  </a>{" "}
-                </Grid>
+              <Grid item xs={12} className="browseButtonDiv">
+                <a className="button" href="https://avatar.mob.land/">
+                  REVEAL APP
+                </a>
               </Grid>
             </Grid>
-            {!isMobileOnly ? null : (
-              <Grid item xs={12} sm={4}>
+            {isMobileOnly ? (
+              <Grid item xs={12} sm={false}>
                 <img
                   alt={"Gangster"}
                   src={"/images/gangster-three.png"}
                   className="gangster3"
                 />
               </Grid>
-            )}
+            ) : null}
           </Grid>
         </div>
       </div>

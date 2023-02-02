@@ -14,7 +14,7 @@ class Coins extends Component {
           src={"/images/ssynr-single.png"}
           style={{
             marginTop: "-30%",
-            width: "65%",
+            width: "75%",
             zIndex: "1",
             position: "relative",
             left: "20%",
@@ -23,10 +23,10 @@ class Coins extends Component {
         <img
           alt={"Seed Coin"}
           style={{
-            width: "55%",
-            marginTop: "-35%",
+            width: "60%",
+            marginTop: "-30%",
             position: "relative",
-            left: "5%",
+            left: "-25%",
             marginBottom: "-10%",
           }}
           src={"/images/seed-single-coin.png"}

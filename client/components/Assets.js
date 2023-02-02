@@ -36,7 +36,7 @@ class Assets extends React.Component {
               </Grid>
               <br />
               <Grid container>
-                <Grid item xs={false} sm={4} />
+                <Grid item xs={12} sm={4} />
                 <Grid item xs={12} sm={5}>
                   <div className="assets">
                     <a
@@ -72,7 +72,7 @@ class Assets extends React.Component {
                           justifyContent: "center",
                         }}
                       >
-                        <a className="buttonAssets">GUIDE</a>{" "}
+                        <a className="button">GUIDE</a>{" "}
                       </div>
                     </Grid>
                     <Grid item xs={3} sm={false} />
@@ -82,7 +82,7 @@ class Assets extends React.Component {
 
               <br />
             </Grid>
-            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={1} />
           </Grid>
         </div>
       </div>

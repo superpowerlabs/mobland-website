@@ -17,9 +17,9 @@ class Leaks extends React.Component {
         >
           <Grid container>
             <Grid item xs={false} sm={1} />
-            <Grid item xs={12} sm={7} style={{ paddingBottom: "11%" }}>
+            <Grid item xs={12} sm={5} style={{ paddingBottom: "11%" }}>
               <Grid item xs={12} sm={12}>
-                <div className="welcomeLeak">In The Works </div>
+                <div className="welcomeLeak">In The Works</div>
               </Grid>
               <br />
               <Grid item xs={12} sm={12}>
@@ -39,12 +39,13 @@ class Leaks extends React.Component {
                   sm={12}
                   className={isMobileOnly ? "leakMobile" : ""}
                 >
-                  <a className="buttonLeaks">ROADMAP</a>
+                  <a className="button">ROADMAP</a>
                 </Grid>
                 <Grid item xs={3} sm={false} />
               </Grid>
               <br />
             </Grid>
+            <Grid item xs={false} sm={6} />
           </Grid>
         </div>
       </div>
