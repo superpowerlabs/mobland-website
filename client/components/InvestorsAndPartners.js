@@ -1,11 +1,7 @@
 // eslint-disable-next-line no-undef
 import React from "react";
 import Base from "./Base";
-import Masonry from "react-masonry-component";
-async function sleep(millis) {
-  // eslint-disable-next-line no-undef
-  return new Promise((resolve) => setTimeout(resolve, millis));
-}
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 export default class InvestorsAndPartners extends Base {
   constructor(props) {
@@ -19,64 +15,18 @@ export default class InvestorsAndPartners extends Base {
     // eslint-disable-next-line no-undef
     this.scrollContainerRef = React.createRef();
 
-    this.bindMany(["magicScroll", "scrollLeftNow"]);
     this.count = 0;
   }
 
-  componentDidMount() {
-    // const { clientWidth } = this.scrollContainerRef.current;
-    // let initialLeft = clientWidth / 2;
-    // initialLeft -= initialLeft % 225;
-    // this.setState({ left: initialLeft });
-    // this.magicScroll();
-    // this.setTimeout(() => document.body.classList.add('render'), 60);
-  }
-
-  async scrollLeftNow(zero) {
-    let { left, direction } = this.state;
-    if (!zero && !(left % 225)) {
-      return;
-    }
-    this.scrollContainerRef.current.scrollLeft = left;
-    left += direction;
-    this.setState({
-      left,
-    });
-    await sleep(1);
-    await this.scrollLeftNow();
-  }
-
-  async magicScroll() {
-    let { left, direction } = this.state;
-    const { clientWidth } = this.scrollContainerRef.current;
-    const len = this.props.set.length;
-    if (direction === 1 && left + clientWidth >= 255 * (len - 3)) {
-      this.setState({ direction: -1 });
-    } else if (direction === -1 && left <= 0) {
-      this.setState({ direction: 1 });
-    }
-
-    await sleep(1000);
-    this.setState({
-      cls: "fade-out",
-    });
-    await this.scrollLeftNow(true);
-    this.setState({
-      cls: "fade-in",
-    });
-    await sleep(300);
-    this.magicScroll();
-  }
 
   render() {
     let i = this.props.start;
     return (
-      <div>
-        <div
+      <div className="scrollingWrapper">
+        <div style={{display: "inline-flex"}}
           // className={"hcontainer grid " + (this.state.cls || "")}
           ref={this.scrollContainerRef}
         >
-          <Masonry>
             {this.props.set.map((item) => {
               if (item.skip) {
                 return null;
@@ -160,7 +110,6 @@ export default class InvestorsAndPartners extends Base {
                 </div>
               );
             })}
-          </Masonry>
         </div>
       </div>
     );

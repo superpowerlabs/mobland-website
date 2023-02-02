@@ -1429,6 +1429,9 @@ table td {
     font-size: 2rem;
     margin: 40px 0;
     text-align: center;
+    color: yellow;
+    font-family: 'Mulish';
+    font-weight: bold;
 }
 
 @media (max-width: 900px) {
@@ -2098,6 +2101,11 @@ b,
     font-family: Wrong, sans-serif;
     padding-top: 10%;
 }
+.scrollingWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}      
 
 @media (max-width: 600px) {
     .welcome {
