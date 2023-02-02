@@ -47,10 +47,7 @@ class Browse extends Component {
               <Grid container>
                 <Grid item xs={false} sm={4} />
                 <Grid item xs={12} sm={6} className="browseButtonDiv">
-                  <a
-                    className="buttonBrowse"
-                    href="https://avatar.mob.land/"
-                  >
+                  <a className="buttonBrowse" href="https://avatar.mob.land/">
                     {" "}
                     REVEAL APP
                   </a>{" "}
