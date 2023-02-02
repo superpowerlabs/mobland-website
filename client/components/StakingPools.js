@@ -13,12 +13,12 @@ class StakingPools extends Component {
           }}
         >
           <Grid container>
-            <Grid item xs={false} md={1} />
-            <Grid item xs={12} md={6}>
+            <Grid item xs={false} sm={1} />
+            <Grid item xs={12} sm={6}>
               <Grid item xs={12}>
                 <div
                   className="welcome"
-                  style={{ paddingTop: isMobileOnly ? 30 : 130 }}
+                  style={{ paddingTop: isMobileOnly ? 30 : "15%" }}
                 >
                   ENTER THE MAFIA METAVERSE
                 </div>
@@ -72,7 +72,7 @@ class StakingPools extends Component {
                 <Grid item xs={false} sm={2} />
               </Grid>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={4}>
               <Grid container>
                 <Grid item xs={3} sm={false} />
                 <Grid item xs={6} sm={12}>
@@ -85,7 +85,7 @@ class StakingPools extends Component {
                 <Grid item xs={3} sm={false} />
               </Grid>
             </Grid>
-            <Grid item xs={false} md={1} />
+            <Grid item xs={false} sm={1} />
           </Grid>
         </div>
       </div>

@@ -1903,7 +1903,7 @@ table td {
 }
 
 .ranking {
-    padding-top: 60px;
+    padding-top: 4%;
     text-align: center;
 }
 
@@ -2042,7 +2042,7 @@ b,
 
 .femaleGangster {
     width: 70%;
-    margin: -90px 0 0 105px;
+    margin: -10% 0 0 23%;
 }
 
 .browseGangsterDiv {
@@ -2196,5 +2196,13 @@ b,
     .welcomeLeak {
         display: flex;
         justify-content: center;
+    }
+
+    .wrongMobile.top {
+        margin-left: 0;
+    }
+
+    .wrongMobile.bottom {
+        margin-left: 0;
     }
 }
