@@ -10,6 +10,8 @@ class Assets extends React.Component {
           style={{
             backgroundImage: 'url("/images/grafiti-wall.png")',
             backgroundSize: "cover",
+            zIndex: "1",
+            position: "relative",
           }}
         >
           <Grid container>
@@ -39,7 +41,7 @@ class Assets extends React.Component {
                   <div className="assets">
                     <a
                       href={
-                        "https://opensea.io/collection/mobland-genesis-synr-pass"
+                        "https://opensea.io/assets?search[query]=mobland%20"
                       }
                     >
                       <img src={"/images/opensea.png"} alt={"OpenSea"} />
@@ -51,7 +53,9 @@ class Assets extends React.Component {
                       />
                     </a>
                     <a
-                      href={"https://opensea.io/collection/mobland-blueprints"}
+                      href={
+                        "https://www.binance.com/en/nft/header-search?keyword=mobland"
+                      }
                     >
                       <img src={"/images/binance.png"} alt={"Binance"} />
                     </a>

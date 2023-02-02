@@ -1940,7 +1940,7 @@ b,
     height: 30px !important;
 }
 .coins {
-    padding-top: 5%;
+    margin-top: -20%;
 }
 .coins img {
     width: 70%;
