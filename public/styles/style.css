@@ -1418,7 +1418,7 @@ table td {
 }
 
 .grid-item {
-    margin: 0 24px 24px;
+    margin: 0 24px 0px;
 }
 
 @media (max-width: 900px) {
@@ -1433,10 +1433,10 @@ table td {
 
 .investor {
     font-size: 2rem;
-    margin: 40px 0;
+    margin: 40px 0 0;
     text-align: center;
     color: yellow;
-    font-family: "Mulish";
+    font-family: "Mulish", sans-serif;
     font-weight: bold;
 }
 
@@ -1447,7 +1447,7 @@ table td {
 }
 
 .list {
-    margin: 40px 0;
+    margin: 40px 0 0;
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -1457,6 +1457,15 @@ table td {
     padding-top: 12px;
     color: white;
     text-decoration: none;
+}
+
+.links span {
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+.links.white:hover {
+    color: white !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -1494,6 +1503,16 @@ table td {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .show > .nav-link {
     color: yellow;
+}
+
+footer.MuiContainer-root {
+    max-width: none !important;
+}
+
+@media (min-width: 1200px) {
+    footer.MuiContainer-root {
+        max-width: none !important;
+    }
 }
 
 .footer2 {

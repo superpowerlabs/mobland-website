@@ -21,7 +21,9 @@ class Economy extends Component {
             <Grid item xs={12} sm={1} />
             <Grid item xs={12} sm={7} style={{ paddingBottom: "2%" }}>
               <Grid item xs={12} sm={12}>
-                <div className="title" style={{ marginTop: "-5%" }}>
+                <div className="title"
+                     // style={{ marginTop: "-5%" }}
+                >
                   Game Economy
                 </div>
               </Grid>

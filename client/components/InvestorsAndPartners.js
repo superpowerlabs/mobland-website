@@ -99,8 +99,8 @@ export default class InvestorsAndPartners extends Base {
                     </div>
                   ) : (
                     <div style={{ color: "transparent" }}>
-                      <br />
-                      <br />
+                      {/*<br />*/}
+                      {/*<br />*/}
                     </div>
                   )}
                 </div>
