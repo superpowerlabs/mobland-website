@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import Base from "./Base";
 import { addToken } from "../utils/Wallet";
 
+
 export default class Header extends Base {
   constructor(props) {
     super(props);
@@ -16,6 +17,7 @@ export default class Header extends Base {
       addressExpanded: false,
       expanded: "",
       pathname: window.location.pathname,
+      showBg: false
     };
 
     this.bindMany(["expandAddress", "checkPathname", "setExpanded"]);
@@ -30,6 +32,15 @@ export default class Header extends Base {
   componentDidMount() {
     this.checkPathname();
     this.checkIfOperator();
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 80) {
+        this.setState({showBg: true});
+      } else {
+        this.setState({showBg: false});
+      }
+    });
+
   }
 
   expandAddress() {
@@ -49,7 +60,7 @@ export default class Header extends Base {
   }
 
   render() {
-    const { expanded } = this.state;
+    const { expanded, showBg } = this.state;
 
     // let address
     // let shortAddress;
@@ -98,7 +109,7 @@ export default class Header extends Base {
       <Navbar
         expanded={expanded}
         fixed={this.isMobile() ? undefined : "top"}
-        bg="dark"
+        bg={showBg ? "dark" : "transparent"}
         expand="lg"
         className={"roboto"}
       >

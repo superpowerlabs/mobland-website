@@ -436,10 +436,12 @@ span.button {
 }
 
 .navbar {
-    background-color: black !important;
+    background-color: transparent !important;
     border-bottom: none !important;
     background-size: 100%;
     padding: 1.2rem 1.4rem !important;
+    border-bottom: 1px solid transparent !important;
+    /*padding-top: 120px;*/
 }
 
 .hina {
@@ -1625,7 +1627,9 @@ table td {
 /*}*/
 
 .navbar-expand-lg.navbar-light.bg-dark {
-    padding-top: 120px;
+    background-color: #000000cc !important;
+    border-bottom: 1px solid #222 !important;
+    transition: background-color 1s, border-bottom 1s;
     /*max-width: 80%;*/
 }
 
@@ -2045,8 +2049,8 @@ b,
 }
 
 .gangster1 {
-    width: 66%;
-    margin-top: 12px;
+    width: 74%;
+    margin-top: -50px;
 }
 
 .femaleGangster {
