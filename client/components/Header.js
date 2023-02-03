@@ -148,13 +148,7 @@ export default class Header extends Base {
               </a>
             </Navbar.Text>
             <Navbar.Text className={"links"} as={Link} to={"/overview"}>
-              <span
-                className={"menucmd yellowHover"}
-                href={"/overview"}
-                target={"/overview"}
-              >
-                How To Play
-              </span>
+              How To Play
             </Navbar.Text>
             <Navbar.Text className={"links white"}>
               <span

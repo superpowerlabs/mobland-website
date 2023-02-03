@@ -19,7 +19,6 @@ function InfoTileItem({ cls = "", alt, title, img, description }) {
           </Box>
           <ul>
             <Typography
-              component="li"
               variant="subtitle1"
               className={"info-tile-description light"}
             >

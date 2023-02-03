@@ -2391,3 +2391,39 @@ b,
     color: white;
     font-family: Mulish, sans-serif;
 }
+
+.info-tile-base .MuiCardMedia-root {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+    margin-left: 3%;
+}
+
+.info-section .MuiCardMedia-root {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+}
+
+.MuiCardContent-root {
+    background-color: transparent !important;
+}
+
+.info-tile-base .MuiCardContent-root {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 79%;
+}
+
+.info-section .MuiCardContent-root {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    background: transparent
+        linear-gradient(180deg, #ffffff27 0%, #0000004b 100%) 0% 0% no-repeat
+        padding-box !important;
+}
