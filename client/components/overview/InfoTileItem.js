@@ -17,7 +17,7 @@ function InfoTileItem({ cls = "", alt, title, img, description }) {
           >
             <div className={"info-tile-title bold"}>{title.toUpperCase()}</div>
           </Box>
-          <ul>
+          <ul style={{ paddingLeft: 0 }}>
             <Typography
               variant="subtitle1"
               className={"info-tile-description light"}
