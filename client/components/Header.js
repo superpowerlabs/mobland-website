@@ -147,11 +147,11 @@ export default class Header extends Base {
                 Market
               </a>
             </Navbar.Text>
-            <Navbar.Text className={"links white"}>
+            <Navbar.Text className={"links"} as={Link} to={"/overview"}>
               <span
                 className={"menucmd yellowHover"}
-                // href={"https://marketplace.mob.land"}
-                // target={"_blank"}
+                href={"/overview"}
+                target={"/overview"}
               >
                 How To Play
               </span>
@@ -214,7 +214,6 @@ export default class Header extends Base {
               <span className={"bitSmaller mulish white"}>JOIN US</span>
 
               <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer">
-
                 <i className="fab fa-discord" />
               </a>
               <a

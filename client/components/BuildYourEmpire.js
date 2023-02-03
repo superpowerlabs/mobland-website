@@ -35,10 +35,7 @@ class BuildYourEmpire extends Component {
             </Grid>
             <Grid item xs={12} sm={12}>
               <div className="empireButtonDiv">
-                <a
-                  className="button"
-                  href="https://shadowmarket.mob.land"
-                >
+                <a className="button" href="https://shadowmarket.mob.land">
                   SHADOW MARKET
                 </a>
               </div>

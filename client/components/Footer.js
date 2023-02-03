@@ -253,11 +253,16 @@ function Footer({ setShowTerms }) {
               right={
                 <div style={{ textAlign: "right" }}>
                   <div style={{ color: "#fe0" }}>
-                    <span className={"bitSmaller mulish bottomSocialLink white"}>Join us</span>
-                    <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer"
-                       className={"bottomSocialLink"}
+                    <span
+                      className={"bitSmaller mulish bottomSocialLink white"}
                     >
-
+                      Join us
+                    </span>
+                    <a
+                      href={"https://discord.gg/tSVtRkppnp"}
+                      rel="noreferrer"
+                      className={"bottomSocialLink"}
+                    >
                       <i className="fab fa-discord" />
                     </a>
                     <a
