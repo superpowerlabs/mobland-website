@@ -35,23 +35,20 @@ function bullet() {
 function SeedFarmGuide() {
   const sections = [
     {
-      title: "WHAT IS SEED?",
+      title: "THE SEED TOKEN",
       img: SeedPileImg,
-      display_img: "left",
+      display_img: "centered",
       description: [
-        <span>
-          SEED fuels the cross-chain MOBLAND economy and is a key asset to
-          generate revenue in the Mafia Metaverse. SEED tokens will be heavily
-          consumed in the production of in-game assets, operating businesses
-          on-chain, maintaining Real Estate and businesses, hiring mercenaries
-          to attack and defend valuable in-game assets, utilizing in-game
-          services, and participating in combat and upgradeability across the
-          ecosystem.
-        </span>,
-        <span>
-          Minted on the BNB chain, SEED can be obtained in four different ways
-          within the SEED Farm, which uses cross-chain infrastructure called
-          Tesseract, developed by Superpower Labs.
+        <span
+          style={{
+            width: "61%",
+            textAlign: "center",
+            display: "block",
+            marginLeft: "22%",
+          }}
+        >
+          MOBLAND’s in-game currency, a token that fuels the chain-agnostic
+          #MafiaMetaverse It is a core asset to generate commodities & resources
         </span>,
       ],
     },
@@ -77,7 +74,7 @@ function SeedFarmGuide() {
     {
       title: "THE GENERATION PROCESS",
       img: PortalImg,
-      display_img: "left",
+      display_img: "floatLeft",
       description: [
         <span>
           Once you have chosen your desired method, you will be taken to the
@@ -123,40 +120,6 @@ function SeedFarmGuide() {
 
   return (
     <Grid container spacing={2} alignItems="flex-end">
-      <Grid item xs={12} sm={12} md={12} className={"centered"}>
-        <LargeCard>
-          <CardContent>
-            <Title
-              navigateTo={null}
-              title="WHAT DO YOU NEED?"
-              upperCase={true}
-            />
-            <Line
-              description={[
-                <span>
-                  To generate SEED in the SEED Farm, you will need the
-                  following:
-                </span>,
-                <span>
-                  {bullet()} Some <b>Ethereum</b> for gas (transaction) fees*{" "}
-                </span>,
-                <span>
-                  {bullet()} Some <b>BNB</b> for gas (transaction) fees{" "}
-                </span>,
-                <span>
-                  {bullet()} <b>SYNR</b> tokens <u>OR</u> <b>sSYNR</b> tokens{" "}
-                  <u>OR</u> a <b>SYNR Pass</b> <u>OR</u> a <b>Blueprint</b>
-                </span>,
-                <span>
-                  *if you are staking a Blueprint you will not need Ethereum for
-                  gas fees, only BNB.
-                </span>,
-              ]}
-            />
-          </CardContent>
-        </LargeCard>
-      </Grid>
-
       {sections.map((section) => {
         return (
           <Grid

@@ -5,7 +5,7 @@ function InfoSection({
   title,
   subtitle = "",
   img = null,
-  display_img = "left",
+  display_img = "",
   description = "",
   footer = "",
   icons = [],
@@ -39,16 +39,8 @@ function InfoSection({
         </div>
       ) : (
         <div>
-          <div
-            className="info-section-title bold centered"
-            style={{ marginBottom: 8 }}
-          >
-            {title}
-          </div>
           {img ? (
-            <div
-              className={display_img === "left" ? "floatLeft" : "floatRight"}
-            >
+            <div className={display_img}>
               <img
                 alt={title}
                 src={img}
@@ -56,6 +48,12 @@ function InfoSection({
               />
             </div>
           ) : null}
+          <div
+            className="info-section-title bold centered"
+            style={{ marginBottom: 8, paddingTop: 15 }}
+          >
+            {title}
+          </div>
           <div className={"light bit-smaller"}>
             {description.map((elem) => {
               return <p key={"p_" + i++}>{elem}</p>;
