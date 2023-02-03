@@ -16,8 +16,8 @@ class StakingPools extends Component {
           loop={isMobileOnly ? true : false}
           src={
             isMobileOnly
-              ? "/images/header-gangster-mobile.mp4"
-              : "/images/header-gangster.mp4"
+              ? "https://assets.mob.land/videos/header-gangster-mobile.mp4"
+              : "https://assets.mob.land/videos/header-gangster.mp4"
           }
         >
           <ControlBar className="controlbar" />
@@ -87,7 +87,6 @@ class StakingPools extends Component {
           </Grid>
         </Grid>
       </div>
-      // </div>
     );
   }
 }
