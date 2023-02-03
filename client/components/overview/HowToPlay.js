@@ -17,7 +17,6 @@ import SeedPileImg from "../../images/Seed_Pile.png";
 import SynrPileImg from "../../images/SYNR_Pile.png";
 import PortalImg from "../../images/Portal.png";
 import YellowArrowImg from "../../images/YellowArrow.png";
-import HowToPlayImg from "../../images/HowToPlay.png";
 import { isMobileOnly } from "react-device-detect";
 
 // TODO dry this code (it's also in HowToPlay.js)
@@ -38,14 +37,12 @@ function HowToPlay() {
       <Box sx={{ maxWidth: isMobileOnly ? "96%" : "80%" }}>
         <ul>
           <Typography
-            component="li"
             variant="subtitle1"
             align="center"
             className={"tile-description light"}
           >
-            <span className={"bold"}>Welcome to the MOBLAND!&nbsp;</span>
-            Here we’ll give you a quick overview of how to start your path to
-            becoming Kingpin of the Mafia Metaverse!
+            Welcome to the MOBLAND! Here we’ll give you a quick overview of how
+            to start your path to becoming Kingpin of the Mafia Metaverse!
             <br />
             If you’re not sure what a specific item is, head to the assets guide
             above for a handy list of definitions for all the items you’ll come
@@ -179,22 +176,7 @@ function HowToPlay() {
           width="100%"
           alignItems="center"
           justifyContent="center"
-        >
-          <CardMedia
-            component="img"
-            alt="How To Play Diagram"
-            image={HowToPlayImg}
-            style={{
-              width: "auto",
-              verticalAlign: "center",
-              minHeight: 514,
-              paddingBottom: 20,
-              borderRadius: 24,
-              border: "1px solid #ffffff60",
-              marginBottom: 34,
-            }}
-          />
-        </Box>
+        ></Box>
       </LargeCard>
     </Stack>
   );

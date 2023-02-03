@@ -4,7 +4,6 @@ import { CircularProgress, Typography } from "@mui/material";
 function Line({ line, cls = "" }) {
   return (
     <Typography
-      component="li"
       variant="subtitle1"
       align="center"
       className={"tile-description " + (cls || "light")}
