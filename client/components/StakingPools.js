@@ -1,17 +1,31 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import { isMobileOnly } from "react-device-detect";
+import { Player, ControlBar } from "video-react";
 
 class StakingPools extends Component {
   render() {
     return (
       <div>
-        <div
+        
+          <Player
+          ref={(player) => {
+            this.player = player;
+          }}
+          autoPlay={true}
+          muted={true}
+          poster={'url("/images/city.jpg")'}
+          src={"/images/header-video.mp4"}
+
+        >
+          <ControlBar className="controlbar" />
+        </Player>
+        {/* <div
           style={{
             backgroundImage: 'url("/images/city.jpg")',
             backgroundSize: "cover",
           }}
-        >
+        > */}
           <Grid container>
             <Grid item xs={false} sm={1} />
             <Grid item xs={12} sm={6}>
@@ -88,7 +102,7 @@ class StakingPools extends Component {
             <Grid item xs={false} sm={1} />
           </Grid>
         </div>
-      </div>
+      // </div>
     );
   }
 }
