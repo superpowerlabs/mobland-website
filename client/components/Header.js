@@ -214,7 +214,6 @@ export default class Header extends Base {
               <span className={"bitSmaller mulish white"}>JOIN US</span>
 
               <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer">
-
                 <i className="fab fa-discord" />
               </a>
               <a
