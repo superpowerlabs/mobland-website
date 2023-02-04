@@ -34,8 +34,14 @@ function HowToPlay() {
   return (
     <Stack spacing={2} alignItems="center">
       {/* stack item one */}
-      <Box sx={{ maxWidth: isMobileOnly ? "96%" : "80%" }}>
-        <ul>
+      <Box
+        sx={{
+          maxWidth: isMobileOnly ? "96%" : "80%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <ul style={{ width: "76%" }}>
           <Typography
             variant="subtitle1"
             align="center"
