@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Card } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Exchanges from "./Exchanges";
+import NftExchange from "./NftExchange";
 
 import SeedPileImg from "../../images/Seed_Pile.png";
 import InfoSection from "./InfoSection";
@@ -126,8 +127,11 @@ function SeedFarmGuide() {
         );
       })}
 
-      <Grid item xs={12} sm={12} md={12}>
+      <Grid item xs={12} sm={6} md={6}>
         <Exchanges title="No tokens? SYNR is available on these platforms:" />
+      </Grid>
+      <Grid item xs={12} sm={6} md={6}>
+        <NftExchange title="NFT's are available n these platforms:" />
       </Grid>
     </Grid>
   );

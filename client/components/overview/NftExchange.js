@@ -2,39 +2,32 @@ import * as React from "react";
 import { CardMedia, Stack } from "@mui/material";
 import Title from "../tile/Title";
 
-import UniswapIcon from "../../images/UniswapWhite.png";
-import KucoinIcon from "../../images/KucoinIcon_White.png";
-import ByBitIcon from "../../images/ByBit_White.png";
-import BitmartIcon from "../../images/Bitmart_White.png";
+import mobland from "../../images/mobland-white-icon.png";
+import opensea from "../../images/opensea.png";
+import binance from "../../images/binance.png";
 
 const exchanges = [
   {
-    img: KucoinIcon,
+    img: mobland,
     height: "52px",
     padding: "10px",
-    link: "https://www.kucoin.com/trade/SYNR-USDT?spm=kcWeb.B5markets.tradeList.1",
+    link: "https://shadowmarket.mob.land",
   },
   {
-    img: ByBitIcon,
+    img: opensea,
     height: "40px",
     padding: "12px",
-    link: "https://www.bybit.com/en-US/trade/spot/SYNR/USDT",
+    link: "https://opensea.io/assets?search[query]=mobland%20",
   },
   {
-    img: BitmartIcon,
+    img: binance,
     height: "45px",
     padding: "10px",
-    link: "https://www.bitmart.com/trade/en?layout=basic&symbol=SYNR_USDT",
-  },
-  {
-    img: UniswapIcon,
-    height: "55px",
-    padding: "0px",
-    link: "https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xbc6e06778708177a18210181b073da747c88490a",
+    link: "https://www.binance.com/en/nft/header-search?keyword=mobland",
   },
 ];
 
-function Exchanges({ title = "", style = {} }) {
+function NftExchange({ title = "", style = {} }) {
   let i = 0;
   return (
     <div>
@@ -67,4 +60,4 @@ function Exchanges({ title = "", style = {} }) {
   );
 }
 
-export default Exchanges;
+export default NftExchange;

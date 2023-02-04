@@ -31,10 +31,6 @@ function AssetsGuide() {
         "SYNR is the governance token of MOBLAND’s Mafia Metaverse. It can be obtained on a number of exchanges and can be staked either in the Core Pool to generate more SYNR or sSYNR, or in the SEED Farm to generate SEED",
       where: [
         {
-          link: "https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xbc6e06778708177a18210181b073da747c88490a",
-          src: UniswapIcon,
-        },
-        {
           link: "https://www.kucoin.com/trade/SYNR-USDT?spm=kcWeb.B5markets.tradeList.1",
           src: KucoinIcon,
         },
@@ -45,6 +41,10 @@ function AssetsGuide() {
         {
           link: "https://www.bitmart.com/trade/en?layout=basic&symbol=SYNR_USDT",
           src: BitmartIcon,
+        },
+        {
+          link: "https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xbc6e06778708177a18210181b073da747c88490a",
+          src: UniswapIcon,
         },
         ,
       ],
