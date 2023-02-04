@@ -6,12 +6,14 @@ import {
   CardMedia,
   Stack,
   Box,
+  Grid,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import Title from "../tile/Title";
 import Line from "../tile/Description";
 import Exchanges from "./Exchanges";
+import NftExchange from "./NftExchange";
 
 import SeedPileImg from "../../images/Seed_Pile.png";
 import SynrPileImg from "../../images/SYNR_Pile.png";
@@ -186,6 +188,14 @@ function HowToPlay() {
           justifyContent="center"
         ></Box>
       </LargeCard>
+      <Grid container>
+        <Grid item xs={12} sm={6} md={6}>
+          <Exchanges title="No tokens? SYNR is available on these platforms:" />
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <NftExchange title="NFT's are available on these platforms:" />
+        </Grid>
+      </Grid>
     </Stack>
   );
 }
