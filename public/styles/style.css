@@ -2343,6 +2343,47 @@ b,
     padding: 30px;
 }
 
+.info-section-subtitle {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: center !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+    padding: 20px;
+}
+
+.info-section-description {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: left !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+}
+
+.info-section .MuiCardContent-root {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.info-section .MuiCardMedia-root {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+}
+
+.info-section .MuiCard-root .img {
+    height: 220px !important;
+    width: auto;
+    margin: 12px 12px 12px 24px;
+}
+
+.info-section .icon {
+    height: 80px !important;
+    margin: 12px;
+    align-self: center !important;
+}
+
 .floatLeft {
     float: left;
 }
@@ -2391,12 +2432,6 @@ b,
     margin-left: 3%;
 }
 
-.info-section .MuiCardMedia-root {
-    display: inline-block;
-    vertical-align: middle;
-    width: 15%;
-}
-
 .MuiCardContent-root {
     background-color: transparent !important;
 }
@@ -2406,12 +2441,6 @@ b,
     vertical-align: middle;
     text-align: left;
     width: 79%;
-}
-
-.info-section .MuiCardContent-root {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
 }
 
 .css-bhp9pd-MuiPaper-root-MuiCard-root {

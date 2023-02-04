@@ -11,6 +11,14 @@ import BlueprintIcon from "../../images/Blueprint.png";
 import SeedFarmIcon from "../../images/Portal.png";
 import TurfIcon from "../../images/Turf_8x8.png";
 import WeedFarmIcon from "../../images/WeedFarm.png";
+import UniswapIcon from "../../images/UniswapWhite.png";
+import KucoinIcon from "../../images/KucoinIcon_White.png";
+import ByBitIcon from "../../images/ByBit_White.png";
+import BitmartIcon from "../../images/Bitmart_White.png";
+import bud from "../../images/bud.png";
+import binance from "../../images/binance.png";
+import opensea from "../../images/opensea.png";
+import mobland from "../../images/mobland-white-icon.png";
 import Exchanges from "./Exchanges";
 
 function AssetsGuide() {
@@ -21,6 +29,25 @@ function AssetsGuide() {
       important: true,
       description:
         "SYNR is the governance token of MOBLAND’s Mafia Metaverse. It can be obtained on a number of exchanges and can be staked either in the Core Pool to generate more SYNR or sSYNR, or in the SEED Farm to generate SEED",
+      where: [
+        {
+          link: "https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xbc6e06778708177a18210181b073da747c88490a",
+          src: UniswapIcon,
+        },
+        {
+          link: "https://www.kucoin.com/trade/SYNR-USDT?spm=kcWeb.B5markets.tradeList.1",
+          src: KucoinIcon,
+        },
+        {
+          link: "https://www.bybit.com/en-US/trade/spot/SYNR/USDT",
+          src: ByBitIcon,
+        },
+        {
+          link: "https://www.bitmart.com/trade/en?layout=basic&symbol=SYNR_USDT",
+          src: BitmartIcon,
+        },
+        ,
+      ],
       button: false,
     },
     {
@@ -29,6 +56,13 @@ function AssetsGuide() {
       important: true,
       description:
         "sSYNR, or Synthetic SYNR, is in-game synthetic currency that will be usable only in-game and in the MOBLAND marketplace. sSYNR can only be acquired by staking SYNR and can be swapped in the SEED Farm to generate SEED instead!",
+      where: [
+        {
+          link: "#",
+          src: mobland,
+        },
+        ,
+      ],
       button: false,
     },
     {
@@ -37,14 +71,28 @@ function AssetsGuide() {
       important: true,
       description:
         "SEED fuels the cross-chain MOBLAND economy and is a key asset to generate revenue in the Mafia Metaverse. SEED can be obtained in the SEED Farm either by staking SYNR, SYNR Passes or Blueprints, or by swapping sSYNR.",
+      where: [
+        {
+          link: "https://staking.mob.land/seed/dashboard",
+          src: mobland,
+        },
+        ,
+      ],
       button: false,
     },
     {
-      title: "SYNR PASSES",
-      img: SynrPassIcon,
+      title: "BUD",
+      img: bud,
       important: true,
       description:
-        "The SYNR Passes, minted on the Ethereum network, gives holders exclusive in-game benefits. They can be staked to generate SEED either as the equivalent of XXXX SYNR or as a multiplier to increase the yield of previously staked SYNR.",
+        "BUD is an in-game asset produced by Weed Farms. Consume BUD to upgrade farms, repair damaged farms, upgrade characters, heal injured characters and additional in-game utilities.",
+      where: [
+        {
+          link: "https://shadowmarket.mob.land/",
+          src: mobland,
+        },
+        ,
+      ],
       button: false,
     },
     {
@@ -53,14 +101,32 @@ function AssetsGuide() {
       important: true,
       description:
         "Blueprints are NFTs minted on the Binance network and represent in-game characters. They can be staked to generate SEED either as the equivalent of XXXX SYNR or as a multiplier to increase the yield of previously staked SYNR.",
+      where: [
+        {
+          link: "https://opensea.io/collection/mobland-blueprints",
+          src: opensea,
+        },
+        {
+          link: "https://www.binance.com/en/nft/collection/syn-city-limited-blueprint-519022065384943617?isBack=1",
+          src: binance,
+        },
+        ,
+      ],
       button: false,
     },
     {
-      title: "SEED FARMS",
-      img: SeedFarmIcon,
+      title: "SYNR PASS",
+      img: SynrPassIcon,
       important: true,
       description:
-        "The SEED Farm is where you can generate SEED (BNB network) by staking SYNR,SYNR Passes, Blueprints, or by swapping sSYNR (Ethereum network). These cross-chain transactions are achieved by utilising Tesseract technology, developed by Superpower Labs.",
+        "The SYNR Passes, minted on the Ethereum network, gives holders exclusive in-game benefits. They can be staked to generate SEED either as SYNR equivalent or as a multiplier to increase the yield of previously staked SYNR.",
+      where: [
+        {
+          link: "https://opensea.io/collection/mobland-genesis-synr-pass",
+          src: opensea,
+        },
+        ,
+      ],
       button: false,
     },
     {
@@ -69,6 +135,17 @@ function AssetsGuide() {
       important: true,
       description:
         "Turf is MOBLAND’s in-game land parcels that can be traded on-chain. There are 5 different Turf sizes, and each can be utilised to build and operate your own businesses and/or by leasing out your Turf to other businesses in MOBLAND.",
+      where: [
+        {
+          link: "https://opensea.io/collection/mobland-turf",
+          src: opensea,
+        },
+        {
+          link: "https://shadowmarket.mob.land/",
+          src: mobland,
+        },
+        ,
+      ],
       button: false,
     },
     {
@@ -77,6 +154,17 @@ function AssetsGuide() {
       important: true,
       description:
         "WEED Farms can be set up to plant (stake) SEED in order to grow WEED Tokens. WEED Farm owners oversee operations, defend and attack to grow their empires, upgrade features, and earn a share of the goods & services produced.",
+      where: [
+        {
+          link: "https://opensea.io/collection/mobland-weed-farm",
+          src: opensea,
+        },
+        {
+          link: "https://shadowmarket.mob.land/",
+          src: mobland,
+        },
+        ,
+      ],
       button: false,
     },
   ];
@@ -92,13 +180,11 @@ function AssetsGuide() {
               img={tile.img}
               alt={tile.title}
               description={tile.description}
+              where={tile.where}
             />
           </Grid>
         );
       })}
-      <Grid item xs={12} sm={12} md={12}>
-        <Exchanges title="No tokens? SYNR is available on these platforms:" />
-      </Grid>
     </Grid>
   );
 }

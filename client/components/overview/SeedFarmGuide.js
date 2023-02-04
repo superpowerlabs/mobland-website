@@ -1,20 +1,22 @@
 import React from "react";
-import { Grid, Card, CardContent } from "@mui/material";
+import { Grid, Card } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import Title from "../tile/Title";
-import Line from "../tile/Description";
 import Exchanges from "./Exchanges";
-import { conf } from "../../config";
 
 import SeedPileImg from "../../images/Seed_Pile.png";
-import PortalImg from "../../images/Portal.png";
-import WeedFarmImg from "../../images/WeedFarm.png";
 import InfoSection from "./InfoSection";
 
 import SynrIcon from "../../images/SYNR_Double.png";
+import BothPortal from "../../images/BothPortals.png";
 import SsynrIcon from "../../images/sSYNR_Double.png";
-import SeedIcon from "../../images/SEED_Double.png";
-import BlueprintIcon from "../../images/Blueprint.png";
+import Genesis from "../../images/GenesisPass.png";
+import BlueprintIcon from "../../images/blueprint.png";
+import GrowBud from "../../images/GrowBud.png";
+import Combat from "../../images/Combat.png";
+import RentIcon from "../../images/RentIcon.png";
+import LendIcon from "../../images/LendIcon.png";
+import HireMercs from "../../images/HireMercs.png";
+import UpgradeIconTwo from "../../images/UpgradeIconTwo.png";
 import { isMobileOnly } from "react-device-detect";
 
 // TODO dry this code (it's also in HowToPlay.js)
@@ -67,51 +69,30 @@ function SeedFarmGuide() {
       icons: [
         { title: "STACK SYNR", src: SynrIcon },
         { title: "SWAP sSYNR", src: SsynrIcon },
-        { title: "STAKE SYNR PASS*", src: SeedIcon },
+        { title: "STAKE SYNR PASS*", src: Genesis },
         { title: "STAKE BLUEPRINT*", src: BlueprintIcon },
       ],
     },
     {
       title: "THE GENERATION PROCESS",
-      img: PortalImg,
-      display_img: "floatLeft",
-      description: [
-        <span>
-          Once you have chosen your desired method, you will be taken to the
-          generator to complete the process. Generating SEED will require to
-          have both Ethereum and BNB for gas (transaction) fees.
-        </span>,
-        <span>
-          Due to the complex, cross-chain nature of the transactions, the whole
-          process can take around 10 minutes to complete. The process will also
-          require you to follow and accept several prompts from MetaMask, e.g.
-          to allow the site to use your tokens and switch networks, so keep an
-          eye out for those messages!
-        </span>,
-        <span>
-          Once complete, your staked assets can be viewed and claimed in the
-          Vesting section, and your SEED can be claimed in the Rewards section.
-        </span>,
-      ],
+      description: [],
+    },
+    {
+      title: "",
+      description: [],
+      img: BothPortal,
+      display_img: "centered",
     },
     {
       title: "WHAT DO I USE SEED FOR?",
-      img: WeedFarmImg,
-      display_img: "right",
-      description: [
-        <span>
-          SEED token will be heavily consumed in the production of in-game
-          assets, operating businesses on-chain, maintaining Real Estate and
-          businesses, hiring mercenaries to attack and raid other Synners’
-          assets, defending your own valuable assets from enemies, utilizing
-          in-game services, and participating in combat and upgradeability
-          across the ecosystem.
-        </span>,
-        <span>
-          For more detailed information on how to use your SEED tokens on your
-          path to becoming a Kingpin of theMafia Metaverse, head to the How To
-          Play tab here!
-        </span>,
+      description: [],
+      icons: [
+        { title: "GROW BUD", src: GrowBud },
+        { title: "ENGAGE IN COMBAT", src: Combat },
+        { title: "RENT ASSETS", src: RentIcon },
+        { title: "LEND ASSETS", src: LendIcon },
+        { title: "HORE MERCENARIES", src: HireMercs },
+        { title: "UPGRADE ASSETS", src: UpgradeIconTwo },
       ],
     },
   ];

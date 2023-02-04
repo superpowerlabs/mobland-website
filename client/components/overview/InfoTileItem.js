@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Box, Typography } from "@mui/material";
 
-function InfoTileItem({ cls = "", alt, title, img, description }) {
+function InfoTileItem({ cls = "", alt, title, img, description, where }) {
+  let i = 0;
   return (
     <div component="main" className={"info-tile-base"}>
       <Card>
@@ -26,6 +27,25 @@ function InfoTileItem({ cls = "", alt, title, img, description }) {
             >
               {description}
             </Typography>
+            {where ? (
+              <div className="bold mulish">
+                Where to get:
+                {where.map((icon) => {
+                  return (
+                    <a href={icon.link} key={"icon" + i++}>
+                      <CardMedia
+                        key={"icon" + i++}
+                        style={{
+                          width: "5%",
+                        }}
+                        component="img"
+                        image={icon.src}
+                      />
+                    </a>
+                  );
+                })}
+              </div>
+            ) : null}
           </ul>
         </CardContent>
       </Card>
