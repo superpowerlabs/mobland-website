@@ -131,7 +131,7 @@ function SeedFarmGuide() {
         <Exchanges title="No tokens? SYNR is available on these platforms:" />
       </Grid>
       <Grid item xs={12} sm={6} md={6}>
-        <NftExchange title="NFT's are available n these platforms:" />
+        <NftExchange title="NFT's are available on these platforms:" />
       </Grid>
     </Grid>
   );
