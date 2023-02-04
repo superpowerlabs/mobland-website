@@ -2280,17 +2280,24 @@ b,
 
 .overview-title {
     font-family: Wrong, sans-serif;
-    font-size: 2.6rem;
+    font-size: 4vw;
     text-transform: uppercase;
     align-self: center;
 }
 
+.infoButton {
+    width: 200px;
+    height: 84%;
+}
+
 .infoButtons .MuiButtonBase-root {
     border-radius: 100px !important;
-    background: #575757 0 0 no-repeat padding-box !important;
+    background: white 0 0 no-repeat padding-box !important;
     border: 1px solid #707070 !important;
-    color: #ffffffd1 !important;
-    font-size: 1rem !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-family: Mulish, sans-serif !important;
+    font-size: 1vw !important;
     min-width: 160px !important;
 }
 

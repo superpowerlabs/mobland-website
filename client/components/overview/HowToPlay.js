@@ -42,8 +42,8 @@ function HowToPlay() {
             className={"tile-description light"}
           >
             Welcome to the MOBLAND! Here we’ll give you a quick overview of how
-            to start your path to becoming Kingpin of the Mafia Metaverse!
-            If you’re not sure what a specific item is, head to the assets guide
+            to start your path to becoming Kingpin of the Mafia Metaverse! If
+            you’re not sure what a specific item is, head to the assets guide
             above for a handy list of definitions for all the items you’ll come
             across.
           </Typography>

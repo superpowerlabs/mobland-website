@@ -31,7 +31,7 @@ function Overview({ subsection }) {
           justifyContent: "center",
           p: 1,
           m: 1,
-          pb: 8,
+          pb: 4,
           borderRadius: 1,
         }}
         className={"infoButtons"}

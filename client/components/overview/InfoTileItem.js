@@ -29,7 +29,7 @@ function InfoTileItem({ cls = "", alt, title, img, description, where }) {
             </Typography>
             {where ? (
               <div className="bold mulish">
-               <span>Where to get:</span>
+                <span>Where to get:</span>
                 {where.map((icon) => {
                   return (
                     <a href={icon.link} key={"icon" + i++}>
