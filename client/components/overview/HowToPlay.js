@@ -66,6 +66,7 @@ function HowToPlay() {
               width: "auto",
               verticalAlign: "center",
               maxHeight: "94px",
+              paddingTop: "2%",
             }}
           />
         </Box>
@@ -112,6 +113,7 @@ function HowToPlay() {
               width: "auto",
               verticalAlign: "center",
               height: "130px",
+              paddingTop: "1.5%",
             }}
           />
         </Box>
@@ -156,6 +158,7 @@ function HowToPlay() {
               width: "auto",
               verticalAlign: "center",
               height: "94px",
+              paddingTop: "1.5%",
             }}
           />
         </Box>

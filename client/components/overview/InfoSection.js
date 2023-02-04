@@ -49,7 +49,7 @@ function InfoSection({
             </div>
           ) : null}
           <div
-            className="info-section-title bold centered"
+            className="info-section-title bold centered mulish"
             style={{ marginBottom: 8, paddingTop: 15 }}
           >
             {title}

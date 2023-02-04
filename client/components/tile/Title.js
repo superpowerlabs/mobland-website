@@ -14,7 +14,7 @@ function Title({ style = {}, navigateTo, title, upperCase }) {
         mb: 2,
       }}
     >
-      <div style={style} className={"tile-title bold"}>
+      <div style={style} className={"tile-title bold mulish"}>
         {navigateTo ? (
           <RouterLink
             to={navigateTo}

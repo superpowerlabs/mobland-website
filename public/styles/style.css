@@ -2012,14 +2012,6 @@ footer.MuiContainer-root {
 }
 
 b,
-.bold {
-    font-family: ModecoBold, sans-serif !important;
-}
-
-.light {
-    font-family: ModecoLight, sans-serif !important;
-}
-
 .two-columns {
     clear: both;
     padding: 0 12px;
@@ -2046,7 +2038,7 @@ b,
 }
 
 .mulish {
-    font-family: Mulish, sans-serif;
+    font-family: Mulish, sans-serif !important;
 }
 
 .assets {
@@ -2389,7 +2381,7 @@ b,
 
 .light {
     color: white;
-    font-family: Mulish, sans-serif;
+    font-family: Mulish, sans-serif !important;
 }
 
 .info-tile-base .MuiCardMedia-root {
