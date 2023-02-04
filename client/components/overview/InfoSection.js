@@ -17,11 +17,16 @@ function InfoSection({
         <div>
           <div className="info-section-title">{title}</div>
           <div className="info-section-subtitle">{subtitle}</div>
-          <Grid container spacing={0} alignItems="flex-end">
-            <Grid item xs={0} sm={2} md={2} />
+          <Grid container justifyContent="center">
             {icons.map((icon) => {
               return (
-                <Grid key={"icon_" + i++} item xs={12} sm={2} md={2}>
+                <Grid
+                  key={"icon_" + i++}
+                  item
+                  xs={12}
+                  sm={icons.length > 4 ? 4 : 3}
+                  md={icons.length > 4 ? 4 : 3}
+                >
                   <Card className={"sectionCard"}>
                     <div className={"centered"}>
                       <img src={icon.src} alt={icon.title} className="icon" />
