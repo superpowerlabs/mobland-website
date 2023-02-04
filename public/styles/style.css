@@ -2009,7 +2009,8 @@ footer.MuiContainer-root {
 }
 
 .bit-smaller {
-    font-size: 90%;
+    font-size: 1.05vw;
+    text-align: center;
 }
 
 b,
@@ -2455,4 +2456,9 @@ b,
     background: transparent
         linear-gradient(180deg, #ffffff27 0%, #0000004b 100%) 0% 0% no-repeat
         padding-box !important;
+}
+
+.extraLight {
+    font-weight: lighter !important;
+    font-family: Mulish, sans-serif !important;
 }

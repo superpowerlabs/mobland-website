@@ -16,7 +16,7 @@ function InfoSection({
       {icons.length ? (
         <div>
           <div className="info-section-title">{title}</div>
-          <div className="info-section-subtitle">{subtitle}</div>
+          <div className="info-section-subtitle extraLight">{subtitle}</div>
           <Grid container justifyContent="center">
             {icons.map((icon) => {
               return (
@@ -40,7 +40,7 @@ function InfoSection({
             })}
             <Grid item xs={0} sm={2} md={2} />
           </Grid>
-          <div className="info-section-footer light">{footer}</div>
+          <div className="info-section-footer">{footer}</div>
         </div>
       ) : (
         <div>
@@ -59,7 +59,7 @@ function InfoSection({
           >
             {title}
           </div>
-          <div className={"light bit-smaller"}>
+          <div className={"extraLight bit-smaller"}>
             {description.map((elem) => {
               return <p key={"p_" + i++}>{elem}</p>;
             })}

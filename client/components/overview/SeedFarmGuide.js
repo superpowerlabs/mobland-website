@@ -59,14 +59,6 @@ function SeedFarmGuide() {
       title: "HOW TO GENERATE SEED",
       subtitle:
         "The are four different methods to generate SEED in the SEED Farm:",
-      footer: (
-        <span>
-          *SYNR Passes and Blueprints can be staked in two different ways:
-          <br />
-          Either as the equivalent of 180000 SYNR (SYNR Passes) or 10000 SYNR
-          (Blueprints), or as a multiplier to increase the yield of staked SYNR.
-        </span>
-      ),
       icons: [
         { title: "STACK SYNR", src: SynrIcon },
         { title: "SWAP sSYNR", src: SsynrIcon },
