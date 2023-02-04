@@ -36,7 +36,8 @@ function InfoTileItem({ cls = "", alt, title, img, description, where }) {
                       <CardMedia
                         key={"icon" + i++}
                         style={{
-                          width: "5%",
+                          width: "7%",
+                          paddingBottom: 6,
                         }}
                         component="img"
                         image={icon.src}
