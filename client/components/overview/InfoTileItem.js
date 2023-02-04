@@ -29,15 +29,14 @@ function InfoTileItem({ cls = "", alt, title, img, description, where }) {
             </Typography>
             {where ? (
               <div className="bold mulish">
-                Where to get:
+               <span>Where to get:</span>
                 {where.map((icon) => {
                   return (
                     <a href={icon.link} key={"icon" + i++}>
                       <CardMedia
                         key={"icon" + i++}
                         style={{
-                          width: "7%",
-                          paddingBottom: 6,
+                          width: "5%",
                         }}
                         component="img"
                         image={icon.src}
