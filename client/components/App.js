@@ -12,6 +12,8 @@ import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 import Error404 from "./Error404";
 import RoadMap from "../components/Roadmap/RoadMap";
+import Overview from "./overview/Overview";
+// import Team from "./Team";
 
 class App extends Common {
   constructor(props) {
@@ -207,13 +209,7 @@ class App extends Common {
     const Store = this.state.Store;
     return (
       <BrowserRouter>
-        {Store.loaded ? (
-          <Header
-            Store={Store}
-            setStore={this.setStore}
-            connect={this.connect}
-          />
-        ) : null}
+        <Header Store={Store} setStore={this.setStore} connect={this.connect} />
         <main>
           <Switch>
             <Route exact path="/">
@@ -226,15 +222,25 @@ class App extends Common {
             {/* <Route exact path="/team">
               <Team Store={Store} setStore={this.setStore} />
             </Route> */}
+            <Route exact path="/overview">
+              <Overview subsection={"howtoplay"} />
+            </Route>
+            <Route exact path="/overview/howtoplay">
+              <Overview subsection={"howtoplay"} />
+            </Route>
+            <Route exact path="/overview/seedfarmguide">
+              <Overview subsection={"seedfarmguide"} />
+            </Route>
+            <Route exact path="/overview/assetsguide">
+              <Overview subsection={"assetsguide"} />
+            </Route>
             <Route exact path="*">
               <Error404 Store={Store} setStore={this.setStore} />
             </Route>
           </Switch>
           {/*<Footer/>*/}
         </main>
-        {Store.loaded ? (
-          <Footer Store={Store} setStore={this.setStore} />
-        ) : null}
+        <Footer Store={Store} setStore={this.setStore} />
         {Store.showModal ? (
           <Modal.Dialog>
             <Modal.Header>
