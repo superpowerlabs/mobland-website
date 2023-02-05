@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 import Base from "./Base";
 import { addToken } from "../utils/Wallet";
-
 export default class Header extends Base {
   constructor(props) {
     super(props);
@@ -150,14 +149,8 @@ export default class Header extends Base {
             <Navbar.Text className={"links"} as={Link} to={"/overview"}>
               How To Play
             </Navbar.Text>
-            <Navbar.Text className={"links white"}>
-              <span
-                className={"menucmd yellowHover"}
-                // href={"https://marketplace.mob.land"}
-                // target={"_blank"}
-              >
-                Roadmap
-              </span>
+            <Navbar.Text as={Link} className={"links white"} to={"/roadmap"}>
+              Roadmap
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
