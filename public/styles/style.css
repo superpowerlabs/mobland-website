@@ -358,6 +358,10 @@ div.subtitle.transparent {
     background: transparent !important;
 }
 
+span.transparent {
+    color: transparent !important;
+}
+
 div.subtitle div {
     font-size: 0.9rem;
     padding-bottom: 6px;
@@ -1830,6 +1834,13 @@ footer.MuiContainer-root {
     font-weight: 800;
 }
 
+.button.disabled {
+    background-color: #888840 !important;
+    color: #440 !important;
+    cursor: default;
+}
+
+
 .buttonSeed {
     border: 1px #f7f8f8 solid;
     background: #f7f8f8;
@@ -1840,6 +1851,7 @@ footer.MuiContainer-root {
     color: black;
     box-shadow: 0 0 15px blue;
 }
+
 
 @media (max-width: 1000px) {
     .button {
@@ -2176,11 +2188,15 @@ b,
     border-top: white 1px solid;
     border-bottom: 1px white solid;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 8px 0;
+    margin: 12px 0;
 }
 .boxSubTitle {
     color: #ffee03;
     font-weight: 300;
+    margin-bottom: -6px;
 }
 .boxDate {
     color: #ffee03;
@@ -2218,6 +2234,16 @@ b,
     bottom: -5%;
     width: 100%;
 }
+
+.socialLarge {
+    font-size: 2rem !important;
+    padding: 12px 0 40px;
+}
+
+.socialLarge .bottomSocialLink {
+    font-size: inherit;
+}
+
 
 @media (max-width: 600px) {
     .welcome {

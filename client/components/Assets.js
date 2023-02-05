@@ -72,7 +72,7 @@ class Assets extends React.Component {
                           justifyContent: "center",
                         }}
                       >
-                        <a className="button">GUIDE</a>{" "}
+                        <a className="button disabled">GUIDE</a>
                       </div>
                     </Grid>
                     <Grid item xs={3} sm={false} />
