@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const apiV1 = require("./routes/apiV1");
 const { applyAll } = require("@superpowerlabs/salus");
-const {config } = require("./salus.config");
+const { config } = require("./salus.config");
 process.on("uncaughtException", function (error) {
   Logger.error(error.message);
   Logger.error(error.stack);

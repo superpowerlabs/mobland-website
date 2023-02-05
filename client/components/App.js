@@ -208,11 +208,7 @@ class App extends Common {
     const Store = this.state.Store;
     return (
       <BrowserRouter>
-        <Header
-          Store={Store}
-          setStore={this.setStore}
-          connect={this.connect}
-        />
+        <Header Store={Store} setStore={this.setStore} connect={this.connect} />
         <main>
           <Switch>
             <Route exact path="/">
