@@ -11,7 +11,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 import Error404 from "./Error404";
-// import Team from "./Team";
+import RoadMap from "../components/Roadmap/RoadMap";
 
 class App extends Common {
   constructor(props) {
@@ -219,6 +219,10 @@ class App extends Common {
             <Route exact path="/">
               <LandingPage Store={Store} setStore={this.setStore} />
             </Route>
+            <Route exact path="/roadmap">
+              <RoadMap />
+            </Route>
+
             {/* <Route exact path="/team">
               <Team Store={Store} setStore={this.setStore} />
             </Route> */}
