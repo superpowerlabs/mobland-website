@@ -208,13 +208,11 @@ class App extends Common {
     const Store = this.state.Store;
     return (
       <BrowserRouter>
-        {Store.loaded ? (
-          <Header
-            Store={Store}
-            setStore={this.setStore}
-            connect={this.connect}
-          />
-        ) : null}
+        <Header
+          Store={Store}
+          setStore={this.setStore}
+          connect={this.connect}
+        />
         <main>
           <Switch>
             <Route exact path="/">
@@ -241,9 +239,7 @@ class App extends Common {
           </Switch>
           {/*<Footer/>*/}
         </main>
-        {Store.loaded ? (
-          <Footer Store={Store} setStore={this.setStore} />
-        ) : null}
+        <Footer Store={Store} setStore={this.setStore} />
         {Store.showModal ? (
           <Modal.Dialog>
             <Modal.Header>

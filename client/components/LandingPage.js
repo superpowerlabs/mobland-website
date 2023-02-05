@@ -50,7 +50,7 @@ export default class LandingPage extends Base {
         {loaded ? (
           <Home />
         ) : (
-          <div className={"allPage"} style={{ height: window.innerHeight }}>
+          <div className={"allPage"} style={{ height: window.innerHeight, zIndex: 10000, position: "absolute", top: 0, left: 0, width: "100%" }}>
             <img
               src={"https://data.mob.land/assets/MoblandSitePreloader.gif"}
               alt={"Loading animation"}

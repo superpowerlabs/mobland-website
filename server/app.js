@@ -5,9 +5,8 @@ const Logger = require("./lib/Logger");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const apiV1 = require("./routes/apiV1");
-const applySecurity = require("./applySecurity");
-const applyNonce = require("./applyNonce");
-
+const { applyAll } = require("@superpowerlabs/salus");
+const {config } = require("./salus.config");
 process.on("uncaughtException", function (error) {
   Logger.error(error.message);
   Logger.error(error.stack);
@@ -36,7 +35,7 @@ const security_config = {
   ],
 };
 
-applySecurity(app, security_config);
+// applySecurity(app, security_config);
 
 app.use(cors());
 app.use(cookieParser());
@@ -53,7 +52,7 @@ app.use("/healthcheck", function (req, res) {
   res.send("ok");
 });
 
-applyNonce(app, security_config);
+applyAll(app, config);
 
 app.use(express.static(path.resolve(__dirname, "../public")));
 
