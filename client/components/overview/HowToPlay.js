@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Typography,
   Card,
@@ -33,6 +33,10 @@ const LargeCard = styled(Card)(({ theme }) => ({
 }));
 
 function HowToPlay() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Stack spacing={2} alignItems="center">
       {/* stack item one */}

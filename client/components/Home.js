@@ -25,6 +25,10 @@ export default class Home extends Base {
     // this.bindMany(["onImageLoad"]);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
