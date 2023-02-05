@@ -27,6 +27,7 @@ body {
     background-color: black; /* #131313 */
     color: whitesmoke;
     font-family: Modeco, sans-serif !important;
+    background-image: url(../images/grafiti-wall.png);
     /*color: #222222;*/
 
     /*background-size: 100%;*/
@@ -652,6 +653,7 @@ img.pc90 {
 
 .bold {
     font-weight: bold !important;
+    color: white;
 }
 
 /*.bg0 {*/
@@ -2007,18 +2009,11 @@ footer.MuiContainer-root {
 }
 
 .bit-smaller {
-    font-size: 90%;
+    font-size: 1.05vw;
+    text-align: center;
 }
 
 b,
-.bold {
-    font-family: ModecoBold, sans-serif !important;
-}
-
-.light {
-    font-family: ModecoLight, sans-serif !important;
-}
-
 .two-columns {
     clear: both;
     padding: 0 12px;
@@ -2045,7 +2040,7 @@ b,
 }
 
 .mulish {
-    font-family: Mulish, sans-serif;
+    font-family: Mulish, sans-serif !important;
 }
 
 .assets {
@@ -2279,4 +2274,195 @@ b,
         text-align: inherit;
         padding-right: 0;
     }
+}
+
+.tile-description {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: center !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+}
+
+.overview-title {
+    font-family: Wrong, sans-serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.infoButton {
+    width: 200px;
+    height: 84%;
+}
+
+.infoButtons .MuiButtonBase-root {
+    border-radius: 100px !important;
+    background: white 0 0 no-repeat padding-box !important;
+    border: 1px solid #707070 !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-family: Mulish, sans-serif !important;
+    font-size: 1vw !important;
+    min-width: 160px !important;
+}
+
+.infoButtons .MuiButtonBase-root.selected {
+    background: #ffee00d1 0 0 no-repeat padding-box !important;
+    box-shadow: 0 0 25px #ffee00dd !important;
+    border-color: #ffee00 !important;
+    color: #000000d1 !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+.info-section-title {
+    clear: both;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffee00;
+}
+
+.info-section-subtitle {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: center !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+    padding: 20px;
+}
+
+.sectionCard {
+    margin: 8px;
+    border-radius: 20px !important;
+    border: 1px solid #ffffcc40;
+}
+
+.info-section-card-title {
+    clear: both;
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
+}
+
+.info-section-footer {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: center !important;
+    line-height: 130% !important;
+    padding: 30px;
+}
+
+.info-section-subtitle {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: center !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+    padding: 20px;
+}
+
+.info-section-description {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: left !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+}
+
+.info-section .MuiCardContent-root {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.info-section .MuiCardMedia-root {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+}
+
+.info-section .MuiCard-root .img {
+    height: 220px !important;
+    width: auto;
+    margin: 12px 12px 12px 24px;
+}
+
+.info-section .icon {
+    height: 80px !important;
+    margin: 12px;
+    align-self: center !important;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.bit-smaller {
+    font-size: 90%;
+}
+
+.info-tile-base {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.6)
+    ) !important;
+    border: 1px solid #8b8b8b90;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+.info-tile-title {
+    clear: both;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.info-tile-description {
+    font-size: 84% !important;
+    font-weight: normal;
+    text-align: left !important;
+    line-height: 130% !important;
+    margin: 4px 0 12px !important;
+}
+
+.light {
+    color: white;
+    font-family: Mulish, sans-serif !important;
+}
+
+.info-tile-base .MuiCardMedia-root {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+    margin-left: 3%;
+}
+
+.MuiCardContent-root {
+    background-color: transparent !important;
+}
+
+.info-tile-base .MuiCardContent-root {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 79%;
+}
+
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    background: transparent
+        linear-gradient(180deg, #ffffff27 0%, #0000004b 100%) 0% 0% no-repeat
+        padding-box !important;
+}
+
+.extraLight {
+    font-weight: lighter !important;
+    font-family: Mulish, sans-serif !important;
 }
