@@ -146,7 +146,7 @@ class RoadMap extends Base {
               <br />
               <Grid container>
                 <Grid item xs={1} />
-                <Grid item xs={10}>
+                <Grid item xs={8}>
                   <div style={{ fontWeight: "bold" }} className="mulish">
                     BE THE FIRST IN THE KNOW!
                   </div>
@@ -180,7 +180,13 @@ class RoadMap extends Base {
                     <i className="fab fa-twitter" />
                   </a>
                 </Grid>
-                <Grid item xs={1} />
+                <Grid style={{ position: "relative" }} item xs={false} sm={3}>
+                  <img
+                    className=" tallGangster"
+                    alt={"Gangster"}
+                    src={"/images/gangster-five-tall.png"}
+                  />{" "}
+                </Grid>{" "}
                 <br />
               </Grid>{" "}
             </Grid>
