@@ -449,6 +449,13 @@ span.button {
     /*padding-top: 120px;*/
 }
 
+@media (max-width: 990px) {
+    .navbar {
+        background-color: #000000cc !important;
+        border-bottom: 1px solid #222 !important;
+    }
+}
+
 .hina {
 }
 
