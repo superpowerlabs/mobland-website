@@ -93,8 +93,8 @@ function Overview({ subsection }) {
       >
         <AssetsGuide />
       </Container>
-      <div style={{ height: 100 }}>
-        <span className={"transparent"}>-</span>{" "}
+      <div style={{ paddingTop: 100 }}>
+        <span className={"transparent"}>-</span>
       </div>
     </div>
   );
