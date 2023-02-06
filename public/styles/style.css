@@ -1840,7 +1840,6 @@ footer.MuiContainer-root {
     cursor: default;
 }
 
-
 .buttonSeed {
     border: 1px #f7f8f8 solid;
     background: #f7f8f8;
@@ -1851,7 +1850,6 @@ footer.MuiContainer-root {
     color: black;
     box-shadow: 0 0 15px blue;
 }
-
 
 @media (max-width: 1000px) {
     .button {
@@ -2243,7 +2241,6 @@ b,
 .socialLarge .bottomSocialLink {
     font-size: inherit;
 }
-
 
 @media (max-width: 600px) {
     .welcome {

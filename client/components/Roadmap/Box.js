@@ -21,7 +21,9 @@ export default class Box extends Base {
           <Grid item xs={1} />
           <Grid item xs={10}>
             <Grid item xs={12}>
-              <div className="boxSubTitle">{week || <span className={"transparent"}>-</span> }</div>
+              <div className="boxSubTitle">
+                {week || <span className={"transparent"}>-</span>}
+              </div>
               <div className="boxDate">{date}</div>
             </Grid>
             <Grid item xs={12}>

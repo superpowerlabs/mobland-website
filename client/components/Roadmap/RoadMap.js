@@ -13,7 +13,13 @@ class RoadMap extends Base {
     let feb8 = {
       week: "WEEK OF",
       date: "FEBRUARY 8th",
-      title: <span>ENTER THE<br/>SHADOW MARKET</span>,
+      title: (
+        <span>
+          ENTER THE
+          <br />
+          SHADOW MARKET
+        </span>
+      ),
       content: [
         "SEED Consumption",
         "BUD Production",
@@ -25,7 +31,13 @@ class RoadMap extends Base {
     let feb15 = {
       week: "WEEK OF",
       date: "FEBRUARY 15th",
-      title: <span>WELCOME TO<br/>THE HOOD</span>,
+      title: (
+        <span>
+          WELCOME TO
+          <br />
+          THE HOOD
+        </span>
+      ),
       content: [
         "Enter the #MafiaMetaverse and Explore Phase 01 of the Mafia’s Playground",
         "Bring your Genesis Blueprints to Life in the City",
@@ -36,7 +48,13 @@ class RoadMap extends Base {
     let feb21 = {
       week: "WEEK OF",
       date: "FEBRUARY 21th",
-      title: <span>REAL-TIME PVP:<br/>ALPHA STAGE</span>,
+      title: (
+        <span>
+          REAL-TIME PVP:
+          <br />
+          ALPHA STAGE
+        </span>
+      ),
       content: [
         "BUD-Looting Minigame",
         " Use Blueprints to Play Against Other Synners",
@@ -48,7 +66,13 @@ class RoadMap extends Base {
     let april = {
       week: "",
       date: "APRIL",
-      title: <span>REAL-TIME PVP:<br/>ALPHA STAGE</span>,
+      title: (
+        <span>
+          REAL-TIME PVP:
+          <br />
+          ALPHA STAGE
+        </span>
+      ),
       content: ["Fight It Out in Royale Mode", "Survival Battle Map"],
     };
 
@@ -156,29 +180,29 @@ class RoadMap extends Base {
                     latest MOBLAND updates!
                   </div>
                   <div className="socialLarge">
-                  <a
-                    href={"https://discord.gg/tSVtRkppnp"}
-                    rel="noreferrer"
-                    className={"bottomSocialLink"}
-                  >
-                    <i className="fab fa-discord" />
-                  </a>
-                  <a
-                    href="https://t.me/MobLandAnnouncements"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={"bottomSocialLink"}
-                  >
-                    <i className="fab fa-telegram" />
-                  </a>
-                  <a
-                    href="https://twitter.com/MoblandHQ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={"bottomSocialLink"}
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
+                    <a
+                      href={"https://discord.gg/tSVtRkppnp"}
+                      rel="noreferrer"
+                      className={"bottomSocialLink"}
+                    >
+                      <i className="fab fa-discord" />
+                    </a>
+                    <a
+                      href="https://t.me/MobLandAnnouncements"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={"bottomSocialLink"}
+                    >
+                      <i className="fab fa-telegram" />
+                    </a>
+                    <a
+                      href="https://twitter.com/MoblandHQ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={"bottomSocialLink"}
+                    >
+                      <i className="fab fa-twitter" />
+                    </a>
                   </div>
                 </Grid>
                 <Grid style={{ position: "relative" }} item xs={false} sm={3}>
