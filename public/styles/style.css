@@ -2163,7 +2163,7 @@ b,
 .roadmapTitle {
     display: flex;
     justify-content: center;
-    font-size: 7vw;
+    font-size: 5.5vw;
     font-family: Wrong, sans-serif;
     padding-top: 20px;
 }
@@ -2377,7 +2377,7 @@ b,
 
 .overview-title {
     font-family: Wrong, sans-serif;
-    font-size: 4vw;
+    font-size: 5.5vw;
     text-transform: uppercase;
     align-self: center;
 }
