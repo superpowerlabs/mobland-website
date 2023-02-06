@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { isMobileOnly } from "react-device-detect";
 
 class Leaks extends React.Component {
@@ -39,7 +40,9 @@ class Leaks extends React.Component {
                   sm={12}
                   className={isMobileOnly ? "leakMobile" : ""}
                 >
-                  <a className="button">ROADMAP</a>
+                  <Link className="button" to={"/roadmap"}>
+                    ROADMAP
+                  </Link>
                 </Grid>
                 <Grid item xs={3} sm={false} />
               </Grid>
