@@ -10,6 +10,8 @@ class Browse extends Component {
         <div
           style={{
             backgroundImage: 'url("/images/grafiti-wall.png")',
+            position: "relative",
+            zIndex: "1",
           }}
         >
           <Grid container>

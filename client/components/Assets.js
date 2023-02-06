@@ -8,10 +8,12 @@ class Assets extends React.Component {
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/grafiti-wall.png")',
+            backgroundImage: 'url("/images/dark-city.jpg")',
             backgroundSize: "cover",
             zIndex: "1",
             position: "relative",
+            borderTop: "1px #3a3a3b solid",
+            borderBottom: "1px #3a3a3b solid",
           }}
         >
           <Grid container>
