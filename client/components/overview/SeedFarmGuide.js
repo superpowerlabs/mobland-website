@@ -4,20 +4,20 @@ import { styled } from "@mui/material/styles";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
 
-import SeedPileImg from "../../images/Seed_Pile.png";
+import SeedPileImg from "../../../_sullof/images/Seed_Pile.png";
 import InfoSection from "./InfoSection";
 
-import SynrIcon from "../../images/SYNR_Double.png";
-import BothPortal from "../../images/BothPortals.png";
-import SsynrIcon from "../../images/sSYNR_Double.png";
-import Genesis from "../../images/GenesisPass.png";
-import BlueprintIcon from "../../images/blueprint.png";
-import GrowBud from "../../images/GrowBud.png";
-import Combat from "../../images/Combat.png";
-import RentIcon from "../../images/RentIcon.png";
-import LendIcon from "../../images/LendIcon.png";
-import HireMercs from "../../images/HireMercs.png";
-import UpgradeIconTwo from "../../images/UpgradeIconTwo.png";
+import SynrIcon from "../../../_sullof/images/SYNR_Double.png";
+import BothPortal from "../../../_sullof/images/BothPortals.png";
+import SsynrIcon from "../../../_sullof/images/sSYNR_Double.png";
+import Genesis from "../../../_sullof/images/GenesisPass.png";
+import BlueprintIcon from "../../../_sullof/images/blueprint.png";
+import GrowBud from "../../../_sullof/images/GrowBud.png";
+import Combat from "../../../_sullof/images/Combat.png";
+import RentIcon from "../../../_sullof/images/RentIcon.png";
+import LendIcon from "../../../_sullof/images/LendIcon.png";
+import HireMercs from "../../../_sullof/images/HireMercs.png";
+import UpgradeIconTwo from "../../../_sullof/images/UpgradeIconTwo.png";
 import { isMobileOnly } from "react-device-detect";
 
 // TODO dry this code (it's also in HowToPlay.js)

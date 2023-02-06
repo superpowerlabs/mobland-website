@@ -3,22 +3,22 @@ import { Grid } from "@mui/material";
 import InfoTileItem from "./InfoTileItem";
 
 // icons
-import SynrIcon from "../../images/SYNR_Double.png";
-import SsynrIcon from "../../images/sSYNR_Double.png";
-import SeedIcon from "../../images/SEED_Double.png";
-import SynrPassIcon from "../../images/GenesisPass.png";
-import BlueprintIcon from "../../images/Blueprint.png";
-import SeedFarmIcon from "../../images/Portal.png";
-import TurfIcon from "../../images/Turf_8x8.png";
-import WeedFarmIcon from "../../images/WeedFarm.png";
-import UniswapIcon from "../../images/UniswapWhite.png";
-import KucoinIcon from "../../images/KucoinIcon_White.png";
-import ByBitIcon from "../../images/ByBit_White.png";
-import BitmartIcon from "../../images/Bitmart_White.png";
-import bud from "../../images/bud.png";
-import binance from "../../images/binance.png";
-import opensea from "../../images/opensea.png";
-import mobland from "../../images/mobland-white-icon.png";
+import SynrIcon from "../../../_sullof/images/SYNR_Double.png";
+import SsynrIcon from "../../../_sullof/images/sSYNR_Double.png";
+import SeedIcon from "../../../_sullof/images/SEED_Double.png";
+import SynrPassIcon from "../../../_sullof/images/GenesisPass.png";
+import BlueprintIcon from "../../../_sullof/images/Blueprint.png";
+import SeedFarmIcon from "../../../_sullof/images/Portal.png";
+import TurfIcon from "../../../_sullof/images/Turf_8x8.png";
+import WeedFarmIcon from "../../../_sullof/images/WeedFarm.png";
+import UniswapIcon from "../../../_sullof/images/UniswapWhite.png";
+import KucoinIcon from "../../../_sullof/images/KucoinIcon_White.png";
+import ByBitIcon from "../../../_sullof/images/ByBit_White.png";
+import BitmartIcon from "../../../_sullof/images/Bitmart_White.png";
+import bud from "../../../_sullof/images/bud.png";
+import binance from "../../../_sullof/images/binance.png";
+import opensea from "../../../_sullof/images/opensea.png";
+import mobland from "../../../_sullof/images/mobland-white-icon.png";
 import Exchanges from "./Exchanges";
 
 function AssetsGuide() {
