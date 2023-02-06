@@ -1795,17 +1795,7 @@ footer.MuiContainer-root {
 
 .textSub {
     font-family: Mulish, sans-serif;
-    font-size: 1.2vw;
-}
-
-.textSub2 {
-    font-size: 1vw;
-}
-
-.browseSub {
-    font-family: Mulish, sans-serif;
-    font-size: 1.2vw;
-    text-align: right;
+    font-size: 1.1vw;
 }
 
 .assetsSub {
