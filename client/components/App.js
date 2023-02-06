@@ -11,7 +11,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 import Error404 from "./Error404";
-import RoadMap from "../components/Roadmap/RoadMap";
+import RoadMap from "./roadmap/RoadMap";
 import Overview from "./overview/Overview";
 // import Team from "./Team";
 

@@ -11,9 +11,15 @@ class RoadMap extends Base {
 
   render() {
     let feb8 = {
-      week: "week of",
+      week: "WEEK OF",
       date: "FEBRUARY 8th",
-      title: "ENTER THE SHADOW MARKET",
+      title: (
+        <span>
+          ENTER THE
+          <br />
+          SHADOW MARKET
+        </span>
+      ),
       content: [
         "SEED Consumption",
         "BUD Production",
@@ -23,9 +29,15 @@ class RoadMap extends Base {
       ],
     };
     let feb15 = {
-      week: "week of",
+      week: "WEEK OF",
       date: "FEBRUARY 15th",
-      title: "WELCOME TO THE HOOD",
+      title: (
+        <span>
+          WELCOME TO
+          <br />
+          THE HOOD
+        </span>
+      ),
       content: [
         "Enter the #MafiaMetaverse and Explore Phase 01 of the Mafia’s Playground",
         "Bring your Genesis Blueprints to Life in the City",
@@ -34,9 +46,15 @@ class RoadMap extends Base {
       ],
     };
     let feb21 = {
-      week: "week of",
+      week: "WEEK OF",
       date: "FEBRUARY 21th",
-      title: "REAL-TIME PVP: ALPHA STAGE",
+      title: (
+        <span>
+          REAL-TIME PVP:
+          <br />
+          ALPHA STAGE
+        </span>
+      ),
       content: [
         "BUD-Looting Minigame",
         " Use Blueprints to Play Against Other Synners",
@@ -48,7 +66,13 @@ class RoadMap extends Base {
     let april = {
       week: "",
       date: "APRIL",
-      title: "REAL-TIME PVP: ALPHA STAGE",
+      title: (
+        <span>
+          REAL-TIME PVP:
+          <br />
+          ALPHA STAGE
+        </span>
+      ),
       content: ["Fight It Out in Royale Mode", "Survival Battle Map"],
     };
 
@@ -155,34 +179,35 @@ class RoadMap extends Base {
                     Follow us on our socials to keep up-to-date with all of the
                     latest MOBLAND updates!
                   </div>
-                  <br />
-                  <a
-                    href={"https://discord.gg/tSVtRkppnp"}
-                    rel="noreferrer"
-                    className={"bottomSocialLink"}
-                  >
-                    <i className="fab fa-discord" />
-                  </a>
-                  <a
-                    href="https://t.me/MobLandAnnouncements"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={"bottomSocialLink"}
-                  >
-                    <i className="fab fa-telegram" />
-                  </a>
-                  <a
-                    href="https://twitter.com/MoblandHQ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={"bottomSocialLink"}
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
+                  <div className="socialLarge">
+                    <a
+                      href={"https://discord.gg/tSVtRkppnp"}
+                      rel="noreferrer"
+                      className={"bottomSocialLink"}
+                    >
+                      <i className="fab fa-discord" />
+                    </a>
+                    <a
+                      href="https://t.me/MobLandAnnouncements"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={"bottomSocialLink"}
+                    >
+                      <i className="fab fa-telegram" />
+                    </a>
+                    <a
+                      href="https://twitter.com/MoblandHQ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={"bottomSocialLink"}
+                    >
+                      <i className="fab fa-twitter" />
+                    </a>
+                  </div>
                 </Grid>
                 <Grid style={{ position: "relative" }} item xs={false} sm={3}>
                   <img
-                    className=" tallGangster"
+                    className="tallGangster"
                     alt={"Gangster"}
                     src={"/images/gangster-five-tall.png"}
                   />{" "}
