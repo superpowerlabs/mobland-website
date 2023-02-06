@@ -149,7 +149,7 @@ export default class Header extends Base {
             <Navbar.Text className={"links"} as={Link} to={"/overview"}>
               How To Play
             </Navbar.Text>
-            <Navbar.Text as={Link} className={"links white"} to={"/roadmap"}>
+            <Navbar.Text as={Link} className={"links"} to={"/roadmap"}>
               Roadmap
             </Navbar.Text>
           </Nav>
