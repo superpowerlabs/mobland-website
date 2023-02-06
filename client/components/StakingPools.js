@@ -13,7 +13,7 @@ class StakingPools extends Component {
           }}
           autoPlay={true}
           muted={true}
-          loop={isMobileOnly ? true : false}
+          loop={true}
           src={
             isMobileOnly
               ? "https://assets.mob.land/videos/header-gangster-mobile.mp4"
