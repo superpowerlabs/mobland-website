@@ -2,9 +2,9 @@ import * as React from "react";
 import { CardMedia, Stack } from "@mui/material";
 import Title from "../tile/Title";
 
-import mobland from "../../../_sullof/images/mobland-white-icon.png";
-import opensea from "../../../_sullof/images/opensea.png";
-import binance from "../../../_sullof/images/binance.png";
+import mobland from "../../images/mobland-white-icon.png";
+import opensea from "../../images/opensea.png";
+import binance from "../../images/binance.png";
 
 const exchanges = [
   {
