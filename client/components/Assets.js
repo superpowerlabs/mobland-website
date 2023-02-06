@@ -2,6 +2,8 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import AssetImages from "./AssetImages";
 import { isMobileOnly } from "react-device-detect";
+import { Link } from "react-router-dom";
+
 class Assets extends React.Component {
   render() {
     return (
@@ -74,7 +76,9 @@ class Assets extends React.Component {
                           justifyContent: "center",
                         }}
                       >
-                        <a className="button disabled">GUIDE</a>
+                        <Link className="button" to={"/overview/assetsguide"}>
+                          Guide
+                        </Link>
                       </div>
                     </Grid>
                     <Grid item xs={3} sm={false} />
