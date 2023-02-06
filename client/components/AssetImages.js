@@ -26,7 +26,7 @@ class AssetImages extends Component {
             marginTop: "-56%",
             position: "relative",
             left: "-19%",
-            transform: "rotate(30deg)"
+            transform: "rotate(30deg)",
           }}
           src={"/images/genesis-pass.png"}
         />
