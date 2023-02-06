@@ -6,7 +6,6 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import Base from "./Base";
-import { addToken } from "../utils/Wallet";
 export default class Header extends Base {
   constructor(props) {
     super(props);
@@ -107,7 +106,7 @@ export default class Header extends Base {
         expanded={expanded}
         fixed={this.isMobile() ? undefined : "top"}
         bg={showBg ? "dark" : "transparent"}
-        expand="lg"
+        expand="sm"
         className={"roboto"}
       >
         {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
@@ -125,32 +124,32 @@ export default class Header extends Base {
                 marginRight: "5%",
               }}
             />
-            <Navbar.Text className={"links"} as={Link} to={"/"}>
-              Home
+            <Navbar.Text className={""} as={Link} to={"/"}>
+              <a className={"yellowHover"}>Home</a>
             </Navbar.Text>
-            <Navbar.Text className={"links"}>
+            <Navbar.Text className={""}>
               <a
-                className={"menucmd yellowHover"}
+                className={"yellowHover"}
                 href={"https://staking.mob.land"}
                 target={"_blank"}
               >
                 Staking
               </a>
             </Navbar.Text>
-            <Navbar.Text className={"links"}>
+            <Navbar.Text className={""}>
               <a
-                className={"menucmd yellowHover"}
+                className={"yellowHover"}
                 href={"https://marketplace.mob.land"}
                 target={"_blank"}
               >
                 Market
               </a>
             </Navbar.Text>
-            <Navbar.Text className={"links"} as={Link} to={"/overview"}>
-              How To Play
+            <Navbar.Text className={""} as={Link} to={"/overview"}>
+              <a className={"yellowHover"}>How To Play</a>
             </Navbar.Text>
-            <Navbar.Text as={Link} className={"links"} to={"/roadmap"}>
-              Roadmap
+            <Navbar.Text as={Link} className={""} to={"/roadmap"}>
+              <a className={"yellowHover"}>Roadmap</a>
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
@@ -174,14 +173,6 @@ export default class Header extends Base {
         {/*    </Button>*/}
         {/*  )*/}
         {/*) : null}*/}
-
-        <Navbar.Collapse>
-          {this.Store.chainId === 1 && !this.isMobile() ? (
-            <Nav className={"addSynr"} onClick={() => addToken()}>
-              Click here to add SYNR to your wallet
-            </Nav>
-          ) : null}
-        </Navbar.Collapse>
         {/*<Navbar.Brand href="/">*/}
         {/*  <img*/}
         {/*    src={"/images/syncity-full-horizontal.png"}*/}
