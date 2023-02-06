@@ -19,6 +19,7 @@ export default class LandingPage extends Base {
   onImageLoad() {
     this.setTimeout(
       () => {
+        localStorage.setItem("skippedAt", Date.now().toString());
         this.setStore({
           loaded: true,
         });
@@ -28,6 +29,13 @@ export default class LandingPage extends Base {
   }
 
   componentDidMount() {
+    const skippedAt = localStorage.getItem("skippedAt");
+    if (skippedAt) {
+      this.setStore({
+        loaded: true,
+      });
+    }
+
     if (/skip/.test(window.location.search)) {
       this.setStore({
         loaded: true,
@@ -35,6 +43,7 @@ export default class LandingPage extends Base {
     }
   }
   skip() {
+    localStorage.setItem("skippedAt", Date.now().toString());
     this.setStore({
       loaded: true,
     });

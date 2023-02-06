@@ -31,7 +31,7 @@ export default class Box extends Base {
             </Grid>
             {this.props.content.map((item) => {
               return (
-                <div>
+                <div key={item}>
                   <Grid item xs={12}>
                     <div className="boxContent">{item}</div>
                   </Grid>
