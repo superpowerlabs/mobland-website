@@ -124,8 +124,8 @@ export default class Header extends Base {
                 marginRight: "5%",
               }}
             />
-            <Navbar.Text className={""} as={Link} to={"/"}>
-              <a className={"yellowHover"}>Home</a>
+            <Navbar.Text className={"yellowHover"} as={Link} to={"/"}>
+              Home
             </Navbar.Text>
             <Navbar.Text className={""}>
               <a
@@ -145,11 +145,11 @@ export default class Header extends Base {
                 Market
               </a>
             </Navbar.Text>
-            <Navbar.Text className={""} as={Link} to={"/overview"}>
-              <a className={"yellowHover"}>How To Play</a>
+            <Navbar.Text className={"yellowHover"} as={Link} to={"/overview"}>
+              How To Play
             </Navbar.Text>
-            <Navbar.Text as={Link} className={""} to={"/roadmap"}>
-              <a className={"yellowHover"}>Roadmap</a>
+            <Navbar.Text as={Link} className={"yellowHover"} to={"/roadmap"}>
+              Roadmap
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
