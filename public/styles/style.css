@@ -2583,4 +2583,7 @@ b,
     .distanceHeader {
         margin-top: 0px;
     }
+    .navbar-brand {
+        width: 82% !important;
+    }
 }
