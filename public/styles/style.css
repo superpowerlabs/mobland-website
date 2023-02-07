@@ -1660,7 +1660,7 @@ footer.MuiContainer-root {
 
 /*}*/
 
-.navbar-expand-lg.navbar-light.bg-dark {
+.navbar-expand-sm.navbar-light.bg-dark {
     background-color: #000000cc !important;
     border-bottom: 1px solid #222 !important;
     transition: background-color 1s, border-bottom 1s;
