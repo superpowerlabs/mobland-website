@@ -39,9 +39,11 @@ export default class Home extends Base {
         <Browse />
         <Leaks />
         <Assets />
-        <Row style={{
-          paddingTop: this.isMobile() ? 40 : 0
-        }}>
+        <Row
+          style={{
+            paddingTop: this.isMobile() ? 40 : 0,
+          }}
+        >
           <Col className={"investor"}>INVESTORS</Col>
         </Row>
         <Row>

@@ -19,7 +19,7 @@ export default class InvestorsAndPartners extends Base {
   }
 
   render() {
-    const {start} = this.props;
+    const { start } = this.props;
     let i = start;
     return (
       <div className="scrollingWrapper">
@@ -109,7 +109,11 @@ export default class InvestorsAndPartners extends Base {
             );
           })}
         </div>
-        {start === 100 ? <div style={{ height: 40 }}><span className={'transparent'}>-</span></div> : null}
+        {start === 100 ? (
+          <div style={{ height: 40 }}>
+            <span className={"transparent"}>-</span>
+          </div>
+        ) : null}
       </div>
     );
   }

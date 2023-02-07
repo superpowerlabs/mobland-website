@@ -19,7 +19,11 @@ function Overview({ subsection }) {
 
   return (
     <div>
-      <Container disableGutters component="main" style={{ paddingTop: isMobileOnly ? 0 : 100 }}>
+      <Container
+        disableGutters
+        component="main"
+        style={{ paddingTop: isMobileOnly ? 0 : 100 }}
+      >
         <div align="center" className="overview-title">
           HOW TO PLAY
         </div>
@@ -50,11 +54,20 @@ function Overview({ subsection }) {
             component={RouterLink}
             to={"/overview/seedfarmguide"}
             className={
-              "button " +
-              (currentView === "seedfarmguide" ? "selected" : "")
+              "button " + (currentView === "seedfarmguide" ? "selected" : "")
             }
           >
-            {isMobileOnly ? <span>SEED<br/>farm<br/>guide</span> : <span>SEED farm guide</span>}
+            {isMobileOnly ? (
+              <span>
+                SEED
+                <br />
+                farm
+                <br />
+                guide
+              </span>
+            ) : (
+              <span>SEED farm guide</span>
+            )}
           </Button>
           <Button
             component={RouterLink}
@@ -63,7 +76,15 @@ function Overview({ subsection }) {
               "button " + (currentView === "assetsguide" ? "selected" : "")
             }
           >
-            {isMobileOnly ? <span>asset<br/>guide</span> : <span>assets guide</span>}
+            {isMobileOnly ? (
+              <span>
+                asset
+                <br />
+                guide
+              </span>
+            ) : (
+              <span>assets guide</span>
+            )}
           </Button>
         </Stack>
       </Box>

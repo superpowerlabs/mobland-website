@@ -110,13 +110,13 @@ export default class Header extends Base {
         className={this.state.expanded ? "expanded" : ""}
         onToggle={this.setExpanded}
       >
-        <img
+        <Link to={"/"} className={"navbar-brand"}><img
           src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
           style={{
-            width: this.isMobile() ? "12%" : "5%",
-            marginRight: "5%",
+            width: this.isMobile() ? "12%" : "40px",
+            // marginRight: "5%",
           }}
-        />
+        /></Link>
         {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -125,19 +125,21 @@ export default class Header extends Base {
 
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
-
-            <Navbar.Text className={"yellowHover"} as={Link} to={"/"} onClick={this.setExpanded}>
-              Home
-            </Navbar.Text>
-            <Navbar.Text className={""}>
-              <a
-                className={"yellowHover"}
-                href={"https://staking.mob.land"}
-                target={"_blank"}
-                onClick={this.setExpanded}
-              >
-                Staking
-              </a>
+            {/*<Navbar.Text*/}
+            {/*  className={"yellowHover"}*/}
+            {/*  as={Link}*/}
+            {/*  to={"/"}*/}
+            {/*  onClick={this.setExpanded}*/}
+            {/*>*/}
+            {/*  Home*/}
+            {/*</Navbar.Text>*/}
+            <Navbar.Text
+              className={"yellowHover"}
+              as={Link}
+              to={"/overview/howtoplay"}
+              onClick={this.setExpanded}
+            >
+              How to play
             </Navbar.Text>
             <Navbar.Text className={""}>
               <a
@@ -149,14 +151,43 @@ export default class Header extends Base {
                 Shadow Market
               </a>
             </Navbar.Text>
-            <Navbar.Text className={"yellowHover"} as={Link} to={"/overview"}
-                         onClick={this.setExpanded}>
-              How To Play
+            <Navbar.Text className={""}>
+              <a
+                className={"yellowHover"}
+                as={Link}
+                to={"/overview/seedfarmguide"}
+                onClick={this.setExpanded}
+              >
+                Seed Farm
+              </a>
             </Navbar.Text>
-            <Navbar.Text as={Link} className={"yellowHover"} to={"/roadmap"}
-                         onClick={this.setExpanded}>
+            <Navbar.Text
+              className={"yellowHover"}
+              as={Link}
+              to={"/overview/assetsguide"}
+              onClick={this.setExpanded}
+            >
+              Assets
+            </Navbar.Text>
+            <Navbar.Text
+              as={Link}
+              className={"yellowHover"}
+              to={"/roadmap"}
+              onClick={this.setExpanded}
+            >
               Roadmap
             </Navbar.Text>
+            <Navbar.Text className={""}>
+              <a
+                className={"yellowHover"}
+                href={"https://staking.mob.land/core/dashboard"}
+                target={"_blank"}
+                onClick={this.setExpanded}
+              >
+                Core Pool
+              </a>
+            </Navbar.Text>
+
           </Nav>
         </Navbar.Collapse>
 

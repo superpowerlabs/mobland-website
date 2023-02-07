@@ -120,7 +120,14 @@ function SeedFarmGuide() {
       })}
 
       <Grid item xs={12} sm={6} md={6}>
-        <Exchanges title={<span>No tokens?{isMobileOnly ? <br/> : " "}SYNR is available on these platforms:</span>} />
+        <Exchanges
+          title={
+            <span>
+              No tokens?{isMobileOnly ? <br /> : " "}SYNR is available on these
+              platforms:
+            </span>
+          }
+        />
       </Grid>
       <Grid item xs={12} sm={6} md={6}>
         <NftExchange title="NFT's are available on these platforms:" />

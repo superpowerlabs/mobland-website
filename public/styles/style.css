@@ -2430,9 +2430,8 @@ b,
 }
 
 @media (max-width: 600px) {
-
     .roadmapTitle,
-    .overview-title{
+    .overview-title {
         font-size: 3rem !important;
         padding-top: 40px !important;
     }
