@@ -38,11 +38,7 @@ function HowToPlay() {
   }, []);
 
   return (
-    <Stack
-      spacing={2}
-      alignItems="center"
-      style={{ marginTop: isMobileOnly ? 0 : 78 }}
-    >
+    <Stack spacing={2} alignItems="center" className="distanceHeader">
       <div align="center" className="overview-title">
         HOW TO PLAY
       </div>
@@ -205,7 +201,7 @@ function HowToPlay() {
         ></Box>
       </LargeCard>
       <Grid container>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={6} className={"distanceFooter"}>
           <Exchanges
             title={
               <span>
@@ -215,7 +211,7 @@ function HowToPlay() {
             }
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={6} className={"distanceFooter"}>
           <NftExchange title="NFT's are available on these platforms:" />
         </Grid>
       </Grid>

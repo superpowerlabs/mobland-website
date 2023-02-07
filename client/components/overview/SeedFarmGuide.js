@@ -93,7 +93,7 @@ function SeedFarmGuide() {
   let i = 0;
 
   return (
-    <div style={{ marginTop: isMobileOnly ? 0 : 78 }}>
+    <div className="distanceHeader">
       <div
         align="center"
         className="overview-title"
@@ -127,7 +127,7 @@ function SeedFarmGuide() {
           );
         })}
 
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={6} className={"distanceFooter"}>
           <Exchanges
             title={
               <span>
@@ -137,7 +137,7 @@ function SeedFarmGuide() {
             }
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={6} className={"distanceFooter"}>
           <NftExchange title="NFT's are available on these platforms:" />
         </Grid>
       </Grid>

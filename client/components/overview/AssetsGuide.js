@@ -169,14 +169,20 @@ function AssetsGuide() {
   ];
 
   return (
-    <div style={{ marginTop: isMobileOnly ? 0 : 78 }}>
+    <div className="distanceHeader">
       <div align="center" className="overview-title">
         ASSETS
       </div>
-      <Grid container spacing={2} alignItems="flex-end">
+      <Grid
+        container
+        spacing={4}
+        alignItems="flex-end"
+        justifyContent="center"
+        className={"distanceFooter"}
+      >
         {tiles.map((tile, index) => {
           return (
-            <Grid item xs={12} sm={12} md={6} key={"tiles_" + index}>
+            <Grid item xs={12} sm={12} md={5} key={"tiles_" + index}>
               <InfoTileItem
                 title={tile.title}
                 titleUpperCase={true}
