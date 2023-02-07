@@ -107,8 +107,16 @@ export default class Header extends Base {
         fixed={this.isMobile() ? undefined : "top"}
         bg={showBg ? "dark" : "transparent"}
         expand="sm"
-        className={"roboto"}
+        className={this.state.expanded ? "expanded" : ""}
+        onToggle={this.setExpanded}
       >
+        <img
+          src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
+          style={{
+            width: this.isMobile() ? "12%" : "5%",
+            marginRight: "5%",
+          }}
+        />
         {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -117,14 +125,8 @@ export default class Header extends Base {
 
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
-            <img
-              src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
-              style={{
-                width: this.isMobile() ? "12%" : "5%",
-                marginRight: "5%",
-              }}
-            />
-            <Navbar.Text className={"yellowHover"} as={Link} to={"/"}>
+
+            <Navbar.Text className={"yellowHover"} as={Link} to={"/"} onClick={this.setExpanded}>
               Home
             </Navbar.Text>
             <Navbar.Text className={""}>
@@ -132,6 +134,7 @@ export default class Header extends Base {
                 className={"yellowHover"}
                 href={"https://staking.mob.land"}
                 target={"_blank"}
+                onClick={this.setExpanded}
               >
                 Staking
               </a>
@@ -139,16 +142,19 @@ export default class Header extends Base {
             <Navbar.Text className={""}>
               <a
                 className={"yellowHover"}
-                href={"https://marketplace.mob.land"}
+                href={"https://shadowmarket.mob.land"}
                 target={"_blank"}
+                onClick={this.setExpanded}
               >
-                Market
+                Shadow Market
               </a>
             </Navbar.Text>
-            <Navbar.Text className={"yellowHover"} as={Link} to={"/overview"}>
+            <Navbar.Text className={"yellowHover"} as={Link} to={"/overview"}
+                         onClick={this.setExpanded}>
               How To Play
             </Navbar.Text>
-            <Navbar.Text as={Link} className={"yellowHover"} to={"/roadmap"}>
+            <Navbar.Text as={Link} className={"yellowHover"} to={"/roadmap"}
+                         onClick={this.setExpanded}>
               Roadmap
             </Navbar.Text>
           </Nav>
@@ -179,9 +185,6 @@ export default class Header extends Base {
         {/*    style={{ height: 40 }}*/}
         {/*  />*/}
         {/*</Navbar.Brand>*/}
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="mr-auto my-2 my-lg-0" navbarScroll></Nav>
-        </Navbar.Collapse>
 
         {this.isMobile() ? null : (
           <Navbar.Collapse

@@ -9,7 +9,7 @@ import clientApi from "../utils/ClientApi";
 import config from "../config";
 import Header from "./Header";
 import Footer from "./Footer";
-import LandingPage from "./LandingPage";
+import Home from "./Home";
 import Error404 from "./Error404";
 import RoadMap from "./roadmap/RoadMap";
 import Overview from "./overview/Overview";
@@ -213,7 +213,7 @@ class App extends Common {
         <main>
           <Switch>
             <Route exact path="/">
-              <LandingPage Store={Store} setStore={this.setStore} />
+              <Home Store={Store} setStore={this.setStore} />
             </Route>
             <Route exact path="/roadmap">
               <RoadMap />

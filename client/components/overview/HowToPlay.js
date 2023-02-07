@@ -56,9 +56,7 @@ function HowToPlay() {
           <Typography
             variant="subtitle1"
             align="center"
-            className={`tile-description light ${
-              isMobileOnly ? "alignLeft" : ""
-            }`}
+            className={"tile-description light"}
           >
             Welcome to the MOBLAND! Here we’ll give you a quick overview of how
             to start your path to becoming Kingpin of the Mafia Metaverse! If
@@ -201,7 +199,7 @@ function HowToPlay() {
       </LargeCard>
       <Grid container>
         <Grid item xs={12} sm={6} md={6}>
-          <Exchanges title="No tokens? SYNR is available on these platforms:" />
+          <Exchanges title={<span>No tokens?{isMobileOnly ? <br/> : " "}SYNR is available on these platforms:</span>} />
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
           <NftExchange title="NFT's are available on these platforms:" />

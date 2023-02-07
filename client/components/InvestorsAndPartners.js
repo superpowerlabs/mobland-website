@@ -19,12 +19,13 @@ export default class InvestorsAndPartners extends Base {
   }
 
   render() {
-    let i = this.props.start;
+    const {start} = this.props;
+    let i = start;
     return (
       <div className="scrollingWrapper">
         <div
           style={{ display: "inline-flex" }}
-          // className={"hcontainer grid " + (this.state.cls || "")}
+          // className={"hcontainer"}
           ref={this.scrollContainerRef}
         >
           {this.props.set.map((item) => {
@@ -108,6 +109,7 @@ export default class InvestorsAndPartners extends Base {
             );
           })}
         </div>
+        {start === 100 ? <div style={{ height: 40 }}><span className={'transparent'}>-</span></div> : null}
       </div>
     );
   }
