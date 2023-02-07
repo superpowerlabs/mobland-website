@@ -182,7 +182,7 @@ function AssetsGuide() {
       >
         {tiles.map((tile, index) => {
           return (
-            <Grid item xs={12} sm={12} md={5} key={"tiles_" + index}>
+            <Grid item xs={11} sm={11} md={5} key={"tiles_" + index}>
               <InfoTileItem
                 title={tile.title}
                 titleUpperCase={true}
