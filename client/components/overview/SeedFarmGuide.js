@@ -109,9 +109,10 @@ function SeedFarmGuide() {
               container
               spacing={0}
               alignItems="flex-end"
+              justifyContent={isMobileOnly ? "center" : ""}
             >
-              <Grid item xs={0} sm={1} md={1} />
-              <Grid item xs={12} sm={10} md={10}>
+              <Grid item xs={1} sm={1} md={1} />
+              <Grid item xs={10} sm={10} md={10}>
                 <InfoSection
                   title={section.title}
                   subtitle={section.subtitle}
@@ -122,7 +123,7 @@ function SeedFarmGuide() {
                   footer={section.footer}
                 />
               </Grid>
-              <Grid item xs={0} sm={1} md={1} />
+              <Grid item xs={0.5} sm={1} md={1} />
             </Grid>
           );
         })}

@@ -2388,7 +2388,7 @@ b,
 }
 
 .info-tile-description {
-    font-size: 84% !important;
+    font-size: 85% !important;
     font-weight: normal;
     text-align: left !important;
     line-height: 130% !important;
@@ -2585,5 +2585,9 @@ b,
     }
     .navbar-brand {
         width: 82% !important;
+    }
+
+    .info-tile-description {
+        font-size: 70% !important;
     }
 }
