@@ -2,6 +2,7 @@
 import React from "react";
 
 import { Navbar, Nav } from "react-bootstrap";
+import { isMobileOnly } from "react-device-detect";
 
 import { Link } from "react-router-dom";
 
@@ -114,7 +115,7 @@ export default class Header extends Base {
           <img
             src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
             style={{
-              width: this.isMobile() ? "12%" : "40px",
+              width: isMobileOnly ? "100%" : "40px",
               // marginRight: "5%",
             }}
           />
