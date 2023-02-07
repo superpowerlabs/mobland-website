@@ -33,12 +33,12 @@ export default class Home extends Base {
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <StakingPools />
-        <SynrRank />
         <BuildYourEmpire />
-        <Browse />
+        <SynrRank />
         <Economy />
-        <Assets />
+        <Browse />
         <Leaks />
+        <Assets />
         <Row>
           <Col className={"investor"}>INVESTORS</Col>
         </Row>

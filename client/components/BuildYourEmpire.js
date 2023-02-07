@@ -9,7 +9,7 @@ class BuildYourEmpire extends Component {
           borderTop: "#404143 solid",
           borderBottom: "#404143 solid",
           backgroundImage: 'url("/images/woodland-bg.jpg")',
-          zIndex: "1",
+          // zIndex: "1",
           position: "relative",
           // clipPath: "polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%)"
         }}

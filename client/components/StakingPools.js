@@ -39,14 +39,18 @@ class StakingPools extends Component {
             <Grid
               item
               xs={12}
-              style={{ display: "flex", justifyContent: "center" }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                paddingBottom: "5%",
+              }}
             >
               <div className="welcomeSub">
                 Step into MOBLAND and take on the world of a modern crime
                 syndicate.
               </div>
             </Grid>
-            <Grid container style={{ marginTop: 40 }}>
+            {/* <Grid container style={{ marginTop: 40 }}>
               <Grid item xs={false} sm={2} />
               <Grid
                 style={{
@@ -83,7 +87,7 @@ class StakingPools extends Component {
                 </a>
               </Grid>
               <Grid item xs={false} sm={2} />
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
       </div>

@@ -22,11 +22,11 @@ class AssetImages extends Component {
         <img
           alt={"Genesis Pass"}
           style={{
-            width: "46%",
-            marginTop: "-42%",
+            width: "39%",
+            marginTop: "-56%",
             position: "relative",
-            left: "-18%",
-            transform: "rotate(45deg)",
+            left: "-19%",
+            transform: "rotate(30deg)",
           }}
           src={"/images/genesis-pass.png"}
         />

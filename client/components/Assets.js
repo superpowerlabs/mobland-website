@@ -2,16 +2,20 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import AssetImages from "./AssetImages";
 import { isMobileOnly } from "react-device-detect";
+import { Link } from "react-router-dom";
+
 class Assets extends React.Component {
   render() {
     return (
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/grafiti-wall.png")',
+            backgroundImage: 'url("/images/dark-city.jpg")',
             backgroundSize: "cover",
             zIndex: "1",
             position: "relative",
+            borderTop: "1px #3a3a3b solid",
+            borderBottom: "1px #3a3a3b solid",
           }}
         >
           <Grid container>
@@ -72,7 +76,9 @@ class Assets extends React.Component {
                           justifyContent: "center",
                         }}
                       >
-                        <a className="button disabled">GUIDE</a>
+                        <Link className="button" to={"/overview/assetsguide"}>
+                          Guide
+                        </Link>
                       </div>
                     </Grid>
                     <Grid item xs={3} sm={false} />
