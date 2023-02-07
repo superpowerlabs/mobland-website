@@ -2359,7 +2359,7 @@ b,
 .tile-description {
     font-size: 84% !important;
     font-weight: normal;
-    text-align: center !important;
+    text-align: center;
     line-height: 130% !important;
     margin: 4px 0 12px !important;
 }
