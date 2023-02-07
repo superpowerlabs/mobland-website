@@ -2428,8 +2428,23 @@ b,
     font-weight: lighter !important;
     font-family: Mulish, sans-serif !important;
 }
+.footerBg {
+    border-top: 1px solid;
+    background: black;
+    padding-top: 3%;
+    border-color: #ffdd0080 !important;
+}
+.footerJoin {
+    text-align: right;
+}
 
 @media (max-width: 600px) {
+    .footerJoin {
+        text-align: center;
+    }
+    .footerBg {
+        text-align: center;
+    }
     .roadmapTitle,
     .overview-title {
         font-size: 3rem !important;
