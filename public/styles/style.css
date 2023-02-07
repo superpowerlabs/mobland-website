@@ -265,12 +265,6 @@ div.textBlock p:last-child {
 /*    border-bottom: 1px dashed #309 !important;*/
 /*}*/
 
-@media (min-width: 990px) {
-    .mr-auto a {
-        font-size: 1.2rem !important;
-    }
-}
-
 /*@media (min-width: 1400px) {*/
 /*    .container {*/
 /*        max-width: 1400px !important;*/
@@ -447,6 +441,13 @@ span.button {
     padding: 1.2rem 1.4rem !important;
     border-bottom: 1px solid transparent !important;
     /*padding-top: 120px;*/
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        background-color: #000000cc !important;
+        border-bottom: 1px solid #222 !important;
+    }
 }
 
 .hina {
@@ -692,10 +693,9 @@ img.pc90 {
 /*    background-size: contain;*/
 /*}*/
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
     .socialLinks {
-        float: right;
-        margin-top: -5%;
+        display: none;
     }
 }
 
@@ -1460,7 +1460,6 @@ table td {
 .navbar-light .navbar-nav .nav-link,
 .links {
     font-family: Mulish, sans-serif;
-    font-size: 0.8rem !important;
     padding-top: 12px;
     color: white;
     text-decoration: none;
@@ -1468,7 +1467,6 @@ table td {
 
 .links span {
     font-weight: 400;
-    font-size: 1.2vw;
 }
 
 .links.white:hover {
@@ -1505,6 +1503,12 @@ table td {
 
 .mr-auto a {
     font-size: 1.2vw !important;
+}
+
+@media (max-width: 990px) {
+    .mr-auto a {
+        font-size: inherit !important;
+    }
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -1795,17 +1799,7 @@ footer.MuiContainer-root {
 
 .textSub {
     font-family: Mulish, sans-serif;
-    font-size: 1.2vw;
-}
-
-.textSub2 {
-    font-size: 1vw;
-}
-
-.browseSub {
-    font-family: Mulish, sans-serif;
-    font-size: 1.2vw;
-    text-align: right;
+    font-size: 1.1vw;
 }
 
 .assetsSub {

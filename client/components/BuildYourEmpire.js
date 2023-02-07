@@ -21,7 +21,7 @@ class BuildYourEmpire extends Component {
               <div className="title">BUILD YOUR EMPIRE </div>
             </Grid>
             <Grid item xs={12} sm={12}>
-              <p className="textSub2">
+              <p className="textSub">
                 Own TURF. Grow BUD. Run MOBLAND. <br />
                 <br /> With ground-breaking cross-chain functionality and headed
                 up by Chief Grow Officers, Snoop Dogg and Champ Medici, we’re

@@ -30,7 +30,7 @@ class Browse extends Component {
                 </div>
               </Grid>
               <Grid item xs={12}>
-                <div className="browseSub">
+                <div className="textSub alignRight">
                   We recently released our custom Blueprint Reveal App which
                   unveiled to the world the range of dynamic (and dangerous)
                   gangsters of MOBLAND for Blueprint NFT holders to use in-game.
