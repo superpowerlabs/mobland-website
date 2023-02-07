@@ -36,10 +36,7 @@ function Overview({ subsection }) {
         }}
         className={"infoButtons"}
       >
-        <Stack
-          direction={isMobileOnly ? "column" : "row"}
-          spacing={isMobileOnly ? 3 : 5}
-        >
+        <Stack direction={isMobileOnly ? "column" : "row"} spacing={5}>
           <Button
             component={RouterLink}
             to={"/overview/howtoplay"}

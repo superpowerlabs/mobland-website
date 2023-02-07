@@ -2389,10 +2389,10 @@ b,
 
 @media (max-width: 600px) {
     .infoButtons .MuiButtonBase-root {
-        font-size: 4vw !important;
+        font-size: 3.5vw !important;
     }
     .infoButton {
-        width: 160px;
+        padding: 0px !important;
     }
 }
 
