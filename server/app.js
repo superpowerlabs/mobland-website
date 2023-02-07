@@ -26,7 +26,14 @@ const security_config = {
   font: ["data:", "fonts.gstatic.com/", "use.fontawesome.com/"],
   img: ["www.w3.org/"],
   index_file: "../../public/index.html",
-  static_assets: ["favicon.png", "favicon.ico", "styles", "images", "bundle"],
+  static_assets: [
+    "favicon.png",
+    "favicon.ico",
+    "styles",
+    "images",
+    "bundle",
+    "assets",
+  ],
 };
 
 applySecurity(app, security_config);
