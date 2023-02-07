@@ -1706,11 +1706,6 @@ footer.MuiContainer-root {
     padding: 8px 0 !important;
 }
 
-.show .navbar-light.navbar-text a,
-.show .yellowHover {
-    padding: 0 !important;
-}
-
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -2390,6 +2385,15 @@ b,
     font-family: Mulish, sans-serif !important;
     font-size: 1vw !important;
     min-width: 160px !important;
+}
+
+@media (max-width: 600px) {
+    .infoButtons .MuiButtonBase-root {
+        font-size: 4vw !important;
+    }
+    .infoButton {
+        width: 160px;
+    }
 }
 
 .infoButtons .MuiButtonBase-root.selected {

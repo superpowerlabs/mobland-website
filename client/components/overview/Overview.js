@@ -36,7 +36,10 @@ function Overview({ subsection }) {
         }}
         className={"infoButtons"}
       >
-        <Stack direction="row" spacing={5}>
+        <Stack
+          direction={isMobileOnly ? "column" : "row"}
+          spacing={isMobileOnly ? 3 : 5}
+        >
           <Button
             component={RouterLink}
             to={"/overview/howtoplay"}
@@ -46,18 +49,16 @@ function Overview({ subsection }) {
           >
             how to play
           </Button>
-          {isMobileOnly ? null : (
-            <Button
-              component={RouterLink}
-              to={"/overview/seedfarmguide"}
-              className={
-                "infoButton " +
-                (currentView === "seedfarmguide" ? "selected" : "")
-              }
-            >
-              SEED farm guide
-            </Button>
-          )}
+          <Button
+            component={RouterLink}
+            to={"/overview/seedfarmguide"}
+            className={
+              "infoButton " +
+              (currentView === "seedfarmguide" ? "selected" : "")
+            }
+          >
+            SEED farm guide
+          </Button>
           <Button
             component={RouterLink}
             to={"/overview/assetsguide"}
