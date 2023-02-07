@@ -110,13 +110,15 @@ export default class Header extends Base {
         className={this.state.expanded ? "expanded" : ""}
         onToggle={this.setExpanded}
       >
-        <Link to={"/"} className={"navbar-brand"}><img
-          src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
-          style={{
-            width: this.isMobile() ? "12%" : "40px",
-            // marginRight: "5%",
-          }}
-        /></Link>
+        <Link to={"/"} className={"navbar-brand"}>
+          <img
+            src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
+            style={{
+              width: this.isMobile() ? "12%" : "40px",
+              // marginRight: "5%",
+            }}
+          />
+        </Link>
         {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -187,7 +189,6 @@ export default class Header extends Base {
                 Core Pool
               </a>
             </Navbar.Text>
-
           </Nav>
         </Navbar.Collapse>
 
