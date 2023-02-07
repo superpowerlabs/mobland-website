@@ -12,7 +12,9 @@ import Footer from "./Footer";
 import Home from "./Home";
 import Error404 from "./Error404";
 import RoadMap from "./roadmap/RoadMap";
-import Overview from "./overview/Overview";
+import HowToPlay from "./overview/HowToPlay";
+import SeedFarmGuide from "./overview/SeedFarmGuide";
+import AssetsGuide from "./overview/AssetsGuide";
 // import Team from "./Team";
 
 class App extends Common {
@@ -222,17 +224,14 @@ class App extends Common {
             {/* <Route exact path="/team">
               <Team Store={Store} setStore={this.setStore} />
             </Route> */}
-            <Route exact path="/overview">
-              <Overview subsection={"howtoplay"} />
+            <Route exact path="/howtoplay">
+              <HowToPlay />
             </Route>
-            <Route exact path="/overview/howtoplay">
-              <Overview subsection={"howtoplay"} />
+            <Route exact path="/seedfarmguide">
+              <SeedFarmGuide />
             </Route>
-            <Route exact path="/overview/seedfarmguide">
-              <Overview subsection={"seedfarmguide"} />
-            </Route>
-            <Route exact path="/overview/assetsguide">
-              <Overview subsection={"assetsguide"} />
+            <Route exact path="/assetsguide">
+              <AssetsGuide />
             </Route>
             <Route exact path="*">
               <Error404 Store={Store} setStore={this.setStore} />

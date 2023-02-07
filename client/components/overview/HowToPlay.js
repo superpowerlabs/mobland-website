@@ -38,7 +38,14 @@ function HowToPlay() {
   }, []);
 
   return (
-    <Stack spacing={2} alignItems="center">
+    <Stack
+      spacing={2}
+      alignItems="center"
+      style={{ marginTop: isMobileOnly ? 0 : 78 }}
+    >
+      <div align="center" className="overview-title">
+        HOW TO PLAY
+      </div>
       {/* stack item one */}
       <Box
         sx={{

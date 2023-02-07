@@ -93,46 +93,55 @@ function SeedFarmGuide() {
   let i = 0;
 
   return (
-    <Grid container spacing={2} alignItems="flex-end">
-      {sections.map((section) => {
-        return (
-          <Grid
-            key={"section_" + i++}
-            container
-            spacing={0}
-            alignItems="flex-end"
-          >
-            <Grid item xs={0} sm={1} md={1} />
-            <Grid item xs={12} sm={10} md={10}>
-              <InfoSection
-                title={section.title}
-                subtitle={section.subtitle}
-                img={section.img}
-                display_img={section.display_img}
-                description={section.description}
-                icons={section.icons}
-                footer={section.footer}
-              />
+    <div style={{ marginTop: isMobileOnly ? 0 : 78 }}>
+      <div
+        align="center"
+        className="overview-title"
+        style={{ paddingBottom: 20 }}
+      >
+        SEED FARM
+      </div>
+      <Grid container spacing={2} alignItems="flex-end">
+        {sections.map((section) => {
+          return (
+            <Grid
+              key={"section_" + i++}
+              container
+              spacing={0}
+              alignItems="flex-end"
+            >
+              <Grid item xs={0} sm={1} md={1} />
+              <Grid item xs={12} sm={10} md={10}>
+                <InfoSection
+                  title={section.title}
+                  subtitle={section.subtitle}
+                  img={section.img}
+                  display_img={section.display_img}
+                  description={section.description}
+                  icons={section.icons}
+                  footer={section.footer}
+                />
+              </Grid>
+              <Grid item xs={0} sm={1} md={1} />
             </Grid>
-            <Grid item xs={0} sm={1} md={1} />
-          </Grid>
-        );
-      })}
+          );
+        })}
 
-      <Grid item xs={12} sm={6} md={6}>
-        <Exchanges
-          title={
-            <span>
-              No tokens?{isMobileOnly ? <br /> : " "}SYNR is available on these
-              platforms:
-            </span>
-          }
-        />
+        <Grid item xs={12} sm={6} md={6}>
+          <Exchanges
+            title={
+              <span>
+                No tokens?{isMobileOnly ? <br /> : " "}SYNR is available on
+                these platforms:
+              </span>
+            }
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <NftExchange title="NFT's are available on these platforms:" />
+        </Grid>
       </Grid>
-      <Grid item xs={12} sm={6} md={6}>
-        <NftExchange title="NFT's are available on these platforms:" />
-      </Grid>
-    </Grid>
+    </div>
   );
 }
 

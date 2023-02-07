@@ -8,7 +8,6 @@ import SsynrIcon from "../../images/ssynr_double.png";
 import SeedIcon from "../../images/seed_double.png";
 import SynrPassIcon from "../../images/genesispass.png";
 import BlueprintIcon from "../../images/blueprint.png";
-import SeedFarmIcon from "../../images/portal.png";
 import TurfIcon from "../../images/turf_8x8.png";
 import WeedFarmIcon from "../../images/weedfarm.png";
 import UniswapIcon from "../../images/uniswapwhite.png";
@@ -19,7 +18,7 @@ import bud from "../../images/bud.png";
 import binance from "../../images/binance.png";
 import opensea from "../../images/opensea.png";
 import mobland from "../../images/mobland-white-icon.png";
-import Exchanges from "./Exchanges";
+import { isMobileOnly } from "react-device-detect";
 
 function AssetsGuide() {
   const tiles = [
@@ -170,22 +169,27 @@ function AssetsGuide() {
   ];
 
   return (
-    <Grid container spacing={2} alignItems="flex-end">
-      {tiles.map((tile, index) => {
-        return (
-          <Grid item xs={12} sm={12} md={6} key={"tiles_" + index}>
-            <InfoTileItem
-              title={tile.title}
-              titleUpperCase={true}
-              img={tile.img}
-              alt={tile.title}
-              description={tile.description}
-              where={tile.where}
-            />
-          </Grid>
-        );
-      })}
-    </Grid>
+    <div style={{ marginTop: isMobileOnly ? 0 : 78 }}>
+      <div align="center" className="overview-title">
+        ASSETS
+      </div>
+      <Grid container spacing={2} alignItems="flex-end">
+        {tiles.map((tile, index) => {
+          return (
+            <Grid item xs={12} sm={12} md={6} key={"tiles_" + index}>
+              <InfoTileItem
+                title={tile.title}
+                titleUpperCase={true}
+                img={tile.img}
+                alt={tile.title}
+                description={tile.description}
+                where={tile.where}
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+    </div>
   );
 }
 

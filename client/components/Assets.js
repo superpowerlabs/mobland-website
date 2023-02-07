@@ -76,8 +76,8 @@ class Assets extends React.Component {
                           justifyContent: "center",
                         }}
                       >
-                        <Link className="button" to={"/overview/assetsguide"}>
-                          Guide
+                        <Link className="button" to={"/assetsguide"}>
+                          ASSETS
                         </Link>
                       </div>
                     </Grid>
