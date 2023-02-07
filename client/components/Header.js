@@ -120,7 +120,7 @@ export default class Header extends Base {
             <img
               src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
               style={{
-                width: "5%",
+                width: this.isMobile() ? "12%" : "5%",
                 marginRight: "5%",
               }}
             />

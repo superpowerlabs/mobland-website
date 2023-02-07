@@ -1706,11 +1706,6 @@ footer.MuiContainer-root {
     padding: 8px 0 !important;
 }
 
-.show .navbar-light.navbar-text a,
-.show .yellowHover {
-    padding: 0 !important;
-}
-
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -2364,7 +2359,7 @@ b,
 .tile-description {
     font-size: 84% !important;
     font-weight: normal;
-    text-align: center !important;
+    text-align: center;
     line-height: 130% !important;
     margin: 4px 0 12px !important;
 }
@@ -2390,6 +2385,15 @@ b,
     font-family: Mulish, sans-serif !important;
     font-size: 1vw !important;
     min-width: 160px !important;
+}
+
+@media (max-width: 600px) {
+    .infoButtons .MuiButtonBase-root {
+        font-size: 3.5vw !important;
+    }
+    .infoButton {
+        padding: 0px !important;
+    }
 }
 
 .infoButtons .MuiButtonBase-root.selected {

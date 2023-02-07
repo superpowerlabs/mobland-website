@@ -42,16 +42,23 @@ function HowToPlay() {
       {/* stack item one */}
       <Box
         sx={{
-          maxWidth: isMobileOnly ? "96%" : "80%",
+          maxWidth: isMobileOnly ? "100%" : "80%",
           display: "flex",
           justifyContent: "center",
         }}
       >
-        <ul style={{ width: "76%" }}>
+        <ul
+          style={{
+            width: isMobileOnly ? "100%" : "76%",
+            marginLeft: isMobileOnly ? "-6%" : "inherit",
+          }}
+        >
           <Typography
             variant="subtitle1"
             align="center"
-            className={"tile-description light"}
+            className={`tile-description light ${
+              isMobileOnly ? "alignLeft" : ""
+            }`}
           >
             Welcome to the MOBLAND! Here we’ll give you a quick overview of how
             to start your path to becoming Kingpin of the Mafia Metaverse! If
