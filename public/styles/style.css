@@ -2388,7 +2388,7 @@ b,
 }
 
 .info-tile-description {
-    font-size: 84% !important;
+    font-size: 85% !important;
     font-weight: normal;
     text-align: left !important;
     line-height: 130% !important;
@@ -2419,6 +2419,7 @@ b,
 }
 
 .css-bhp9pd-MuiPaper-root-MuiCard-root {
+    border-radius: 20px !important;
     background: transparent
         linear-gradient(180deg, #ffffff27 0%, #0000004b 100%) 0% 0% no-repeat
         padding-box !important;
@@ -2427,6 +2428,14 @@ b,
 .extraLight {
     font-weight: lighter !important;
     font-family: Mulish, sans-serif !important;
+}
+
+.distanceFooter {
+    padding-bottom: 50px;
+}
+
+.distanceHeader {
+    margin-top: 78px;
 }
 
 @media (max-width: 600px) {
@@ -2570,5 +2579,15 @@ b,
     .overFarm {
         text-align: inherit;
         padding-right: 0;
+    }
+    .distanceHeader {
+        margin-top: 0px;
+    }
+    .navbar-brand {
+        width: 10% !important;
+    }
+
+    .info-tile-description {
+        font-size: 70% !important;
     }
 }

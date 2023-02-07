@@ -2,6 +2,7 @@
 import React from "react";
 
 import { Navbar, Nav } from "react-bootstrap";
+import { isMobileOnly } from "react-device-detect";
 
 import { Link } from "react-router-dom";
 
@@ -114,7 +115,7 @@ export default class Header extends Base {
           <img
             src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
             style={{
-              width: this.isMobile() ? "12%" : "40px",
+              width: isMobileOnly ? "100%" : "40px",
               // marginRight: "5%",
             }}
           />
@@ -138,7 +139,7 @@ export default class Header extends Base {
             <Navbar.Text
               className={"yellowHover"}
               as={Link}
-              to={"/overview/howtoplay"}
+              to={"/howtoplay"}
               onClick={this.setExpanded}
             >
               How to play
@@ -153,20 +154,18 @@ export default class Header extends Base {
                 Shadow Market
               </a>
             </Navbar.Text>
-            <Navbar.Text className={""}>
-              <a
-                className={"yellowHover"}
-                as={Link}
-                to={"/overview/seedfarmguide"}
-                onClick={this.setExpanded}
-              >
-                Seed Farm
-              </a>
+            <Navbar.Text
+              className={"yellowHover"}
+              as={Link}
+              to={"/seedfarmguide"}
+              onClick={this.setExpanded}
+            >
+              Seed Farm
             </Navbar.Text>
             <Navbar.Text
               className={"yellowHover"}
               as={Link}
-              to={"/overview/assetsguide"}
+              to={"/assetsguide"}
               onClick={this.setExpanded}
             >
               Assets
