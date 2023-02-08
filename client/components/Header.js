@@ -172,7 +172,7 @@ export default class Header extends Base {
               to={"/seedfarmguide"}
               onClick={this.setExpanded}
             >
-              Seed Farm
+              SEED Farm Guide
             </Navbar.Text>
             <Navbar.Text
               className={"yellowHover"}
@@ -189,16 +189,6 @@ export default class Header extends Base {
               onClick={this.setExpanded}
             >
               Roadmap
-            </Navbar.Text>
-            <Navbar.Text className={""}>
-              <a
-                className={"yellowHover"}
-                href={"https://staking.mob.land/core/dashboard"}
-                target={"_blank"}
-                onClick={this.setExpanded}
-              >
-                Core Pool
-              </a>
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>

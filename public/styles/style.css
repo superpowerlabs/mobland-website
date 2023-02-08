@@ -2440,7 +2440,7 @@ b,
 }
 
 .distanceFooter {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
 }
 
 .distanceHeader {
@@ -2604,6 +2604,10 @@ b,
 
     .info-tile-description {
         font-size: 70% !important;
+    }
+
+    .howtoList {
+        padding-left: 0px !important;
     }
 }
 

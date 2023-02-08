@@ -8,7 +8,7 @@ class Footer extends Component {
       <div className="footerBg">
         <Grid container>
           <Grid item xs={false} sm={1} />
-          <Grid item xs={12} sm={4} md={3}>
+          <Grid item xs={12} sm={5} md={5}>
             <Grid item xs={12} sm={12}>
               <img
                 style={{ width: "60%", marginLeft: "-4%", paddingBottom: "5%" }}
@@ -19,7 +19,7 @@ class Footer extends Component {
             </Grid>
             <Grid item xs={12} sm={12}>
               <Grid container>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={3}>
                   <div className="bold mulish">About</div>
                   <span className={"light"}>
                     <Link
@@ -33,14 +33,22 @@ class Footer extends Component {
                   </span>
                   <br />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={4}>
                   <div className="bold mulish">Be a SYNNER</div>
                   <span className={"light"}>
                     <Link
                       display="block"
                       underline="hover"
                       color="inherit"
-                      href={"/core/dashboard"}
+                      href={"https://shadowmarket.mob.land"}
+                    >
+                      Shadow Marketplace
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://staking.mob.land/core/dashboard"}
                     >
                       Core Pool
                     </Link>
@@ -49,17 +57,63 @@ class Footer extends Component {
                       display="block"
                       underline="hover"
                       color="inherit"
-                      href={"/seed/dashboard"}
+                      href={"https://staking.mob.land/seed/dashboard"}
                     >
                       SEED Farm
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://blueprints.mob.land/"}
+                    >
+                      Blueprint Showcase
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://avatar.mob.land/"}
+                    >
+                      Reveal App
                     </Link>
                     <br />
                   </span>
                 </Grid>
+                <Grid item xs={12} sm={4}>
+                  <div className="bold mulish">Guides</div>
+                  <span className={"light"}>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"/howtoplay"}
+                    >
+                      How to play
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"/seedfarmguide"}
+                    >
+                      SEED Farm Guide
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"/assetsguide"}
+                    >
+                      Assets
+                    </Link>
+                  </span>
+                  <br />
+                </Grid>
+                <Grid item xs={false} sm={1} />
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={false} sm={1} md={2} />
 
           <Grid item xs={12} sm={5}>
             <div className="footerJoin">
