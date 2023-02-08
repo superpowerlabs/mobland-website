@@ -65,6 +65,14 @@ class Footer extends Component {
                       display="block"
                       underline="hover"
                       color="inherit"
+                      href={"https://blueprints.mob.land/"}
+                    >
+                      Blueprint Showcase
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
                       href={"https://avatar.mob.land/"}
                     >
                       Reveal App
@@ -90,14 +98,6 @@ class Footer extends Component {
                       href={"/seedfarmguide"}
                     >
                       SEED Farm Guide
-                    </Link>
-                    <Link
-                      display="block"
-                      underline="hover"
-                      color="inherit"
-                      href={"https://blueprints.mob.land/"}
-                    >
-                      Blueprint Showcase
                     </Link>
                     <Link
                       display="block"
