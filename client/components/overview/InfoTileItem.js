@@ -17,7 +17,7 @@ function InfoTileItem({ cls = "", alt, title, img, description, where }) {
             }}
           >
             <div className={"info-tile-title bold mulish"}>
-              {title.toUpperCase()}
+              {title}
             </div>
           </Box>
           <ul style={{ paddingLeft: 0 }}>

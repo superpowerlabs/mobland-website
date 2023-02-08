@@ -57,7 +57,7 @@ function AssetsGuide() {
         "sSYNR, or Synthetic SYNR, is in-game synthetic currency that will be usable only in-game and in the MOBLAND marketplace. sSYNR can only be acquired by staking SYNR and can be swapped in the SEED Farm to generate SEED instead!",
       where: [
         {
-          link: "#",
+          link: "https://staking.mob.land/core/dashboard",
           src: mobland,
         },
         ,
