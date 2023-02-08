@@ -41,30 +41,7 @@ class Assets extends React.Component {
               <br />
               <Grid container>
                 <Grid item xs={12} sm={4} />
-                <Grid item xs={12} sm={5}>
-                  <div className="assets">
-                    <a
-                      href={
-                        "https://opensea.io/assets?search[query]=mobland%20"
-                      }
-                    >
-                      <img src={"/images/opensea.png"} alt={"OpenSea"} />
-                    </a>
-                    {/* <a href={""}>
-                      <img
-                        src={"/images/mobland-white-icon.png"}
-                        alt={"mobland"}
-                      />
-                    </a> */}
-                    <a
-                      href={
-                        "https://www.binance.com/en/nft/header-search?keyword=mobland"
-                      }
-                    >
-                      <img src={"/images/binance.png"} alt={"Binance"} />
-                    </a>
-                  </div>
-                </Grid>
+                <Grid item xs={12} sm={5} />
                 <Grid item xs={12} sm={3}>
                   <Grid container>
                     <Grid item xs={3} sm={false} />
