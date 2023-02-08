@@ -2590,4 +2590,8 @@ b,
     .info-tile-description {
         font-size: 70% !important;
     }
+
+    .howtoList {
+        padding-left: 0px !important;
+    }
 }

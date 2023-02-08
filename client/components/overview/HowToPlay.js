@@ -89,7 +89,7 @@ function HowToPlay() {
             }}
           />
         </Box>
-        <CardContent>
+        <CardContent className="howtoList">
           <Title
             navigateTo={null}
             title="GET STARTED WITH SYNR"
@@ -136,7 +136,7 @@ function HowToPlay() {
             }}
           />
         </Box>
-        <CardContent>
+        <CardContent className="howtoList">
           <Title
             navigateTo={null}
             title="POWER UP THE SEED FARM"
@@ -181,7 +181,7 @@ function HowToPlay() {
             }}
           />
         </Box>
-        <CardContent>
+        <CardContent className="howtoList">
           <Title
             navigateTo={null}
             title="PUT YOUR SEED TO WORK"
