@@ -194,12 +194,8 @@
 /* Glitch styles */
 .glitch {
     position: relative;
-    /*width: var(--glitch-width);*/
-    /*max-width: 400px;*/
-    /*height: var(--glitch-height);*/
-    /*max-height: calc(400px * 1.25);*/
-    width: 140px;
-    height: 140px;
+    width: 90px;
+    height: 90px;
     overflow: hidden;
     margin: 0 auto;
 }
