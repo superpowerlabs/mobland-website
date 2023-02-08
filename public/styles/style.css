@@ -2440,7 +2440,7 @@ b,
 }
 
 .distanceFooter {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
 }
 
 .distanceHeader {
