@@ -85,8 +85,8 @@ export default class InvestorsAndPartners extends Base {
                   style = 5;
                 }
                 return (
-                  <Grid item xs={4} sm={3} md={2}>
-                    <div key={key} className={"tile"}>
+                  <Grid key={key} item xs={4} sm={3} md={2}>
+                    <div className={"tile"}>
                       <div className={"grid-item"}>
                         <a href={item.href} target={"_blank"}>
                           {/*<div className="grid__item">*/}
