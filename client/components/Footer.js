@@ -42,6 +42,14 @@ class Footer extends Component {
                       display="block"
                       underline="hover"
                       color="inherit"
+                      href={"/seedfarmguide"}
+                    >
+                      SEED Farm Guide
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
                       href={"/assetsguide"}
                     >
                       Assets

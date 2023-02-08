@@ -172,7 +172,7 @@ export default class Header extends Base {
               to={"/seedfarmguide"}
               onClick={this.setExpanded}
             >
-              Seed Farm Guide
+              SEED Farm Guide
             </Navbar.Text>
             <Navbar.Text
               className={"yellowHover"}
