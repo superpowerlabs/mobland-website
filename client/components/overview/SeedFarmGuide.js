@@ -139,7 +139,7 @@ function SeedFarmGuide() {
           />
         </Grid>
         <Grid item xs={12} sm={6} md={6} className={"distanceFooter"}>
-          <NftExchange title="NFT's are available on these platforms:" />
+          <NftExchange title="No NFT?" />
         </Grid>
       </Grid>
     </div>

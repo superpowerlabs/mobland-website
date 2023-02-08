@@ -276,7 +276,7 @@ a.yellowHover {
     color: whitesmoke !important;
 }
 
-a.yellowHover:hover {
+.yellow, a.yellowHover:hover {
     color: yellow !important;
 }
 
