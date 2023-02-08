@@ -68,7 +68,9 @@ export default class Home extends Base {
               set={partners}
               start={100}
             />
-            <div style={{ height: 60 }} ><span className={"transparent"}>-</span></div>
+            <div style={{ height: 60 }}>
+              <span className={"transparent"}>-</span>
+            </div>
           </Col>
         </Row>
       </div>

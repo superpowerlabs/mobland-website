@@ -67,103 +67,100 @@ export default class InvestorsAndPartners extends Base {
     let i = this.props.start;
     return (
       <div
-          // className={"hcontainer grid " + (this.state.cls || "")}
-          ref={this.scrollContainerRef}
-        >
-          <Grid container>
-            <Grid item xs={1} />
+        // className={"hcontainer grid " + (this.state.cls || "")}
+        ref={this.scrollContainerRef}
+      >
+        <Grid container>
+          <Grid item xs={1} />
 
-            <Grid item xs={10}>
-              <Grid container>
-                {this.props.set.map((item) => {
-                  if (item.skip) {
-                    return null;
-                  }
-                  let key = "entity" + i++;
-                  let style = Math.ceil(5 * Math.random());
-                  if (style === 6) {
-                    style = 5;
-                  }
-                  return (
-                    <Grid item xs={4} sm={3} md={2}>
-                      <div key={key} className={"tile"}>
-                        <div className={"grid-item"}>
-                          <a href={item.href} target={"_blank"}>
-                            {/*<div className="grid__item">*/}
+          <Grid item xs={10}>
+            <Grid container>
+              {this.props.set.map((item) => {
+                if (item.skip) {
+                  return null;
+                }
+                let key = "entity" + i++;
+                let style = Math.ceil(5 * Math.random());
+                if (style === 6) {
+                  style = 5;
+                }
+                return (
+                  <Grid item xs={4} sm={3} md={2}>
+                    <div key={key} className={"tile"}>
+                      <div className={"grid-item"}>
+                        <a href={item.href} target={"_blank"}>
+                          {/*<div className="grid__item">*/}
+                          <div
+                            className={
+                              "hcard  glitch glitch--style-" +
+                              style +
+                              " " +
+                              (Math.random() > 0.5 ? "glitch--vertical" : "")
+                            }
+                          >
                             <div
-                              className={
-                                "hcard  glitch glitch--style-" +
-                                style +
-                                " " +
-                                (Math.random() > 0.5 ? "glitch--vertical" : "")
-                              }
-                            >
-                              <div
-                                className="nonglitch__img"
-                                style={{
-                                  backgroundImage: `url(/images/investors/${item.img})`,
-                                }}
-                              />
-                              <div
-                                className="glitch__img"
-                                style={{
-                                  backgroundImage: `url(/images/investors/${item.img})`,
-                                }}
-                              />
-                              <div
-                                className="glitch__img"
-                                style={{
-                                  backgroundImage: `url(/images/investors/${item.img})`,
-                                }}
-                              />
-                              <div
-                                className="glitch__img"
-                                style={{
-                                  backgroundImage: `url(/images/investors/${item.img})`,
-                                }}
-                              />
-                              <div
-                                className="glitch__img"
-                                style={{
-                                  backgroundImage: `url(/images/investors/${item.img})`,
-                                }}
-                              />
-                            </div>
-                          </a>
-                          <div className={"centered"} style={{ paddingTop: 6 }}>
-                            <a
-                              className={"grey666 yellowHover"}
-                              href={item.href}
-                            >
-                              {item.name}
-                            </a>
+                              className="nonglitch__img"
+                              style={{
+                                backgroundImage: `url(/images/investors/${item.img})`,
+                              }}
+                            />
+                            <div
+                              className="glitch__img"
+                              style={{
+                                backgroundImage: `url(/images/investors/${item.img})`,
+                              }}
+                            />
+                            <div
+                              className="glitch__img"
+                              style={{
+                                backgroundImage: `url(/images/investors/${item.img})`,
+                              }}
+                            />
+                            <div
+                              className="glitch__img"
+                              style={{
+                                backgroundImage: `url(/images/investors/${item.img})`,
+                              }}
+                            />
+                            <div
+                              className="glitch__img"
+                              style={{
+                                backgroundImage: `url(/images/investors/${item.img})`,
+                              }}
+                            />
                           </div>
-                          {item.company ? (
-                            <div
-                              style={{ paddingBottom: 10 }}
-                              className={
-                                this.isMobile()
-                                  ? "grey999 centered"
-                                  : "wrapped grey999 centered"
-                              }
-                            >
-                              {item.company}
-                            </div>
-                          ) : (
-                            <div style={{ color: "transparent" }}>
-                              <br />
-                            </div>
-                          )}
+                        </a>
+                        <div className={"centered"} style={{ paddingTop: 6 }}>
+                          <a className={"grey666 yellowHover"} href={item.href}>
+                            {item.name}
+                          </a>
                         </div>
+                        {item.company ? (
+                          <div
+                            style={{ paddingBottom: 10 }}
+                            className={
+                              this.isMobile()
+                                ? "grey999 centered"
+                                : "wrapped grey999 centered"
+                            }
+                          >
+                            {item.company}
+                          </div>
+                        ) : (
+                          <div style={{ color: "transparent" }}>
+                            <br />
+                          </div>
+                        )}
                       </div>
-                    </Grid>
-                  );
-                })}
-              </Grid>
+                    </div>
+                  </Grid>
+                );
+              })}
             </Grid>
-            <Grid item xs={1} />
           </Grid>
-        </div>
+          <Grid item xs={1} />
+        </Grid>
+      </div>
     );
   }
 }

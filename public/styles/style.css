@@ -1414,6 +1414,7 @@ table td {
     background-position: center center;
     background-color: black; /* #131313 */
     filter: grayscale(1);
+    border: 1px solid #222;
 }
 
 .dongle {
