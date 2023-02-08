@@ -1,5 +1,6 @@
 import * as React from "react";
 import { CardMedia, Stack } from "@mui/material";
+import { Link } from "react-router-dom";
 import Title from "../tile/Title";
 
 import mobland from "../../images/mobland-white-icon.png";
@@ -32,30 +33,31 @@ function NftExchange({ title = "", style = {} }) {
   return (
     <div>
       {title ? <Title title={title} upperCase={false} /> : null}
-      <Stack
-        direction="row"
-        spacing={3}
-        align="center"
-        justifyContent="center"
-        sx={style}
-      >
-        {exchanges.map((exchange, index) => {
-          return (
-            <a href={exchange.link} key={"exchange_" + i++}>
-              <CardMedia
-                key={"exchange_" + i++}
-                style={{
-                  width: "auto",
-                  maxHeight: exchange.height,
-                  paddingTop: exchange.padding,
-                }}
-                component="img"
-                image={exchange.img}
-              />
-            </a>
-          );
-        })}
-      </Stack>
+      <div className={'centered'}>Look at <Link to={"/assetsguide"}><span className={"yellow"}>Assets</span> </Link> to see where to get them.</div>
+      {/*<Stack*/}
+      {/*  direction="row"*/}
+      {/*  spacing={3}*/}
+      {/*  align="center"*/}
+      {/*  justifyContent="center"*/}
+      {/*  sx={style}*/}
+      {/*>*/}
+      {/*  {exchanges.map((exchange, index) => {*/}
+      {/*    return (*/}
+      {/*      <a href={exchange.link} key={"exchange_" + i++}>*/}
+      {/*        <CardMedia*/}
+      {/*          key={"exchange_" + i++}*/}
+      {/*          style={{*/}
+      {/*            width: "auto",*/}
+      {/*            maxHeight: exchange.height,*/}
+      {/*            paddingTop: exchange.padding,*/}
+      {/*          }}*/}
+      {/*          component="img"*/}
+      {/*          image={exchange.img}*/}
+      {/*        />*/}
+      {/*      </a>*/}
+      {/*    );*/}
+      {/*  })}*/}
+      {/*</Stack>*/}
     </div>
   );
 }

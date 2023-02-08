@@ -16,9 +16,7 @@ function InfoTileItem({ cls = "", alt, title, img, description, where }) {
               mb: 2,
             }}
           >
-            <div className={"info-tile-title bold mulish"}>
-              {title}
-            </div>
+            <div className={"info-tile-title bold mulish"}>{title}</div>
           </Box>
           <ul style={{ paddingLeft: 0 }}>
             <Typography
