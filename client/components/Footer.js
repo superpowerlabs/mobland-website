@@ -30,6 +30,22 @@ class Footer extends Component {
                     >
                       WhitePaper
                     </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"/howtoplay"}
+                    >
+                      How to play
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"/assetsguide"}
+                    >
+                      Assets
+                    </Link>
                   </span>
                   <br />
                 </Grid>
@@ -40,7 +56,15 @@ class Footer extends Component {
                       display="block"
                       underline="hover"
                       color="inherit"
-                      href={"/core/dashboard"}
+                      href={"https://shadowmarket.mob.land"}
+                    >
+                      Marketplace
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://staking.mob.land/core/dashboard"}
                     >
                       Core Pool
                     </Link>
@@ -49,7 +73,7 @@ class Footer extends Component {
                       display="block"
                       underline="hover"
                       color="inherit"
-                      href={"/seed/dashboard"}
+                      href={"https://staking.mob.land/seed/dashboard"}
                     >
                       SEED Farm
                     </Link>
