@@ -111,15 +111,23 @@ export default class Header extends Base {
         className={this.state.expanded ? "expanded" : ""}
         onToggle={this.setExpanded}
       >
-        <Link to={"/"} className={"navbar-brand"}>
+        {isMobileOnly ?
+            <img
+              src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
+              style={{
+                width: 40,
+                // marginRight: "5%",
+              }}
+            />
+           : <Link to={"/"} className={"navbar-brand"}>
           <img
             src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
             style={{
-              width: isMobileOnly ? "100%" : "40px",
+              width: 40,
               // marginRight: "5%",
             }}
           />
-        </Link>
+        </Link>}
         {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -128,14 +136,14 @@ export default class Header extends Base {
 
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
-            {/*<Navbar.Text*/}
-            {/*  className={"yellowHover"}*/}
-            {/*  as={Link}*/}
-            {/*  to={"/"}*/}
-            {/*  onClick={this.setExpanded}*/}
-            {/*>*/}
-            {/*  Home*/}
-            {/*</Navbar.Text>*/}
+            {isMobileOnly ? <Navbar.Text
+                className={"yellowHover"}
+                as={Link}
+                to={"/"}
+                onClick={this.setExpanded}
+              >
+                Home
+              </Navbar.Text> : null}
             <Navbar.Text
               className={"yellowHover"}
               as={Link}
