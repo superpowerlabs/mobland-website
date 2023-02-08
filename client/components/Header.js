@@ -15,7 +15,7 @@ export default class Header extends Base {
       addressExpanded: false,
       expanded: "",
       pathname: window.location.pathname,
-      showBg: true
+      showBg: true,
       // showBg: false,
     };
 

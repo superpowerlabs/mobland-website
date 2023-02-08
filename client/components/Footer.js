@@ -11,7 +11,7 @@ class Footer extends Component {
           <Grid item xs={12} sm={5} md={5}>
             <Grid item xs={12} sm={12}>
               <img
-                style={{ width: 300, marginLeft: "-4%", paddingBottom: "5%" }}
+                style={{ width: 231, padding: "0 0 16px" }}
                 src={"/images/mobland-horizontal.png"}
                 alt={"Mobland"}
               />
