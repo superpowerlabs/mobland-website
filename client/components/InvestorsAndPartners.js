@@ -66,8 +66,7 @@ export default class InvestorsAndPartners extends Base {
   render() {
     let i = this.props.start;
     return (
-      <div>
-        <div
+      <div
           // className={"hcontainer grid " + (this.state.cls || "")}
           ref={this.scrollContainerRef}
         >
@@ -87,7 +86,7 @@ export default class InvestorsAndPartners extends Base {
                   }
                   return (
                     <Grid item xs={4} sm={3} md={2}>
-                      <div key={key}>
+                      <div key={key} className={"tile"}>
                         <div className={"grid-item"}>
                           <a href={item.href} target={"_blank"}>
                             {/*<div className="grid__item">*/}
@@ -165,7 +164,6 @@ export default class InvestorsAndPartners extends Base {
             <Grid item xs={1} />
           </Grid>
         </div>
-      </div>
     );
   }
 }

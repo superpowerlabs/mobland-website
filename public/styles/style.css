@@ -2605,3 +2605,7 @@ b,
         font-size: 70% !important;
     }
 }
+
+.tile {
+    padding-bottom: 18px;
+}
