@@ -12,7 +12,7 @@ export default class Error404 extends Base {
   render() {
     return (
       <Container style={{ marginTop: 100 }}>
-        <div className={"noTokens m0Auto"}>
+        <div className={"noTokens m0Auto"} style={{padding: 100}}>
           <p>404, page not found :-(</p>
         </div>
       </Container>

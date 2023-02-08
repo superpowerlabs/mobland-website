@@ -15,7 +15,8 @@ export default class Header extends Base {
       addressExpanded: false,
       expanded: "",
       pathname: window.location.pathname,
-      showBg: false,
+      showBg: true
+      // showBg: false,
     };
 
     this.bindMany(["expandAddress", "checkPathname", "setExpanded"]);
@@ -31,13 +32,14 @@ export default class Header extends Base {
     this.checkPathname();
     this.checkIfOperator();
 
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 80) {
-        this.setState({ showBg: true });
-      } else {
-        this.setState({ showBg: false });
-      }
-    });
+    // we do not need this anymore, at least for now
+    // window.addEventListener("scroll", () => {
+    //   if (window.scrollY > 80) {
+    //     this.setState({ showBg: true });
+    //   } else {
+    //     this.setState({ showBg: false });
+    //   }
+    // });
   }
 
   expandAddress() {
@@ -225,7 +227,7 @@ export default class Header extends Base {
             style={{ display: "block" }}
           >
             <Navbar.Text className={"socialLinks"}>
-              <span className={"bitSmaller mulish white"}>JOIN US</span>
+              <span className={"bitSmaller mulish white"}>Join us</span>
 
               <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer">
                 <i className="fab fa-discord" />

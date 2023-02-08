@@ -439,7 +439,7 @@ span.button {
     background-color: transparent !important;
     border-bottom: none !important;
     background-size: 100%;
-    padding: 1.2rem 1.4rem !important;
+    padding: 15px 1.4rem 12px !important;
     border-bottom: 1px solid transparent !important;
     /*padding-top: 120px;*/
 }

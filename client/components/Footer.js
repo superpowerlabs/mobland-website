@@ -11,7 +11,7 @@ class Footer extends Component {
           <Grid item xs={12} sm={5} md={5}>
             <Grid item xs={12} sm={12}>
               <img
-                style={{ width: "60%", marginLeft: "-4%", paddingBottom: "5%" }}
+                style={{ width: 300, marginLeft: "-4%", paddingBottom: "5%" }}
                 src={"/images/mobland-horizontal.png"}
                 alt={"Mobland"}
               />
@@ -19,7 +19,7 @@ class Footer extends Component {
             </Grid>
             <Grid item xs={12} sm={12}>
               <Grid container>
-                <Grid item xs={12} sm={3}>
+                <Grid item xs={12} sm={12} lg={3}>
                   <div className="bold mulish">About</div>
                   <span className={"light"}>
                     <Link
@@ -33,7 +33,7 @@ class Footer extends Component {
                   </span>
                   <br />
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={12} lg={4}>
                   <div className="bold mulish">Be a SYNNER</div>
                   <span className={"light"}>
                     <Link
@@ -80,7 +80,7 @@ class Footer extends Component {
                     <br />
                   </span>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={12} lg={4}>
                   <div className="bold mulish">Guides</div>
                   <span className={"light"}>
                     <Link
