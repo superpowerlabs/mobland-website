@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 import React from "react";
 import Base from "../Base";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 // import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
