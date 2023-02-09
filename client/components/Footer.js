@@ -77,7 +77,14 @@ class Footer extends Component {
                     >
                       Reveal App
                     </Link>
-                    <br />
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://leaderboard.mob.land"}
+                    >
+                      Leaderboard
+                    </Link>
                   </span>
                 </Grid>
                 <Grid item xs={12} sm={12} lg={4}>
