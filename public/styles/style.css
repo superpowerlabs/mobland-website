@@ -2422,6 +2422,10 @@ b,
     margin: 4px 0 12px !important;
 }
 
+.overCountDown {
+    height: 120px;
+}
+
 .countDown {
     font-size: 1.5rem;
     font-weight: bold;
@@ -2641,6 +2645,14 @@ b,
 
     .howtoList {
         padding-left: 0px !important;
+    }
+
+    .overCountDown {
+        text-align: center;
+    }
+
+    .countDown {
+        font-size: 1rem;
     }
 }
 
