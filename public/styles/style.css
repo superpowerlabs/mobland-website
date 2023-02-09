@@ -2381,6 +2381,31 @@ b,
     border: 1px solid #8b8b8b90;
     border-radius: 25px;
     opacity: 1;
+    min-height: 210px;
+}
+
+@media (max-width: 1366px) {
+    .info-tile-base {
+        min-height: 227px;
+    }
+}
+
+@media (max-width: 1084px) {
+    .info-tile-base {
+        min-height: 245px;
+    }
+}
+
+@media (max-width: 945px) {
+    .info-tile-base {
+        min-height: 262px;
+    }
+}
+
+@media (max-width: 892px) {
+    .info-tile-base {
+        min-height: inherit;
+    }
 }
 
 .info-tile-title {
