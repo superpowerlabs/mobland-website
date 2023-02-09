@@ -152,7 +152,7 @@ function AssetsGuide() {
       img: WeedFarmIcon,
       important: true,
       description:
-        "WEED Farms can be set up to plant (stake) SEED in order to grow WEED Tokens. WEED Farm owners oversee operations, defend and attack to grow their empires, upgrade features, and earn a share of the goods & services produced.",
+        "WEED Farms can be set up to plant (stake) SEED in order to grow BUD Tokens. WEED Farm owners oversee operations, defend and attack to grow their empires, upgrade features, and earn a share of the goods & services produced.",
       where: [
         {
           link: "https://opensea.io/collection/mobland-weed-farm",
