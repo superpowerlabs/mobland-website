@@ -2422,6 +2422,12 @@ b,
     margin: 4px 0 12px !important;
 }
 
+.countDown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffee00;
+}
+
 .light {
     color: white;
     font-family: Mulish, sans-serif !important;
