@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
 
-import SeedPileImg from "../../images/seed_pile.png";
+import SeedImg from "../../images/seed-single-coin.png";
 import InfoSection from "./InfoSection";
 
 import SynrIcon from "../../images/synr_double.png";
@@ -39,7 +39,7 @@ function SeedFarmGuide() {
   const sections = [
     {
       title: "THE SEED TOKEN",
-      img: SeedPileImg,
+      img: SeedImg,
       display_img: "centered",
       description: [
         <span
