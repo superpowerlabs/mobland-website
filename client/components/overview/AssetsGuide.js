@@ -21,6 +21,14 @@ import mobland from "../../images/mobland-white-icon.png";
 import { isMobileOnly } from "react-device-detect";
 
 function AssetsGuide() {
+  function timeDiff() {
+    const launchDate = new Date("2023-02-13T02:00:00.000Z");
+    const then = launchDate.getTime();
+    const now = Date.now();
+    const diff = Math.round((then - now) / 1000);
+    return diff > 0 ? diff : 0;
+  }
+
   const tiles = [
     {
       title: "SYNR",
@@ -87,7 +95,7 @@ function AssetsGuide() {
         "BUD is an in-game asset produced by Weed Farms. Consume BUD to upgrade farms, repair damaged farms, upgrade characters, heal injured characters and additional in-game utilities.",
       where: [
         {
-          link: "https://shadowmarket.mob.land/",
+          link: timeDiff() ? "https://shadowmarket.mob.land/" : "#",
           src: mobland,
         },
         ,
@@ -140,7 +148,7 @@ function AssetsGuide() {
           src: opensea,
         },
         {
-          link: "https://shadowmarket.mob.land/",
+          link: timeDiff() ? "https://shadowmarket.mob.land/" : "#",
           src: mobland,
         },
         ,
@@ -159,7 +167,7 @@ function AssetsGuide() {
           src: opensea,
         },
         {
-          link: "https://shadowmarket.mob.land/",
+          link: timeDiff() ? "https://shadowmarket.mob.land/" : "#",
           src: mobland,
         },
         ,

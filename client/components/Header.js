@@ -104,7 +104,8 @@ export default class Header extends Base {
     //   connectedTo = "";
     // }
 
-    const shadowLaunched = Date.now() > (new Date("2023-02-13T02:00:00.000Z")).getTime();
+    const shadowLaunched =
+      Date.now() > new Date("2023-02-13T02:00:00.000Z").getTime();
 
     return (
       <Navbar
@@ -160,16 +161,18 @@ export default class Header extends Base {
             >
               How to play
             </Navbar.Text>
-            {shadowLaunched ? <Navbar.Text className={""}>
-              <a
-                className={"yellowHover"}
-                href={"https://shadowmarket.mob.land"}
-                target={"_blank"}
-                onClick={this.setExpanded}
-              >
-                Shadow Market
-              </a>
-            </Navbar.Text> : null}
+            {shadowLaunched ? (
+              <Navbar.Text className={""}>
+                <a
+                  className={"yellowHover"}
+                  href={"https://shadowmarket.mob.land"}
+                  target={"_blank"}
+                  onClick={this.setExpanded}
+                >
+                  Shadow Market
+                </a>
+              </Navbar.Text>
+            ) : null}
             <Navbar.Text
               className={"yellowHover"}
               as={Link}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Title from "../tile/Title";
 import PropTypes from "prop-types";
 
-function NftExchange({ title = ""}) {
+function NftExchange({ title = "" }) {
   return (
     <div>
       {title ? <Title title={title} upperCase={false} /> : null}
