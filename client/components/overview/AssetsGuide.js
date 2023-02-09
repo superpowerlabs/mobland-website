@@ -14,7 +14,7 @@ import UniswapIcon from "../../images/uniswapwhite.png";
 import KucoinIcon from "../../images/kucoinicon_white.png";
 import ByBitIcon from "../../images/bybit_white.png";
 import BitmartIcon from "../../images/bitmart_white.png";
-import bud from "../../images/bud.png";
+import bud from "../../images/bud_double.png";
 import binance from "../../images/binance.png";
 import opensea from "../../images/opensea.png";
 import mobland from "../../images/mobland-white-icon.png";
