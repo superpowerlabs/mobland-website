@@ -194,12 +194,14 @@ export default class Header extends Base {
             </Navbar.Text>
             <Navbar.Text>
               <a
-              className={"yellowHover"}
-              target={"_blank"}
-              href={"https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"}
-              onClick={this.setExpanded}
-            >
-              Blog
+                className={"yellowHover"}
+                target={"_blank"}
+                href={
+                  "https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"
+                }
+                onClick={this.setExpanded}
+              >
+                Blog
               </a>
             </Navbar.Text>
           </Nav>

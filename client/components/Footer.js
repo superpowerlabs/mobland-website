@@ -82,7 +82,16 @@ class Footer extends Component {
                 </Grid>
                 <Grid item xs={12} sm={12} lg={4}>
                   <div className="bold mulish">Guides / Articles</div>
-                  <div className="mulish"><a href={"https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"} target={"_blanc"}>Blog</a></div>
+                  <div className="mulish">
+                    <a
+                      href={
+                        "https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"
+                      }
+                      target={"_blanc"}
+                    >
+                      Blog
+                    </a>
+                  </div>
                   <span className={"light"}>
                     <Link
                       display="block"
