@@ -20,7 +20,7 @@ function Links() {
             generate revenue for GameFi 2.0 participants.
           </div>
           <a className="button" href="https://staking.mob.land/seed/dashboard">
-            SEED FARM
+            SEED GENERATOR
           </a>
         </Grid>
       </Grid>
