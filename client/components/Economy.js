@@ -54,7 +54,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  sm={3}
+                  sm={4}
                   className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
@@ -67,7 +67,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  sm={6}
+                  sm={5}
                   className={isMobileOnly ? "mobileExchange" : null}
                 >
                   <div className="exchanges">
