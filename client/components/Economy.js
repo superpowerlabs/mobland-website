@@ -54,7 +54,7 @@ class Economy extends Component {
                 <Grid
                   item
                   xs={12}
-                  sm={4}
+                  sm={3}
                   className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
@@ -64,6 +64,7 @@ class Economy extends Component {
                     SEED GENERATOR
                   </a>
                 </Grid>
+                <Grid item xs={12} sm={1} />
                 <Grid
                   item
                   xs={12}

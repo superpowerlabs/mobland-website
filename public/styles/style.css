@@ -1835,6 +1835,7 @@ footer.MuiContainer-root {
     border: 1px #f7f8f8 solid;
     background: #f7f8f8;
     box-shadow: 0 0 6px #ffffff90 !important;
+    white-space: nowrap;
 }
 
 .button:hover {
