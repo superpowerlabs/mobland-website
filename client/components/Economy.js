@@ -61,7 +61,7 @@ class Economy extends Component {
                     className="button buttonSeed"
                     href="https://staking.mob.land/seed/dashboard"
                   >
-                    SEED FARM
+                    SEED GENERATOR
                   </a>
                 </Grid>
                 <Grid

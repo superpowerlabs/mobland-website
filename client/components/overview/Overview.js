@@ -61,12 +61,12 @@ function Overview({ subsection }) {
               <span>
                 SEED
                 <br />
-                farm
+                Generator
                 <br />
                 guide
               </span>
             ) : (
-              <span>SEED farm guide</span>
+              <span>SEED Generator guide</span>
             )}
           </Button>
           <Button

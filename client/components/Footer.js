@@ -59,7 +59,7 @@ class Footer extends Component {
                       color="inherit"
                       href={"https://staking.mob.land/seed/dashboard"}
                     >
-                      SEED Farm
+                      SEED Generator
                     </Link>
                     <Link
                       display="block"
@@ -81,7 +81,17 @@ class Footer extends Component {
                   </span>
                 </Grid>
                 <Grid item xs={12} sm={12} lg={4}>
-                  <div className="bold mulish">Guides</div>
+                  <div className="bold mulish">Guides / Articles</div>
+                  <div className="mulish">
+                    <a
+                      href={
+                        "https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"
+                      }
+                      target={"_blanc"}
+                    >
+                      Blog
+                    </a>
+                  </div>
                   <span className={"light"}>
                     <Link
                       display="block"
@@ -97,7 +107,7 @@ class Footer extends Component {
                       color="inherit"
                       href={"/seedfarmguide"}
                     >
-                      SEED Farm Guide
+                      SEED Generator Guide
                     </Link>
                     <Link
                       display="block"

@@ -174,7 +174,7 @@ export default class Header extends Base {
               to={"/seedfarmguide"}
               onClick={this.setExpanded}
             >
-              SEED Farm Guide
+              SEED Generator
             </Navbar.Text>
             <Navbar.Text
               className={"yellowHover"}
@@ -191,6 +191,18 @@ export default class Header extends Base {
               onClick={this.setExpanded}
             >
               Roadmap
+            </Navbar.Text>
+            <Navbar.Text>
+              <a
+                className={"yellowHover"}
+                target={"_blank"}
+                href={
+                  "https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"
+                }
+                onClick={this.setExpanded}
+              >
+                Blog
+              </a>
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
