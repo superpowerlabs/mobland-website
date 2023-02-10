@@ -2670,3 +2670,6 @@ b,
 .tile {
     padding-bottom: 18px;
 }
+.MuiCard-root {
+    background-color: transparent !important;
+}
