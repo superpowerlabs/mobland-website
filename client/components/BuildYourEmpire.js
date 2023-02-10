@@ -36,8 +36,8 @@ class BuildYourEmpire extends Component {
       let seconds = Math.floor(countDown % 60);
       return (
         <div className="countDown">
-          <span className={"VT323 clock"}>
-            {days > 0 ? `${days}d | ` : ""}
+          <span className={"clock"}>
+            {days > 0 ? `${days}d - ` : ""}
             {zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
           </span>
         </div>
