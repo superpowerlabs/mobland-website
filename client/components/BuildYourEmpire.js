@@ -76,7 +76,7 @@ class BuildYourEmpire extends Component {
                   </a>
                 </div>
               ) : (
-                <div style={{ height: 120 }}>
+                <div className={"overCountDown"}>
                   The Shadow Market will be online in
                   <br /> {timeRemained()}
                 </div>
