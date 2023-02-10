@@ -9,7 +9,7 @@ class Browse extends Component {
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/grafiti-wall.png")',
+            backgroundImage: 'url("/images/grafiti-wall.jpg")',
             position: "relative",
             zIndex: "1",
           }}
