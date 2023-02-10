@@ -2,7 +2,7 @@
 import React from "react";
 import Base from "./Base";
 // import Masonry from "react-masonry-component";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 
 async function sleep(millis) {
   // eslint-disable-next-line no-undef

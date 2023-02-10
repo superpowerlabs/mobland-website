@@ -1,10 +1,11 @@
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const { join } = require("path");
 // const { HotModuleReplacementPlugin } = require('webpack')
 
-const mode = process.env.ENV || "development";
+const mode = "production";
 
 const config = {
   entry: "./client",
@@ -16,6 +17,7 @@ const config = {
   devServer: {
     contentBase: "./dist",
   },
+
   module: {
     rules: [
       {
@@ -45,6 +47,10 @@ const config = {
       cache: true,
       template: join(__dirname, "/public/index.html"),
     }),
+    new CompressionWebpackPlugin({
+      algorithm: "gzip",
+    }),
+    // new WebpackBundleAnalyzer.BundleAnalyzerPlugin(),
   ],
   externals: {},
   mode,
