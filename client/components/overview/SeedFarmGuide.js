@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
@@ -35,6 +35,9 @@ import { isMobileOnly } from "react-device-detect";
 // }
 
 function SeedFarmGuide() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const sections = [
     {
       title: "THE SEED TOKEN",
