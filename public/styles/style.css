@@ -27,7 +27,7 @@ body {
     background-color: black; /* #131313 */
     color: whitesmoke;
     font-family: Modeco, sans-serif !important;
-    background-image: url(../images/grafiti-wall.jpg);
+    background-image: url(/images/grafiti-wall.jpg);
     /*color: #222222;*/
 
     /*background-size: 100%;*/
