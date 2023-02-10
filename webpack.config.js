@@ -1,11 +1,12 @@
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
+// const ESLintPlugin = require("eslint-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const { join } = require("path");
 // const { HotModuleReplacementPlugin } = require('webpack')
 
-const mode = "production";
+const mode =
+  process.env.NODE_ENV === "development" ? "development" : "production";
 
 const config = {
   entry: "./client",
