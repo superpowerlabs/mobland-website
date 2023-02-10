@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid } from "@material-ui/core";
 import Base from "../Base";
 import Box from "./Box";
 import { isMobileOnly } from "react-device-detect";

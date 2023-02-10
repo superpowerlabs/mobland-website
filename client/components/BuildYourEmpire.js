@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid } from "@mui/material";
+import { Grid } from "@material-ui/core";
 
 class BuildYourEmpire extends Component {
   timeDiff() {
