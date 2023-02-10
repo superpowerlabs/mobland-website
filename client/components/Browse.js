@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-undef
 import React, { Component } from "react";
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
 class Browse extends Component {
