@@ -26,15 +26,18 @@ class BuildYourEmpire extends Component {
   render() {
     const { countDown } = this.state;
 
+    function zeroPad(num) {
+      return num < 10 ? "0" + num : num;
+    }
     function timeRemained() {
       let days = Math.floor(countDown / (3600 * 24));
       let hours = Math.floor((countDown % (3600 * 24)) / 3600);
       let minutes = Math.floor((countDown % 3600) / 60);
       let seconds = Math.floor(countDown % 60);
       return (
-        <div className="countDown">
-          {days} Days {hours} Hours {minutes} Minutes {seconds} Seconds
-        </div>
+        <div className="countDown"><span className={"VT323 clock"}>
+          {days > 0 ? `${days}d | ` : ""}{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
+        </span></div>
       );
     }
 
