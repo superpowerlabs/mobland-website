@@ -84,7 +84,7 @@
     "lint": "npm run lint:client && npm run lint:server",
     "lint:client": "eslint client/**/*.js",
     "lint:server": "eslint server/**/*.js",
-    "dev": "npm run build && npm run start:dev",
+    "dev": "NODE_ENV=development webpack && node .",
     "prepare": "husky install"
   },
   "eslintConfig": {
