@@ -80,7 +80,7 @@ class RoadMap extends Base {
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <div
           style={{
-            backgroundImage: 'url("/images/grafiti-city.png")',
+            backgroundImage: 'url("/images/grafiti-city.jpg")',
             backgroundSize: "cover",
             borderBottom: "1px #3a3a3b solid",
             position: "relative",

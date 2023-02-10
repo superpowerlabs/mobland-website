@@ -7,7 +7,7 @@ class SynrRank extends Component {
     return (
       <div
         style={{
-          backgroundImage: 'url("/images/grafiti-wall.png")',
+          backgroundImage: 'url("/images/grafiti-wall.jpg")',
         }}
       >
         <Grid container className={"stats"}>

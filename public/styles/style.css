@@ -27,7 +27,7 @@ body {
     background-color: black; /* #131313 */
     color: whitesmoke;
     font-family: Modeco, sans-serif !important;
-    background-image: url(../images/grafiti-wall.png);
+    background-image: url(/images/grafiti-wall.jpg);
     /*color: #222222;*/
 
     /*background-size: 100%;*/
@@ -958,15 +958,6 @@ h1.notTooLarge {
 .topsynnersLogo img {
     width: 360px;
     align-content: center;
-}
-
-.yellowLogo {
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.yellowLogo img {
-    width: 220px;
 }
 
 .progressBar1 {

@@ -1,6 +1,5 @@
 import React from "react";
-import { Grid, Card } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Grid } from "@mui/material";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
 
@@ -10,7 +9,7 @@ import InfoSection from "./InfoSection";
 import SynrIcon from "../../images/synr_double.png";
 import BothPortal from "../../images/bothportals.png";
 import SsynrIcon from "../../images/ssynr_double.png";
-import Genesis from "../../images/genesispass.png";
+import Genesis from "../../images/genesispass.jpg";
 import BlueprintIcon from "../../images/blueprint.png";
 import GrowBud from "../../images/growbud.png";
 import Combat from "../../images/combat.png";

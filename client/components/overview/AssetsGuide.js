@@ -6,7 +6,7 @@ import InfoTileItem from "./InfoTileItem";
 import SynrIcon from "../../images/synr_double.png";
 import SsynrIcon from "../../images/ssynr_double.png";
 import SeedIcon from "../../images/seed_double.png";
-import SynrPassIcon from "../../images/genesispass.png";
+import SynrPassIcon from "../../images/genesispass.jpg";
 import BlueprintIcon from "../../images/blueprint.png";
 import TurfIcon from "../../images/turf_8x8.png";
 import WeedFarmIcon from "../../images/weedfarm.png";
@@ -18,7 +18,6 @@ import bud from "../../images/bud_double.png";
 import binance from "../../images/binance.png";
 import opensea from "../../images/opensea.png";
 import mobland from "../../images/mobland-white-icon.png";
-import { isMobileOnly } from "react-device-detect";
 
 function AssetsGuide() {
   function timeDiff() {
