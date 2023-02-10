@@ -2,9 +2,6 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
-const TerserWebpackPlugin = require("terser-webpack-plugin");
-// const WebpackBundleAnalyzer = require( "webpack-bundle-analyzer")
-
 const { join } = require("path");
 // const { HotModuleReplacementPlugin } = require('webpack')
 
@@ -55,17 +52,6 @@ const config = {
     }),
     // new WebpackBundleAnalyzer.BundleAnalyzerPlugin(),
   ],
-  optimization: {
-    minimizer: [
-      new TerserWebpackPlugin({
-        terserOptions: {
-          compress: {
-            drop_console: true,
-          },
-        },
-      }),
-    ],
-  },
   externals: {},
   mode,
 };
