@@ -960,14 +960,6 @@ h1.notTooLarge {
     align-content: center;
 }
 
-.yellowLogo {
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.yellowLogo img {
-    width: 220px;
-}
 
 .progressBar1 {
     display: flex;
