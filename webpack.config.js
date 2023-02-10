@@ -5,7 +5,6 @@ const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 // const WebpackBundleAnalyzer = require( "webpack-bundle-analyzer")
 
-
 const { join } = require("path");
 // const { HotModuleReplacementPlugin } = require('webpack')
 
@@ -52,26 +51,24 @@ const config = {
       template: join(__dirname, "/public/index.html"),
     }),
     new CompressionWebpackPlugin({
-      algorithm: "gzip"
-    }),  
+      algorithm: "gzip",
+    }),
     // new WebpackBundleAnalyzer.BundleAnalyzerPlugin(),
-
   ],
   optimization: {
     minimizer: [
       new TerserWebpackPlugin({
         terserOptions: {
           compress: {
-            drop_console: true
-          }
-        }
-      })
-    ]
+            drop_console: true,
+          },
+        },
+      }),
+    ],
   },
   externals: {},
   mode,
 };
-
 
 module.exports = (env, argv) => {
   if (mode === "development" || argv.mode === "development") {
