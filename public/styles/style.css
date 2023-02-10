@@ -2423,13 +2423,20 @@ b,
 }
 
 .overCountDown {
-    height: 120px;
+    height: 165px;
 }
 
 .countDown {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #ffee00;
+}
+
+.clock {
+    background-color: black;
+    padding: 0 9px 2px;
+    border-radius: 7px;
+    border: 2px dotted #660;
 }
 
 .light {
@@ -2482,6 +2489,10 @@ b,
 
 .distanceHeader {
     margin-top: 78px;
+}
+
+.VT323 {
+    font-family: VT323, sans-serif !important;
 }
 
 @media (max-width: 600px) {
@@ -2652,7 +2663,7 @@ b,
     }
 
     .countDown {
-        font-size: 1rem;
+        font-size: 3rem;
     }
 }
 
