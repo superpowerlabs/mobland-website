@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import InfoTileItem from "./InfoTileItem";
 
@@ -20,6 +20,10 @@ import opensea from "../../images/opensea.png";
 import mobland from "../../images/mobland-white-icon.png";
 
 function AssetsGuide() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   function timeDiff() {
     const launchDate = new Date("2023-02-13T02:00:00.000Z");
     const then = launchDate.getTime();
