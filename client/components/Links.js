@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-undef
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid } from "@material-ui/core";
 
 function Links() {
   return (

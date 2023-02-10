@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid } from "@mui/material";
+import { Grid } from "@material-ui/core";
 import Link from "@mui/material/Link";
 
 class Footer extends Component {
