@@ -1,4 +1,10 @@
 @font-face {
+    font-family: ClockIcons;
+    src: url(../assets/clockicons.ttf);
+    font-weight: normal;
+}
+
+@font-face {
     font-family: Wrong;
     src: url(../assets/wrongtime.ttf);
     font-weight: normal;
@@ -2427,6 +2433,7 @@ b,
 }
 
 .countDown {
+    font-family: ClockIcons, monospace;
     font-size: 3rem;
     font-weight: bold;
     color: #ffee00;
@@ -2489,10 +2496,6 @@ b,
 
 .distanceHeader {
     margin-top: 78px;
-}
-
-.VT323 {
-    font-family: VT323, sans-serif !important;
 }
 
 @media (max-width: 600px) {
