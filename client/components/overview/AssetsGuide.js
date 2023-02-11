@@ -110,7 +110,7 @@ function AssetsGuide() {
       img: BlueprintIcon,
       important: true,
       description:
-        "Blueprints are NFTs minted on the Binance network and represent in-game characters. They can be staked to generate SEED either as the equivalent of XXXX SYNR or as a multiplier to increase the yield of previously staked SYNR.",
+        "Blueprints are NFTs minted on the Binance network and represent in-game characters. They can be staked to generate SEED either as SYNR equivalent or as a multiplier to increase the yield of previously staked SYNR.",
       where: [
         {
           link: "https://opensea.io/collection/mobland-blueprints",
