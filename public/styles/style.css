@@ -1,4 +1,10 @@
 @font-face {
+    font-family: ClockIcons;
+    src: url(../assets/clockicons.ttf);
+    font-weight: normal;
+}
+
+@font-face {
     font-family: Wrong;
     src: url(../assets/wrongtime.ttf);
     font-weight: normal;
@@ -2420,6 +2426,7 @@ b,
 }
 
 .countDown {
+    font-family: ClockIcons, monospace;
     font-size: 3rem;
     font-weight: bold;
     color: #ffee00;
