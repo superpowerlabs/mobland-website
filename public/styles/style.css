@@ -1777,6 +1777,7 @@ footer.MuiContainer-root {
     justify-content: center;
     font-size: 5.5vw;
     font-family: Wrong, sans-serif;
+    position: relative;
 }
 
 .welcomeLeak {
@@ -1789,6 +1790,7 @@ footer.MuiContainer-root {
     font-family: Mulish, sans-serif;
     font-size: 1.2vw;
     margin-top: -1%;
+    position: relative;
 }
 
 .textSub {
@@ -2489,7 +2491,35 @@ b,
     margin-top: 78px;
 }
 
+.VT323 {
+    font-family: VT323, sans-serif !important;
+}
+
+.gangsterUzi {
+    width: 70%;
+    margin-top: -20%;
+    position: relative;
+    z-index: 1;
+}
+.banner {
+    position: absolute;
+    width: 130%;
+    z-index: 0;
+    opacity: 0.75;
+    right: -10%;
+    top: -20%;
+}
+
 @media (max-width: 600px) {
+    .banner {
+        width: 131%;
+        right: -20%;
+        top: -25%;
+        height: 150%;
+    }
+    .gangsterUzi {
+        transform: scaleX(-1);
+    }
     .footerJoin {
         text-align: center;
     }
@@ -2516,12 +2546,13 @@ b,
 
     .welcome {
         font-size: 12.5vw;
-        text-align: center;
+        text-align: left;
+        padding-left: 5%;
     }
     .welcomeSub {
         font-size: 4vw;
         width: 90%;
-        text-align: center;
+        text-align: left;
     }
     .assetsTitle {
         justify-content: center;
