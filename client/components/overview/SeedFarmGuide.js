@@ -60,7 +60,7 @@ function SeedFarmGuide() {
     {
       title: "HOW TO GENERATE SEED",
       subtitle:
-        "The are four different methods to generate SEED in the SEED Farm:",
+        "The are four different methods to generate SEED in the SEED Generator:",
       icons: [
         { title: "STACK SYNR", src: SynrIcon },
         { title: "SWAP sSYNR", src: SsynrIcon },

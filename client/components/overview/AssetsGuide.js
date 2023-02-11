@@ -38,7 +38,7 @@ function AssetsGuide() {
       img: SynrIcon,
       important: true,
       description:
-        "SYNR is the governance token of MOBLAND’s Mafia Metaverse. It can be obtained on a number of exchanges and can be staked either in the Core Pool to generate more SYNR or sSYNR, or in the SEED Farm to generate SEED",
+        "SYNR is the governance token of MOBLAND’s Mafia Metaverse. It can be obtained on a number of exchanges and can be staked either in the Core Pool to generate more SYNR or sSYNR, or in the SEED Generator to generate SEED",
       where: [
         {
           link: "https://www.kucoin.com/trade/SYNR-USDT?spm=kcWeb.B5markets.tradeList.1",
@@ -65,7 +65,7 @@ function AssetsGuide() {
       img: SsynrIcon,
       important: true,
       description:
-        "sSYNR, or Synthetic SYNR, is in-game synthetic currency that will be usable only in-game and in the MOBLAND marketplace. sSYNR can only be acquired by staking SYNR and can be swapped in the SEED Farm to generate SEED instead!",
+        "sSYNR, or Synthetic SYNR, is in-game synthetic currency that will be usable only in-game and in the MOBLAND marketplace. sSYNR can only be acquired by staking SYNR and can be swapped in the SEED Generator to generate SEED instead!",
       where: [
         {
           link: "https://staking.mob.land/core/dashboard",
@@ -80,7 +80,7 @@ function AssetsGuide() {
       img: SeedIcon,
       important: true,
       description:
-        "SEED fuels the cross-chain MOBLAND economy and is a key asset to generate revenue in the Mafia Metaverse. SEED can be obtained in the SEED Farm either by staking SYNR, SYNR Passes or Blueprints, or by swapping sSYNR.",
+        "SEED fuels the cross-chain MOBLAND economy and is a key asset to generate revenue in the Mafia Metaverse. SEED can be obtained in the SEED Generator either by staking SYNR, SYNR Passes or Blueprints, or by swapping sSYNR.",
       where: [
         {
           link: "https://staking.mob.land/seed/dashboard",

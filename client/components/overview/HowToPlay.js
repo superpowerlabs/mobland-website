@@ -139,12 +139,12 @@ function HowToPlay() {
         <CardContent className="howtoList">
           <Title
             navigateTo={null}
-            title="POWER UP THE SEED FARM"
+            title="POWER UP THE SEED Generator"
             upperCase={true}
           />
           <Line
             description={[
-              "SEED fuels the MOBLAND economy so you’re gonna want to load up. Take your SYNR and head over to the SEED Farm section of the staking app to stake it in a sweet cross-chain transaction made possible with Superpower’s Tesseract technology.",
+              "SEED fuels the MOBLAND economy so you’re gonna want to load up. Take your SYNR and head over to the SEED Generator section of the staking app to stake it in a sweet cross-chain transaction made possible with Superpower’s Tesseract technology.",
               "Head over to this guide for a breakdown of this process.",
             ]}
           />
@@ -189,7 +189,7 @@ function HowToPlay() {
           />
           <Line
             description={[
-              "Now that you’ve stacked your wallet with SEED tokens, you can utilize them in many different ways. Use the interactive guide below to learn more about the various ways you can start your climb to becoming Kingpin of the Mafia Metaverse.",
+              "Now that you’ve stacked your wallet with SEED tokens, you can utilize them in many different ways as you start your climb to becoming Kingpin of the Mafia Metaverse.",
             ]}
           />
         </CardContent>
@@ -198,7 +198,7 @@ function HowToPlay() {
           width="100%"
           alignItems="center"
           justifyContent="center"
-        ></Box>
+        />
       </LargeCard>
       <Grid container>
         <Grid item xs={12} sm={6} md={6} className={"distanceFooter"}>

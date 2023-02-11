@@ -65,7 +65,7 @@ class BuildYourEmpire extends Component {
               <p className="textSub">
                 Own TURF. Grow BUD. Run MOBLAND. <br />
                 <br /> With ground-breaking cross-chain functionality and headed
-                up by Chief Grow Officers, Snoop Dogg and Champ Medici, we’re
+                up by Chief Grow Officers, <span className={"yellow"}>Snoop Dogg</span> and <span className={"yellow"}>Champ Medici</span>, we’re
                 proud to announce the{" "}
                 <span style={{ color: "#ffee03", fontWeight: "bold" }}>
                   SHADOW MARKET
