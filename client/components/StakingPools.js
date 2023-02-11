@@ -19,9 +19,9 @@ class StakingPools extends Base {
   }
 
   render() {
-    if (!this.state.videoEnded) {
-      return (
-        <div>
+    return (
+      <div>
+        <div style={{ display: this.state.videoEnded ? "none" : "inherit" }}>
           <Player
             ref={(player) => {
               this.player = player;
@@ -39,14 +39,12 @@ class StakingPools extends Base {
             <ControlBar className="controlbar" />
           </Player>{" "}
         </div>
-      );
-    } else {
-      return (
         <div
           style={{
             backgroundSize: "cover",
             backgroundImage: 'url("/images/justicia-dark.jpg")',
             paddingTop: "10%",
+            display: !this.state.videoEnded ? "none" : "inherit",
           }}
         >
           <Grid
@@ -116,8 +114,8 @@ class StakingPools extends Base {
             ) : null}
           </Grid>
         </div>
-      );
-    }
+      </div>
+    );
   }
 }
 
