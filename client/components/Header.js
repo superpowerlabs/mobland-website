@@ -1,19 +1,12 @@
 // import { isMobile } from "react-device-detect";
 import React from "react";
 
-import {
-  Navbar,
-  Nav,
-  OverlayTrigger,
-  Tooltip,
-  NavDropdown,
-} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
+import { isMobileOnly } from "react-device-detect";
 
 import { Link } from "react-router-dom";
 
 import Base from "./Base";
-import { addToken } from "../utils/Wallet";
-
 export default class Header extends Base {
   constructor(props) {
     super(props);
@@ -22,6 +15,8 @@ export default class Header extends Base {
       addressExpanded: false,
       expanded: "",
       pathname: window.location.pathname,
+      showBg: true,
+      // showBg: false,
     };
 
     this.bindMany(["expandAddress", "checkPathname", "setExpanded"]);
@@ -36,6 +31,15 @@ export default class Header extends Base {
   componentDidMount() {
     this.checkPathname();
     this.checkIfOperator();
+
+    // we do not need this anymore, at least for now
+    // window.addEventListener("scroll", () => {
+    //   if (window.scrollY > 80) {
+    //     this.setState({ showBg: true });
+    //   } else {
+    //     this.setState({ showBg: false });
+    //   }
+    // });
   }
 
   expandAddress() {
@@ -55,7 +59,7 @@ export default class Header extends Base {
   }
 
   render() {
-    const { expanded } = this.state;
+    const { expanded, showBg } = this.state;
 
     // let address
     // let shortAddress;
@@ -100,14 +104,37 @@ export default class Header extends Base {
     //   connectedTo = "";
     // }
 
+    const shadowLaunched =
+      Date.now() > new Date("2023-02-13T02:00:00.000Z").getTime();
+
     return (
       <Navbar
         expanded={expanded}
         fixed={this.isMobile() ? undefined : "top"}
-        bg="dark"
-        expand="lg"
-        className={"roboto"}
+        bg={showBg ? "dark" : "transparent"}
+        expand="sm"
+        className={this.state.expanded ? "expanded" : ""}
+        onToggle={this.setExpanded}
       >
+        {isMobileOnly ? (
+          <img
+            src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
+            style={{
+              width: 40,
+              // marginRight: "5%",
+            }}
+          />
+        ) : (
+          <Link to={"/"} className={"navbar-brand"}>
+            <img
+              src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
+              style={{
+                width: 40,
+                // marginRight: "5%",
+              }}
+            />
+          </Link>
+        )}
         {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -116,64 +143,74 @@ export default class Header extends Base {
 
         <Navbar.Collapse id="navbarScroll">
           <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
-            {window.location.pathname !== "/" ? (
-              <Navbar.Text className={"links"} as={Link} to={"/"}>
-                HOME
+            {isMobileOnly ? (
+              <Navbar.Text
+                className={"yellowHover"}
+                as={Link}
+                to={"/"}
+                onClick={this.setExpanded}
+              >
+                Home
               </Navbar.Text>
             ) : null}
-            <NavDropdown className={"links"} title="ABOUT" id="nav-dropdown">
-              {/*<NavDropdown.Divider />*/}
-              {/* <NavDropdown.Item eventKey="team" as={Link} to={"/team"}>
-                TEAM
-              </NavDropdown.Item> */}
-              <NavDropdown.Item
-                eventKey="leaderboard"
-                href={"https://leaderboard.mob.land"}
-                target={"_blank"}
-              >
-                LEADERBOARD
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Navbar.Text className={"links"}>
-              <a
-                className={"menucmd yellowHover"}
-                href={"https://staking.mob.land"}
-                target={"_blank"}
-              >
-                STAKING
-              </a>
-            </Navbar.Text>
-            <Navbar.Text className={"links"}>
-              <a
-                className={"menucmd yellowHover"}
-                href={"https://marketplace.mob.land"}
-                target={"_blank"}
-              >
-                MARKETPLACE
-              </a>
-            </Navbar.Text>
-            <OverlayTrigger
-              placement={"bottom"}
-              overlay={
-                <Tooltip id={"tooltip-bottom-2"} className={"tooltipBottom"}>
-                  Coming soon
-                </Tooltip>
-              }
+            <Navbar.Text
+              className={"yellowHover"}
+              as={Link}
+              to={"/howtoplay"}
+              onClick={this.setExpanded}
             >
-              <Navbar.Text className={"links"}>GOVERNANCE</Navbar.Text>
-            </OverlayTrigger>
+              How to play
+            </Navbar.Text>
+            {shadowLaunched ? (
+              <Navbar.Text className={""}>
+                <a
+                  className={"yellowHover"}
+                  href={"https://shadowmarket.mob.land"}
+                  target={"_blank"}
+                  onClick={this.setExpanded}
+                >
+                  Shadow Market
+                </a>
+              </Navbar.Text>
+            ) : null}
+            <Navbar.Text
+              className={"yellowHover"}
+              as={Link}
+              to={"/seedfarmguide"}
+              onClick={this.setExpanded}
+            >
+              SEED Generator
+            </Navbar.Text>
+            <Navbar.Text
+              className={"yellowHover"}
+              as={Link}
+              to={"/assetsguide"}
+              onClick={this.setExpanded}
+            >
+              Assets
+            </Navbar.Text>
+            <Navbar.Text
+              as={Link}
+              className={"yellowHover"}
+              to={"/roadmap"}
+              onClick={this.setExpanded}
+            >
+              Roadmap
+            </Navbar.Text>
+            <Navbar.Text>
+              <a
+                className={"yellowHover"}
+                target={"_blank"}
+                href={
+                  "https://coinmarketcap.com/community/profile/MOBLAND/?type=Articles"
+                }
+                onClick={this.setExpanded}
+              >
+                Blog
+              </a>
+            </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
-        {this.Store.width ? (
-          <img
-            className={"positionAbsolute"}
-            src={"https://s3.mob.land/assets/Mobland_Title_Stylized300.png"}
-            style={{
-              width: 220,
-              left: this.isMobile() ? 80 : this.Store.width / 2 - 110,
-            }}
-          />
-        ) : null}
 
         {/*{this.isMobile() ? (*/}
         {/*  this.Store.connectedWallet ? (*/}
@@ -194,23 +231,12 @@ export default class Header extends Base {
         {/*    </Button>*/}
         {/*  )*/}
         {/*) : null}*/}
-
-        <Navbar.Collapse>
-          {this.Store.chainId === 1 && !this.isMobile() ? (
-            <Nav className={"addSynr"} onClick={() => addToken()}>
-              Click here to add SYNR to your wallet
-            </Nav>
-          ) : null}
-        </Navbar.Collapse>
         {/*<Navbar.Brand href="/">*/}
         {/*  <img*/}
         {/*    src={"/images/syncity-full-horizontal.png"}*/}
         {/*    style={{ height: 40 }}*/}
         {/*  />*/}
         {/*</Navbar.Brand>*/}
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="mr-auto my-2 my-lg-0" navbarScroll></Nav>
-        </Navbar.Collapse>
 
         {this.isMobile() ? null : (
           <Navbar.Collapse
@@ -218,14 +244,10 @@ export default class Header extends Base {
             style={{ display: "block" }}
           >
             <Navbar.Text className={"socialLinks"}>
-              <a
-                href={"https://discord.gg/tSVtRkppnp"}
-                style={{ color: "yellow" }}
-                rel="noreferrer"
-              >
-                <span className={"bitSmaller"}>JOIN US</span>
+              <span className={"bitSmaller mulish white"}>Join us</span>
 
-                <i className="fab fa-discord" style={{ color: "yellow" }} />
+              <a href={"https://discord.gg/tSVtRkppnp"} rel="noreferrer">
+                <i className="fab fa-discord" />
               </a>
               <a
                 href="https://t.me/MobLandAnnouncements"

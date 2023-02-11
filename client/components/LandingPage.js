@@ -3,7 +3,6 @@ import React from "react";
 import Base from "./Base";
 // import Ab from "./lib/Ab";
 import Home from "./Home";
-// import VideoBg from "./VideoBg";
 
 // eslint-disable-next-line no-undef
 // const { Container, Row, Col } from "react-bootstrap";
@@ -20,6 +19,7 @@ export default class LandingPage extends Base {
   onImageLoad() {
     this.setTimeout(
       () => {
+        localStorage.setItem("skippedAt", Date.now().toString());
         this.setStore({
           loaded: true,
         });
@@ -29,6 +29,13 @@ export default class LandingPage extends Base {
   }
 
   componentDidMount() {
+    const skippedAt = localStorage.getItem("skippedAt");
+    if (skippedAt) {
+      this.setStore({
+        loaded: true,
+      });
+    }
+
     if (/skip/.test(window.location.search)) {
       this.setStore({
         loaded: true,
@@ -36,6 +43,7 @@ export default class LandingPage extends Base {
     }
   }
   skip() {
+    localStorage.setItem("skippedAt", Date.now().toString());
     this.setStore({
       loaded: true,
     });
@@ -43,13 +51,25 @@ export default class LandingPage extends Base {
 
   render() {
     const { loaded } = this.Store;
+    // const loaded = true;
 
     return (
       <div style={{ width: "100%" }}>
+        <div className={"wrongPreload"}>#</div>
         {loaded ? (
           <Home />
         ) : (
-          <div className={"allPage"} style={{ height: window.innerHeight }}>
+          <div
+            className={"allPage"}
+            style={{
+              height: window.innerHeight,
+              zIndex: 10000,
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+            }}
+          >
             <img
               src={"https://data.mob.land/assets/MoblandSitePreloader.gif"}
               alt={"Loading animation"}

@@ -1,10 +1,12 @@
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
+// const ESLintPlugin = require("eslint-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const { join } = require("path");
 // const { HotModuleReplacementPlugin } = require('webpack')
 
-const mode = process.env.ENV || "development";
+const mode =
+  process.env.NODE_ENV === "development" ? "development" : "production";
 
 const config = {
   entry: "./client",
@@ -16,12 +18,25 @@ const config = {
   devServer: {
     contentBase: "./dist",
   },
+
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/",
+            },
+          },
+        ],
       },
     ],
   },
@@ -33,6 +48,10 @@ const config = {
       cache: true,
       template: join(__dirname, "/public/index.html"),
     }),
+    new CompressionWebpackPlugin({
+      algorithm: "gzip",
+    }),
+    // new WebpackBundleAnalyzer.BundleAnalyzerPlugin(),
   ],
   externals: {},
   mode,

@@ -1,18 +1,18 @@
-// eslint-disable-next-line no-undef
 import React from "react";
 import Base from "./Base";
-// import Ab from "./lib/Ab";
-import VideoBg from "./VideoBg";
-
 import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
+import StakingPools from "./StakingPools";
 // import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
-// eslint-disable-next-line no-undef
 import { Row, Col } from "react-bootstrap";
-
-// eslint-disable-next-line no-undef
+import SynrRank from "./SynrRank";
+import BuildYourEmpire from "./BuildYourEmpire";
+import Browse from "./Browse";
+import Economy from "./Economy";
+import Assets from "./Assets";
+import Leaks from "./Leaks";
 
 export default class Home extends Base {
   constructor(props) {
@@ -25,56 +25,25 @@ export default class Home extends Base {
     // this.bindMany(["onImageLoad"]);
   }
 
-  // onImageLoad() {
-  //   this.setTimeout(() => {
-  //     this.setState({
-  //       loaded: true,
-  //     });
-  //   }, 1000); //7000);
-  // }
-
-  componentDidMount() {}
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   render() {
-    // const { loaded } = this.state;
-
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
-        <VideoBg />
-        <Row className={"stats"}>
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>497k+</div>
-              <div className={"underWrong"}>
-                Existing community
-                <br />
-                and growing
-              </div>
-            </div>{" "}
-          </Col>
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>$3M USD+</div>
-              <div className={"underWrong"}>
-                8000 NFTS
-                <br />
-                sold out in 18 minutes
-              </div>
-            </div>{" "}
-          </Col>
-
-          <Col xs={12} lg={4}>
-            <div className={"centered" + (this.isMobile() ? " mb22" : "")}>
-              <div className={"wrong"}>#1 IN Vol</div>
-              <div className={"underWrong"}>
-                Ranked #1 on Binance NFT
-                <br />
-                all-time volume
-              </div>
-            </div>{" "}
-          </Col>
-        </Row>
-        <Row>
+        <StakingPools />
+        <BuildYourEmpire />
+        <SynrRank />
+        <Economy />
+        <Browse />
+        <Leaks />
+        <Assets />
+        <Row
+          style={{
+            paddingTop: this.isMobile() ? 40 : 0,
+          }}
+        >
           <Col className={"investor"}>INVESTORS</Col>
         </Row>
         <Row>
@@ -99,6 +68,9 @@ export default class Home extends Base {
               set={partners}
               start={100}
             />
+            <div style={{ height: 60 }}>
+              <span className={"transparent"}>-</span>
+            </div>
           </Col>
         </Row>
       </div>

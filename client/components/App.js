@@ -9,8 +9,12 @@ import clientApi from "../utils/ClientApi";
 import config from "../config";
 import Header from "./Header";
 import Footer from "./Footer";
-import LandingPage from "./LandingPage";
+import Home from "./Home";
 import Error404 from "./Error404";
+import RoadMap from "./roadmap/RoadMap";
+import HowToPlay from "./overview/HowToPlay";
+import SeedFarmGuide from "./overview/SeedFarmGuide";
+import AssetsGuide from "./overview/AssetsGuide";
 // import Team from "./Team";
 
 class App extends Common {
@@ -23,7 +27,7 @@ class App extends Common {
     if (/mobland/.test(window.location.origin)) {
       window.location = "https://mob.land";
     } else if (
-      !/local/.test(location.origin) &&
+      !/(local|amazonaws)/.test(location.origin) &&
       window.location.protocol === "http:"
     ) {
       window.location = location.href.replace(/^http:/, "https:");
@@ -207,30 +211,35 @@ class App extends Common {
     const Store = this.state.Store;
     return (
       <BrowserRouter>
-        {Store.loaded ? (
-          <Header
-            Store={Store}
-            setStore={this.setStore}
-            connect={this.connect}
-          />
-        ) : null}
+        <Header Store={Store} setStore={this.setStore} connect={this.connect} />
         <main>
           <Switch>
             <Route exact path="/">
-              <LandingPage Store={Store} setStore={this.setStore} />
+              <Home Store={Store} setStore={this.setStore} />
             </Route>
+            <Route exact path="/roadmap">
+              <RoadMap />
+            </Route>
+
             {/* <Route exact path="/team">
               <Team Store={Store} setStore={this.setStore} />
             </Route> */}
+            <Route exact path="/howtoplay">
+              <HowToPlay />
+            </Route>
+            <Route exact path="/seedfarmguide">
+              <SeedFarmGuide />
+            </Route>
+            <Route exact path="/assetsguide">
+              <AssetsGuide />
+            </Route>
             <Route exact path="*">
               <Error404 Store={Store} setStore={this.setStore} />
             </Route>
           </Switch>
           {/*<Footer/>*/}
         </main>
-        {Store.loaded ? (
-          <Footer Store={Store} setStore={this.setStore} />
-        ) : null}
+        <Footer Store={Store} setStore={this.setStore} />
         {Store.showModal ? (
           <Modal.Dialog>
             <Modal.Header>
