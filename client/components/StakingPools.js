@@ -1,97 +1,123 @@
-import React, { Component } from "react";
+import React from "react";
 import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 import { Player, ControlBar } from "video-react";
+import Base from "./Base";
 
-class StakingPools extends Component {
+class StakingPools extends Base {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      videoEnded: isMobileOnly ? true : false,
+    };
+    this.bindMany(["handleVideoEnded"]);
+  }
+
+  handleVideoEnded() {
+    this.setState({ videoEnded: true });
+  }
+
   render() {
-    return (
-      <div>
-        <Player
-          ref={(player) => {
-            this.player = player;
-          }}
-          autoPlay={true}
-          muted={true}
-          loop={true}
-          src={
-            isMobileOnly
-              ? "https://assets.mob.land/videos/header-gangster-mobile.mp4"
-              : "https://assets.mob.land/videos/header-gangster.mp4"
-          }
-        >
-          <ControlBar className="controlbar" />
-        </Player>
-        <Grid
-          container
+    if (!this.state.videoEnded) {
+      return (
+        <div>
+          <Player
+            ref={(player) => {
+              this.player = player;
+            }}
+            autoPlay={true}
+            muted={true}
+            loop={false}
+            src={
+              isMobileOnly
+                ? "https://assets.mob.land/videos/header-gangster-mobile.mp4"
+                : "https://assets.mob.land/videos/header-gangster.mp4"
+            }
+            onEnded={this.handleVideoEnded}
+          >
+            <ControlBar className="controlbar" />
+          </Player>{" "}
+        </div>
+      );
+    } else {
+      return (
+        <div
           style={{
-            marginTop: isMobileOnly ? "-73%" : "-20%",
-            zIndex: "1",
-            position: "relative",
-            marginBottom: "3%",
+            backgroundSize: "cover",
+            backgroundImage: 'url("/images/justicia-dark.jpg")',
+            paddingTop: "10%",
           }}
         >
-          <Grid item xs={false} sm={6} />
-          <Grid item xs={12} sm={6}>
-            <Grid item xs={12}>
-              <div className="welcome">ENTER THE MAFIA METAVERSE</div>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                paddingBottom: "5%",
-              }}
-            >
-              <div className="welcomeSub">
-                Step into MOBLAND and take on the world of a modern crime
-                syndicate.
+          <Grid
+            container
+            style={{
+              zIndex: "1",
+              position: "relative",
+            }}
+          >
+            {isMobileOnly ? null : (
+              <Grid
+                style={{ display: "flex", justifyContent: "flex-end" }}
+                item
+                xs={false}
+                sm={5}
+              >
+                <img
+                  alt={"Uzi Gangster"}
+                  src={"/images/gangster-uzi.png"}
+                  className="gangsterUzi"
+                />
+              </Grid>
+            )}
+            <Grid item xs={10} sm={7}>
+              <div
+                style={{
+                  position: "relative",
+                }}
+              >
+                <img
+                  alt={"Banner"}
+                  src={"/images/banner.png"}
+                  className="banner"
+                />
+                <Grid item xs={12}>
+                  <div className="welcome">ENTER THE MAFIA METAVERSE</div>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    paddingBottom: "5%",
+                  }}
+                >
+                  <div className="welcomeSub">
+                    Step into MOBLAND and take on the world of a modern crime
+                    syndicate.
+                  </div>
+                </Grid>
               </div>
             </Grid>
-            {/* <Grid container style={{ marginTop: 40 }}>
-              <Grid item xs={false} sm={2} />
+            {isMobileOnly ? (
               <Grid
-                style={{
-                  display: "flex",
-                  justifyContent: isMobileOnly ? "center" : "right",
-                  paddingRight: isMobileOnly ? 0 : 20,
-                }}
+                style={{ display: "flex", justifyContent: "flex-end" }}
                 item
-                xs={6}
-                sm={4}
+                xs={12}
+                sm={false}
               >
-                <a
-                  className="button"
-                  href="https://staking.mob.land/core/dashboard"
-                >
-                  CORE POOL
-                </a>
+                <img
+                  alt={"Uzi Gangster"}
+                  src={"/images/gangster-uzi.png"}
+                  className="gangsterUzi"
+                />
               </Grid>
-              <Grid
-                style={{
-                  display: "flex",
-                  justifyContent: isMobileOnly ? "center" : "left",
-                  paddingLeft: isMobileOnly ? 0 : 20,
-                }}
-                item
-                xs={6}
-                sm={4}
-              >
-                <a
-                  className="button buttonSeed"
-                  href="https://staking.mob.land/seed/dashboard"
-                >
-                  SEED POOL
-                </a>
-              </Grid>
-              <Grid item xs={false} sm={2} />
-            </Grid> */}
+            ) : null}
           </Grid>
-        </Grid>
-      </div>
-    );
+        </div>
+      );
+    }
   }
 }
 
