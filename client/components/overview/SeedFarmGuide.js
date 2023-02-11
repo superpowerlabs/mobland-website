@@ -86,7 +86,7 @@ function SeedFarmGuide() {
         { title: "ENGAGE IN COMBAT", src: Combat },
         { title: "RENT ASSETS", src: RentIcon },
         { title: "LEND ASSETS", src: LendIcon },
-        { title: "HORE MERCENARIES", src: HireMercs },
+        { title: "HIRE MERCENARIES", src: HireMercs },
         { title: "UPGRADE ASSETS", src: UpgradeIconTwo },
       ],
     },
