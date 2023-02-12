@@ -98,7 +98,7 @@ function AssetsGuide() {
         "BUD is an in-game asset produced by Weed Farms. Consume BUD to upgrade farms, repair damaged farms, upgrade characters, heal injured characters and additional in-game utilities.",
       where: [
         {
-          link: timeDiff() ? "https://shadowmarket.mob.land/" : "#",
+          link: timeDiff() ? "#" : "https://shadowmarket.mob.land/",
           src: mobland,
         },
         ,
@@ -150,11 +150,10 @@ function AssetsGuide() {
           link: "https://opensea.io/collection/mobland-turf",
           src: opensea,
         },
-        {
-          link: timeDiff() ? "https://shadowmarket.mob.land/" : "#",
-          src: mobland,
-        },
-        ,
+        // {
+        //   link: timeDiff() ? "#" : "https://shadowmarket.mob.land/",
+        //   src: mobland,
+        // },
       ],
       button: false,
     },
@@ -169,11 +168,10 @@ function AssetsGuide() {
           link: "https://opensea.io/collection/mobland-weed-farm",
           src: opensea,
         },
-        {
-          link: timeDiff() ? "https://shadowmarket.mob.land/" : "#",
-          src: mobland,
-        },
-        ,
+        // {
+        //   link: timeDiff() ? "#" : "https://shadowmarket.mob.land/",
+        //   src: mobland,
+        // },
       ],
       button: false,
     },
