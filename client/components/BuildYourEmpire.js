@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 
 class BuildYourEmpire extends Component {
-
   render() {
-
     return (
       <div
         style={{
@@ -38,11 +36,11 @@ class BuildYourEmpire extends Component {
               </p>
             </Grid>
             <Grid item xs={12} sm={12}>
-                <div className="empireButtonDiv">
-                  <a className="button" href="https://shadowmarket.mob.land">
-                    SHADOW MARKET
-                  </a>
-                </div>
+              <div className="empireButtonDiv">
+                <a className="button" href="https://shadowmarket.mob.land">
+                  SHADOW MARKET
+                </a>
+              </div>
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} className={"overFarm"}>

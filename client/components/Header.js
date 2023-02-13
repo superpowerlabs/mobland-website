@@ -104,7 +104,6 @@ export default class Header extends Base {
     //   connectedTo = "";
     // }
 
-
     return (
       <Navbar
         expanded={expanded}
@@ -159,16 +158,16 @@ export default class Header extends Base {
             >
               How to play
             </Navbar.Text>
-              <Navbar.Text className={""}>
-                <a
-                  className={"yellowHover"}
-                  href={"https://shadowmarket.mob.land"}
-                  target={"_blank"}
-                  onClick={this.setExpanded}
-                >
-                  Shadow Market
-                </a>
-              </Navbar.Text>
+            <Navbar.Text className={""}>
+              <a
+                className={"yellowHover"}
+                href={"https://shadowmarket.mob.land"}
+                target={"_blank"}
+                onClick={this.setExpanded}
+              >
+                Shadow Market
+              </a>
+            </Navbar.Text>
             <Navbar.Text
               className={"yellowHover"}
               as={Link}
