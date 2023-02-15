@@ -102,7 +102,7 @@ function AssetsGuide() {
       img: BlueprintIcon,
       important: true,
       description:
-        "Blueprints are NFTs minted on the Binance network and represent in-game characters. They can be staked to generate SEED either as SYNR equivalent or as a multiplier to increase the yield of previously staked SYNR.",
+        <span><a href={"https://blueprints.mob.land"} target={"_blank"}>Blueprints</a> are NFTs minted on the Binance network and represent in-game characters. They <a href="https://staking.mob.land/seed/dashboard" target={"_blank"}>can be staked to generate SEED</a> either as SYNR equivalent or as a multiplier to increase the yield of previously staked SYNR.</span>,
       where: [
         {
           link: "https://opensea.io/collection/mobland-blueprints",
@@ -136,16 +136,16 @@ function AssetsGuide() {
       img: TurfIcon,
       important: true,
       description:
-        "Turf is MOBLAND’s in-game land parcels that can be traded on-chain. There are 5 different Turf sizes, and each can be utilised to build and operate your own businesses and/or by leasing out your Turf to other businesses in MOBLAND.",
+        <span>Turf is MOBLAND’s in-game land parcels that can be traded on-chain. There are 5 different Turf sizes, and each can be utilised to build and operate your own businesses and/or by leasing out your Turf to other businesses in MOBLAND. <a href={"https://sales.mob.land/yournfts"} target={"_blank"}>See yours here</a>.</span>,
       where: [
         {
           link: "https://opensea.io/collection/mobland-turf",
           src: opensea,
         },
-        // {
-        //   link: "https://shadowmarket.mob.land/",
-        //   src: mobland,
-        // },
+        {
+          link: "https://shadowmarket.mob.land/",
+          src: mobland,
+        },
       ],
       button: false,
     },
@@ -154,16 +154,16 @@ function AssetsGuide() {
       img: WeedFarmIcon,
       important: true,
       description:
-        "WEED Farms can be set up to plant (stake) SEED in order to grow BUD Tokens. WEED Farm owners oversee operations, defend and attack to grow their empires, upgrade features, and earn a share of the goods & services produced.",
+        <span>WEED Farms can be set up to plant (stake) SEED in order to grow BUD Tokens. WEED Farm owners oversee operations, defend and attack to grow their empires, upgrade features, and earn a share of the goods & services produced. <a href={"https://sales.mob.land/yournfts"} target={"_blank"}>See yours here</a></span>,
       where: [
         {
           link: "https://opensea.io/collection/mobland-weed-farm",
           src: opensea,
         },
-        // {
-        //   link: "https://shadowmarket.mob.land/",
-        //   src: mobland,
-        // },
+        {
+          link: "https://shadowmarket.mob.land/",
+          src: mobland,
+        },
       ],
       button: false,
     },
@@ -179,7 +179,7 @@ function AssetsGuide() {
         spacing={4}
         alignItems="flex-end"
         justifyContent="center"
-        className={"distanceFooter"}
+        className={"distanceFooter guides"}
       >
         {tiles.map((tile, index) => {
           return (

@@ -2682,14 +2682,6 @@ b,
     .howtoList {
         padding-left: 0px !important;
     }
-
-    /*.overCountDown {*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*.countDown {*/
-    /*    font-size: 3rem;*/
-    /*}*/
 }
 
 .tile {
@@ -2697,4 +2689,8 @@ b,
 }
 .MuiCard-root {
     background-color: transparent !important;
+}
+
+.guides a {
+    color: #ffee00 !important;
 }
