@@ -42,7 +42,7 @@ class Footer extends Component {
                       color="inherit"
                       href={"https://shadowmarket.mob.land"}
                     >
-                      Shadow Marketplace
+                      Shadow Market
                     </Link>
                     <Link
                       display="block"
