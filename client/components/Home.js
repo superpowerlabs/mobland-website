@@ -10,6 +10,7 @@ import { Row, Col } from "react-bootstrap";
 import SynrRank from "./SynrRank";
 import BuildYourEmpire from "./BuildYourEmpire";
 import Browse from "./Browse";
+import City from "./City";
 import Economy from "./Economy";
 import Assets from "./Assets";
 import Leaks from "./Leaks";
@@ -33,6 +34,7 @@ export default class Home extends Base {
     return (
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <StakingPools />
+        <City />
         <BuildYourEmpire />
         <SynrRank />
         <Economy />
