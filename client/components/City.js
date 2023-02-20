@@ -18,7 +18,10 @@ class City extends Component {
             <Grid item xs={12} sm={6} />
             <Grid item xs={12} sm={5}>
               <Grid item xs={12}>
-                <div style={{textShadow: "3px 2px 0px black"}} className={isMobileOnly ? "title" : "titleRight"}>
+                <div
+                  style={{ textShadow: "3px 2px 0px black" }}
+                  className={isMobileOnly ? "title" : "titleRight"}
+                >
                   Welcome to the HOOD{" "}
                 </div>
               </Grid>
