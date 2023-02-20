@@ -32,7 +32,9 @@ class City extends Component {
                   real-time text and speech, play games and win BUD!{" "}
                 </div>
               </Grid>
-              <Grid item xs={12} className="browseButtonDiv">
+              <Grid item xs={12} className="browseButtonDiv" style={
+                {marginBottom: 22}
+              }>
                 <a className="button" href="https://play.mob.land/">
                   ENTER THE CITY
                 </a>
