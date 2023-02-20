@@ -44,12 +44,12 @@ export default class Home extends Base {
         <Row
           style={{
             paddingTop: this.isMobile() ? 40 : 0,
-            width: "100%"
+            width: "100%",
           }}
         >
           <Col className={"investor"}>INVESTORS</Col>
         </Row>
-        <Row style={{width: "100%"}}>
+        <Row style={{ width: "100%" }}>
           <Col className={"list"}>
             <InvestorsAndPartners
               store={this.Store}
@@ -60,10 +60,10 @@ export default class Home extends Base {
           </Col>
         </Row>
 
-        <Row style={{width: "100%"}}>
+        <Row style={{ width: "100%" }}>
           <Col className={"investor"}>PARTNERS</Col>
         </Row>
-        <Row style={{width: "100%"}}>
+        <Row style={{ width: "100%" }}>
           <Col className={"list"}>
             <InvestorsAndPartners
               store={this.Store}
