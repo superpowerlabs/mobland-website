@@ -1796,6 +1796,7 @@ footer.MuiContainer-root {
 .textSub {
     font-family: Mulish, sans-serif;
     font-size: 1.1vw;
+    text-shadow: black 0px 0px 6px;
 }
 
 .assetsSub {
