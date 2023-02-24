@@ -1796,6 +1796,7 @@ footer.MuiContainer-root {
 .textSub {
     font-family: Mulish, sans-serif;
     font-size: 1.1vw;
+    text-shadow: black 0px 0px 6px;
 }
 
 .assetsSub {
@@ -1966,7 +1967,7 @@ footer.MuiContainer-root {
     text-align: right;
     font-size: 5vw;
     font-family: Wrong, sans-serif;
-    padding-top: 10%;
+    padding-top: 80px;
 }
 
 .exchanges {
