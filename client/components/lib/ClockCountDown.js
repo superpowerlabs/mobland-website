@@ -5,9 +5,7 @@ import Base from "../Base";
 class ClockCountDown extends Base {
   constructor(props) {
     super(props);
-    this.bindMany([
-      "timeDiff"
-      ]);
+    this.bindMany(["timeDiff"]);
     this.state = {
       countDown: this.timeDiff(),
     };
@@ -62,9 +60,13 @@ class ClockCountDown extends Base {
       <span>
         {countDown !== 0 ? (
           <div className={"overCountDown " + extraClass}>
-            {label ? <span>The Shadow Market will be online in
-            <br /></span> : null}
-             {timeRemained()}
+            {label ? (
+              <span>
+                The Shadow Market will be online in
+                <br />
+              </span>
+            ) : null}
+            {timeRemained()}
           </div>
         ) : afterLabel ? (
           <div className={afterClass}>
@@ -72,7 +74,9 @@ class ClockCountDown extends Base {
               {afterLabel}
             </a>
           </div>
-        ) : "Cico"}
+        ) : (
+          "Cico"
+        )}
       </span>
     );
   }

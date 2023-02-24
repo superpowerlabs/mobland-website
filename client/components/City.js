@@ -6,14 +6,14 @@ import { isMobileOnly } from "react-device-detect";
 import ClockCountDown from "./lib/ClockCountDown";
 
 class City extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      endsAt: "2023-03-01T04:00:00Z",
+      endsAt: "2023-03-02T04:00:00Z",
+      // Wed Mar 01 2023 07:00:pm PST
     };
   }
-    render() {
+  render() {
     return (
       <div>
         <div
@@ -41,13 +41,19 @@ class City extends Component {
                   Enter the #MafiaMetaverse and explore the Mafia’s Playground!
                   Take control of your GENESIS BLUEPRINT and cause chaos in the
                   city with your character! Meet up with friends, chat in
-                  real-time text and speech, play games and win BUD{
-                  Date.now() > new Date(this.state.endsAt).getTime() ? "." : <span>{" "}in
-                    <ClockCountDown
-                      endsAt={this.state.endsAt}
-                      extraClass={"cityCountDown"}
-                    /></span>
-                }
+                  real-time text and speech, play games and win BUD
+                  {Date.now() > new Date(this.state.endsAt).getTime() ? (
+                    "."
+                  ) : (
+                    <span>
+                      {" "}
+                      in
+                      <ClockCountDown
+                        endsAt={this.state.endsAt}
+                        extraClass={"cityCountDown"}
+                      />
+                    </span>
+                  )}
                 </div>
               </Grid>
 
