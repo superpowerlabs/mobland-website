@@ -2421,23 +2421,23 @@ b,
     margin: 4px 0 12px !important;
 }
 
-/*.overCountDown {*/
-/*    height: 165px;*/
-/*}*/
+.overCountDown {
+    height: 165px;
+}
 
-/*.countDown {*/
-/*    font-family: ClockIcons, monospace;*/
-/*    font-size: 3rem;*/
-/*    font-weight: bold;*/
-/*    color: #ffee00;*/
-/*}*/
+.countDown {
+    font-family: ClockIcons, monospace;
+    font-size: inherit;
+    font-weight: bold;
+    color: #ffee00;
+}
 
-/*.clock {*/
-/*    background-color: black;*/
-/*    padding: 0 9px 2px;*/
-/*    border-radius: 7px;*/
-/*    border: 2px dotted #660;*/
-/*}*/
+.clock {
+    background-color: black;
+    padding: 0 9px 2px;
+    border-radius: 7px;
+    border: 2px dotted #660;
+}
 
 .light {
     color: white;
