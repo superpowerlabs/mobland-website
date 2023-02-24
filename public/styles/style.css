@@ -2426,18 +2426,30 @@ b,
     height: 165px;
 }
 
+.overCountDown.cityCountDown {
+    height: auto !important;
+    font-size: 3vw !important;
+    margin-top: 12px;
+}
+
 .countDown {
-    font-family: ClockIcons, monospace;
+    font-family: ClockIcons, monospace !important;
     font-size: inherit;
     font-weight: bold;
     color: #ffee00;
 }
+
 
 .clock {
     background-color: black;
     padding: 0 9px 2px;
     border-radius: 7px;
     border: 2px dotted #660;
+}
+
+.clock.cityCountDown {
+    padding: 4px 12px 6px !important;
+    font-size: 2rem !important;
 }
 
 .light {

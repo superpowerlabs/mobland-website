@@ -1,6 +1,18 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Base from "../Base";
 
-class ClockCountDown extends Component {
+class ClockCountDown extends Base {
+  constructor(props) {
+    super(props);
+    this.bindMany([
+      "timeDiff"
+      ]);
+    this.state = {
+      countDown: this.timeDiff(),
+    };
+  }
+
   timeDiff() {
     const launchDate = new Date(this.props.endsAt);
     const then = launchDate.getTime();
@@ -9,15 +21,10 @@ class ClockCountDown extends Component {
     return diff > 0 ? diff : 0;
   }
 
-  constructor() {
-    super();
-    this.state = {
-      countDown: this.timeDiff(),
-    };
-    this.bindMany["timeDiff"];
-  }
-
   componentDidMount() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
     this.interval = setInterval(() => {
       this.setState({ countDown: this.timeDiff() });
     }, 1000);
@@ -25,7 +32,13 @@ class ClockCountDown extends Component {
 
   render() {
     const { countDown } = this.state;
-    const { afterLink, afterLabel, extraClass = "", afterClass = "" } = this.props;
+    const {
+      afterLink = "",
+      afterLabel = "",
+      afterClass = "",
+      extraClass = "",
+      label = "",
+    } = this.props;
 
     function zeroPad(num) {
       return num < 10 ? "0" + num : num;
@@ -36,28 +49,44 @@ class ClockCountDown extends Component {
       let minutes = Math.floor((countDown % 3600) / 60);
       let seconds = Math.floor(countDown % 60);
       return (
-        <div className="countDown"><span className={"VT323 clock"}>
-          {days > 0 ? `${days}d | ` : ""}{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
-        </span></div>
+        <div className="countDown">
+          <span className={"clock " + extraClass}>
+            {days > 0 ? `${days}d - ` : ""}
+            {zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
+          </span>
+        </div>
       );
     }
 
     return (
-      <>
-        {countDown !== 0 ? <div className={"overCountDown " + extraClass}>
-          The Shadow Market will be online in
-          <br /> {timeRemained()}
-        </div> : afterLabel ? (
+      <span>
+        {countDown !== 0 ? (
+          <div className={"overCountDown " + extraClass}>
+            {label ? <span>The Shadow Market will be online in
+            <br /></span> : null}
+             {timeRemained()}
+          </div>
+        ) : afterLabel ? (
           <div className={afterClass}>
             <a className="button" href={afterLink}>
-              {alterLabel}
+              {afterLabel}
             </a>
           </div>
-        ) : null
-        }
-      </>
+        ) : "Cico"}
+      </span>
     );
   }
 }
+
+ClockCountDown.propTypes = {
+  endsAt: PropTypes.string,
+  afterLink: PropTypes.string,
+  afterLabel: PropTypes.string,
+  afterClass: PropTypes.string,
+  extraClass: PropTypes.string,
+  clockStyle: PropTypes.object,
+  downCountStyle: PropTypes.object,
+  label: PropTypes.string,
+};
 
 export default ClockCountDown;
