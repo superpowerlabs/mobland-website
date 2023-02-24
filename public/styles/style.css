@@ -1,8 +1,8 @@
-/*@font-face {*/
-/*    font-family: ClockIcons;*/
-/*    src: url(../assets/clockicons.ttf);*/
-/*    font-weight: normal;*/
-/*}*/
+@font-face {
+    font-family: ClockIcons;
+    src: url(../assets/clockicons.ttf);
+    font-weight: normal;
+}
 
 @font-face {
     font-family: Wrong;
