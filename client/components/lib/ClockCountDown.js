@@ -60,12 +60,7 @@ class ClockCountDown extends Base {
       <span>
         {countDown !== 0 ? (
           <div className={"overCountDown " + extraClass}>
-            {label ? (
-              <span>
-                The Shadow Market will be online in
-                <br />
-              </span>
-            ) : null}
+            {label}
             {timeRemained()}
           </div>
         ) : afterLabel ? (
@@ -88,8 +83,6 @@ ClockCountDown.propTypes = {
   afterLabel: PropTypes.string,
   afterClass: PropTypes.string,
   extraClass: PropTypes.string,
-  clockStyle: PropTypes.object,
-  downCountStyle: PropTypes.object,
   label: PropTypes.string,
 };
 
