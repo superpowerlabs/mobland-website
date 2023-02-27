@@ -2,7 +2,7 @@ const path = require("path");
 
 const config = {
   disableHelmet: true,
-  siteIndexFile: path.resolve(__dirname, "../public/index.html"),
+  siteIndexFile: path.resolve(__dirname, "../public/bundle/index.html"),
   srcDefaults: ["'self'", "*.mob.land"],
   staticFolders: ["assets", "images", "styles", "bundle"],
   helmetConfig: {

@@ -1,26 +1,20 @@
 @font-face {
     font-family: ClockIcons;
-    src: url(../assets/clockicons.ttf);
+    src: url("../fonts/clockicons.ttf") format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: Wrong;
-    src: url(../assets/wrongtime.ttf);
+    src: url("../fonts/wrongtime.ttf") format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: Modeco;
-    src: url(../assets/Modeco-Regular.ttf);
+    src: url("../fonts/Modeco-Regular.ttf") format('truetype');
     font-weight: normal;
 }
-
-/*@font-face {*/
-/*    font-family: Mulish;*/
-/*    src: url(../assets/Mulish-Regular.ttf);*/
-/*    font-weight: normal;*/
-/*}*/
 
 a {
     text-decoration: none !important;

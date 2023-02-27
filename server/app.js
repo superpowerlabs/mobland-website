@@ -14,29 +14,6 @@ process.on("uncaughtException", function (error) {
 
 const app = express();
 
-const security_config = {
-  connect: ["ka-f.fontawesome.com"],
-  style: [
-    "'unsafe-hashes'",
-    "fonts.googleapis.com/",
-    "cdnjs.cloudflare.com/ajax/libs/bootstrap/",
-    "use.fontawesome.com/releases/v6.0.0-beta1/",
-  ],
-  font: ["data:", "fonts.gstatic.com/", "use.fontawesome.com/"],
-  img: ["www.w3.org/"],
-  index_file: "../../public/index.html",
-  static_assets: [
-    "favicon.png",
-    "favicon.ico",
-    "styles",
-    "images",
-    "bundle",
-    "assets",
-  ],
-};
-
-// applySecurity(app, security_config);
-
 app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
