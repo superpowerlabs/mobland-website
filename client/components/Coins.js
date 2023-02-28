@@ -1,17 +1,19 @@
 import React, { Component } from "react";
-
+import SynrDouble from "../assets/images/synr-double.png";
+import SsynrSingle from "../assets/images/ssynr-single.png";
+import SeedSingle from "../assets/images/seed-single-coin.png";
 class Coins extends Component {
   render() {
     return (
       <div className="coins">
         <img
-          alt={"Synr Coins"}
-          src={"/images/synr-double.png"}
+          alt="Synr Coins"
+          src={SynrDouble}
           style={{ paddingTop: "10%" }}
         />
         <img
-          alt={"sSynr Coin"}
-          src={"/images/ssynr-single.png"}
+          alt="sSynr Coin"
+          src={SsynrSingle}
           style={{
             marginTop: "-30%",
             width: "75%",
@@ -21,7 +23,8 @@ class Coins extends Component {
           }}
         />
         <img
-          alt={"Seed Coin"}
+          alt="Seed Coin"
+          src={SeedSingle}
           style={{
             width: "60%",
             marginTop: "-30%",
@@ -29,7 +32,6 @@ class Coins extends Component {
             left: "-25%",
             marginBottom: "-10%",
           }}
-          src={"/images/seed-single-coin.png"}
         />
       </div>
     );
