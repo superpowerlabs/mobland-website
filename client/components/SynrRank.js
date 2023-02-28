@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
+import GrafitiWall from "../assets/images/grafiti-wall.jpg";
+import GangsterFive from "../assets/images/gangster-five.png";
+
 class SynrRank extends Component {
   render() {
     return (
       <div
         style={{
-          backgroundImage: 'url("/images/grafiti-wall.jpg")',
+          backgroundImage: `url(${GrafitiWall})`,
         }}
       >
         <Grid container className={"stats"}>
@@ -16,7 +19,7 @@ class SynrRank extends Component {
               <img
                 alt={"Gangster"}
                 className={"femaleGangster"}
-                src={"/images/gangster-five.png"}
+                src={GangsterFive}
               />
             </Grid>
           )}
@@ -25,12 +28,6 @@ class SynrRank extends Component {
             xs={12}
             sm={4}
             className={"ranking"}
-            // style={{
-            //   display: "flex",
-            //   justifyContent: "center",
-            //   alignItems: "center",
-            //   marginLeft: isMobileOnly ? null : "-6%",
-            // }}
           >
             <div className={"centered"}>
               <div className={isMobileOnly ? "wrongMobile top" : "welcome"}>
@@ -70,12 +67,6 @@ class SynrRank extends Component {
             xs={12}
             sm={4}
             className={"ranking"}
-            // style={{
-            //   display: "flex",
-            //   alignItems: "center",
-            //   justifyContent: "center",
-            //   marginTop: "-2%",
-            // }}
           >
             <div className={"centered"}>
               <div className={isMobileOnly ? "wrongMobile bottom" : "welcome"}>
@@ -105,7 +96,7 @@ class SynrRank extends Component {
             >
               <img
                 alt={"Gangster"}
-                src={"/images/gangster-five.png"}
+                src={GangsterFive}
                 style={{ width: "50%", marginRight: "-7%" }}
               />
             </Grid>
