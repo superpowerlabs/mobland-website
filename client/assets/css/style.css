@@ -1,18 +1,18 @@
 @font-face {
     font-family: ClockIcons;
-    src: url("../fonts/clockicons.ttf") format('truetype');
+    src: url("../fonts/clockicons.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: Wrong;
-    src: url("../fonts/wrongtime.ttf") format('truetype');
+    src: url("../fonts/wrongtime.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: Modeco;
-    src: url("../fonts/Modeco-Regular.ttf") format('truetype');
+    src: url("../fonts/Modeco-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 

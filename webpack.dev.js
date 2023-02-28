@@ -10,7 +10,7 @@ module.exports = merge(common, {
 
   devtool: "inline-source-map",
   devServer: {
-      contentBase: "./dist",
+    contentBase: "./dist",
   },
   module: {
     rules: [
@@ -21,7 +21,7 @@ module.exports = merge(common, {
       {
         test: /\.(jpe?g|png|gif|svg)$/,
         exclude: /node_modules/,
-        type: "asset/resource", 
+        type: "asset/resource",
         generator: {
           outputPath: "images/",
         },
@@ -29,4 +29,3 @@ module.exports = merge(common, {
     ],
   },
 });
-
