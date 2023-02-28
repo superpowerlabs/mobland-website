@@ -77,11 +77,7 @@ class StakingPools extends Base {
                   position: "relative",
                 }}
               >
-                <img
-                  alt={"Banner"}
-                  src={Banner}
-                  className="banner"
-                />
+                <img alt={"Banner"} src={Banner} className="banner" />
                 <Grid item xs={12}>
                   <div className="welcome">ENTER THE MAFIA METAVERSE</div>
                 </Grid>
