@@ -16,6 +16,14 @@ module.exports = merge(common, {
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        exclude: /node_modules/,
+        type: "asset",
+        // generator: {
+        //   outputPath: "assets/images/",
+        // },
+      },
     ],
   },
   optimization: {

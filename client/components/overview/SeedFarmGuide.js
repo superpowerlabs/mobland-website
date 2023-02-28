@@ -3,20 +3,20 @@ import { Grid } from "@mui/material";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
 
-import SeedImg from "../../images/seed-single-coin.png";
+import SeedImg from "../../assets/images/seed-single-coin.png";
 import InfoSection from "./InfoSection";
 
-import SynrIcon from "../../images/synr_double.png";
-import BothPortal from "../../images/bothportals.png";
-import SsynrIcon from "../../images/ssynr_double.png";
-import Genesis from "../../images/genesispass.jpg";
-import BlueprintIcon from "../../images/blueprint.png";
-import GrowBud from "../../images/growbud.png";
-import Combat from "../../images/combat.png";
-import RentIcon from "../../images/renticon.png";
-import LendIcon from "../../images/lendicon.png";
-import HireMercs from "../../images/hiremercs.png";
-import UpgradeIconTwo from "../../images/upgradeicontwo.png";
+import SynrIcon from "../../assets/images/synr_double.png";
+import BothPortal from "../../assets/images/bothportals.png";
+import SsynrIcon from "../../assets/images/ssynr_double.png";
+import Genesis from "../../assets/images/genesispass.jpg";
+import BlueprintIcon from "../../assets/images/blueprint.png";
+import GrowBud from "../../assets/images/growbud.png";
+import Combat from "../../assets/images/combat.png";
+import RentIcon from "../../assets/images/renticon.png";
+import LendIcon from "../../assets/images/lendicon.png";
+import HireMercs from "../../assets/images/hiremercs.png";
+import UpgradeIconTwo from "../../assets/images/upgradeicontwo.png";
 import { isMobileOnly } from "react-device-detect";
 
 // TODO dry this code (it's also in HowToPlay.js)

@@ -21,14 +21,6 @@ module.exports = {
         type: "asset/resource",
         exclude: /node_modules/,
       },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/,
-        exclude: /node_modules/,
-        type: "asset/resource",
-        generator: {
-          outputPath: "images/",
-        },
-      },
     ],
   },
   plugins: [
