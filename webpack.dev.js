@@ -34,12 +34,8 @@ module.exports = merge(common, {
   },
   plugins: [
     new DeadCodePlugin({
-      patterns: [
-        "client/**/*.(js|jsx|css)",
-        "server/**/*.(js|jsx|css)",
-      ],
-      exclude: [
-        "**/*.(stories|spec).(js|jsx)",
-      ],
-    })
-  ]});
+      patterns: ["client/**/*.(js|jsx|css)", "server/**/*.(js|jsx|css)"],
+      exclude: ["**/*.(stories|spec).(js|jsx)"],
+    }),
+  ],
+});

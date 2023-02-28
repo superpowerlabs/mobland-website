@@ -6,11 +6,7 @@ class Coins extends Component {
   render() {
     return (
       <div className="coins">
-        <img
-          alt="Synr Coins"
-          src={SynrDouble}
-          style={{ paddingTop: "10%" }}
-        />
+        <img alt="Synr Coins" src={SynrDouble} style={{ paddingTop: "10%" }} />
         <img
           alt="sSynr Coin"
           src={SsynrSingle}
