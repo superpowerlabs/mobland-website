@@ -3,13 +3,16 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
+import GrafitiWall from "../assets/images/grafiti-wall.jpg";
+import GansterThree from "../assets/images/gangster-three.png";
+
 class Browse extends Component {
   render() {
     return (
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/grafiti-wall.jpg")',
+            backgroundImage: `url(${GrafitiWall})`,
             position: "relative",
             zIndex: "1",
           }}
@@ -20,7 +23,7 @@ class Browse extends Component {
               <Grid item sm={5} className={"browseGangsterDiv"}>
                 <img
                   alt={"Gangster"}
-                  src={"/images/gangster-three.png"}
+                  src={GansterThree}
                   className={"thirdGangster"}
                 />
               </Grid>
@@ -52,7 +55,7 @@ class Browse extends Component {
               <Grid item xs={12} sm={false}>
                 <img
                   alt={"Gangster"}
-                  src={"/images/gangster-three.png"}
+                  src={GansterThree}
                   className="gangster3"
                 />
               </Grid>
