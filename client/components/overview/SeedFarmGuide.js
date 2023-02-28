@@ -19,21 +19,6 @@ import HireMercs from "../../assets/images/hiremercs.png";
 import UpgradeIconTwo from "../../assets/images/upgradeicontwo.png";
 import { isMobileOnly } from "react-device-detect";
 
-// TODO dry this code (it's also in HowToPlay.js)
-// const LargeCard = styled(Card)(({ theme }) => ({
-//   background:
-//     "transparent linear-gradient(180deg, #FFFFFF27 0%, #0000004B 100%) 0% 0% no-repeat padding-box",
-//   border: "1px solid #8B8B8B90",
-//   borderRadius: "25px",
-//   opacity: 1,
-//   maxWidth: isMobileOnly ? "96%" : "60%",
-//   margin: "0 auto",
-// }));
-//
-// function bullet() {
-//   return <span style={{ fontSize: "1.2rem" }}>•</span>;
-// }
-
 function SeedFarmGuide() {
   useEffect(() => {
     window.scrollTo(0, 0);
