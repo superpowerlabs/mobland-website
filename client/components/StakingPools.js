@@ -4,6 +4,9 @@ import { isMobileOnly } from "react-device-detect";
 import { Player, ControlBar } from "video-react";
 import Base from "./Base";
 
+import JusticiaDark from "../assets/images/justicia-dark.jpg";
+import GangsterUzi from "../assets/images/gangster-uzi.png";
+import Banner from "../assets/images/banner.png";
 class StakingPools extends Base {
   constructor(props) {
     super(props);
@@ -42,7 +45,7 @@ class StakingPools extends Base {
         <div
           style={{
             backgroundSize: "cover",
-            backgroundImage: 'url("/images/justicia-dark.jpg")',
+            backgroundImage: `url(${JusticiaDark})`,
             paddingTop: "10%",
             display: !this.state.videoEnded ? "none" : "inherit",
           }}
@@ -63,7 +66,7 @@ class StakingPools extends Base {
               >
                 <img
                   alt={"Uzi Gangster"}
-                  src={"/images/gangster-uzi.png"}
+                  src={GangsterUzi}
                   className="gangsterUzi"
                 />
               </Grid>
@@ -76,7 +79,7 @@ class StakingPools extends Base {
               >
                 <img
                   alt={"Banner"}
-                  src={"/images/banner.png"}
+                  src={Banner}
                   className="banner"
                 />
                 <Grid item xs={12}>
@@ -107,7 +110,7 @@ class StakingPools extends Base {
               >
                 <img
                   alt={"Uzi Gangster"}
-                  src={"/images/gangster-uzi.png"}
+                  src={GangsterUzi}
                   className="gangsterUzi"
                 />
               </Grid>
