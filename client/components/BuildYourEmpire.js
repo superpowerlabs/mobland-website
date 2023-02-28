@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Grid } from "@mui/material";
 
+import FarmNight from "../assets/images/farm-night.png";
+import WoodLand from "../assets/images/woodland-bg.jpg";
 class BuildYourEmpire extends Component {
   render() {
     return (
@@ -8,7 +10,7 @@ class BuildYourEmpire extends Component {
         style={{
           borderTop: "#404143 solid",
           borderBottom: "#404143 solid",
-          backgroundImage: 'url("/images/woodland-bg.jpg")',
+          backgroundImage: `url(${WoodLand})`,
           // zIndex: "1",
           position: "relative",
           // clipPath: "polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%)"
@@ -25,8 +27,8 @@ class BuildYourEmpire extends Component {
                 Own TURF. Grow BUD. Run MOBLAND. <br />
                 <br /> With ground-breaking cross-chain functionality and headed
                 up by Chief Grow Officers,{" "}
-                <span className={"yellow"}>Snoop Dogg</span> and{" "}
-                <span className={"yellow"}>Champ Medici</span>, we’re proud to
+                <span className="yellow">Snoop Dogg</span> and{" "}
+                <span className="yellow">Champ Medici</span>, we’re proud to
                 announce the{" "}
                 <span style={{ color: "#ffee03", fontWeight: "bold" }}>
                   SHADOW MARKET
@@ -45,8 +47,8 @@ class BuildYourEmpire extends Component {
           </Grid>
           <Grid item xs={12} sm={6} className={"overFarm"}>
             <img
-              alt={"Farm"}
-              src={"/images/farm-night.png"}
+              alt="Farm"
+              src={FarmNight}
               className="farmImage"
             />
           </Grid>

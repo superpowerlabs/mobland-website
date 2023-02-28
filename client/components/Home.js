@@ -4,7 +4,6 @@ import investors from "../data/investors.json";
 import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
 import StakingPools from "./StakingPools";
-// import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 import { Row, Col } from "react-bootstrap";
 import SynrRank from "./SynrRank";

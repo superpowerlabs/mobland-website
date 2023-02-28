@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-undef
 import React from "react";
 import Base from "./Base";
-// import Masonry from "react-masonry-component";
 import { Grid } from "@mui/material";
 
 async function sleep(millis) {
@@ -67,7 +66,6 @@ export default class InvestorsAndPartners extends Base {
     let i = this.props.start;
     return (
       <div
-        // className={"hcontainer grid " + (this.state.cls || "")}
         ref={this.scrollContainerRef}
       >
         <Grid container>
@@ -89,7 +87,6 @@ export default class InvestorsAndPartners extends Base {
                     <div className={"tile"}>
                       <div className={"grid-item"}>
                         <a href={item.href} target={"_blank"}>
-                          {/*<div className="grid__item">*/}
                           <div
                             className={
                               "hcard  glitch glitch--style-" +

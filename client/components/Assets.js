@@ -4,13 +4,14 @@ import AssetImages from "./AssetImages";
 import { isMobileOnly } from "react-device-detect";
 import { Link } from "react-router-dom";
 
+import DarkCity from "../assets/images/dark-city.jpg";
 class Assets extends React.Component {
   render() {
     return (
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/dark-city.jpg")',
+            backgroundImage: `url(${DarkCity})`,
             backgroundSize: "cover",
             zIndex: "1",
             position: "relative",
