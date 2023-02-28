@@ -46,11 +46,7 @@ class BuildYourEmpire extends Component {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6} className={"overFarm"}>
-            <img
-              alt="Farm"
-              src={FarmNight}
-              className="farmImage"
-            />
+            <img alt="Farm" src={FarmNight} className="farmImage" />
           </Grid>
         </Grid>
       </div>

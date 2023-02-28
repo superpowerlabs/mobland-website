@@ -65,9 +65,7 @@ export default class InvestorsAndPartners extends Base {
   render() {
     let i = this.props.start;
     return (
-      <div
-        ref={this.scrollContainerRef}
-      >
+      <div ref={this.scrollContainerRef}>
         <Grid container>
           <Grid item xs={1} />
 
