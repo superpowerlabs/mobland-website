@@ -23,12 +23,7 @@ class SynrRank extends Component {
               />
             </Grid>
           )}
-          <Grid
-            item
-            xs={12}
-            sm={4}
-            className={"ranking"}
-          >
+          <Grid item xs={12} sm={4} className={"ranking"}>
             <div className={"centered"}>
               <div className={isMobileOnly ? "wrongMobile top" : "welcome"}>
                 500,000+
@@ -62,12 +57,7 @@ class SynrRank extends Component {
             </div>{" "}
           </Grid>
 
-          <Grid
-            item
-            xs={12}
-            sm={4}
-            className={"ranking"}
-          >
+          <Grid item xs={12} sm={4} className={"ranking"}>
             <div className={"centered"}>
               <div className={isMobileOnly ? "wrongMobile bottom" : "welcome"}>
                 #1 Volume
