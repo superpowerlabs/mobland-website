@@ -30,11 +30,12 @@ app.use("/healthcheck", function (req, res) {
   res.send("ok");
 });
 
-
-app.use("/", expressStaticGzip(path.resolve(__dirname, "../public/bundle"),{
+app.use(
+  "/",
+  expressStaticGzip(path.resolve(__dirname, "../public/bundle"), {
     enableBrotli: true,
-  }
-));
+  })
+);
 
 applyAll(app, config);
 
