@@ -98,31 +98,31 @@ export default class InvestorsAndPartners extends Base {
                             <div
                               className="nonglitch__img"
                               style={{
-                                backgroundImage: `url(/images/investors/optimized/${item.img}.webp)`,
+                                backgroundImage: `url(${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(/images/investors/optimized/${item.img}.webp)`,
+                                backgroundImage: `url(${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(/images/investors/optimized/${item.img}.webp)`,
+                                backgroundImage: `url(${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(/images/investors/optimized/${item.img}.webp)`,
+                                backgroundImage: `url(${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(/images/investors/optimized/${item.img}.webp)`,
+                                backgroundImage: `url(${item.img})`,
                               }}
                             />
                           </div>
