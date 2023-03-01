@@ -3,21 +3,21 @@ import { Grid } from "@mui/material";
 import InfoTileItem from "./InfoTileItem";
 
 // icons
-import SynrIcon from "../../assets/images/synr_double.png";
-import SsynrIcon from "../../assets/images/ssynr_double.png";
-import SeedIcon from "../../assets/images/seed_double.png";
-import SynrPassIcon from "../../assets/images/genesispass.jpg";
-import BlueprintIcon from "../../assets/images/blueprint.png";
-import TurfIcon from "../../assets/images/turf_8x8.png";
-import WeedFarmIcon from "../../assets/images/weedfarm.png";
-import UniswapIcon from "../../assets/images/uniswapwhite.png";
-import KucoinIcon from "../../assets/images/kucoinicon_white.png";
-import ByBitIcon from "../../assets/images/bybit_white.png";
-import BitmartIcon from "../../assets/images/bitmart_white.png";
-import bud from "../../assets/images/bud_double.png";
-import binance from "../../assets/images/binance.png";
-import opensea from "../../assets/images/opensea.png";
-import mobland from "../../assets/images/mobland-white-icon.png";
+import SynrIcon from "../../assets/images/optimized/synr_double.png.webp";
+import SsynrIcon from "../../assets/images/optimized/ssynr_double.png.webp";
+import SeedIcon from "../../assets/images/optimized/seed_double.png.webp";
+import SynrPassIcon from "../../assets/images/optimized/genesispass.jpg.webp";
+import BlueprintIcon from "../../assets/images/optimized/blueprint.png.webp";
+import TurfIcon from "../../assets/images/optimized/turf_8x8.png.webp";
+import WeedFarmIcon from "../../assets/images/optimized/weedfarm.png.webp";
+import UniswapIcon from "../../assets/images/optimized/uniswapwhite.png.webp";
+import KucoinIcon from "../../assets/images/optimized/kucoinicon_white.png.webp";
+import ByBitIcon from "../../assets/images/optimized/bybit_white.png.webp";
+import BitmartIcon from "../../assets/images/optimized/bitmart_white.png.webp";
+import bud from "../../assets/images/optimized/bud_double.png.webp";
+import binance from "../../assets/images/optimized/binance.png.webp";
+import opensea from "../../assets/images/optimized/opensea.png.webp";
+import mobland from "../../assets/images/optimized/mobland-white-icon.png.webp";
 
 function AssetsGuide() {
   useEffect(() => {

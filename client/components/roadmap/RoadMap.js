@@ -4,8 +4,8 @@ import Base from "../Base";
 import Box from "./Box";
 import { isMobileOnly } from "react-device-detect";
 
-import GrafitiWall from "../../assets/images/grafiti-wall.jpg";
-import GangsterFiveTall from "../../assets/images/gangster-five-tall.png";
+import GrafitiWall from "../../assets/images/optimized/grafiti-wall.jpg.webp";
+import GangsterFiveTall from "../../assets/images/optimized/gangster-five-tall.png.webp";
 
 class RoadMap extends Base {
   componentDidMount() {

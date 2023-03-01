@@ -20,7 +20,7 @@ module.exports = merge(common, {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif|svg|webp)$/,
         exclude: /node_modules/,
         type: "asset/resource",
         // generator: {

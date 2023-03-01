@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import Link from "@mui/material/Link";
 
-import MoblandHorizontal from "../assets/images/mobland-horizontal.png";
+import MoblandHorizontal from "../assets/images/optimized/mobland-horizontal.png.webp";
 class Footer extends Component {
   render() {
     return (

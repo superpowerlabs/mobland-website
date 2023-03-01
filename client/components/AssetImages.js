@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import Turf from "../assets/images/turf.png";
-import Blueprint from "../assets/images/blueprint-tilted.png";
-import GenesisPass from "../assets/images/genesis-pass.png";
+import Turf from "../assets/images/optimized/turf.png.webp";
+import Blueprint from "../assets/images/optimized/blueprint-tilted.png.webp";
+import GenesisPass from "../assets/images/optimized/genesis-pass.png.webp";
 class AssetImages extends Component {
   render() {
     return (

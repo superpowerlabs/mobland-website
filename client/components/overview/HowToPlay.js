@@ -15,10 +15,10 @@ import Line from "../tile/Description";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
 
-import SeedPileImg from "../../assets/images/seed_pile.png";
-import SynrPileImg from "../../assets/images/synr_pile.png";
-import PortalImg from "../../assets/images/portal.png";
-import YellowArrowImg from "../../assets/images/yellowarrow.png";
+import SeedPileImg from "../../assets/images/optimized/seed_pile.png.webp";
+import SynrPileImg from "../../assets/images/optimized/synr_pile.png.webp";
+import PortalImg from "../../assets/images/optimized/portal.png.webp";
+import YellowArrowImg from "../../assets/images/optimized/yellowarrow.png.webp";
 import { isMobileOnly } from "react-device-detect";
 
 // TODO dry this code (it's also in HowToPlay.js)

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import SynrDouble from "../assets/images/synr-double.png";
-import SsynrSingle from "../assets/images/ssynr-single.png";
-import SeedSingle from "../assets/images/seed-single-coin.png";
+import SynrDouble from "../assets/images/optimized/synr-double.png.webp";
+import SsynrSingle from "../assets/images/optimized/ssynr-single.png.webp";
+import SeedSingle from "../assets/images/optimized/seed-single-coin.png.webp";
 class Coins extends Component {
   render() {
     return (

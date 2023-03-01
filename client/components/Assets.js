@@ -4,7 +4,7 @@ import AssetImages from "./AssetImages";
 import { isMobileOnly } from "react-device-detect";
 import { Link } from "react-router-dom";
 
-import DarkCity from "../assets/images/dark-city.jpg";
+import DarkCity from "../assets/images/optimized/dark-city.jpg.webp";
 class Assets extends React.Component {
   render() {
     return (

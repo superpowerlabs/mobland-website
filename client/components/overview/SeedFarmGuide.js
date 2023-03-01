@@ -3,20 +3,20 @@ import { Grid } from "@mui/material";
 import Exchanges from "./Exchanges";
 import NftExchange from "./NftExchange";
 
-import SeedImg from "../../assets/images/seed-single-coin.png";
+import SeedImg from "../../assets/images/optimized/seed-single-coin.png.webp";
 import InfoSection from "./InfoSection";
 
-import SynrIcon from "../../assets/images/synr_double.png";
-import BothPortal from "../../assets/images/bothportals.png";
-import SsynrIcon from "../../assets/images/ssynr_double.png";
-import Genesis from "../../assets/images/genesispass.jpg";
-import BlueprintIcon from "../../assets/images/blueprint.png";
-import GrowBud from "../../assets/images/growbud.png";
-import Combat from "../../assets/images/combat.png";
-import RentIcon from "../../assets/images/renticon.png";
-import LendIcon from "../../assets/images/lendicon.png";
-import HireMercs from "../../assets/images/hiremercs.png";
-import UpgradeIconTwo from "../../assets/images/upgradeicontwo.png";
+import SynrIcon from "../../assets/images/optimized/synr_double.png.webp";
+import BothPortal from "../../assets/images/optimized/bothportals.png.webp";
+import SsynrIcon from "../../assets/images/optimized/ssynr_double.png.webp";
+import Genesis from "../../assets/images/optimized/genesispass.jpg.webp";
+import BlueprintIcon from "../../assets/images/optimized/blueprint.png.webp";
+import GrowBud from "../../assets/images/optimized/growbud.png.webp";
+import Combat from "../../assets/images/optimized/combat.png.webp";
+import RentIcon from "../../assets/images/optimized/renticon.png.webp";
+import LendIcon from "../../assets/images/optimized/lendicon.png.webp";
+import HireMercs from "../../assets/images/optimized/hiremercs.png.webp";
+import UpgradeIconTwo from "../../assets/images/optimized/upgradeicontwo.png.webp";
 import { isMobileOnly } from "react-device-detect";
 
 function SeedFarmGuide() {

@@ -4,9 +4,9 @@ import { isMobileOnly } from "react-device-detect";
 import { Player, ControlBar } from "video-react";
 import Base from "./Base";
 
-import JusticiaDark from "../assets/images/justicia-dark.jpg";
-import GangsterUzi from "../assets/images/gangster-uzi.png";
-import Banner from "../assets/images/banner.png";
+import JusticiaDark from "../assets/images/optimized/justicia-dark.jpg.webp";
+import GangsterUzi from "../assets/images/optimized/gangster-uzi.png.webp";
+import Banner from "../assets/images/optimized/banner.png.webp";
 class StakingPools extends Base {
   constructor(props) {
     super(props);

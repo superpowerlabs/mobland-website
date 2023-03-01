@@ -3,11 +3,11 @@ import { Grid } from "@mui/material";
 import Coins from "./Coins";
 import { isMobileOnly } from "react-device-detect";
 
-import MlCity2 from "../assets/images/ml-city2.jpg";
-import KucoinIcon from "../assets/images/kucoinicon_white.png";
-import ByBitIcon from "../assets/images/bybit_white.png";
-import BitmartIcon from "../assets/images/bitmart_white.png";
-import UniswapIcon from "../assets/images/uniswapwhite.png";
+import MlCity2 from "../assets/images/optimized/ml-city2.jpg.webp";
+import KucoinIcon from "../assets/images/optimized/kucoinicon_white.png.webp";
+import ByBitIcon from "../assets/images/optimized/bybit_white.png.webp";
+import BitmartIcon from "../assets/images/optimized/bitmart_white.png.webp";
+import UniswapIcon from "../assets/images/optimized/uniswapwhite.png.webp";
 
 class Economy extends Component {
   render() {
