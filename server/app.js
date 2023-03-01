@@ -1,4 +1,5 @@
 const express = require("express");
+const expressStaticGzip = require("express-static-gzip");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const Logger = require("./lib/Logger");
@@ -31,6 +32,7 @@ app.use("/healthcheck", function (req, res) {
 
 applyAll(app, config);
 
+app.use("/", expressStaticGzip(path.resolve(__dirname, "../public")));
 app.use(express.static(path.resolve(__dirname, "../public")));
 
 // catch 404 and forward to error handler
