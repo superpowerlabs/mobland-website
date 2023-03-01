@@ -30,10 +30,13 @@ app.use("/healthcheck", function (req, res) {
   res.send("ok");
 });
 
-applyAll(app, config);
 
-app.use("/", expressStaticGzip(path.resolve(__dirname, "../public")));
-app.use(express.static(path.resolve(__dirname, "../public")));
+app.use("/", expressStaticGzip(path.resolve(__dirname, "../public/bundle"),{
+    enableBrotli: true,
+  }
+));
+
+applyAll(app, config);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

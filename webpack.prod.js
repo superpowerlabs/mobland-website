@@ -1,7 +1,10 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 
+// webpack compression plugin:
+// https://webpack.js.org/plugins/compression-webpack-plugin/
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
@@ -35,6 +38,9 @@ module.exports = merge(common, {
     }),
     new CompressionWebpackPlugin({
       algorithm: "gzip",
+    }),
+    new CompressionWebpackPlugin({
+      algorithm: "brotliCompress",
     }),
   ],
 });

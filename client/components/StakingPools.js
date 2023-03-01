@@ -7,6 +7,8 @@ import Base from "./Base";
 import JusticiaDark from "../assets/images/optimized/justicia-dark.jpg.webp";
 import GangsterUzi from "../assets/images/optimized/gangster-uzi.png.webp";
 import Banner from "../assets/images/optimized/banner.png.webp";
+
+import "../assets/css/video-react.css";
 class StakingPools extends Base {
   constructor(props) {
     super(props);

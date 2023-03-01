@@ -6,7 +6,7 @@ module.exports = {
   entry: "./client",
   output: {
     path: __dirname + "/public/bundle",
-    publicPath: "/bundle/",
+    publicPath: "",
     filename: "bundle.min.js",
   },
   module: {

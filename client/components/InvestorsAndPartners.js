@@ -3,6 +3,8 @@ import React from "react";
 import Base from "./Base";
 import { Grid } from "@mui/material";
 
+import "../assets/css/glitch.css";
+
 async function sleep(millis) {
   // eslint-disable-next-line no-undef
   return new Promise((resolve) => setTimeout(resolve, millis));
