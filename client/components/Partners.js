@@ -68,8 +68,8 @@ const PARTNERS = [
     href: "https://synthetix.io/",
     name: "Synthetix",
     img: require("../assets/images/investors/optimized/Synthetix.jpg.webp"),
-  }
-]
+  },
+];
 
 class Partners {
   constructor() {

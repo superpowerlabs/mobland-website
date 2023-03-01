@@ -18,8 +18,7 @@ export default class Home extends Base {
   constructor(props) {
     super(props);
 
-    this.state = {
-    };
+    this.state = {};
   }
 
   componentDidMount() {
