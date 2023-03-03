@@ -30,10 +30,6 @@ body {
     background-image: url("../images/optimized/grafiti-wall.jpg.webp");
 }
 
-.dongle {
-    font-family: Dongle, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .textBlock {
     color: whitesmoke;
     font-size: 1rem;
@@ -1323,10 +1319,6 @@ table td {
     background-color: black; /* #131313 */
     filter: grayscale(1);
     border: 1px solid #333;
-}
-
-.dongle {
-    font-family: "Dongle", sans-serif !important;
 }
 
 .wrapped {
