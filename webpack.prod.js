@@ -1,5 +1,6 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
+const path = require("path");
 
 // webpack compression plugin:
 // https://webpack.js.org/plugins/compression-webpack-plugin/
@@ -12,6 +13,11 @@ module.exports = merge(common, {
   mode: "production",
 
   devtool: "source-map",
+  output: {
+    path: path.join(__dirname, "/bundle"),
+    publicPath: "/",
+    filename: "static/bundle.min.[fullhash].js",
+  },
   module: {
     rules: [
       {

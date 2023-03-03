@@ -32,7 +32,7 @@ app.use("/healthcheck", function (req, res) {
 
 app.use(
   "/",
-  expressStaticGzip(path.resolve(__dirname, "../public/bundle"), {
+  expressStaticGzip(path.resolve(__dirname, "../bundle"), {
     enableBrotli: true,
   })
 );

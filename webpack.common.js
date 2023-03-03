@@ -4,11 +4,6 @@ const { join } = require("path");
 
 module.exports = {
   entry: "./client",
-  output: {
-    path: __dirname + "/public/bundle",
-    publicPath: "",
-    filename: "bundle.min.js",
-  },
   module: {
     rules: [
       {
@@ -26,7 +21,7 @@ module.exports = {
   plugins: [
     new NodePolyfillPlugin(),
     new HTMLWebpackPlugin({
-      favicon: false,
+      favicon: "./public/favicon.ico",
       showErrors: true,
       cache: true,
       template: join(__dirname, "/public/index.html"),

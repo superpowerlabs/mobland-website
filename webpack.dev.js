@@ -10,8 +10,13 @@ module.exports = merge(common, {
   mode: "development",
 
   devtool: "inline-source-map",
+  output: {
+    path: __dirname + "/bundle-dev",
+    publicPath: "",
+    filename: "bundle.min.js",
+  },
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./bundle-dev",
   },
   module: {
     rules: [
