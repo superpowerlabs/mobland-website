@@ -688,10 +688,6 @@ div.label {
     font-weight: normal;
 }
 
-.digit {
-    font-family: "Ubuntu Mono", sans-serif;
-}
-
 .error {
     background-color: crimson;
     color: floralwhite;
@@ -714,10 +710,6 @@ div.label {
 .memberName {
     width: 25%;
     float: left;
-}
-
-.memberCode {
-    font-family: "Ubuntu Mono", sans-serif;
 }
 
 .newCodes {
@@ -1033,11 +1025,6 @@ table td {
     font-size: 18px;
     font-weight: bold;
     padding-left: 50px;
-}
-
-.data {
-    padding-left: 20px;
-    font-family: "Ubuntu Mono", sans-serif;
 }
 
 .stats {
