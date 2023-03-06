@@ -1,4 +1,5 @@
 const express = require("express");
+const expressStaticGzip = require("express-static-gzip");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const Logger = require("./lib/Logger");
@@ -13,29 +14,6 @@ process.on("uncaughtException", function (error) {
 });
 
 const app = express();
-
-const security_config = {
-  connect: ["ka-f.fontawesome.com"],
-  style: [
-    "'unsafe-hashes'",
-    "fonts.googleapis.com/",
-    "cdnjs.cloudflare.com/ajax/libs/bootstrap/",
-    "use.fontawesome.com/releases/v6.0.0-beta1/",
-  ],
-  font: ["data:", "fonts.gstatic.com/", "use.fontawesome.com/"],
-  img: ["www.w3.org/"],
-  index_file: "../../public/index.html",
-  static_assets: [
-    "favicon.png",
-    "favicon.ico",
-    "styles",
-    "images",
-    "bundle",
-    "assets",
-  ],
-};
-
-// applySecurity(app, security_config);
 
 app.use(cors());
 app.use(cookieParser());
@@ -52,9 +30,14 @@ app.use("/healthcheck", function (req, res) {
   res.send("ok");
 });
 
-applyAll(app, config);
+app.use(
+  "/",
+  expressStaticGzip(path.resolve(__dirname, "../bundle"), {
+    enableBrotli: true,
+  })
+);
 
-app.use(express.static(path.resolve(__dirname, "../public")));
+applyAll(app, config);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

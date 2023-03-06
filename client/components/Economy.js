@@ -3,13 +3,19 @@ import { Grid } from "@mui/material";
 import Coins from "./Coins";
 import { isMobileOnly } from "react-device-detect";
 
+import MlCity2 from "../assets/images/ml-city2.jpg.webp";
+import KucoinIcon from "../assets/images/kucoinicon_white.png.webp";
+import ByBitIcon from "../assets/images/bybit_white.png.webp";
+import BitmartIcon from "../assets/images/bitmart_white.png.webp";
+import UniswapIcon from "../assets/images/uniswapwhite.png.webp";
+
 class Economy extends Component {
   render() {
     return (
       <div>
         <div
           style={{
-            backgroundImage: 'url("/images/ml-city2.jpg")',
+            backgroundImage: `url(${MlCity2})`,
             backgroundSize: "cover",
             borderTop: "1px #3a3a3b solid",
             borderBottom: "1px #3a3a3b solid",
@@ -77,26 +83,26 @@ class Economy extends Component {
                         "https://www.kucoin.com/trade/SYNR-USDT?spm=kcWeb.B5markets.tradeList.1"
                       }
                     >
-                      <img src={"/images/kucoin.png"} alt={"Kucoin"} />
+                      <img src={KucoinIcon} alt={"Kucoin"} />
                     </a>
                     <a
                       href={"https://www.bybit.com/en-US/trade/spot/SYNR/USDT"}
                     >
-                      <img src={"/images/bybit.png"} alt={"ByBit"} />
+                      <img src={ByBitIcon} alt={"ByBit"} />
                     </a>
                     <a
                       href={
                         "https://www.bitmart.com/trade/en?layout=basic&symbol=SYNR_USDT"
                       }
                     >
-                      <img src={"/images/some-b.png"} alt={"Bitmart"} />
+                      <img src={BitmartIcon} alt={"Bitmart"} />
                     </a>
                     <a
                       href={
                         "https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xbc6e06778708177a18210181b073da747c88490a"
                       }
                     >
-                      <img src={"/images/uniswap.png"} alt={"Uniswap"} />
+                      <img src={UniswapIcon} alt={"Uniswap"} />
                     </a>
                   </div>
                 </Grid>
