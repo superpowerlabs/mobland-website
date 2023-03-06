@@ -8,7 +8,6 @@ import JusticiaDark from "../assets/images/optimized/justicia-dark.jpg.webp";
 import GangsterUzi from "../assets/images/optimized/gangster-uzi.png.webp";
 import Banner from "../assets/images/optimized/banner.png.webp";
 import GangsterHeaderPoster from "../assets/images/optimized/header-ganster-poster.png.webp";
-import GangsterHeaderVideo from "../assets/videos/header-gangster.mp4";
 import "../assets/css/video-react.css";
 
 class StakingPools extends Base {
@@ -41,7 +40,7 @@ class StakingPools extends Base {
               onEnded={this.handleVideoEnded}
               poster={GangsterHeaderPoster}
             >
-              <source src={GangsterHeaderVideo} />
+              <source src="https://static.mob.land/videos/header-gangster.mp4" />
               <ControlBar className="controlbar" disableCompletely="true" />
             </Player>{" "}
           </div>
