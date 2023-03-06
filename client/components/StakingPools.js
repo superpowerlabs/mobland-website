@@ -7,8 +7,13 @@ import Base from "./Base";
 import JusticiaDark from "../assets/images/optimized/justicia-dark.jpg.webp";
 import GangsterUzi from "../assets/images/optimized/gangster-uzi.png.webp";
 import Banner from "../assets/images/optimized/banner.png.webp";
+import GangsterHeaderPoster from "../assets/images/optimized/header-ganster-poster.png.webp";
+import GangsterHeaderPosterMobile from "../assets/images/optimized/header-ganster-mobile-poster.png.webp";
 
+import GangsterHeaderVideoMobile from "../assets/videos/header-gangster-mobile.mp4";
+import GangsterHeaderVideo from "../assets/videos/header-gangster.mp4";
 import "../assets/css/video-react.css";
+
 class StakingPools extends Base {
   constructor(props) {
     super(props);
@@ -31,17 +36,21 @@ class StakingPools extends Base {
             ref={(player) => {
               this.player = player;
             }}
+            preload="auto"
             autoPlay={true}
             muted={true}
             loop={false}
-            src={
-              isMobileOnly
-                ? "https://assets.mob.land/videos/header-gangster-mobile.mp4"
-                : "https://assets.mob.land/videos/header-gangster.mp4"
-            }
             onEnded={this.handleVideoEnded}
+            poster={
+              isMobileOnly ? GangsterHeaderPosterMobile : GangsterHeaderPoster
+            }
           >
-            <ControlBar className="controlbar" />
+            <source
+              src={
+                isMobileOnly ? GangsterHeaderVideoMobile : GangsterHeaderVideo
+              }
+            />
+            <ControlBar className="controlbar" disableCompletely="true" />
           </Player>{" "}
         </div>
         <div

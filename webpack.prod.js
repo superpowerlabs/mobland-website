@@ -16,7 +16,7 @@ module.exports = merge(common, {
   output: {
     path: path.join(__dirname, "/bundle"),
     publicPath: "/",
-    filename: "static/bundle.min.[fullhash].js",
+    filename: "bundle.min.[fullhash].js",
   },
   module: {
     rules: [
@@ -33,6 +33,22 @@ module.exports = merge(common, {
         //   outputPath: "assets/images/",
         // },
       },
+      {
+        test: /\.(mp4)$/,
+        exclude: /node_modules/,
+        type: "asset",
+        // generator: {
+        //   outputPath: "assets/videos/",
+        // },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        exclude: /node_modules/,
+        // generator: {
+        //   outputPath: "assets/fonts/",
+        // },
+      },
     ],
   },
   optimization: {
@@ -40,12 +56,16 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      // filename: "assets/css/[name].[contenthash].css",
     }),
     new CompressionWebpackPlugin({
+      deleteOriginalAssets: true,
+      test: /\.(js|css|html|webp|ttf|mp4)$/,
       algorithm: "gzip",
     }),
     new CompressionWebpackPlugin({
+      deleteOriginalAssets: true,
+      test: /\.(js|css|html|webp|ttf|mp4)$/,
       algorithm: "brotliCompress",
     }),
   ],

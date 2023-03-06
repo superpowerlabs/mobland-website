@@ -25,12 +25,12 @@ module.exports = merge(common, {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(jpe?g|png|gif|svg|webp)$/,
+        test: /\.(jpe?g|png|gif|svg|webp|mp4)$/,
         exclude: /node_modules/,
         type: "asset/resource",
-        // generator: {
-        //   outputPath: "images/",
-        // },
+        generator: {
+          outputPath: "images/",
+        },
       },
     ],
   },
