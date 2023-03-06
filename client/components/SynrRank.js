@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
-import GrafitiWall from "../assets/images/optimized/grafiti-wall.jpg.webp";
-import GangsterFive from "../assets/images/optimized/gangster-five.png.webp";
+import GrafitiWall from "../assets/images/grafiti-wall.jpg.webp";
+import GangsterFive from "../assets/images/gangster-five.png.webp";
 
 class SynrRank extends Component {
   render() {

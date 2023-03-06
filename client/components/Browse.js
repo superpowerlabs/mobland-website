@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
-import GrafitiWall from "../assets/images/optimized/grafiti-wall.jpg.webp";
-import GansterThree from "../assets/images/optimized/gangster-three.png.webp";
+import GrafitiWall from "../assets/images/grafiti-wall.jpg.webp";
+import GansterThree from "../assets/images/gangster-three.png.webp";
 
 class Browse extends Component {
   render() {

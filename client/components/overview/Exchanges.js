@@ -2,10 +2,10 @@ import * as React from "react";
 import { CardMedia, Stack } from "@mui/material";
 import Title from "../tile/Title";
 
-import UniswapIcon from "../../assets/images/optimized/uniswapwhite.png.webp";
-import KucoinIcon from "../../assets/images/optimized/kucoinicon_white.png.webp";
-import ByBitIcon from "../../assets/images/optimized/bybit_white.png.webp";
-import BitmartIcon from "../../assets/images/optimized/bitmart_white.png.webp";
+import UniswapIcon from "../../assets/images/uniswapwhite.png.webp";
+import KucoinIcon from "../../assets/images/kucoinicon_white.png.webp";
+import ByBitIcon from "../../assets/images/bybit_white.png.webp";
+import BitmartIcon from "../../assets/images/bitmart_white.png.webp";
 
 const exchanges = [
   {

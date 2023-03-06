@@ -6,7 +6,7 @@ import { isMobileOnly } from "react-device-detect";
 import { Link } from "react-router-dom";
 
 import Base from "./Base";
-import MoblandLogo from "../assets/images/optimized/Mobland_Logo_Stylized300.png.webp";
+import MoblandLogo from "../assets/images/Mobland_Logo_Stylized300.png.webp";
 export default class Header extends Base {
   constructor(props) {
     super(props);

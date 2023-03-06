@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Grid } from "@mui/material";
 
-import FarmNight from "../assets/images/optimized/farm-night.png.webp";
-import WoodLand from "../assets/images/optimized/woodland-bg.jpg.webp";
+import FarmNight from "../assets/images/farm-night.png.webp";
+import WoodLand from "../assets/images/woodland-bg.jpg.webp";
 class BuildYourEmpire extends Component {
   render() {
     return (

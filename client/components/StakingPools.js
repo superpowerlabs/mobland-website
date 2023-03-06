@@ -4,10 +4,10 @@ import { isMobileOnly } from "react-device-detect";
 import { Player, ControlBar } from "video-react";
 import Base from "./Base";
 
-import JusticiaDark from "../assets/images/optimized/justicia-dark.jpg.webp";
-import GangsterUzi from "../assets/images/optimized/gangster-uzi.png.webp";
-import Banner from "../assets/images/optimized/banner.png.webp";
-import GangsterHeaderPoster from "../assets/images/optimized/header-ganster-poster.png.webp";
+import JusticiaDark from "../assets/images/justicia-dark.jpg.webp";
+import GangsterUzi from "../assets/images/gangster-uzi.png.webp";
+import Banner from "../assets/images/banner.png.webp";
+import GangsterHeaderPoster from "../assets/images/header-ganster-poster.png.webp";
 import "../assets/css/video-react.css";
 
 class StakingPools extends Base {

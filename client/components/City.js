@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
 import ClockCountDown from "./lib/ClockCountDown";
-import MobhuntScene from "../assets/images/optimized/mobhunt-scene.jpg.webp";
+import MobhuntScene from "../assets/images/mobhunt-scene.jpg.webp";
 class City extends Component {
   constructor(props) {
     super(props);

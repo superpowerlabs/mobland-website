@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { isMobileOnly } from "react-device-detect";
 
-import MobLeak from "../assets/images/optimized/mob-leak.jpg.webp";
+import MobLeak from "../assets/images/mob-leak.jpg.webp";
 class Leaks extends React.Component {
   render() {
     return (
