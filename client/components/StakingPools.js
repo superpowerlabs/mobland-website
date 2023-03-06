@@ -8,9 +8,6 @@ import JusticiaDark from "../assets/images/optimized/justicia-dark.jpg.webp";
 import GangsterUzi from "../assets/images/optimized/gangster-uzi.png.webp";
 import Banner from "../assets/images/optimized/banner.png.webp";
 import GangsterHeaderPoster from "../assets/images/optimized/header-ganster-poster.png.webp";
-import GangsterHeaderPosterMobile from "../assets/images/optimized/header-ganster-mobile-poster.png.webp";
-
-import GangsterHeaderVideoMobile from "../assets/videos/header-gangster-mobile.mp4";
 import GangsterHeaderVideo from "../assets/videos/header-gangster.mp4";
 import "../assets/css/video-react.css";
 
@@ -31,28 +28,25 @@ class StakingPools extends Base {
   render() {
     return (
       <div>
-        <div style={{ display: this.state.videoEnded ? "none" : "inherit" }}>
-          <Player
-            ref={(player) => {
-              this.player = player;
-            }}
-            preload="auto"
-            autoPlay={true}
-            muted={true}
-            loop={false}
-            onEnded={this.handleVideoEnded}
-            poster={
-              isMobileOnly ? GangsterHeaderPosterMobile : GangsterHeaderPoster
-            }
-          >
-            <source
-              src={
-                isMobileOnly ? GangsterHeaderVideoMobile : GangsterHeaderVideo
-              }
-            />
-            <ControlBar className="controlbar" disableCompletely="true" />
-          </Player>{" "}
-        </div>
+        {isMobileOnly ? null : (
+          <div style={{ display: this.state.videoEnded ? "none" : "inherit" }}>
+            <Player
+              ref={(player) => {
+                this.player = player;
+              }}
+              preload="auto"
+              autoPlay={true}
+              muted={true}
+              loop={false}
+              onEnded={this.handleVideoEnded}
+              poster={GangsterHeaderPoster}
+            >
+              <source src={GangsterHeaderVideo} />
+              <ControlBar className="controlbar" disableCompletely="true" />
+            </Player>{" "}
+          </div>
+        )}
+
         <div
           style={{
             backgroundSize: "cover",
