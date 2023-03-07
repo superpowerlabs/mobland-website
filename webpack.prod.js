@@ -15,7 +15,7 @@ module.exports = merge(common, {
   devtool: "source-map",
   output: {
     path: path.join(__dirname, "/bundle"),
-    publicPath: "/",
+    publicPath: "",
     filename: "bundle.min.[fullhash].js",
   },
   module: {
@@ -59,12 +59,12 @@ module.exports = merge(common, {
       // filename: "assets/css/[name].[contenthash].css",
     }),
     new CompressionWebpackPlugin({
-      deleteOriginalAssets: true,
+      // deleteOriginalAssets: true,
       test: /\.(js|css|html|webp|ttf|mp4)$/,
       algorithm: "gzip",
     }),
     new CompressionWebpackPlugin({
-      deleteOriginalAssets: true,
+      // deleteOriginalAssets: true,
       test: /\.(js|css|html|webp|ttf|mp4)$/,
       algorithm: "brotliCompress",
     }),
