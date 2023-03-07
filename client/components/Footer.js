@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import Link from "@mui/material/Link";
 
-import MoblandHorizontal from "../assets/images/mobland-horizontal.png.webp";
 class Footer extends Component {
   render() {
     return (
@@ -13,8 +12,8 @@ class Footer extends Component {
             <Grid item xs={12} sm={12}>
               <img
                 style={{ width: 231, padding: "0 0 16px" }}
-                src={MoblandHorizontal}
-                alt="Mobland"
+                src={"/images/mobland-horizontal.png"}
+                alt={"Mobland"}
               />
               <br />
             </Grid>

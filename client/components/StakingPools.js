@@ -4,12 +4,6 @@ import { isMobileOnly } from "react-device-detect";
 import { Player, ControlBar } from "video-react";
 import Base from "./Base";
 
-import JusticiaDark from "../assets/images/justicia-dark.jpg.webp";
-import GangsterUzi from "../assets/images/gangster-uzi.png.webp";
-import Banner from "../assets/images/banner.png.webp";
-import GangsterHeaderPoster from "../assets/images/header-ganster-poster.png.webp";
-import "../assets/css/video-react.css";
-
 class StakingPools extends Base {
   constructor(props) {
     super(props);
@@ -27,29 +21,28 @@ class StakingPools extends Base {
   render() {
     return (
       <div>
-        {isMobileOnly ? null : (
-          <div style={{ display: this.state.videoEnded ? "none" : "inherit" }}>
-            <Player
-              ref={(player) => {
-                this.player = player;
-              }}
-              preload="auto"
-              autoPlay={true}
-              muted={true}
-              loop={false}
-              onEnded={this.handleVideoEnded}
-              poster={GangsterHeaderPoster}
-            >
-              <source src="https://static.mob.land/videos/header-gangster.mp4" />
-              <ControlBar className="controlbar" disableCompletely="true" />
-            </Player>{" "}
-          </div>
-        )}
-
+        <div style={{ display: this.state.videoEnded ? "none" : "inherit" }}>
+          <Player
+            ref={(player) => {
+              this.player = player;
+            }}
+            autoPlay={true}
+            muted={true}
+            loop={false}
+            src={
+              isMobileOnly
+                ? "https://assets.mob.land/videos/header-gangster-mobile.mp4"
+                : "https://assets.mob.land/videos/header-gangster.mp4"
+            }
+            onEnded={this.handleVideoEnded}
+          >
+            <ControlBar className="controlbar" />
+          </Player>{" "}
+        </div>
         <div
           style={{
             backgroundSize: "cover",
-            backgroundImage: `url(${JusticiaDark})`,
+            backgroundImage: 'url("/images/justicia-dark.jpg")',
             paddingTop: "10%",
             display: !this.state.videoEnded ? "none" : "inherit",
           }}
@@ -70,7 +63,7 @@ class StakingPools extends Base {
               >
                 <img
                   alt={"Uzi Gangster"}
-                  src={GangsterUzi}
+                  src={"/images/gangster-uzi.png"}
                   className="gangsterUzi"
                 />
               </Grid>
@@ -81,7 +74,11 @@ class StakingPools extends Base {
                   position: "relative",
                 }}
               >
-                <img alt={"Banner"} src={Banner} className="banner" />
+                <img
+                  alt={"Banner"}
+                  src={"/images/banner.png"}
+                  className="banner"
+                />
                 <Grid item xs={12}>
                   <div className="welcome">ENTER THE MAFIA METAVERSE</div>
                 </Grid>
@@ -110,7 +107,7 @@ class StakingPools extends Base {
               >
                 <img
                   alt={"Uzi Gangster"}
-                  src={GangsterUzi}
+                  src={"/images/gangster-uzi.png"}
                   className="gangsterUzi"
                 />
               </Grid>

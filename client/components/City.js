@@ -4,12 +4,13 @@ import { Grid } from "@mui/material";
 import { isMobileOnly } from "react-device-detect";
 
 import ClockCountDown from "./lib/ClockCountDown";
-import MobhuntScene from "../assets/images/mobhunt-scene.jpg.webp";
+
 class City extends Component {
   constructor(props) {
     super(props);
     this.state = {
       endsAt: "2023-03-02T04:00:00Z",
+      // Wed Mar 01 2023 07:00:pm PST
     };
   }
   render() {
@@ -18,7 +19,7 @@ class City extends Component {
         <div
           style={{
             borderTop: "#404143 solid",
-            backgroundImage: `url(${MobhuntScene})`,
+            backgroundImage: 'url("/images/mobhunt-scene.jpg")',
             backgroundSize: "cover",
           }}
         >

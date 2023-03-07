@@ -3,14 +3,13 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { isMobileOnly } from "react-device-detect";
 
-import MobLeak from "../assets/images/mob-leak.jpg.webp";
 class Leaks extends React.Component {
   render() {
     return (
       <div>
         <div
           style={{
-            backgroundImage: `url(${MobLeak})`,
+            backgroundImage: 'url("/images/mob-leak.jpg")',
             backgroundSize: "cover",
             borderTop: "1px #3a3a3b solid",
             borderBottom: "1px #3a3a3b solid",
