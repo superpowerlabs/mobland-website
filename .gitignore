@@ -18,6 +18,8 @@ yarn-debug.log*
 yarn-error.log*
 
 /public/bundle
+/bundle
+/bundle0
 /package-lock.json
 
 localdb
