@@ -15,7 +15,6 @@ import RoadMap from "./roadmap/RoadMap";
 import HowToPlay from "./overview/HowToPlay";
 import SeedFarmGuide from "./overview/SeedFarmGuide";
 import AssetsGuide from "./overview/AssetsGuide";
-// import Team from "./Team";
 
 class App extends Common {
   constructor(props) {
@@ -220,10 +219,6 @@ class App extends Common {
             <Route exact path="/roadmap">
               <RoadMap />
             </Route>
-
-            {/* <Route exact path="/team">
-              <Team Store={Store} setStore={this.setStore} />
-            </Route> */}
             <Route exact path="/howtoplay">
               <HowToPlay />
             </Route>
