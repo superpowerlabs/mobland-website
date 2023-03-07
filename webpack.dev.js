@@ -11,12 +11,12 @@ module.exports = merge(common, {
 
   devtool: "inline-source-map",
   output: {
-    path: __dirname + "/bundle-dev",
+    path: __dirname + "/bundle",
     publicPath: "",
     filename: "bundle.min.js",
   },
   devServer: {
-    contentBase: "./bundle-dev",
+    contentBase: "./bundle",
   },
   module: {
     rules: [
@@ -28,9 +28,14 @@ module.exports = merge(common, {
         test: /\.(jpe?g|png|gif|svg|webp|mp4)$/,
         exclude: /node_modules/,
         type: "asset/resource",
-        generator: {
-          outputPath: "images/",
-        },
+        // generator: {
+        //   outputPath: "images/",
+        // },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        exclude: /node_modules/,
       },
     ],
   },
