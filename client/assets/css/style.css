@@ -1733,7 +1733,7 @@ footer.MuiContainer-root {
     cursor: default;
 }
 
-.buttonSeed {
+.whiteBg {
     border: 1px #f7f8f8 solid;
     background: #f7f8f8;
     box-shadow: 0 0 6px #ffffff90 !important;
@@ -1750,7 +1750,7 @@ footer.MuiContainer-root {
         font-size: 1.5vw !important;
     }
 
-    .buttonSeed {
+    .whiteBg {
         font-size: 1.5vw !important;
     }
 
@@ -2536,7 +2536,7 @@ b,
         margin: 1%;
     }
 
-    .buttonSeed {
+    .whiteBg {
         font-size: 5.5vw !important;
         margin: 1%;
     }

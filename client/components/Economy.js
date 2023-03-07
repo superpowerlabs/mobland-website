@@ -64,7 +64,7 @@ class Economy extends Component {
                   className={isMobileOnly ? "economyMobile" : ""}
                 >
                   <a
-                    className="button buttonSeed"
+                    className="button whiteBg"
                     href="https://staking.mob.land/seed/dashboard"
                   >
                     SEED GENERATOR

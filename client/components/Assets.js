@@ -54,9 +54,8 @@ class Assets extends React.Component {
                   <a
                     style={{
                       marginLeft: 24,
-                      background: "white !important",
                     }}
-                    className="button"
+                    className="button whiteBg"
                     href={"https://assets.mob.land"}
                   >
                     VIEW YOUR NFTs
