@@ -14,7 +14,7 @@ module.exports = merge(common, {
 
   devtool: "source-map",
   output: {
-    path: path.join(__dirname, "/bundle0"),
+    path: path.join(__dirname, "/bundle"),
     publicPath: "/",
     filename: "bundle.min.[fullhash].js",
   },
