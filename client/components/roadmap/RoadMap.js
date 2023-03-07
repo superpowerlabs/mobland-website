@@ -4,6 +4,9 @@ import Base from "../Base";
 import Box from "./Box";
 import { isMobileOnly } from "react-device-detect";
 
+import GrafitiWall from "../../assets/images/grafiti-wall.jpg.webp";
+import GangsterFiveTall from "../../assets/images/gangster-five-tall.png.webp";
+
 class RoadMap extends Base {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -80,7 +83,7 @@ class RoadMap extends Base {
       <div style={{ marginTop: this.isMobile() ? 0 : 78 }}>
         <div
           style={{
-            backgroundImage: 'url("/images/grafiti-city.jpg")',
+            backgroundImage: `url(${GrafitiWall})`,
             backgroundSize: "cover",
             borderBottom: "1px #3a3a3b solid",
             position: "relative",
@@ -209,7 +212,7 @@ class RoadMap extends Base {
                   <img
                     className="tallGangster"
                     alt={"Gangster"}
-                    src={"/images/gangster-five-tall.png"}
+                    src={GangsterFiveTall}
                   />{" "}
                 </Grid>{" "}
                 <br />
