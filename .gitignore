@@ -19,8 +19,6 @@ yarn-error.log*
 
 /bundle
 /package-lock.json
-/bundle0
-/public/bundle
 
 localdb
 leveldb
