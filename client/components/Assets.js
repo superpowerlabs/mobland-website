@@ -40,30 +40,29 @@ class Assets extends React.Component {
                 </div>
               </Grid>
               <br />
-              <Grid container>
-                <Grid item xs={12} sm={4} />
-                <Grid item xs={12} sm={5} />
-                <Grid item xs={12} sm={3}>
-                  <Grid container>
-                    <Grid item xs={3} sm={false} />
-                    <Grid item xs={6} sm={12}>
-                      <div
-                        style={{
-                          paddingTop: isMobileOnly ? "10%" : "0%",
-                          display: "flex",
-                          justifyContent: "center",
-                        }}
-                      >
-                        <Link className="button" to={"/assetsguide"}>
-                          ASSETS
-                        </Link>
-                      </div>
-                    </Grid>
-                    <Grid item xs={3} sm={false} />
-                  </Grid>
-                </Grid>
+              <Grid item xs={12} sm={12}>
+                <div
+                  style={{
+                    // paddingTop: isMobileOnly ? "10%" : "0%",
+                    display: "flex",
+                    justifyContent: "right",
+                  }}
+                >
+                  <Link className="button" to={"/assetsguide"}>
+                    GUIDE
+                  </Link>
+                  <a
+                    style={{
+                      marginLeft: 24,
+                      backgroundColor: "white !important",
+                    }}
+                    className="button"
+                    href={"https://assets.mob.land"}
+                  >
+                    VIEW YOUR NFTs
+                  </a>
+                </div>
               </Grid>
-
               <br />
             </Grid>
             <Grid item xs={12} sm={1} />
