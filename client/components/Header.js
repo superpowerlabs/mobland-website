@@ -3,10 +3,10 @@ import React from "react";
 
 import { Navbar, Nav } from "react-bootstrap";
 import { isMobileOnly } from "react-device-detect";
+
 import { Link } from "react-router-dom";
 
 import Base from "./Base";
-import MoblandLogo from "../assets/images/Mobland_Logo_Stylized300.png.webp";
 export default class Header extends Base {
   constructor(props) {
     super(props);
@@ -16,6 +16,7 @@ export default class Header extends Base {
       expanded: "",
       pathname: window.location.pathname,
       showBg: true,
+      // showBg: false,
     };
 
     this.bindMany(["expandAddress", "checkPathname", "setExpanded"]);
@@ -30,6 +31,15 @@ export default class Header extends Base {
   componentDidMount() {
     this.checkPathname();
     this.checkIfOperator();
+
+    // we do not need this anymore, at least for now
+    // window.addEventListener("scroll", () => {
+    //   if (window.scrollY > 80) {
+    //     this.setState({ showBg: true });
+    //   } else {
+    //     this.setState({ showBg: false });
+    //   }
+    // });
   }
 
   expandAddress() {
@@ -51,6 +61,49 @@ export default class Header extends Base {
   render() {
     const { expanded, showBg } = this.state;
 
+    // let address
+    // let shortAddress;
+    // if (this.Store.connectedWallet) {
+    //   let fullAddress = this.Store.connectedWallet;
+    //   shortAddress = this.ellipseAddress(fullAddress);
+    //   if (this.state.addressExpanded) {
+    //     address = (
+    //       <span>
+    //         {this.Store.connectedWallet}
+    //         {/*  <i onClick={this.expandAddress}*/}
+    //         {/*                                                className="command fa fa-minus-circle"*/}
+    //         {/*/>*/}
+    //       </span>
+    //     );
+    //   } else {
+    //     address = (
+    //       <span>
+    //         {shortAddress}
+    //         {/*{isPhone ? null :*/}
+    //         {/*  <i style={{marginLeft: 5}} onClick={this.expandAddress}*/}
+    //         {/*     className="command fa fa-plus-circle"*/}
+    //         {/*  />*/}
+    //         {/*}*/}
+    //       </span>
+    //     );
+    //   }
+    // }
+
+    // let connectedTo = "";
+    //   =
+    //   (
+    //   <span className={"connected"}>
+    //     {this.Store.connectedWallet ? (
+    //       <span className={"notConnected"}>Switch to Ethereum Mainnet</span>
+    //     ) : null}
+    //   </span>
+    // );
+    // let { connectedNetwork } = this.Store;
+
+    // if (connectedNetwork) {
+    //   connectedTo = "";
+    // }
+
     return (
       <Navbar
         expanded={expanded}
@@ -62,7 +115,7 @@ export default class Header extends Base {
       >
         {isMobileOnly ? (
           <img
-            src={MoblandLogo}
+            src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
             style={{
               width: 40,
               // marginRight: "5%",
@@ -71,7 +124,7 @@ export default class Header extends Base {
         ) : (
           <Link to={"/"} className={"navbar-brand"}>
             <img
-              src={MoblandLogo}
+              src={"https://s3.mob.land/assets/Mobland_Logo_Stylized300.png"}
               style={{
                 width: 40,
                 // marginRight: "5%",
@@ -79,6 +132,7 @@ export default class Header extends Base {
             />
           </Link>
         )}
+        {/*<i className="fa-solid fa-bars" style={{fontSize: '2rem'}}></i>*/}
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={this.setExpanded}
@@ -153,6 +207,32 @@ export default class Header extends Base {
           </Nav>
         </Navbar.Collapse>
 
+        {/*{this.isMobile() ? (*/}
+        {/*  this.Store.connectedWallet ? (*/}
+        {/*    <div className={"aqua floatRightAbsolute"}>*/}
+        {/*      <i*/}
+        {/*        className="fas fa-user-astronaut"*/}
+        {/*        style={{ marginRight: 10 }}*/}
+        {/*      />*/}
+        {/*      {address}*/}
+        {/*    </div>*/}
+        {/*  ) : (*/}
+        {/*    <Button*/}
+        {/*      className={"floatRightAbsolute"}*/}
+        {/*      size={"sm"}*/}
+        {/*      onClick={this.props.connect}*/}
+        {/*    >*/}
+        {/*      Connect your wallet*/}
+        {/*    </Button>*/}
+        {/*  )*/}
+        {/*) : null}*/}
+        {/*<Navbar.Brand href="/">*/}
+        {/*  <img*/}
+        {/*    src={"/images/syncity-full-horizontal.png"}*/}
+        {/*    style={{ height: 40 }}*/}
+        {/*  />*/}
+        {/*</Navbar.Brand>*/}
+
         {this.isMobile() ? null : (
           <Navbar.Collapse
             className="justify-content-end"
@@ -181,6 +261,13 @@ export default class Header extends Base {
             </Navbar.Text>
           </Navbar.Collapse>
         )}
+        {/*{*/}
+        {/*  this.state.isOperator*/}
+        {/*    ? <Navbar.Text>*/}
+        {/*      <Link to="/admin" className={'gold'}><i className="fas fa-tools"/> Admin</Link>*/}
+        {/*    </Navbar.Text>*/}
+        {/*    : null*/}
+        {/*}*/}
       </Navbar>
     );
   }

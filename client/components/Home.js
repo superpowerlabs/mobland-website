@@ -1,7 +1,10 @@
 import React from "react";
 import Base from "./Base";
+import investors from "../data/investors.json";
+import partners from "../data/partners.json";
 import InvestorsAndPartners from "./InvestorsAndPartners";
 import StakingPools from "./StakingPools";
+// import InvestorsAndPartners from "./InfiniteInvestorsAndPartners";
 
 import { Row, Col } from "react-bootstrap";
 import SynrRank from "./SynrRank";
@@ -12,13 +15,15 @@ import Economy from "./Economy";
 import Assets from "./Assets";
 import Leaks from "./Leaks";
 
-import investors from "./Investors";
-import partners from "./Partners";
 export default class Home extends Base {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      // loaded: false,
+    };
+
+    // this.bindMany(["onImageLoad"]);
   }
 
   componentDidMount() {
@@ -49,7 +54,7 @@ export default class Home extends Base {
             <InvestorsAndPartners
               store={this.Store}
               setStore={this.setStore}
-              set={investors.getItems()}
+              set={investors}
               start={0}
             />
           </Col>
@@ -63,7 +68,7 @@ export default class Home extends Base {
             <InvestorsAndPartners
               store={this.Store}
               setStore={this.setStore}
-              set={partners.getItems()}
+              set={partners}
               start={100}
             />
             <div style={{ height: 60 }}>

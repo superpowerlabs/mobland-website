@@ -1,9 +1,8 @@
 // eslint-disable-next-line no-undef
 import React from "react";
 import Base from "./Base";
+// import Masonry from "react-masonry-component";
 import { Grid } from "@mui/material";
-
-import "../assets/css/glitch.css";
 
 async function sleep(millis) {
   // eslint-disable-next-line no-undef
@@ -67,7 +66,10 @@ export default class InvestorsAndPartners extends Base {
   render() {
     let i = this.props.start;
     return (
-      <div ref={this.scrollContainerRef}>
+      <div
+        // className={"hcontainer grid " + (this.state.cls || "")}
+        ref={this.scrollContainerRef}
+      >
         <Grid container>
           <Grid item xs={1} />
 
@@ -87,6 +89,7 @@ export default class InvestorsAndPartners extends Base {
                     <div className={"tile"}>
                       <div className={"grid-item"}>
                         <a href={item.href} target={"_blank"}>
+                          {/*<div className="grid__item">*/}
                           <div
                             className={
                               "hcard  glitch glitch--style-" +
@@ -98,31 +101,31 @@ export default class InvestorsAndPartners extends Base {
                             <div
                               className="nonglitch__img"
                               style={{
-                                backgroundImage: `url(${item.img})`,
+                                backgroundImage: `url(/images/investors/${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(${item.img})`,
+                                backgroundImage: `url(/images/investors/${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(${item.img})`,
+                                backgroundImage: `url(/images/investors/${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(${item.img})`,
+                                backgroundImage: `url(/images/investors/${item.img})`,
                               }}
                             />
                             <div
                               className="glitch__img"
                               style={{
-                                backgroundImage: `url(${item.img})`,
+                                backgroundImage: `url(/images/investors/${item.img})`,
                               }}
                             />
                           </div>
