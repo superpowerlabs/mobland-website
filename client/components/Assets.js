@@ -54,7 +54,7 @@ class Assets extends React.Component {
                   <a
                     style={{
                       marginLeft: 24,
-                      backgroundColor: "white !important",
+                      background: "white !important",
                     }}
                     className="button"
                     href={"https://assets.mob.land"}
