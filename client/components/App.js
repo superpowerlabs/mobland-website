@@ -16,6 +16,8 @@ import HowToPlay from "./overview/HowToPlay";
 import SeedFarmGuide from "./overview/SeedFarmGuide";
 import AssetsGuide from "./overview/AssetsGuide";
 
+import Privacy from "./Privacy";
+
 class App extends Common {
   constructor(props) {
     super(props);
@@ -221,6 +223,9 @@ class App extends Common {
             </Route>
             <Route exact path="/howtoplay">
               <HowToPlay />
+            </Route>
+            <Route exact path="/privacy">
+              <Privacy />
             </Route>
             <Route exact path="/seedfarmguide">
               <SeedFarmGuide />
