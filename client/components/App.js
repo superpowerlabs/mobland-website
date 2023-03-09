@@ -224,7 +224,7 @@ class App extends Common {
             <Route exact path="/howtoplay">
               <HowToPlay />
             </Route>
-            <Route exact path="/privacy">
+            <Route exact path="/privacy-783654">
               <Privacy />
             </Route>
             <Route exact path="/seedfarmguide">
