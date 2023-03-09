@@ -256,7 +256,14 @@ img.oil {
     /*color: indigo;*/
 }
 
+.padded {
+    padding: 40px 0 60px;
+}
 .roboto {
+}
+
+.fooSpacer {
+    height: 12px !important;
 }
 
 .largerp {
@@ -2035,6 +2042,36 @@ b,
 .economyMobile {
     display: flex;
     justify-content: center;
+}
+
+.legalDocs {
+    text-align: left !important;
+    color: #cce !important;
+    padding: 0 5%;
+}
+
+.legalDocs h2 {
+    text-align: left;
+}
+
+.legalDocs table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #204;
+    margin: 0 0 1em;
+    font-size: 80% !important;
+}
+
+.legalDocs th {
+    padding: 4px;
+    border: 1px solid #204;
+    font-weight: bold;
+}
+
+.legalDocs td {
+    padding: 4px;
+    border: 1px solid #204;
 }
 
 .leakMobile {

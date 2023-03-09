@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import Link from "@mui/material/Link";
+import { Link as RouterLink } from "react-router-dom";
 
 import MoblandHorizontal from "../assets/images/mobland-horizontal.png.webp";
 class Footer extends Component {
@@ -31,8 +32,13 @@ class Footer extends Component {
                     >
                       WhitePaper
                     </Link>
+                    {/*<RouterLink*/}
+                    {/*  to="/privacy"*/}
+                    {/*>*/}
+                    {/*  Privacy Policy*/}
+                    {/*</RouterLink>*/}
                   </span>
-                  <br />
+                  <div className="fooSpacer" />
                 </Grid>
                 <Grid item xs={12} sm={12} lg={4}>
                   <div className="bold mulish">Be a SYNNER</div>
@@ -44,6 +50,14 @@ class Footer extends Component {
                       href={"https://shadowmarket.mob.land"}
                     >
                       Shadow Market
+                    </Link>
+                    <Link
+                      display="block"
+                      underline="hover"
+                      color="inherit"
+                      href={"https://assets.mob.land"}
+                    >
+                      Safehouse
                     </Link>
                     <Link
                       display="block"
@@ -87,6 +101,7 @@ class Footer extends Component {
                       Leaderboard
                     </Link>
                   </span>
+                  <div className="fooSpacer" />
                 </Grid>
                 <Grid item xs={12} sm={12} lg={4}>
                   <div className="bold mulish">Guides / Articles</div>
@@ -126,7 +141,7 @@ class Footer extends Component {
                       Assets
                     </Link>
                   </span>
-                  <br />
+                  <div className="fooSpacer" />
                 </Grid>
                 <Grid item xs={false} sm={1} />
               </Grid>
