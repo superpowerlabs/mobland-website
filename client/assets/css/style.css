@@ -2079,6 +2079,11 @@ b,
     justify-content: center;
 }
 
+.iconText {
+    font-size: 80%;
+    color: white !important;
+}
+
 .assetsTitle {
     display: flex;
     justify-content: flex-end;

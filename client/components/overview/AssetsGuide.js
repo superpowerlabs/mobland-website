@@ -62,6 +62,7 @@ function AssetsGuide() {
         {
           link: "https://staking.mob.land/core/dashboard",
           src: mobland,
+          title: "Core Pool",
         },
         ,
       ],
@@ -77,6 +78,7 @@ function AssetsGuide() {
         {
           link: "https://staking.mob.land/seed/dashboard",
           src: mobland,
+          title: "SEED Generator",
         },
         ,
       ],
@@ -92,6 +94,7 @@ function AssetsGuide() {
         {
           link: "https://shadowmarket.mob.land/",
           src: mobland,
+          title: "Shadow Market",
         },
         ,
       ],
@@ -124,7 +127,11 @@ function AssetsGuide() {
           link: "https://www.binance.com/en/nft/collection/syn-city-limited-blueprint-519022065384943617?isBack=1",
           src: binance,
         },
-        ,
+        {
+          link: "https://assets.mob.land/",
+          src: mobland,
+          title: "Safehouse",
+        },
       ],
       button: false,
     },
@@ -139,7 +146,11 @@ function AssetsGuide() {
           link: "https://opensea.io/collection/mobland-genesis-synr-pass",
           src: opensea,
         },
-        ,
+        {
+          link: "https://assets.mob.land/",
+          src: mobland,
+          title: "Safehouse",
+        },
       ],
       button: false,
     },
@@ -167,6 +178,12 @@ function AssetsGuide() {
         {
           link: "https://shadowmarket.mob.land/",
           src: mobland,
+          title: "Shadow Market",
+        },
+        {
+          link: "https://assets.mob.land/",
+          src: mobland,
+          title: "Safehouse",
         },
       ],
       button: false,
@@ -194,6 +211,12 @@ function AssetsGuide() {
         {
           link: "https://shadowmarket.mob.land/",
           src: mobland,
+          title: "Shadow Market",
+        },
+        {
+          link: "https://assets.mob.land/",
+          src: mobland,
+          title: "Safehouse",
         },
       ],
       button: false,

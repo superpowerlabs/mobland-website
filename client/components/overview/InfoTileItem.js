@@ -31,14 +31,19 @@ function InfoTileItem({ cls = "", alt, title, img, description, where }) {
                 {where.map((icon) => {
                   return (
                     <a href={icon.link} key={"icon" + i++}>
-                      <CardMedia
-                        key={"icon" + i++}
-                        style={{
-                          width: "5%",
-                        }}
-                        component="img"
-                        image={icon.src}
-                      />
+                      {icon.src ? (
+                        <CardMedia
+                          key={"icon" + i++}
+                          style={{
+                            width: "5%",
+                          }}
+                          component="img"
+                          image={icon.src}
+                        />
+                      ) : null}
+                      {icon.title ? (
+                        <span className={"iconText"}> {icon.title}</span>
+                      ) : null}
                     </a>
                   );
                 })}
