@@ -30,6 +30,13 @@ app.use("/healthcheck", function (req, res) {
   res.send("ok");
 });
 
+app.use("/hello", function (req, res) {
+  res.json({
+    hello: "world",
+    from: process.env.WHEREAMI,
+  });
+});
+
 app.use(
   "/",
   expressStaticGzip(path.resolve(__dirname, "../bundle"), {
