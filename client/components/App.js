@@ -24,17 +24,17 @@ class App extends Common {
 
     let localStore = JSON.parse(ls("localStore") || "{}");
     let pathhash = ethers.utils.id(window.location.pathname);
-
-    if (/mobland/.test(window.location.origin)) {
-      window.location = "https://mob.land";
-    } else if (
-      !/(local|amazonaws)/.test(location.origin) &&
-      window.location.protocol === "http:"
+    let wrongDomain = false;
+    if (
+      !/(local|amazonaws|superpowerlabs)/.test(window.location.origin) &&
+      window.location.hostname !== "mob.land"
     ) {
-      window.location = location.href.replace(/^http:/, "https:");
+      window.location = "https://mob.land";
+      wrongDomain = true;
     }
 
     this.state = {
+      wrongDomain,
       Store: Object.assign(
         {
           content: {},
@@ -209,6 +209,9 @@ class App extends Common {
   }
 
   render() {
+    if (this.state.wrongDomain) {
+      return <div />;
+    }
     const Store = this.state.Store;
     return (
       <BrowserRouter>
