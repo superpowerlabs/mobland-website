@@ -62,13 +62,17 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "purge.css",
+      filename: "main.css",
     }),
     new PurgeCSSPlugin({
       ///pass the paths for where the js, css and html files are
       paths: glob.sync([`${PATHS.client}/**/*`, `${PATHS.public}/**/*`], {
         nodir: true,
       }),
+      ///purge css does not detect dynamic classes here safelist thos dynamic classes
+      safelist: {
+        standard: [/navbar/, /video/, /MuiCard/, /bg-dark/],
+      },
     }),
     new CompressionWebpackPlugin({
       // deleteOriginalAssets: true,
