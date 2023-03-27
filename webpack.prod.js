@@ -5,9 +5,15 @@ const path = require("path");
 // webpack compression plugin:
 // https://webpack.js.org/plugins/compression-webpack-plugin/
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
-
+const glob = require("glob");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+
+const PATHS = {
+  client: path.join(__dirname, "client"),
+  public: path.join(__dirname, "public"),
+};
 
 module.exports = merge(common, {
   mode: "production",
@@ -56,7 +62,13 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      // filename: "assets/css/[name].[contenthash].css",
+      filename: "purge.css",
+    }),
+    new PurgeCSSPlugin({
+      ///pass the paths for where the js, css and html files are
+      paths: glob.sync([`${PATHS.client}/**/*`, `${PATHS.public}/**/*`], {
+        nodir: true,
+      }),
     }),
     new CompressionWebpackPlugin({
       // deleteOriginalAssets: true,
