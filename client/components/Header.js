@@ -130,14 +130,14 @@ export default class Header extends Base {
             >
               Assets
             </Navbar.Text>
-            <Navbar.Text
-              as={Link}
-              className={"yellowHover"}
-              to={"/roadmap"}
-              onClick={this.setExpanded}
-            >
-              Roadmap
-            </Navbar.Text>
+            {/*<Navbar.Text*/}
+            {/*  as={Link}*/}
+            {/*  className={"yellowHover"}*/}
+            {/*  to={"/roadmap"}*/}
+            {/*  onClick={this.setExpanded}*/}
+            {/*>*/}
+            {/*  Roadmap*/}
+            {/*</Navbar.Text>*/}
             <Navbar.Text className={"yellowHover"} onClick={this.setExpanded}>
               <a
                 href={"https://data.mob.land/assets/mobland-whitepaper.pdf"}
