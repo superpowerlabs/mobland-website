@@ -140,7 +140,7 @@ export default class Header extends Base {
             </Navbar.Text>
             <Navbar.Text className={"yellowHover"} onClick={this.setExpanded}>
               <a
-                href={"/assets/mobland-whitepaper.pdf"}
+                href={"https://data.mob.land/assets/mobland-whitepaper.pdf"}
                 target={"whitepaper"}
                 alt={"White paper"}
               >
