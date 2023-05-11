@@ -210,7 +210,8 @@ div.textBlock p:last-child {
     height: 6px;
 }
 
-a.yellowHover {
+a.yellowHover,
+.yellowHover a {
     color: whitesmoke !important;
 }
 

@@ -37,6 +37,15 @@ app.use("/hello", function (req, res) {
   });
 });
 
+app.get("/assets/MoblandWhitepaper.pdf", function (req, res) {
+  const pdfPath = path.resolve(
+    __dirname,
+    "../public/assets/MoblandWhitepaper.pdf"
+  );
+  res.setHeader("Content-Type", "application/pdf");
+  res.sendFile(pdfPath);
+});
+
 app.use(
   "/",
   expressStaticGzip(path.resolve(__dirname, "../bundle"), {
