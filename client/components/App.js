@@ -18,7 +18,7 @@ import AssetsGuide from "./overview/AssetsGuide";
 
 import Privacy from "./Privacy";
 
-class App extends Common {
+export default class App extends Common {
   constructor(props) {
     super(props);
 
@@ -275,5 +275,3 @@ class App extends Common {
     );
   }
 }
-
-module.exports = App;
