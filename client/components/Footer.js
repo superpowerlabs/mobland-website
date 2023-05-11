@@ -28,7 +28,8 @@ class Footer extends Component {
                       display="block"
                       underline="hover"
                       color="inherit"
-                      href={"https://mobland.gitbook.io/mobland/"}
+                      href={"/assets/MoblandWhitepaper.pdf"}
+                      target={"whitepaper"}
                     >
                       WhitePaper
                     </Link>

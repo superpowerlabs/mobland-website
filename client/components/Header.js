@@ -138,6 +138,15 @@ export default class Header extends Base {
             >
               Roadmap
             </Navbar.Text>
+            <Navbar.Text className={"yellowHover"} onClick={this.setExpanded}>
+              <a
+                href={"/assets/MoblandWhitepaper.pdf"}
+                target={"whitepaper"}
+                alt={"White paper"}
+              >
+                White paper
+              </a>
+            </Navbar.Text>
             <Navbar.Text>
               <a
                 className={"yellowHover"}
