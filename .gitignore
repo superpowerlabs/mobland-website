@@ -21,9 +21,9 @@ yarn-error.log*
 /bundle
 /bundle0
 /package-lock.json
+/pnpm-lock.yaml
 
 localdb
 leveldb
 tmp
 pgdata
-

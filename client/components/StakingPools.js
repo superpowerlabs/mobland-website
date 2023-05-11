@@ -41,7 +41,7 @@ class StakingPools extends Base {
               poster={GangsterHeaderPoster}
             >
               <source src="https://static.mob.land/videos/header-gangster.mp4" />
-              <ControlBar className="controlbar" disableCompletely="true" />
+              <ControlBar className="controlbar" disableCompletely={true} />
             </Player>{" "}
           </div>
         )}
