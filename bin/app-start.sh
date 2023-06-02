@@ -94,7 +94,7 @@ if [[ `pm2 list | grep $APP | grep online` ]]; then
   pm2 delete $APP
 fi
 
-pm2 start index.js -i $CORES --name $APP
+pm2 start index.cjs -i $CORES --name $APP
 pm2 save
 
 sleep 1
