@@ -1,3 +1,4 @@
+import abi from "./ABI.json";
 let isDev;
 if (typeof window !== "undefined") {
   isDev = /localhost/.test(window.location.hostname);
@@ -16,7 +17,7 @@ if (isDev) {
 
 const config = {
   supportedId,
-  abi: require("./ABI.json"),
+  abi: abi,
   season: 2,
   contracts: {
     42: "0x6d3cf40fe8649947f5fddfedc910b9bb09652ba7",
@@ -26,4 +27,4 @@ const config = {
   isSynCity: /syn.city/.test(window.location.origin),
 };
 
-module.exports = config;
+export default config;

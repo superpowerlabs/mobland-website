@@ -1,6 +1,6 @@
 const request = require("supertest");
 const expect = require("chai").expect;
-const app = require("../server/app");
+const app = require("../server/app.cjs");
 
 describe("Integration test", function () {
   it("should return ok", async function () {

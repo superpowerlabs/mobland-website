@@ -1,4 +1,3 @@
-import React from "react";
 import "../client/assets/css/style.css";
 import App from "./components/App";
 import { createRoot } from "react-dom/client";

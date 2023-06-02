@@ -18,6 +18,7 @@ yarn-debug.log*
 yarn-error.log*
 
 /public/bundle
+/build
 /bundle
 /bundle0
 /package-lock.json
