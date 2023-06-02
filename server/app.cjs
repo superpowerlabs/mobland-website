@@ -2,10 +2,10 @@ const express = require("express");
 const expressStaticGzip = require("express-static-gzip");
 const path = require("path");
 const cookieParser = require("cookie-parser");
-const Logger = require("./lib/Logger");
+const Logger = require("./lib/Logger.cjs");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const apiV1 = require("./routes/apiV1");
+const apiV1 = require("./routes/apiV1.cjs");
 const { applyAll } = require("@superpowerlabs/salus");
 const { config } = require("./salus.config.cjs");
 process.on("uncaughtException", function (error) {

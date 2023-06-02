@@ -2,6 +2,7 @@
   "name": "mobland-website",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "description": "A simple website for mob.land",
   "main": "index.js",
   "repository": {
