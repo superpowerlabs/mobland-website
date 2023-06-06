@@ -26,7 +26,9 @@ export default class App extends Common {
     let pathhash = ethers.utils.id(window.location.pathname);
     let wrongDomain = false;
     if (
-      !/(local|amazonaws|superpowerlabs)/.test(window.location.origin) &&
+      !/(local|amazonaws|superpowerlabs|127\.0\.0\.)/.test(
+        window.location.origin
+      ) &&
       window.location.hostname !== "mob.land"
     ) {
       window.location = "https://mob.land";
