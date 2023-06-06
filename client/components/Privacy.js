@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Markdown from "react-markdown-it";
-import { Grid } from "@mui/material";
 
 function Privacy() {
   const { pathname } = useLocation();
