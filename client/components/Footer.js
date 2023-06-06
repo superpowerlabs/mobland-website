@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "@mui/material";
 import Link from "@mui/material/Link";
-import { Link as RouterLink } from "react-router-dom";
 
 import MoblandHorizontal from "../assets/images/mobland-horizontal.png.webp";
 class Footer extends Component {
